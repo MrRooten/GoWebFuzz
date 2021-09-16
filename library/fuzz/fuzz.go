@@ -1,6 +1,7 @@
 package fuzz
 
 import (
+	"fmt"
 	"gowebfuzz/library/fuzz/matchlib"
 	"gowebfuzz/library/network/gwfhttp"
 	"gowebfuzz/library/utils"
@@ -12,9 +13,14 @@ func StartFuzzing(pageParser *matchlib.PageParser) {
 func Drive(requeset *http.Request) error {
 	reqp := gwfhttp.RequestPacket{}
 	reqp.ReadFromHTTPRequest(requeset)
-	pageParser,err := matchlib.MatchRequest(requeset)
+	bs := reqp.WriteToBytes()
+	pageParser,err := matchlib.MatchRequestRawData(&bs)
 	if err != nil {
 		utils.Log.Error(err.Error())
+	}
+
+	if pageParser != nil && len(pageParser.Parsers) != 0 {
+		fmt.Println(string(bs))
 	}
 	return nil
 }

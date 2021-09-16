@@ -52,7 +52,10 @@ type MatchRequestHandler struct {
 }
 
 func (mrh MatchRequestHandler) ModifyRequest(req *http.Request) error {
-	go fuzz.Drive(req)
+	if req.Method == "CONNECT" {
+		return nil
+	}
+	fuzz.Drive(req)
 	return nil
 }
 
