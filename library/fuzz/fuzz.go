@@ -10,11 +10,13 @@ import (
 func StartFuzzing(pageParser *matchlib.PageParser) {
 
 }
+
+//Passive fuzz only match uri body and POST body
 func Drive(requeset *http.Request) error {
 	reqp := gwfhttp.RequestPacket{}
 	reqp.ReadFromHTTPRequest(requeset)
 	bs := reqp.WriteToBytes()
-	pageParser,err := matchlib.MatchRequestRawData(&bs)
+	pageParser,err := matchlib.MatchRequestRawDataPassive(&bs)
 	if err != nil {
 		utils.Log.Error(err.Error())
 	}

@@ -179,3 +179,103 @@ func MatchRequestRawData(rawData *[]byte) (*PageParser,error) {
 	}
 	return pageParser,nil
 }
+
+func isValidParamPlace(start int,end int,requestData *[]byte) bool {
+	firstLineEnd := bytes.Index(*requestData,[]byte("\r\n"))
+	request_uri := bytes.Split((*requestData)[:firstLineEnd],[]byte(" "))[1]
+	path := bytes.Split(request_uri,[]byte("?"))[0]
+	split := bytes.Split(path,[]byte("."))
+	ext := string(split[len(split)-1])
+	if ext == ".gif" {
+		return false
+	}
+	if end <= firstLineEnd {
+		return true
+	}
+
+	bodyStart := bytes.Index(*requestData,[]byte("\r\n\r\n"))
+	if start > bodyStart {
+		return true
+	}
+
+	return false
+}
+
+func MatchRequestRawDataPassive(rawData *[]byte) (*PageParser,error) {
+	key := []byte("thisismylife")
+	keyOccurrence := bytesMatchAll(*rawData,key)
+	pageParser := &PageParser{}
+	pageParser.OrignalRequestData = rawData
+	for _,index := range keyOccurrence {
+		if !isKeyPlaceOk(rawData,index) {
+			continue
+		}
+		patternParser := PatternParser{}
+		if index == 0 {
+			return nil,errors.New("wrong format of request data")
+		}
+		qualifier := string((*rawData)[index-1:index])
+		var unqualifier string
+		var isUrlEncodedFlag bool
+		if index < 3 || (*rawData)[index-3] != '%' {
+			isUrlEncodedFlag = false
+			if qualifier == "{" {
+				unqualifier = "}"
+			} else if qualifier == "(" {
+				unqualifier = ")"
+			} else if qualifier == "[" {
+				unqualifier = "]"
+			} else if qualifier == "<" {
+				unqualifier = ">"
+			} else {
+				unqualifier = qualifier
+			}
+		} else {
+			isUrlEncodedFlag = true
+			qualifier = string((*rawData)[index-3:index])
+			unescapeQualifier,err := url.QueryUnescape(qualifier)
+			if err != nil {
+
+			}
+			if unescapeQualifier == "{" {
+				unqualifier = url.QueryEscape("}")
+			} else if unescapeQualifier == "(" {
+				unqualifier = url.QueryEscape(")")
+			} else if unescapeQualifier == "[" {
+				unqualifier = url.QueryEscape("]")
+			} else if unescapeQualifier == "<" {
+				unqualifier = url.QueryEscape(">")
+			} else {
+				unqualifier = qualifier
+			}
+		}
+		start := index-1
+		end := start + len(key)
+
+		for i:=end;i < len(*rawData)+len(qualifier);i++ {
+			if strings.ToLower(string((*rawData)[i:i+len(qualifier)])) == strings.ToLower(unqualifier) {
+				end = i
+				break
+			}
+		}
+
+		if !isValidParamPlace(start,end,rawData) {
+			return pageParser,nil
+		}
+
+		if isUrlEncodedFlag == true {
+			patternParser.OriginalPattern = string((*rawData)[start-2:end+3])
+		} else {
+			patternParser.OriginalPattern = string((*rawData)[start:end+1])
+		}
+
+		patternParser.Start = start
+		patternParser.End = end
+		patternParser.orignalRequestData = rawData
+		patternParser.parse()
+		pageParser.Parsers = append(pageParser.Parsers,&patternParser)
+
+		sort.Sort(ByFlag(pageParser.Parsers))
+	}
+	return pageParser,nil
+}

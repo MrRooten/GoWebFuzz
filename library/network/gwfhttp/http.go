@@ -4,6 +4,7 @@ import (
 	"bytes"
 	"crypto/tls"
 	"errors"
+	"fmt"
 	"io"
 	"io/ioutil"
 	"net/http"
@@ -43,20 +44,28 @@ type RequestPacket struct {
 	body []byte
 
 	client http.Client
+
+	request *http.Request
 }
 
 func (request *RequestPacket) SetHttpConfig(timeout time.Duration,proxyString string,redirectDepth int) error{
-	request.client.Timeout = timeout
 
-	tr := &http.Transport{}
+
 	if proxyString != "" {
 		proxy,err := url.Parse(proxyString)
 		if err != nil {
 			return err
 		}
-		tr = &http.Transport{
+		tr := &http.Transport{
 			Proxy: http.ProxyURL(proxy),
 			TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+			MaxIdleConnsPerHost: 20,
+		}
+		request.client.Transport = tr
+	} else {
+		tr := &http.Transport{
+			TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+			MaxIdleConnsPerHost: 20,
 		}
 		request.client.Transport = tr
 	}
@@ -97,6 +106,11 @@ func (request *RequestPacket) ReadFromHTTPRequest(req *http.Request) error {
 	for k,v := range req.Header {
 		request.headers[k] = strings.Join(v,"")
 	}
+	request.headers["Host"] = req.Host
+	if _, ok := request.headers["User-Agent"]; !ok {
+		request.headers["User-Agent"] = `Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36 Edg/93.0.961.47`
+	}
+
 	return nil
 }
 
@@ -191,7 +205,7 @@ func (request *RequestPacket) GetURI() string {
 	return ""
 }
 
-func (request *RequestPacket) GetHTTPProtocol() string {
+func (request *RequestPacket) GetProto() string {
 	return request.httpProtocol
 }
 
@@ -220,24 +234,26 @@ func (request *RequestPacket) GetBody() ([]byte,error) {
 		body := request.rawData[bytes.Index(request.rawData,[]byte("\r\n")):len(request.rawData)]
 		return body,nil
 	}
-	return []byte(""),errors.New("not valid request bytes")
+	return []byte(""),nil
 }
 
 func (request *RequestPacket) SendPacket() (*ResponsePacket,error){
 	body,err := request.GetBody()
+	var req *http.Request
 	if err != nil {
 		return nil,err
 	}
-	req,err := http.NewRequest(request.httpMethod,request.requestURL,bytes.NewReader(body))
+
+	req,err = http.NewRequest("GET",request.requestURL,bytes.NewReader(body))
+	if err != nil {
+		fmt.Println(err)
+	}
 	//req.Proto = request.httpProtocol
 	for k,v := range request.headers {
 		req.Header.Set(k,v)
 	}
 
-	client := request.client
-
-	res,err := client.Do(req)
-
+	res,err := request.client.Do(req)
 	if err != nil {
 		return nil,err
 	}
@@ -249,7 +265,7 @@ func (request *RequestPacket) SendPacket() (*ResponsePacket,error){
 
 type ResponsePacket struct {
 	rawData []byte
-	bodyReader io.Reader
+	bodyReader io.ReadCloser
 	headers map[string]string
 	statusCode int
 	httpProtocol string
@@ -266,15 +282,22 @@ func (response *ResponsePacket) ReadFromHTTPResponse(res *http.Response) (*Respo
 	return response,nil
 }
 
+
 func (response *ResponsePacket) GetBody(size int) ([]byte,error) {
 	var body []byte
+	var err error
 	if size >= 0 {
-		body = make([]byte, size)
+		reader := io.LimitReader(response.bodyReader,int64(size))
+		body,err = ioutil.ReadAll(reader)
+		if err != nil {
+			return nil,err
+		}
+		io.Copy(ioutil.Discard,response.bodyReader)
 	} else {
 		return ioutil.ReadAll(response.bodyReader)
 	}
 
-	response.bodyReader.Read(body)
+
 	return body,nil
 }
 
@@ -286,6 +309,9 @@ func (response *ResponsePacket) GetStatusCode() int {
 	return response.statusCode
 }
 
+func (response *ResponsePacket) GetProto() string {
+	return response.httpProtocol
+}
 func GetBytesFromHTTPRequest(request *http.Request) ([]byte,error) {
 	return []byte(""),nil
 }

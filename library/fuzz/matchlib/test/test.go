@@ -2,10 +2,14 @@ package main
 
 import (
 	"fmt"
-	"gowebfuzz/library/fuzz/busterlib"
-	"gowebfuzz/library/fuzz/matchlib"
-	"io/ioutil"
-	"os"
+	"github.com/cjoudrey/gluahttp"
+	"github.com/google/cel-go/cel"
+	"github.com/google/cel-go/checker/decls"
+	lua "github.com/yuin/gopher-lua"
+	"gowebfuzz/library/lualib"
+	"log"
+	"net/http"
+	"strings"
 )
 
 func isIteratorDone(mp *map[int][]int) bool {
@@ -63,17 +67,125 @@ func replaceBytes(bytesToBeReplaced *[]byte,bytesToReplace []byte,start int,end 
 	*bytesToBeReplaced = append(*bytesToBeReplaced,tmp...)
 	return bytesToBeReplaced
 }
-func main() {
-	//s := []byte("%3babcdefg|hij|base64|3123%3b")
-	//a,_ := matchlib.MatchRequestRawData(&s)
-	//fmt.Printf("%#v\n",a.Parsers[0])
-	//target := []byte("abcdefg")
-	//replaceBytes(&target,[]byte("123"),0,3)
-	//fmt.Println(string(target))
 
-	file,_ := os.Open(".\\burpsuite")
-	bs,_ := ioutil.ReadAll(file)
-	p,_ := matchlib.MatchRequestRawData(&bs)
-	//fmt.Printf("%#v",p.Parsers)
-	busterlib.ProcIterator(p)
+func testCel() {
+	d := cel.Declarations(decls.NewVar("ame", decls.String))
+	env, err := cel.NewEnv(d)
+	if err != nil {
+		log.Fatalf("environment creation error: %v\n", err)
+	}
+	ast, iss := env.Compile(`"Hello world! I'm " + ame + "."`)
+	// Check iss for compilation errors.
+	if iss.Err() != nil {
+		log.Fatalln(iss.Err())
+	}
+	prg, err := env.Program(ast)
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+		out, _, err := prg.Eval(map[string]interface{}{
+			"ame": "CEL",
+		})
+		if err != nil {
+			log.Fatalln(err)
+		}
+		fmt.Println(out)
+
+}
+
+func testLua() {
+	L := lua.NewState()
+	defer L.Close()
+	if err := L.DoString(`print("hello")`); err != nil {
+		panic(err)
+	}
+}
+
+type Person struct {
+	Name string
+}
+
+const luaPersonTypeName = "person"
+
+// Registers my person type to given L.
+func registerPersonType(L *lua.LState) {
+	mt := L.NewTypeMetatable(luaPersonTypeName)
+	L.SetGlobal("person", mt)
+	// static attributes
+	L.SetField(mt, "new", L.NewFunction(newPerson))
+	// methods
+	L.SetField(mt, "__index", L.SetFuncs(L.NewTable(), personMethods))
+}
+
+// Constructor
+func newPerson(L *lua.LState) int {
+	person := &Person{L.CheckString(1)}
+	ud := L.NewUserData()
+	ud.Value = person
+	L.SetMetatable(ud, L.GetTypeMetatable(luaPersonTypeName))
+	L.Push(ud)
+	return 1
+}
+
+// Checks whether the first lua argument is a *LUserData with *Person and returns this *Person.
+func checkPerson(L *lua.LState) *Person {
+	ud := L.CheckUserData(1)
+	if v, ok := ud.Value.(*Person); ok {
+		return v
+	}
+	L.ArgError(1, "person expected")
+	return nil
+}
+
+var personMethods = map[string]lua.LGFunction{
+	"name": personGetSetName,
+}
+
+// Getter and setter for the Person#Name
+func personGetSetName(L *lua.LState) int {
+	p := checkPerson(L)
+	if L.GetTop() == 2 {
+		p.Name = L.CheckString(2)
+		return 0
+	}
+	L.Push(lua.LString(p.Name))
+	return 1
+}
+
+
+func run(s string) {
+	L := lua.NewState()
+	defer L.Close()
+	registerPersonType(L)
+	L.SetGlobal("response",lua.LString(string(s)))
+	if err := L.DoString(`
+		p = person.new("Steeve")
+		print(p:name()) -- "Steeve"
+		p:name("Alice")
+		print(p:name()) -- "Alice"
+		print(response)
+    `); err != nil {
+		panic(err)
+	}
+
+}
+
+func testMatchResponse() {
+	L := lua.NewState()
+	defer L.Close()
+	L.PreloadModule("http", gluahttp.NewHttpModule(&http.Client{}).Loader)
+	request,_ := http.NewRequest("GET","http://www.baidu.com",strings.NewReader(""))
+	client := http.Client{}
+	res,_ := client.Do(request)
+	lualib.RegisterRequestTable(L,request)
+	lualib.RegisterResponseTable(L,res)
+	if err := L.DoFile("./test.lua"); err != nil {
+		panic(err)
+	}
+	i := L.GetGlobal("result").(lua.LNumber)
+	fmt.Println(i)
+}
+func main() {
+	testMatchResponse()
 }
