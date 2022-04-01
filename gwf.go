@@ -1,9 +1,7 @@
 package main
 
-import "log"
-import _ "github.com/gookit/color"
-import _ "github.com/google/martian"
+import "gowebfuzz/library/cmdline"
 
 func main() {
-	log.Fatalf("%s\n","hello");
+	cmdline.Execute()
 }

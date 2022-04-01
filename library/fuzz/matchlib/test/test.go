@@ -154,23 +154,6 @@ func personGetSetName(L *lua.LState) int {
 }
 
 
-func run(s string) {
-	L := lua.NewState()
-	defer L.Close()
-	registerPersonType(L)
-	L.SetGlobal("response",lua.LString(string(s)))
-	if err := L.DoString(`
-		p = person.new("Steeve")
-		print(p:name()) -- "Steeve"
-		p:name("Alice")
-		print(p:name()) -- "Alice"
-		print(response)
-    `); err != nil {
-		panic(err)
-	}
-
-}
-
 func testMatchResponse() {
 	L := lua.NewState()
 	defer L.Close()

@@ -136,14 +136,23 @@ func (request *RequestPacket) WriteToBytes() []byte {
 }
 
 func (request *RequestPacket) ReadFromBytes(rawData *[]byte,isSSL bool) error {
-	seperatorIndex := bytes.Index(*rawData,[]byte("\r\n\r\n"))
+	headSeperator := []byte{}
+	seperator := []byte{}
+	if bytes.Count(*rawData,[]byte("\r\n")) > 0 {
+		headSeperator = []byte("\r\n")
+		seperator = []byte("\r\n\r\n")
+	} else {
+		headSeperator = []byte("\n")
+		seperator = []byte("\n\n")
+	}
+	seperatorIndex := bytes.Index(*rawData,seperator)
 	head := (*rawData)[0:seperatorIndex]
 	body := (*rawData)[seperatorIndex+4:len(*rawData)]
 	if request.headers == nil {
 		request.headers = map[string]string{}
 	}
 
-	headSplit := bytes.Split(head,[]byte("\r\n"))
+	headSplit := bytes.Split(head,headSeperator)
 	firstLineSplit := bytes.Split(headSplit[0],[]byte(" "))
 	if len(firstLineSplit) != 3 {
 		return errors.New("the request is not valid in first line")
@@ -271,7 +280,7 @@ type ResponsePacket struct {
 	httpProtocol string
 }
 
-func (response *ResponsePacket) ReadFromHTTPResponse(res *http.Response) (*ResponsePacket,error) {
+func (response *ResponsePacket) ReadFromHTTPResponse(res *http.Response) (error) {
 	response.bodyReader = res.Body
 	response.headers = map[string]string{}
 	for k,v := range res.Header {
@@ -279,8 +288,9 @@ func (response *ResponsePacket) ReadFromHTTPResponse(res *http.Response) (*Respo
 	}
 	response.statusCode = res.StatusCode
 	response.httpProtocol = res.Proto
-	return response,nil
+	return nil
 }
+
 
 
 func (response *ResponsePacket) GetBody(size int) ([]byte,error) {

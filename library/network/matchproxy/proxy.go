@@ -9,6 +9,8 @@ import (
 	"github.com/google/martian/mitm"
 	"github.com/google/martian/verify"
 	"gowebfuzz/library/fuzz"
+	"gowebfuzz/library/modules/information"
+	"gowebfuzz/library/network/gwfhttp"
 	"log"
 	"net"
 	"net/http"
@@ -46,16 +48,28 @@ type MatchProxy struct {
 	tr http.Transport
 }
 
+type RequestTuple struct {
+	Request *http.Request
+	Response *http.Response //Reverve for later update
+	ResPacket *gwfhttp.ResponsePacket //Reverve for later update
+}
+
+
 type MatchRequestHandler struct {
 	MatchPattern string
 	Config MatchConfig
+	Fuzz *fuzz.Fuzz
 }
+
 
 func (mrh MatchRequestHandler) ModifyRequest(req *http.Request) error {
 	if req.Method == "CONNECT" {
 		return nil
 	}
-	fuzz.Drive(req)
+
+	//Save the requeset and response to a queue
+	//mrh.Fuzz.Drive(req)
+
 	return nil
 }
 
@@ -65,9 +79,24 @@ type MatchResponseHandler struct {
 }
 
 func (mrh MatchResponseHandler)  ModifyResponse(res *http.Response) error {
+	finder := information.LinksFinder{}
+	err := finder.MatchResponse(res)
+	//bs,err := ioutil.ReadAll(res.Body)
+	//res.Body = ioutil.NopCloser(bytes.NewReader(bs))
+	//fmt.Println(string(bs))
+	if err != nil {
+		return err
+	}
 	return nil
 }
 
+func NewMatchRequestHandler(routineSize int) (MatchRequestHandler){
+	mrh := MatchRequestHandler{}
+	mrh.Fuzz = new(fuzz.Fuzz)
+	mrh.Fuzz.Init(5,"go://1","",5)
+	go mrh.Fuzz.StartFuzzing()
+	return mrh
+}
 
 func NewMatchProxy(matchProxy MatchProxy) (*MatchProxy,error) {
 	martian.Init()
@@ -138,7 +167,7 @@ func NewMatchProxy(matchProxy MatchProxy) (*MatchProxy,error) {
 		go p.Serve(tls.NewListener(tl, mc.TLS()))
 	}
 
-	p.SetRequestModifier(MatchRequestHandler{MatchPattern: "GET"})
+	p.SetRequestModifier(NewMatchRequestHandler(5))
 	p.SetResponseModifier(MatchResponseHandler{})
 
 	m := martianhttp.NewModifier()

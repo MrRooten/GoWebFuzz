@@ -13,9 +13,9 @@ end
 local http = require("http")
 result = 0
 
-
 if(res.status_code == 200)
 then
+    print(dump(res))
     result = 1
     print("It's Vulnable")
 end
