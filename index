@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="keywords" content="">
+<meta name="description" content="">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,minimum-scale=1.0">
+<title>南宁市第八中学</title>
+<link class='mb_css' rel="stylesheet" type="text/css" href="/App/Tpl/Home/newDefalut/Public/css/pc_引导页.css" media='only screen and (min-width:639px)'>
+<link class="pc_css" rel="stylesheet" type="text/css" href="/App/Tpl/Home/newDefalut/Public/css/mob_引导页.css" media='only screen and (max-width:640px)'>
+<!--[if lte IE 9]>
+<link rel="stylesheet" type="text/css" href="/App/Tpl/Home/newDefalut/Public/css/pc_引导页.css">
+<![endif]-->
+<link class="pc_css1" rel="stylesheet" type="text/css" href="/App/Tpl/Home/newDefalut/Public/css/pc_引导页.css">
+<script type="text/javascript" src='/App/Tpl/Home/newDefalut/Public/js/jquery-1.7.2.min.js'></script>
+<script type="text/javascript" src="/App/Tpl/Home/newDefalut/Public/js/rem.js"></script>
+<script type="text/javascript" src="/App/Tpl/Home/newDefalut/Public/js/引导页.js"></script>
+<!-- <script type="text/javascript" src="/App/Tpl/Home/newDefalut/Public/js/respond.js"> </script> -->
+</head>
+<body>
+<div class="container">
+	<div class="top">
+	    <div class="top_con">
+	    	<a href="/index.php/index.html"><h2 class="logo"></h2></a>
+			<div class="tingzi"></div>
+	    </div>
+	</div>
+	<div class="center">
+	    <div class="conter_container">
+	    	<div class="pic">
+	    	    				<!-- <img src="/App/Tpl/Home/newDefalut/Public/images/yindao_pic/N1.png">
+				<img src="/App/Tpl/Home/newDefalut/Public/images/yindao_pic/N2.png"> -->
+			</div>
+
+			<div class="flash">
+				<object type="application/x-shockwave-flash" data="/App/Tpl/Home/newDefalut/Public/images/yindao_pic/float.swf" width="100%" height="100%">
+					  <param name="movie" value="/App/Tpl/Home/newDefalut/Public/images/yindao_pic/float.swf" />
+					  <param name="wmode" value="transparent" />
+					  <param name="quality" value="high" />
+					  <embed src="/App/Tpl/Home/newDefalut/Public/images/yindao_pic/float.swf" quality="high" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"  width="100%" height="100%"></embed>
+				</object>
+			</div>
+
+			<div class="right">
+				<a class="right_top" href="">
+					<h3 class='h_top'>学校概况</h3>
+					<div class="text_left">
+						<h3 class='h_bott_t'>南宁市第八中学简介</h3>
+						<div>
+						       4月13日晚，我校高二年级在学校体育馆举行了 “诵读中华经典，营造书香校园”为主题的中华经典诵读比赛。
+       高二年级16个班级八百多名学生和40多位语文教师、班主任教师参加了今天的诵读比赛。各班级选取了曹操、李白、苏轼、岳飞、梁启超、毛泽东等古今伟大诗人的名作进行精心编排，选取了合适的音乐配合朗诵，运用舞蹈、歌唱、书法等相关艺术辅助，感情真挚地投入，朗诵形式多样，朗诵技巧高超。这次经典诵读比赛，使同学们在享受了一场美妙的艺术盛宴。
+						
+						<!-- <div style="text-align: center">&nbsp;</div>
+
+<div>　　&nbsp;&nbsp; <font size="4">南宁市第八中学创办于1958年，是南宁市的传统名校。校区占地145亩，与广西农科院为邻，相思湖、明月湖连通运河绕校而过。2004年被评为自...</font></div>						 -->
+						</div>
+					</div>
+					<div class="text_right">
+						<img src="/App/Tpl/Home/newDefalut/Public/images/yindao_pic/JIAN.png">
+					</div>
+				</a>
+				<div class="right_bottom">
+					<div class="text_left_x">
+						<h3 class='h_bott'><span>高中快讯</span><a class='more' href="/index.php/cpdt.html">更多&raquo;</a></h3>
+						<p><a href="/index.php/mtbd/994.html" target="_blank" >南宁市中小学、幼儿园学生家长 疫情防控责任告知书</a><span>12-30</span></p><p><a href="/index.php/mtbd/989.html" target="_blank" > 庆祝建党百年 展现青春活力        ——南宁市第八中学开展第三十七届田径运动会</a><span>11-22</span></p><p><a href="/index.php/mtbd/977.html" target="_blank" >南宁市2022届体育高考术科视导活动在南宁八中举行</a><span>09-17</span></p><p><a href="/index.php/mtbd/976.html" target="_blank" >南宁八中贯彻落实《品质教育 学在南宁——南宁市新时代教育高质量发展总体方案（2021-2023）》实施方案</a><span>09-06</span></p>	                    
+					</div>
+					<div class="text_right_x">
+						<h3 class='h_bott'><span>初中快讯</span><a class='more' href="/index.php/cpdt.html" target="_blank">更多&raquo;</a></h3>
+						<p><a href="/index.php/cpdt/960.html" target="_blank" >南宁八中2020年度教育工作总结</a><span>12-22</span></p><p><a href="/index.php/cpdt/959.html" target="_blank" >不忘初心牢记使命敢于担当，奋力推进首府教育高质量发展</a><span>12-22</span></p><p><a href="/index.php/cpdt/958.html" target="_blank" >南宁市教育系统2020年度教育工作展示宣传语</a><span>12-22</span></p><p><a href="/index.php/cpdt/954.html" target="_blank" >南宁八中顺利开展2020年秋季学期段考质量分析会</a><span>11-20</span></p>					</div>
+				</div>
+			</div>
+	    </div>
+	</div>
+	<div class="bottom">
+	   <div class="bottom_con">
+		<a href="/index.html"><img class='bottom_pic' src="/App/Tpl/Home/newDefalut/Public/images/yindao_pic/JIN.jpg"></a>
+		</div>
+	</div>
+</div>
+<div class='mob_container'>
+	<div class="header">
+		<img class="logo" src="/App/Tpl/Home/newDefalut/Public/images/lanmu_pic/logo.png "/>
+	</div>
+	<div class="text_left">
+		<h3 class='h_bott_t'>
+			<img src="/App/Tpl/Home/newDefalut/Public/images/yindao_pic/jianj.jpg">
+		</h3>
+		<div>
+		       4月13日晚，我校高二年级在学校体育馆举行了 “诵读中华经典，营造书香校园”为主题的中华经典诵读比赛。
+       高二年级16个班级八百多名学生和40多位语文教师、班主任教师参加了今天的诵读比赛。各班级选取了曹操、李白、苏轼、岳飞、梁启超、毛泽东等古今伟大诗人的名作进行精心编排，选取了合适的音乐配合朗诵，运用舞蹈、歌唱、书法等相关艺术辅助，感情真挚地投入，朗诵形式多样，朗诵技巧高超。这次经典诵读比赛，使同学们在享受了一场美妙的艺术盛宴。
+		<a class='mro' href="/index.php/mtbd/546.html">...详情</a>
+		</div>
+	</div>
+	<a class='into' href="/index.html">
+		<img src="/App/Tpl/Home/newDefalut/Public/images/yindao_pic/jinr.png">
+	</a>
+</div>
+</body>
+</html>

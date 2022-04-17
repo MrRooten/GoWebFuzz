@@ -6,9 +6,10 @@ import (
 	"gowebfuzz/library/network/gwfhttp"
 	"io/ioutil"
 	"net/http"
+	"time"
+
 	"os"
 	"strings"
-	"time"
 )
 
 func httpsTest() {

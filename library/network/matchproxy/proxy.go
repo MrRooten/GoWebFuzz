@@ -8,9 +8,7 @@ import (
 	"github.com/google/martian/martianlog"
 	"github.com/google/martian/mitm"
 	"github.com/google/martian/verify"
-	"gowebfuzz/library/fuzz"
-	"gowebfuzz/library/modules/information"
-	"gowebfuzz/library/network/gwfhttp"
+	"gowebfuzz/library/network/matchproxy/matchlib"
 	"log"
 	"net"
 	"net/http"
@@ -26,7 +24,6 @@ type MatchConfig struct {
 	MatchPattern string
 	//Match Key
 	MatchKey string
-
 }
 
 type MatchProxy struct {
@@ -48,57 +45,7 @@ type MatchProxy struct {
 	tr http.Transport
 }
 
-type RequestTuple struct {
-	Request *http.Request
-	Response *http.Response //Reverve for later update
-	ResPacket *gwfhttp.ResponsePacket //Reverve for later update
-}
-
-
-type MatchRequestHandler struct {
-	MatchPattern string
-	Config MatchConfig
-	Fuzz *fuzz.Fuzz
-}
-
-
-func (mrh MatchRequestHandler) ModifyRequest(req *http.Request) error {
-	if req.Method == "CONNECT" {
-		return nil
-	}
-
-	//Save the requeset and response to a queue
-	//mrh.Fuzz.Drive(req)
-
-	return nil
-}
-
-
-type MatchResponseHandler struct {
-
-}
-
-func (mrh MatchResponseHandler)  ModifyResponse(res *http.Response) error {
-	finder := information.LinksFinder{}
-	err := finder.MatchResponse(res)
-	//bs,err := ioutil.ReadAll(res.Body)
-	//res.Body = ioutil.NopCloser(bytes.NewReader(bs))
-	//fmt.Println(string(bs))
-	if err != nil {
-		return err
-	}
-	return nil
-}
-
-func NewMatchRequestHandler(routineSize int) (MatchRequestHandler){
-	mrh := MatchRequestHandler{}
-	mrh.Fuzz = new(fuzz.Fuzz)
-	mrh.Fuzz.Init(5,"go://1","",5)
-	go mrh.Fuzz.StartFuzzing()
-	return mrh
-}
-
-func NewMatchProxy(matchProxy MatchProxy) (*MatchProxy,error) {
+func NewMatchProxy(matchProxy MatchProxy) (*MatchProxy, error) {
 	martian.Init()
 
 	p := martian.NewProxy()
@@ -107,7 +54,6 @@ func NewMatchProxy(matchProxy MatchProxy) (*MatchProxy,error) {
 	if err != nil {
 		log.Fatal(err)
 	}
-
 
 	tr := &http.Transport{
 		Dial: (&net.Dialer{
@@ -130,27 +76,26 @@ func NewMatchProxy(matchProxy MatchProxy) (*MatchProxy,error) {
 		p.SetDownstreamProxy(u)
 	}
 
-
 	var x509c *x509.Certificate
 	var priv interface{}
 
 	if matchProxy.Cert != "" && matchProxy.Key != "" {
 		tlsc, err := tls.LoadX509KeyPair(matchProxy.Cert, matchProxy.Key)
 		if err != nil {
-			return nil,err
+			return nil, err
 		}
 		priv = tlsc.PrivateKey
 
 		x509c, err = x509.ParseCertificate(tlsc.Certificate[0])
 		if err != nil {
-			return nil,err
+			return nil, err
 		}
 	}
 
 	if x509c != nil && priv != nil {
 		mc, err := mitm.NewConfig(x509c, priv)
 		if err != nil {
-			return nil,err
+			return nil, err
 		}
 
 		mc.SetValidity(time.Hour)
@@ -166,41 +111,33 @@ func NewMatchProxy(matchProxy MatchProxy) (*MatchProxy,error) {
 
 		go p.Serve(tls.NewListener(tl, mc.TLS()))
 	}
-
-	p.SetRequestModifier(NewMatchRequestHandler(5))
-	p.SetResponseModifier(MatchResponseHandler{})
+	reqHandler := matchlib.NewMatchRequestHandler(5)
+	reqHandler.Request = new(http.Request)
+	reqHandler.Pair = new(matchlib.Pair)
+	matchlib.Records.Pairs = []*matchlib.Pair{}
+	p.SetRequestModifier(reqHandler)
+	p.SetResponseModifier(matchlib.NewMatchResponseHandler(reqHandler))
 
 	m := martianhttp.NewModifier()
 
-
 	logger := martianlog.NewLogger()
 	logger.SetDecode(true)
-
-
-
 
 	// Verify assertions.
 	vh := verify.NewHandler()
 	vh.SetRequestVerifier(m)
 	vh.SetResponseVerifier(m)
 
-
 	// Reset verifications.
 	rh := verify.NewResetHandler()
 	rh.SetRequestVerifier(m)
 	rh.SetResponseVerifier(m)
 
-
-
 	go p.Serve(l)
 	matchProxy.Proxy = *p
-	return &matchProxy,nil
+	return &matchProxy, nil
 }
 
 func (matchProxy *MatchProxy) CloseProxy() {
 	matchProxy.Proxy.Close()
 }
-
-
-
-

@@ -10,13 +10,18 @@ import (
 func Execute() {
 	cmd := &cli.App{
 		//Global flag
-		Flags: []cli.Flag {
-
+		Flags: []cli.Flag{
+			&cli.StringFlag{
+				Name:    "config-file",
+				Aliases: []string{"cf"},
+				Value:   "",
+				Usage:   "Set the config file",
+			},
 		},
 		//Comands
 		Commands: []*cli.Command{
 			{
-				Name: "webproxy",
+				Name:  "webproxy",
 				Usage: "Use web proxy to detect target website",
 				Action: func(context *cli.Context) error {
 					fmt.Println(context.String("config-file"))

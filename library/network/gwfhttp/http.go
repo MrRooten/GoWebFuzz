@@ -15,8 +15,8 @@ import (
 )
 
 type RequestConfig struct {
-	Timeout time.Duration
-	Proxy string
+	Timeout              time.Duration
+	Proxy                string
 	FollowDirectionDepth int
 }
 type RequestPacket struct {
@@ -48,23 +48,22 @@ type RequestPacket struct {
 	request *http.Request
 }
 
-func (request *RequestPacket) SetHttpConfig(timeout time.Duration,proxyString string,redirectDepth int) error{
-
+func (request *RequestPacket) SetHttpConfig(timeout time.Duration, proxyString string, redirectDepth int) error {
 
 	if proxyString != "" {
-		proxy,err := url.Parse(proxyString)
+		proxy, err := url.Parse(proxyString)
 		if err != nil {
 			return err
 		}
 		tr := &http.Transport{
-			Proxy: http.ProxyURL(proxy),
-			TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+			Proxy:               http.ProxyURL(proxy),
+			TLSClientConfig:     &tls.Config{InsecureSkipVerify: true},
 			MaxIdleConnsPerHost: 20,
 		}
 		request.client.Transport = tr
 	} else {
 		tr := &http.Transport{
-			TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
+			TLSClientConfig:     &tls.Config{InsecureSkipVerify: true},
 			MaxIdleConnsPerHost: 20,
 		}
 		request.client.Transport = tr
@@ -101,10 +100,13 @@ func (request *RequestPacket) ReadFromHTTPRequest(req *http.Request) error {
 	request.httpMethod = req.Method
 	request.uri = req.RequestURI
 	request.httpProtocol = req.Proto
-	request.requestURL = request.httpScheme + req.Host + "/" +request.uri
-	request.headers = map[string]string{}
-	for k,v := range req.Header {
-		request.headers[k] = strings.Join(v,"")
+	request.requestURL = request.httpScheme + req.Host + "/" + request.uri
+	request.headers = make(map[string]string)
+	if request.headers == nil {
+		return nil
+	}
+	for k, v := range req.Header {
+		request.headers[k] = strings.Join(v, "")
 	}
 	request.headers["Host"] = req.Host
 	if _, ok := request.headers["User-Agent"]; !ok {
@@ -116,58 +118,58 @@ func (request *RequestPacket) ReadFromHTTPRequest(req *http.Request) error {
 
 func (request *RequestPacket) WriteToBytes() []byte {
 	res := []byte("")
-	res = append(res[:],[]byte(request.httpMethod)[:]...)
-	res = append(res[:],[]byte(" ")...)
-	res = append(res[:],[]byte(request.uri)[:]...)
-	res = append(res[:],[]byte(" ")...)
-	res = append(res[:],[]byte(request.httpProtocol)[:]...)
-	res = append(res[:],[]byte("\r\n")...)
-	for k,v := range request.headers {
+	res = append(res[:], []byte(request.httpMethod)[:]...)
+	res = append(res[:], []byte(" ")...)
+	res = append(res[:], []byte(request.uri)[:]...)
+	res = append(res[:], []byte(" ")...)
+	res = append(res[:], []byte(request.httpProtocol)[:]...)
+	res = append(res[:], []byte("\r\n")...)
+	for k, v := range request.headers {
 		s := []byte("")
-		s = append(s[:],[]byte(k)...)
-		s = append(s[:],[]byte(" : ")...)
-		s = append(s[:],[]byte(v)...)
-		s = append(s[:],[]byte("\r\n")...)
-		res = append(res[:],s...)
+		s = append(s[:], []byte(k)...)
+		s = append(s[:], []byte(" : ")...)
+		s = append(s[:], []byte(v)...)
+		s = append(s[:], []byte("\r\n")...)
+		res = append(res[:], s...)
 	}
-	res = append(res[:],[]byte("\r\n")...)
-	res = append(res[:],request.body...)
+	res = append(res[:], []byte("\r\n")...)
+	res = append(res[:], request.body...)
 	return res
 }
 
-func (request *RequestPacket) ReadFromBytes(rawData *[]byte,isSSL bool) error {
+func (request *RequestPacket) ReadFromBytes(rawData *[]byte, isSSL bool) error {
 	headSeperator := []byte{}
 	seperator := []byte{}
-	if bytes.Count(*rawData,[]byte("\r\n")) > 0 {
+	if bytes.Count(*rawData, []byte("\r\n")) > 0 {
 		headSeperator = []byte("\r\n")
 		seperator = []byte("\r\n\r\n")
 	} else {
 		headSeperator = []byte("\n")
 		seperator = []byte("\n\n")
 	}
-	seperatorIndex := bytes.Index(*rawData,seperator)
+	seperatorIndex := bytes.Index(*rawData, seperator)
 	head := (*rawData)[0:seperatorIndex]
-	body := (*rawData)[seperatorIndex+4:len(*rawData)]
+	body := (*rawData)[seperatorIndex+4 : len(*rawData)]
 	if request.headers == nil {
 		request.headers = map[string]string{}
 	}
 
-	headSplit := bytes.Split(head,headSeperator)
-	firstLineSplit := bytes.Split(headSplit[0],[]byte(" "))
+	headSplit := bytes.Split(head, headSeperator)
+	firstLineSplit := bytes.Split(headSplit[0], []byte(" "))
 	if len(firstLineSplit) != 3 {
 		return errors.New("the request is not valid in first line")
 	}
 
-	request.httpMethod = string(bytes.Trim(firstLineSplit[0]," "))
-	request.uri = string(bytes.Trim(firstLineSplit[1]," "))
-	request.httpProtocol = string(bytes.Trim(firstLineSplit[2]," "))
-	for i:=1;i < len(headSplit);i++ {
-		colonIndex := bytes.Index(headSplit[i],[]byte(":"))
+	request.httpMethod = string(bytes.Trim(firstLineSplit[0], " "))
+	request.uri = string(bytes.Trim(firstLineSplit[1], " "))
+	request.httpProtocol = string(bytes.Trim(firstLineSplit[2], " "))
+	for i := 1; i < len(headSplit); i++ {
+		colonIndex := bytes.Index(headSplit[i], []byte(":"))
 		if colonIndex == -1 {
 			return errors.New("the header is not Valid in " + string(headSplit[i]))
 		}
-		key := bytes.Trim(headSplit[i][0:colonIndex]," ")
-		value := bytes.Trim(headSplit[i][colonIndex+1:len(headSplit[i])]," ")
+		key := bytes.Trim(headSplit[i][0:colonIndex], " ")
+		value := bytes.Trim(headSplit[i][colonIndex+1:len(headSplit[i])], " ")
 		request.headers[string(key)] = string(value)
 		if strings.ToLower(string(key)) == "host" {
 			request.host = string(value)
@@ -187,15 +189,14 @@ func (request *RequestPacket) ReadFromBytes(rawData *[]byte,isSSL bool) error {
 	return nil
 }
 
-
 func (request *RequestPacket) GetHTTPMethod() string {
 	if request.httpMethod != "" {
 		return request.httpMethod
-	} else if !reflect.DeepEqual(request.orignalRequest,http.Request{}) {
+	} else if !reflect.DeepEqual(request.orignalRequest, http.Request{}) {
 		request.httpMethod = request.orignalRequest.Method
 		return request.httpMethod
 	} else if len(request.rawData) != 0 {
-		request.httpMethod = string(bytes.Split(request.rawData,[]byte(" "))[0])
+		request.httpMethod = string(bytes.Split(request.rawData, []byte(" "))[0])
 		return request.httpMethod
 	}
 	return ""
@@ -204,11 +205,11 @@ func (request *RequestPacket) GetHTTPMethod() string {
 func (request *RequestPacket) GetURI() string {
 	if request.uri != "" {
 		return request.uri
-	} else if !reflect.DeepEqual(request.orignalRequest,http.Request{}) {
+	} else if !reflect.DeepEqual(request.orignalRequest, http.Request{}) {
 		request.uri = request.orignalRequest.RequestURI
 		return request.uri
 	} else if len(request.rawData) != 0 {
-		request.uri = string(bytes.Split(request.rawData,[]byte(" "))[1])
+		request.uri = string(bytes.Split(request.rawData, []byte(" "))[1])
 		return request.uri
 	}
 	return ""
@@ -226,89 +227,87 @@ func (request *RequestPacket) GetHeaders() map[string]string {
 	return request.headers
 }
 
-func (request *RequestPacket) GetBody() ([]byte,error) {
+func (request *RequestPacket) GetBody() ([]byte, error) {
 	if len(request.body) != 0 {
-		return request.body,nil
-	} else if !reflect.DeepEqual(request.orignalRequest,http.Request{}) {
+		return request.body, nil
+	} else if !reflect.DeepEqual(request.orignalRequest, http.Request{}) {
 		reader := request.orignalRequest.Body
 		if reader == nil {
-			return []byte(""),nil
+			return []byte(""), nil
 		}
-		body,err := ioutil.ReadAll(reader)
+		body, err := ioutil.ReadAll(reader)
 		if err != nil {
-			return []byte(""),err
+			return []byte(""), err
 		}
-		return body,err
-	}  else if len(request.rawData) != 0 {
-		body := request.rawData[bytes.Index(request.rawData,[]byte("\r\n")):len(request.rawData)]
-		return body,nil
+		return body, err
+	} else if len(request.rawData) != 0 {
+		body := request.rawData[bytes.Index(request.rawData, []byte("\r\n")):len(request.rawData)]
+		return body, nil
 	}
-	return []byte(""),nil
+	return []byte(""), nil
 }
 
-func (request *RequestPacket) SendPacket() (*ResponsePacket,error){
-	body,err := request.GetBody()
+func (request *RequestPacket) SendPacket() (*ResponsePacket, error) {
+	body, err := request.GetBody()
 	var req *http.Request
 	if err != nil {
-		return nil,err
+		return nil, err
 	}
 
-	req,err = http.NewRequest("GET",request.requestURL,bytes.NewReader(body))
+	req, err = http.NewRequest("GET", request.requestURL, bytes.NewReader(body))
 	if err != nil {
 		fmt.Println(err)
 	}
 	//req.Proto = request.httpProtocol
-	for k,v := range request.headers {
-		req.Header.Set(k,v)
+	for k, v := range request.headers {
+		req.Header.Set(k, v)
 	}
 
-	res,err := request.client.Do(req)
+	res, err := request.client.Do(req)
 	if err != nil {
-		return nil,err
+		return nil, err
 	}
 	response := ResponsePacket{}
 	response.ReadFromHTTPResponse(res)
-	return &response,nil
+	return &response, nil
 }
-
 
 type ResponsePacket struct {
-	rawData []byte
-	bodyReader io.ReadCloser
-	headers map[string]string
-	statusCode int
+	rawData      []byte
+	bodyReader   io.ReadCloser
+	headers      map[string]string
+	statusCode   int
 	httpProtocol string
+
+	Body []byte
 }
 
-func (response *ResponsePacket) ReadFromHTTPResponse(res *http.Response) (error) {
-	response.bodyReader = res.Body
-	response.headers = map[string]string{}
-	for k,v := range res.Header {
-		response.headers[k] = strings.Join(v,"")
+func (response *ResponsePacket) ReadFromHTTPResponse(res *http.Response) error {
+	//response.bodyReader = res.Body
+	response.headers = make(map[string]string)
+	for k, v := range res.Header {
+		response.headers[k] = strings.Join(v, "")
 	}
 	response.statusCode = res.StatusCode
 	response.httpProtocol = res.Proto
 	return nil
 }
 
-
-
-func (response *ResponsePacket) GetBody(size int) ([]byte,error) {
+func (response *ResponsePacket) GetBody(size int) ([]byte, error) {
 	var body []byte
 	var err error
 	if size >= 0 {
-		reader := io.LimitReader(response.bodyReader,int64(size))
-		body,err = ioutil.ReadAll(reader)
+		reader := io.LimitReader(response.bodyReader, int64(size))
+		body, err = ioutil.ReadAll(reader)
 		if err != nil {
-			return nil,err
+			return nil, err
 		}
-		io.Copy(ioutil.Discard,response.bodyReader)
+		io.Copy(ioutil.Discard, response.bodyReader)
 	} else {
 		return ioutil.ReadAll(response.bodyReader)
 	}
 
-
-	return body,nil
+	return body, nil
 }
 
 func (response *ResponsePacket) GetHeaders() map[string]string {
@@ -322,6 +321,6 @@ func (response *ResponsePacket) GetStatusCode() int {
 func (response *ResponsePacket) GetProto() string {
 	return response.httpProtocol
 }
-func GetBytesFromHTTPRequest(request *http.Request) ([]byte,error) {
-	return []byte(""),nil
+func GetBytesFromHTTPRequest(request *http.Request) ([]byte, error) {
+	return []byte(""), nil
 }
