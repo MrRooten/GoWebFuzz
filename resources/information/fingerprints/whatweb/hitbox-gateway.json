@@ -1,0 +1,21 @@
+{
+  "name": "Hitbox-Gateway",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Hitbox Gateway)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Hitbox Gateway ([^\\s]{1,10})$)",
+      "search": "headers[server]"
+    },
+    {
+      "url": "/favicon.ico",
+      "md5": "0c7fdff990b60f5c7ec6ecf995c6f59f"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://login.hitbox.com/"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "GoServe",
+  "matches": [
+    {
+      "regexp": "(?-mix:^GoServe)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^GoServe\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^GoServe for OS\\/2, version ([^\\s^;]+); SRE-http [\\d\\.]+$)",
+      "search": "headers[server]"
+    },
+    {
+      "module": "(?-mix:^GoServe for OS\\/2, version [^\\s^;]+; (SRE-http [\\d\\.]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www2.hursley.ibm.com/goserve"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "OpenSSL",
+  "matches": [
+    {
+      "regexp": "(?-mix:OpenSSL)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:[^\\r^\\n]*OpenSSL\\/([^\\s^\\r^\\n]+))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.openssl.org/"
+}

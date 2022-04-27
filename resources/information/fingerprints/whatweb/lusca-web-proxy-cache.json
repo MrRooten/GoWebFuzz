@@ -1,0 +1,17 @@
+{
+  "name": "Lusca-Web-Proxy-Cache",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^Lusca$)"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Lusca\\/LUSCA_HEAD-([^\\s]+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.lusca.org/"
+}

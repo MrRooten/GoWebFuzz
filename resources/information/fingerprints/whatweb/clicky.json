@@ -1,0 +1,12 @@
+{
+  "name": "Clicky",
+  "matches": [
+    {
+      "regexp": "(?i-mx:<script[^>]+src=[\"'](https?:)?\\/\\/static\\.getclicky\\.com)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.getclicky.com/"
+}

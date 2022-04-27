@@ -1,0 +1,13 @@
+{
+  "name": "micro_httpd",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?i-mx:micro_httpd)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.acme.com/software/micro_httpd/"
+}

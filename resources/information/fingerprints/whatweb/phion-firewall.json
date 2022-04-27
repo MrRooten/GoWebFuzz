@@ -1,0 +1,17 @@
+{
+  "name": "Phion-Firewall",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Phion)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Phion\\/(.+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.phion.com/INT/products/perimeter_security/Pages/default.aspx"
+}

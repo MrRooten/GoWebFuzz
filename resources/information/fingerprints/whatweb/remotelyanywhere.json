@@ -1,0 +1,17 @@
+{
+  "name": "RemotelyAnywhere",
+  "matches": [
+    {
+      "regexp": "(?-mix:^RemotelyAnywhere)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^RemotelyAnywhere\\/([\\d\\.]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.remotelyanywhere.com/"
+}

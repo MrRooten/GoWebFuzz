@@ -1,0 +1,12 @@
+{
+  "name": "WordPressSpamFree",
+  "matches": [
+    {
+      "version": "(?-mix:<!-- Protected by \\(WP-SpamFree\\) v([\\d\\.]+) :: JS BEGIN -->)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://wordpress.org/extend/plugins/spam-free/"
+}

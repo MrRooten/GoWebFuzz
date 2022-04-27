@@ -1,0 +1,21 @@
+{
+  "name": "HP-System-Management-Homepage",
+  "matches": [
+    {
+      "certainty": 75,
+      "regexp": "(?-mix:<TITLE>HP System Management Homepage Login<\\/TITLE>)"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:Compaq-HMMD=)"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:CompaqHTTPServer\\/[^\\s]+ HP System Management Homepage\\/([\\d\\.]+)$)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"HP System Management Homepage Login\" (inurl:2381|inurl:2301)"
+  ],
+  "website": "http://h18002.www1.hp.com/products/servers/management/agents/index.html"
+}

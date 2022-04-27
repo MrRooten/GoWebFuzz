@@ -1,0 +1,16 @@
+{
+  "name": "FluentNET",
+  "matches": [
+    {
+      "ghdb": "\"powered by FluentCMS from DotContent\"",
+      "certainty": 75
+    },
+    {
+      "version": "(?-mix:<meta name=\"GENERATOR\" content=\"Fluent[CMS|NET]+ ([\\d\\.]+) )"
+    }
+  ],
+  "dorks": [
+    "\"powered by FluentCMS from DotContent\""
+  ],
+  "website": "http://www.dotcontent.net"
+}

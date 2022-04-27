@@ -1,0 +1,13 @@
+{
+  "name": "NetApp-NAS",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^NetApp\\/(.+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.netapp.com/us/products/protocols/nas/nas.html"
+}

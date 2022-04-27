@@ -1,0 +1,13 @@
+{
+  "name": "HikVision",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^Hikvision-Webs$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.hikvisionusa.com/"
+}

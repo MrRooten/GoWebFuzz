@@ -1,0 +1,22 @@
+{
+  "name": "Concrete5",
+  "matches": [
+    {
+      "name": "JavaScript",
+      "regexp": "(?-mix:\\bvar CCM_DISPATCHER_FILENAME ?=)"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"concrete5 - ([0-9\\.a-z]+)\")",
+      "name": "meta generator tag"
+    },
+    {
+      "name": "CONCRETE5 cookie",
+      "search": "headers[set-cookie]",
+      "regexp": "(?i-mx:^CONCRETE5=)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "www.concrete5.org"
+}

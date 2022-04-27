@@ -1,0 +1,30 @@
+{
+  "name": "Microsoft-Sharepoint",
+  "matches": [
+    {
+      "certainty": 75,
+      "text": "<noscript><div class='noindex'>You may be trying to access this site from a secured browser on the server. Please enable scripts and reload this page.</div></noscript>"
+    },
+    {
+      "certainty": 75,
+      "text": "<noscript><div class='noindex'>Please enable scripts and reload this page. If your browser does not support script, then you can visit the minimal version of this site at <a href="
+    },
+    {
+      "certainty": 75,
+      "text": "<meta name=\"CollaborationServer\" content=\"SharePoint Team Web Site\" />"
+    },
+    {
+      "text": "<input type=\"hidden\" name=\"MSOWebPartPage_PostbackSource\" id=\"MSOWebPartPage_PostbackSource\" value="
+    },
+    {
+      "text": "<meta name=\"GENERATOR\" content=\"Microsoft SharePoint\" />"
+    },
+    {
+      "text": "<meta name=\"progid\" content=\"SharePoint.WebPartPage.Document\" />"
+    }
+  ],
+  "dorks": [
+    "\"You may be trying to access this site from a secured browser on the server. Please enable scripts and reload this page.\""
+  ],
+  "website": "http://sharepoint.microsoft.com/"
+}

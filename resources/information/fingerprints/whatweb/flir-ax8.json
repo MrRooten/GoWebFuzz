@@ -1,0 +1,12 @@
+{
+  "name": "Flir-AX8",
+  "matches": [
+    {
+      "text": "<p style=\"display: inline-block\" id=\"login-title\">FLIR AX8"
+    }
+  ],
+  "dorks": [
+    "intitle:\"FLIR AX8\" \"User web\" password"
+  ],
+  "website": "https://www.flir.com/products/ax8-automation/"
+}

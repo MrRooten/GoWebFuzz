@@ -1,0 +1,16 @@
+{
+  "name": "Entrans",
+  "matches": [
+    {
+      "text": "<li ><a href=\"list.php?category=all&amp;page=1\" >View All Strings</a> </li>"
+    },
+    {
+      "certainty": 25,
+      "text": "<title>Entrans</title>"
+    }
+  ],
+  "dorks": [
+    "\"View All Strings\" \"The tool can be used by the online community\""
+  ],
+  "website": "http://entrans.sourceforge.net/"
+}

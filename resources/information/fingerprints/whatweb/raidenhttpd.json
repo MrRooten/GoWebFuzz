@@ -1,0 +1,17 @@
+{
+  "name": "RaidenHTTPD",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^RaidenHTTPD\\/([^\\s]+) \\([^\\)]+\\)$)"
+    },
+    {
+      "search": "headers[server]",
+      "string": "(?-mix:^RaidenHTTPD\\/[^\\s]+ \\(([^\\)]+)\\)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.raidenhttpd.com/en/"
+}

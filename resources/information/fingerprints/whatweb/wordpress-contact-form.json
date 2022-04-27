@@ -1,0 +1,12 @@
+{
+  "name": "Wordpress-Contact-Form",
+  "matches": [
+    {
+      "version": "(?-mix:<input type=\"hidden\" name=\"_wpcf([\\d\\.]+)\" value=\"1\" \\/>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://wordpress.org/extend/plugins/contact-form-7/"
+}

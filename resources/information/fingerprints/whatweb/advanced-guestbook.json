@@ -1,0 +1,27 @@
+{
+  "name": "Advanced-Guestbook",
+  "matches": [
+    {
+      "certainty": 75,
+      "ghdb": "intitle:guestbook \"advanced guestbook 2.2\" powered"
+    },
+    {
+      "certainty": 75,
+      "text": "Thank you for stopping by my site. Here you can leave your mark."
+    },
+    {
+      "name": "powered by",
+      "version": 2.2,
+      "regexp": "(?-mix:<b>Advanced Guestbook 2.2<br>\\s+Powered by PHP)"
+    },
+    {
+      "name": "powered by - regexp",
+      "version": "(?-mix:<a href=\"http:\\/\\/www.proxy2.de\" target=\"_blank\"><font color=\"#CCCCCC\" size=\"1\">(Advanced Guestbook) ([^<]+))",
+      "offset": 1
+    }
+  ],
+  "dorks": [
+    "inurl:guestbook.php \"Advanced GuestBook\" \"powered by phpbb\""
+  ],
+  "website": "http://proxy2.de/scripts.php"
+}

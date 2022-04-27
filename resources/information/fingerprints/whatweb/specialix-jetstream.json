@@ -1,0 +1,13 @@
+{
+  "name": "Specialix-JETSTREAM",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Specialix JETSTREAM ([\\d\\.]+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

@@ -1,0 +1,19 @@
+{
+  "name": "iGiveTest",
+  "matches": [
+    {
+      "version": "(?-mix:Powered by <a href=\"http:\\/\\/iGiveTest\\.com\" target=_blank>iGiveTest v([\\d\\.]+)<\\/a>)"
+    },
+    {
+      "version": "(?-mix:<tr><td colspan=[\\d] align=right>Powered by iGiveTest v([\\d\\.]+)<\\/a><\\/td><\\/tr>)"
+    },
+    {
+      "certainty": 25,
+      "text": "<form action=\"index.php\" method=post name=signinform>"
+    }
+  ],
+  "dorks": [
+    "\"Powered by iGiveTest\""
+  ],
+  "website": "http://igivetest.com/"
+}

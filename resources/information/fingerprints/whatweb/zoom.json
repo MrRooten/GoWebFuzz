@@ -1,0 +1,10 @@
+{
+  "name": "Zoom",
+  "matches": [
+
+  ],
+  "dorks": [
+    "inurl:zoom.us intitle:\"Video Conferencing, Web Conferencing, Online Meetings, Screen Sharing - Zoom\""
+  ],
+  "website": "https://zoom.us/"
+}

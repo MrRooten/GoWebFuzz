@@ -1,0 +1,17 @@
+{
+  "name": "Content-Security-Policy",
+  "matches": [
+    {
+      "search": "headers[x-content-security-policy]",
+      "string": "(?-mix:^(.*)$)"
+    },
+    {
+      "search": "headers[x-webkit-csp]",
+      "string": "(?-mix:^(.*)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

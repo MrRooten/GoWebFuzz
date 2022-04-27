@@ -1,0 +1,13 @@
+{
+  "name": "Boa-WebServer",
+  "matches": [
+    {
+      "version": "(?-mix:^[\\s]*Boa\\/([^\\s]+))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.boa.org/"
+}

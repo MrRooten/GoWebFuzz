@@ -1,0 +1,23 @@
+{
+  "name": "PRTG-Network-Monitor",
+  "matches": [
+    {
+      "string": "(?-mix:<title>PRTG Network Monitor \\(([^\\)]+)\\)&nbsp;\\|&nbsp;Welcome<\\/title>)"
+    },
+    {
+      "version": "(?-mix:<link rel=\"stylesheet\" type=\"text\\/css\" href=\"\\/css\\/prtgmini\\.css\\?prtgversion=([^\"]+)\" media=\"print,screen,projection\" \\/>)"
+    },
+    {
+      "version": "(?-mix:^PRTG)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^PRTG\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+    "\"PRTG Network Monitor\" intitle:\"PRTG Network Monitor\" \"Password\" \"Login Name \"GUI\" inurl:\"install_the_windows_gui\""
+  ],
+  "website": "http://www.paessler.com/prtg"
+}

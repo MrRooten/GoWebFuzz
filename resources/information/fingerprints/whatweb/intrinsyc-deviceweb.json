@@ -1,0 +1,13 @@
+{
+  "name": "Intrinsyc-deviceWEB",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Intrinsyc deviceWEB v([\\d\\.]+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.intrinsyc.com/"
+}

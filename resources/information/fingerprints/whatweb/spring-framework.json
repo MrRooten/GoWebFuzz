@@ -1,0 +1,13 @@
+{
+  "name": "Spring-Framework",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "text": "org.springframework.web.servlet.i18n.CookieLocaleResolver.LOCALE="
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.springsource.org/"
+}

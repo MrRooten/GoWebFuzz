@@ -1,0 +1,14 @@
+{
+  "name": "PyroCMS",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:_pyrocms_)",
+      "name": "PyroCMS cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://pyrocms.com/"
+}

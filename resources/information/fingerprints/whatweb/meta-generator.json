@@ -1,0 +1,15 @@
+{
+  "name": "MetaGenerator",
+  "matches": [
+    {
+      "string": "(?i-mx:<meta[^>=]+content[\\s]*=[\\s]*[\"|']?([^\"^'^>]+)[\"|']?[^>=]+name[\\s]*=[\\s]*[\"|']?generator[\"|']?)"
+    },
+    {
+      "string": "(?i-mx:<meta[^>=]+name[\\s]*=[\\s]*[\"|']?generator[\"|']?[^>=]+content[\\s]*=[\\s]*\"([^\"'>]+)\")"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

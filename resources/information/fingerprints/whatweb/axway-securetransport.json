@@ -1,0 +1,20 @@
+{
+  "name": "Axway-SecureTransport",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^SecureTransport\\/([^\\s]+))"
+    },
+    {
+      "text": "<!-- /application.bar -->"
+    },
+    {
+      "certainty": 75,
+      "text": "<title>Welcome to SecureTransport</title>"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Welcome to SecureTransport\""
+  ],
+  "website": "http://www.axway.com/products-solutions/mft/gateways/securetransport"
+}

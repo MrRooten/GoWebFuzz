@@ -1,0 +1,13 @@
+{
+  "name": "Cisco-ACE-XML-Gateway",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^ACE XML Gateway$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.cisco.com/en/US/products/ps7314/index.html"
+}

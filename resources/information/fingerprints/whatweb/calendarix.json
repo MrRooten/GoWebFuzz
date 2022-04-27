@@ -1,0 +1,29 @@
+{
+  "name": "Calendarix",
+  "matches": [
+    {
+      "regexp": "(?i-mx:powered by <a[^>]*http:\\/\\/www.calendarix.com[^>]+>Calendarix<\\/a>)"
+    },
+    {
+      "text": "  default : { window.location.href='calendar.php?op=cal&month=9&year=2010&catview=0' ; break;}"
+    },
+    {
+      "text": "var url = 'cal_popup.php?op=view&id='+event+'&uname=' ;"
+    },
+    {
+      "md5": "24dde98839b19e595532bb92d99f356a",
+      "path": "images/calendarix.gif"
+    },
+    {
+      "text": "<title>Calendarix User Login</title>"
+    },
+    {
+      "version": "(?-mix:<img src=\"images\\/calendarix.gif\" Alt=\"About Calendarix ([\\d\\.a-z]+)\" border=0 width=88 height=31  \\/>)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Calendarix User Login\" intext:\"Calendarix User Login\" \"Username\" \"Password\"",
+    "\"powered by Calendarix\""
+  ],
+  "website": "http://www.calendarix.com/"
+}

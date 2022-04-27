@@ -1,0 +1,13 @@
+{
+  "name": "Seminole",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Seminole\\/([^\\s]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://gladesoft.com/products/seminole/"
+}

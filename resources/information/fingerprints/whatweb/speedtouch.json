@@ -1,0 +1,23 @@
+{
+  "name": "SpeedTouch",
+  "matches": [
+    {
+      "url": "/favicon.ico",
+      "md5": "befcded36aec1e59ea624582fcb3225c"
+    },
+    {
+      "regexp": "(?-mix:(Basic|Digest) realm=\"SpeedTouch)",
+      "search": "headers[www-authenticate]",
+      "name": "WWW-Authenticate realm"
+    },
+    {
+      "string": "(?-mix:Basic realm=\"SpeedTouch \\(([\\dA-F]{2}\\-[\\dA-F]{2}\\-[\\dA-F]{2}\\-[\\dA-F]{2}\\-[\\dA-F]{2}\\-[\\dA-F]{2})\\))",
+      "search": "headers[www-authenticate]",
+      "name": "WWW-Authenticate realm"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.thomsontelecom.com.au/speedtouch/support.htm"
+}

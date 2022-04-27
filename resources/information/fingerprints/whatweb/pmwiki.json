@@ -1,0 +1,22 @@
+{
+  "name": "PmWiki",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:imstime=[\\d]+;)"
+    },
+    {
+      "text": "<!--PageLeftFmt-->"
+    },
+    {
+      "text": "<span class='commentout-pmwikiorg'>"
+    },
+    {
+      "regexp": "(?-mix:<link rel='stylesheet' href='[^']*\\/pmwiki\\/pub\\/skins\\/pmwiki\\/pmwiki\\.css' type='text\\/css' \\/>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.pmwiki.org/"
+}

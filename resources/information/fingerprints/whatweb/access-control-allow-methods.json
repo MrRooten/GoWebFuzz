@@ -1,0 +1,13 @@
+{
+  "name": "Access-Control-Allow-Methods",
+  "matches": [
+    {
+      "search": "headers[access-control-allow-methods]",
+      "string": "(?-mix:(.+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.w3.org/TR/2008/WD-access-control-20080912/"
+}

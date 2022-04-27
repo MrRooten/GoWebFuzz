@@ -1,0 +1,33 @@
+{
+  "name": "Dell-KACE-Appliance",
+  "matches": [
+    {
+      "url": "/common/about.php",
+      "version": "(?-mix:<b>K1000 Systems Management Appliance<\\/b> <b>v([^\\s^<]+)<\\/b>)"
+    },
+    {
+      "search": "headers[x-dellkace-version]",
+      "version": "(?-mix:^(.+)$)"
+    },
+    {
+      "search": "headers[x-dellkace-host]",
+      "string": "(?-mix:^(.+)$)"
+    },
+    {
+      "search": "headers[x-dellkace-appliance]",
+      "model": "(?-mix:^(.+)$)"
+    },
+    {
+      "search": "headers[x-kbox-version]",
+      "version": "(?-mix:^(.+)$)"
+    },
+    {
+      "search": "headers[x-kbox-webserver]",
+      "string": "(?-mix:^(.+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.kace.com/products/overview"
+}

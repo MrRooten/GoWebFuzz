@@ -1,0 +1,19 @@
+{
+  "name": "phpBazar",
+  "matches": [
+    {
+      "text": "<title>phpBazar-AdminPanel</title>",
+      "module": "Admin Page"
+    },
+    {
+      "text": "<br>Login to phpBazar with Admin- or Moderator-Level & use the Administration-Functions! ->"
+    },
+    {
+      "version": "(?-mix:<p><div class=\"footer\">phpBazar Ver. ([\\d\\.]+) &copy 2001\\-[\\d]{4} by <a href=\"http:\\/\\/www.smartisoft.com[\\/]?\" target=\"_blank\">SmartISoft<\\/a><\\/div>)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"phpBazar-AdminPanel\" -intitle"
+  ],
+  "website": "http://www.smartisoft.com/"
+}

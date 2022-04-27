@@ -1,0 +1,13 @@
+{
+  "name": "Restlet-Framework",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Restlet-Framework\\/([^\\s]+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.restlet.org/"
+}

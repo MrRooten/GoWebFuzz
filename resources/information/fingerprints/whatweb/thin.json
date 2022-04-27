@@ -1,0 +1,17 @@
+{
+  "name": "thin",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^thin ([^\\s]+) codename (.+)$)"
+    },
+    {
+      "search": "headers[server]",
+      "string": "(?-mix:^thin [^\\s]+ (codename .+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://code.macournoyer.com/thin/"
+}

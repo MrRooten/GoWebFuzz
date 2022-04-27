@@ -1,0 +1,16 @@
+{
+  "name": "CitrusDB",
+  "matches": [
+    {
+      "text": "<INPUT TYPE=\"SUBMIT\" NAME=\"submit\" VALUE=\"Login\"  onclick=\"password.value = calcMD5(password.value)\" class=smallbutton>"
+    },
+    {
+      "certainty": 75,
+      "text": "<center><table><td valign=top><img src=\"images/my-logo.png\">"
+    }
+  ],
+  "dorks": [
+    "intitle:CitrusDB \"Enter your username and password\" \"username\" \"password\""
+  ],
+  "website": "http://www.citrusdb.org/"
+}

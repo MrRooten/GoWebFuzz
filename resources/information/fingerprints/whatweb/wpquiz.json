@@ -1,0 +1,15 @@
+{
+  "name": "wpQuiz",
+  "matches": [
+    {
+      "regexp": "(?-mix:<title>[^>]*>> [Register|Login]+ - wp[q|Q]+uiz<\\/title>)"
+    },
+    {
+      "text": "<div class='small' style='text-align: center;'>Powered by wpQuiz</div>\n"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.wireplastik.com/"
+}

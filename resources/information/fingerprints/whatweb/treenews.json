@@ -1,0 +1,21 @@
+{
+  "name": "TreeNeWS",
+  "matches": [
+    {
+      "url": "/vendor.js",
+      "string": "(?-mix:var _VENDOR_ = \"([^\"]+)\";)"
+    },
+    {
+      "url": "/vendor.js",
+      "model": "(?-mix:var _OTHER_SYSTEM_MANAGEMENT_NAME_ = '([^']+)';)"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^TreeNeWS\\/([^\\s]+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

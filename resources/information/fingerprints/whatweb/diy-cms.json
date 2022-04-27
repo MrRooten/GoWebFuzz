@@ -1,0 +1,31 @@
+{
+  "name": "DiY-CMS",
+  "matches": [
+    {
+      "text": "Powered by: <a href=\"http://www.diy-cms.com\" target=\"_blank\">DIY-CMS</a>"
+    },
+    {
+      "text": "<a href=\"http://www.pghost.eu/14/18/diy_cms-25.html\">Powered by DIY-CMS</a>"
+    },
+    {
+      "text": "<title>DIY-CMS Database Error</title>"
+    },
+    {
+      "text": "<p><b><a href=\"http://www.diy-cms.com/\" target=\"_blank\">Powered by: DIY-CMS</a></b></p></body></html>"
+    },
+    {
+      "text": "<td valign='middle'><img border='0' src=\"admin_skin/default/images//admin_login.png\"></a></td>"
+    },
+    {
+      "version": "(?-mix:<META content=\"Powered by DiY-CMS ([\\d\\.]+) [0-9]{4} \" name=\"description\">)"
+    },
+    {
+      "version": "(?-mix:Powered by <a href=\"http:\\/\\/www.pghost.eu[^>]+>DIY-CMS v ([\\d\\.]+)<\\/a>)"
+    }
+  ],
+  "dorks": [
+    "\"powered by DiY-CMS\"",
+    "intitle:\"DIY-CMS Database Error\""
+  ],
+  "website": "http://www.diy-cms.com/"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "NetBox",
+  "matches": [
+    {
+      "regexp": "(?-mix:^NetBox)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^NetBox Version (.+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.netbox.cn/"
+}

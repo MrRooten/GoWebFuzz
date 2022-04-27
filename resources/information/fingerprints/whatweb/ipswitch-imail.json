@@ -1,0 +1,17 @@
+{
+  "name": "Ipswitch-IMail",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Ipswitch-IMail)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Ipswitch-IMail\\/([\\d\\.]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.imailserver.com/"
+}

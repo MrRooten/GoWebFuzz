@@ -1,0 +1,12 @@
+{
+  "name": "Typekit",
+  "matches": [
+    {
+      "regexp": "(?i-mx:<script [^>]*src=[\"'][^>]*use\\.typekit\\.com)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://typekit.com/"
+}

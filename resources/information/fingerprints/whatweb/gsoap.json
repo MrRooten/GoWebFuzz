@@ -1,0 +1,17 @@
+{
+  "name": "gSOAP",
+  "matches": [
+    {
+      "regexp": "(?-mix:^gSOAP)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^gSOAP\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://gsoap2.sourceforge.net/"
+}

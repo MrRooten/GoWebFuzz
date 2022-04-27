@@ -1,0 +1,22 @@
+{
+  "name": "TalkSwitch-Phone",
+  "matches": [
+    {
+      "regexp": "(?-mix:^TalkSwitch)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^TalkSwitch HTTP Server\\/([\\d\\.]+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "regexp": "(?-mix:^Digest realm=\"Your TalkSwitch System\"$)",
+      "search": "headers[www-authenticate]",
+      "name": "WWW-Authenticate realm"
+    }
+  ],
+  "dorks": [
+    "intitle:TalkSwitch \"Welcome to TalkSwitch\" \"More information about TalkSwitch can be found on the TalkSwitch home page\""
+  ],
+  "website": "http://www.talkswitch.com/"
+}

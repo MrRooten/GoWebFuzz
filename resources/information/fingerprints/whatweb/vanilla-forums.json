@@ -1,0 +1,25 @@
+{
+  "name": "Vanilla-Forums",
+  "matches": [
+    {
+      "search": "headers[x-garden-version]",
+      "version": "(?-mix:^Vanilla ([^\\s]+)$)"
+    },
+    {
+      "version": "(?-mix:Powered by <a href=\"(http:\\/\\/)?getvanilla\\.com\\/?\">Vanilla ([^\\s^<]+)<\\/a>)",
+      "offset": 1
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:Vanilla=deleted; expires=)"
+    },
+    {
+      "certainty": 25,
+      "regexp": "(?i-mx:<body id=[\"'](DiscussionsPage|vanilla))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://vanillaforums.org/"
+}

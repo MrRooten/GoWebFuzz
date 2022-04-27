@@ -1,0 +1,15 @@
+{
+  "name": "Zoph",
+  "matches": [
+    {
+      "text": "<li class=\"selected\"><a href=\"zoph.php\">home</a></li><li ><a href=\"albums.php\">albums</a></li><li ><a href=\"categories.php\">categories</a></li><li >"
+    },
+    {
+      "text": "<title>Zoph - Home</title>"
+    }
+  ],
+  "dorks": [
+    "inurl:albums.php inurl:parent_album_id"
+  ],
+  "website": "http://www.zoph.org/"
+}

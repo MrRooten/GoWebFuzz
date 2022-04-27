@@ -1,0 +1,18 @@
+{
+  "name": "Pluck-CMS",
+  "matches": [
+    {
+      "ghdb": "\"powered by pluck\" +admin inurl:\"file=kop1.php\""
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"pluck ([^\\s^\"]+)\" \\/>)"
+    },
+    {
+      "text": "powered by <a href=\"http://www.pluck-cms.org\">pluck</a>"
+    }
+  ],
+  "dorks": [
+    "\"powered by pluck\" \"admin\" inurl:\"file=kop1.php\""
+  ],
+  "website": "http://www.pluck-cms.org/"
+}

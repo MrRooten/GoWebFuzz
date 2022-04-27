@@ -1,0 +1,13 @@
+{
+  "name": "Easy-File-Sharing-Web-Server",
+  "matches": [
+    {
+      "version": "(?-mix:^Easy File Sharing Web Server v(.+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.sharing-file.com/"
+}

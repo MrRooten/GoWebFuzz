@@ -1,0 +1,23 @@
+{
+  "name": "OpenConf",
+  "matches": [
+    {
+      "text": "Powered by <a href=\"http://www.OpenConf.org\" target=\"_blank\">OpenConf</a>"
+    },
+    {
+      "version": "(?-mix:<div class=\"powered\">Powered by <a href=\"http:\\/\\/www\\.OpenConf\\.com\" target=\"_blank\">OpenConf<\\/a>(<sup>&reg;<\\/sup>)?<!--([^\\s]+)-->)",
+      "offset": 1
+    },
+    {
+      "version": "(?-mix:<script type=\"text\\/javascript\" src=\"openconf\\.js\\?v=([^\\s^\"]+)\"><\\/script>)"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:OPENCONF=[^;]+;)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by OpenConf\""
+  ],
+  "website": "http://www.openconf.com/"
+}

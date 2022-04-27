@@ -1,0 +1,22 @@
+{
+  "name": "ASProxy",
+  "matches": [
+    {
+      "text": "<!-- Surf the web invisibly using ASProxy power. A Powerfull web proxy is in your hands. -->"
+    },
+    {
+      "text": "<!--This is ASProxy powered by SalarSoft. -->"
+    },
+    {
+      "text": "<input type=\"button\" onclick=\"_Page_SubmitForm()\" value=\"Display\" id=\"btnASProxyDisplayButton\" class=\"Button\" />"
+    },
+    {
+      "version": "(?-mix:asproxydone=\"2\"(\\ style=\"font-weight:[\\s]*bold;[\\s]*text-decoration:[\\s]*none\")?>ASProxy ([^\\s^<]+)<\\/a>)",
+      "offset": 1
+    }
+  ],
+  "dorks": [
+    "\"Surf the web with ASProxy\" inurl:(surf|noscript)"
+  ],
+  "website": "http://asproxy.sourceforge.net/"
+}

@@ -1,0 +1,40 @@
+{
+  "name": "MobileIron-MDM",
+  "matches": [
+    {
+      "search": "headers[location]",
+      "status": 302,
+      "text": "/mifs/user/index.html",
+      "certainty": 75
+    },
+    {
+      "url": "/mifs/user/index.html",
+      "status": 302,
+      "search": "headers[location]",
+      "text": "/mifs/user/login.jsp"
+    },
+    {
+      "url": "/mifs/user/login.jsp",
+      "status": 200,
+      "string": "(?-mix:<span rs=\"copyright\"><\\/span> &copy; ([\\d]{4}) MobileIron)"
+    },
+    {
+      "url": "/mifs/user/login.jsp",
+      "status": 200,
+      "string": "(?-mix:Copyright &copy; ([\\d]{4}) MobileIron. All rights reserved.)"
+    },
+    {
+      "url": "/mifs/user/login.jsp",
+      "status": 200,
+      "version": "(?-mix:<link href=\"\\/mifs\\/css\\/pages\\/userlogin.css\\?([\\d\\.]+)\")"
+    },
+    {
+      "status": 200,
+      "text": "<title>MobileIron User Portal: Sign In"
+    }
+  ],
+  "dorks": [
+    "intitle:\"MobileIron User Portal: Sign In\" inurl:mifs/user"
+  ],
+  "website": "https://www.mobileiron.com/en/unified-endpoint-management/solutions/mobile-device-management"
+}

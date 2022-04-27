@@ -1,0 +1,43 @@
+{
+  "name": "Jenkins",
+  "matches": [
+    {
+      "regexp": "(?-mix:<script>var isRunAsTest=false; var rootURL=\"[^\"]*\";<\\/script>)"
+    },
+    {
+      "version": "(?-mix:<\\/span><a href=\"http:\\/\\/jenkins\\-ci\\.org\\/\">Jenkins ver\\. ([^<]+)<\\/a>)"
+    },
+    {
+      "search": "headers[x-hudson-theme]",
+      "regexp": "(?-mix:^.*$)"
+    },
+    {
+      "search": "headers[x-instance-identity]",
+      "regexp": "(?-mix:^.*$)"
+    },
+    {
+      "search": "headers[x-hudson-cli-port]",
+      "regexp": "(?-mix:^.*$)"
+    },
+    {
+      "search": "headers[x-jenkins]",
+      "version": "(?-mix:^(.+)$)"
+    },
+    {
+      "search": "headers[x-hudson]",
+      "regexp": "(?-mix:^.*$)"
+    },
+    {
+      "search": "headers[x-jenkins-cli-port]",
+      "regexp": "(?-mix:^.*$)"
+    },
+    {
+      "search": "headers[x-ssh-endpoint]",
+      "regexp": "(?-mix:^.*$)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Jenkins\" \"Remember me on this computer\" \"Jenkins ver\""
+  ],
+  "website": "http://jenkins-ci.org/"
+}

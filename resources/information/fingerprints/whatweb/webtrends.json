@@ -1,0 +1,14 @@
+{
+  "name": "WebTrends",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^WEBTRENDS_ID)",
+      "name": "WEBTRENDS_ID cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.webtrends.com/"
+}

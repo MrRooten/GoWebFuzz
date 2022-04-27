@@ -1,0 +1,13 @@
+{
+  "name": "Prototype",
+  "matches": [
+    {
+      "name": "js tag",
+      "regexp": "(?-mix:<script [^>]*(prototype[^>]*.js)[^>]*)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Google-Talk-Chatback",
+  "matches": [
+    {
+      "regexp": "(?-mix:<iframe[^>]+src[\\s]*=[\\s]*('|\")http:\\/\\/www.google.com\\/talk\\/service\\/badge\\/Show\\?tk=[^>]+>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.google.com/talk/service/badge/New"
+}

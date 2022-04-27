@@ -1,0 +1,21 @@
+{
+  "name": "PhpMesFilms",
+  "matches": [
+    {
+      "text": "\t\t<title>PhpMesFilms - Administration</title>"
+    },
+    {
+      "text": "\t\t<title>PhpMesFilms - Liste</title>"
+    },
+    {
+      "text": "\t\t<title>PhpMesFilms - Fiche film</title>"
+    },
+    {
+      "text": "\t\t\t\tpowered by <a href=\"http://phpmesfilms.dyndns.org/\">PhpMesFilms</a>"
+    }
+  ],
+  "dorks": [
+    "\"powered by PhpMesFilms\""
+  ],
+  "website": null
+}

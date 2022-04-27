@@ -1,0 +1,22 @@
+{
+  "name": "Caudium",
+  "matches": [
+    {
+      "version": "(?-mix:Caudium\\/([\\d\\.]+))",
+      "search": "headers[server]"
+    },
+    {
+      "name": "HTTP Server Header",
+      "regexp": "(?-mix:Caudium)",
+      "search": "headers[server]"
+    },
+    {
+      "module": "(?-mix:(Pike v[\\d\\.]+ release [\\d]+)$)",
+      "search": "headers[x-got-fish]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.caudium.net/"
+}

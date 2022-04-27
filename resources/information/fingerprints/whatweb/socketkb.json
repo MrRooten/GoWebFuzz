@@ -1,0 +1,12 @@
+{
+  "name": "SocketKB",
+  "matches": [
+    {
+      "version": "(?-mix:>Powered by SocketKB version ([\\d\\.]+)<\\/a>)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by SocketKB version\" -intext"
+  ],
+  "website": "http://socketkb.com/site/home/"
+}

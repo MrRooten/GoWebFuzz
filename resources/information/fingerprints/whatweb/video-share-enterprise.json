@@ -1,0 +1,19 @@
+{
+  "name": "VideoShareEnterprise",
+  "matches": [
+    {
+      "name": "GHDB: \"Powered By AlstraSoft Video Share Enterprise\"",
+      "certainty": 75,
+      "ghdb": "\"Powered By AlstraSoft Video Share Enterprise\""
+    },
+    {
+      "name": "default html comment",
+      "certainty": 100,
+      "text": "<!--!!!!!!!!!!!!!!!!!!!!!!!!! Processing SCRIPT !!!!!!!!!!!!!!!!!!!-->"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.alstrasoft.com"
+}

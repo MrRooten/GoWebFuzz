@@ -1,0 +1,17 @@
+{
+  "name": "HP-ProCurve-Switch",
+  "matches": [
+    {
+      "regexp": "(?-mix:^eHTTP)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^eHTTP v([\\d\\.]{1,3})$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.hp.com/rnd/"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Axel-Device",
+  "matches": [
+
+  ],
+  "dorks": [
+    "\"Syntax Error or Not Axel XML data\""
+  ],
+  "website": "http://www.axel.com/"
+}

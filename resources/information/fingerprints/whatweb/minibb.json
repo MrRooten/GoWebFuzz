@@ -1,0 +1,19 @@
+{
+  "name": "MiniBB",
+  "matches": [
+    {
+      "text": "<td class=\"tbTransparent txtR\"><!--miniBB Copyright link. You are not allowed to remove it if you have not purchased the Commercial License. Refer to COPYING file for more-->"
+    },
+    {
+      "regexp": "(?i-mx:Powered by <a[^>]+href=\"http:\\/\\/www.minibb.(com|net)\"[^>]*>miniBB[^<]{0,15}<\\/a>)"
+    },
+    {
+      "version": "(?i-mx:Powered by <a[^>]+href=\"http:\\/\\/www.miniBB.(com|net)\"[^>]*>miniBB ([^<]{1,7})<\\/a>)",
+      "offset": 1
+    }
+  ],
+  "dorks": [
+    "\"Powered by MiniBB\""
+  ],
+  "website": "http://www.minibb.com/"
+}

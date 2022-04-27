@@ -1,0 +1,24 @@
+{
+  "name": "webSPELL",
+  "matches": [
+    {
+      "text": "<meta name=\"generator\" content=\"webSPELL\" />"
+    },
+    {
+      "version": "(?-mix:This site is using the <a href=\"http:\\/\\/www.webspell.org\" target=\"[^\"]+\">webSPELL (Free Content Management System|script) \\(version: ([^\\)]+)\\)[\\s]*<\\/a>)",
+      "offset": 1
+    },
+    {
+      "version": "(?-mix:Diese Seite benutzt das <a href=\"http:\\/\\/www.webspell.org\" target=\"[^\"]+\">webSPELL Script \\(Version: ([^\\)]+)\\)[\\s]*<\\/a>)"
+    },
+    {
+      "certainty": 75,
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:ws_session=[a-z\\d]+;)"
+    }
+  ],
+  "dorks": [
+    "\"this site is using the webspell script version\" -dork"
+  ],
+  "website": "http://www.webspell.org/"
+}

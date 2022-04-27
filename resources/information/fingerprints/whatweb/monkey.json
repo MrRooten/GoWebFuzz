@@ -1,0 +1,17 @@
+{
+  "name": "Monkey",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Monkey)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Monkey\\/([\\d\\.]+))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.monkey-project.com/"
+}

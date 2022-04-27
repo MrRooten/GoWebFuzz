@@ -1,0 +1,17 @@
+{
+  "name": "Orenosv",
+  "matches": [
+    {
+      "version": "(?-mix:^orenosv)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^orenosv\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.orenosv.com/orenosv_en.html"
+}

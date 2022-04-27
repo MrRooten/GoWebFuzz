@@ -1,0 +1,18 @@
+{
+  "name": "GuppY",
+  "matches": [
+    {
+      "text": "<meta name=\"Generator\" content=\"GuppY\">"
+    },
+    {
+      "version": "(?-mix:<div class=\"foot\"><span class='copyright'>&nbsp; <a class='copyright' href='http:\\/\\/www.freeguppy.org\\/' title='GuppY site' target='_blank'> Site powered by GuppY v([\\d\\.]+) <\\/a>)"
+    },
+    {
+      "version": "(?-mix:  <!--\\[  GuppY v([\\d\\.]+) CeCILL Copyright \\(C\\) [\\d]{4}\\-[\\d]{4} by Laurent Duveau \\- http:\\/\\/www.freeguppy.org\\/  \\]-->)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by GuppY\" \"CeCILL Free License\""
+  ],
+  "website": "http://www.freeguppy.org/?lng=en"
+}

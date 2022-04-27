@@ -1,0 +1,13 @@
+{
+  "name": "StackExchange",
+  "matches": [
+    {
+      "name": "StackExchange.init() call",
+      "regexp": "(?-mix:StackExchange.init)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

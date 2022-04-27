@@ -1,0 +1,12 @@
+{
+  "name": "OneFileCMS",
+  "matches": [
+    {
+      "text": "<p>This site powered by <a href=\"http://onefilecms.com/\">OneFileCMS</a>. [<a href=\"onefilecms.php?f=index.php\">Admin</a>]</p>"
+    }
+  ],
+  "dorks": [
+    "\"This site powered by OneFileCMS\""
+  ],
+  "website": "http://onefilecms.com/"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "PowerWeb",
+  "matches": [
+    {
+      "regexp": "(?-mix:^PowerWeb)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^PowerWeb\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.compusource.co.za/powerweb/"
+}

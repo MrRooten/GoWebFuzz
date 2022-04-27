@@ -1,0 +1,23 @@
+{
+  "name": "Cisco-ACE",
+  "matches": [
+    {
+      "certainty": 75,
+      "url": "/favicon.ico",
+      "md5": "5ee29688a968d3912880b3780cdde42e"
+    },
+    {
+      "text": "<link href=\"/utility/cuesStylesLogo.css\" rel=\"stylesheet\" type=\"text/css\" />"
+    },
+    {
+      "version": "(?-mix:<div class=\"cuesLoginVersionInfo\">Version ([^\\s]+)<\\/div>)"
+    },
+    {
+      "model": "(?-mix:<div class=\"cuesLoginProductName\">ACE ([^\\s]+) Device Manager<\\/div>)"
+    }
+  ],
+  "dorks": [
+    "inurl:\"/change_password.vm?username\""
+  ],
+  "website": "http://www.cisco.com/en/US/products/ps6906/index.html"
+}

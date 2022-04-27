@@ -1,0 +1,17 @@
+{
+  "name": "RiOS",
+  "matches": [
+    {
+      "search": "headers[x-rbt-optimized-by]",
+      "version": "(?-mix:\\(RiOS ([^\\s]+)\\))"
+    },
+    {
+      "search": "headers[x-rbt-optimized-by]",
+      "string": "(?-mix:(.+) \\(RiOS)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.riverbed.com/"
+}

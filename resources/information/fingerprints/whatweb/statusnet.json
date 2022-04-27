@@ -1,0 +1,15 @@
+{
+  "name": "StatusNet",
+  "matches": [
+    {
+      "version": "(?-mix:<p>This site is powered by <a href=\"http:\\/\\/status\\.net\\/\">StatusNet<\\/a> version ([^\\s]+),)"
+    },
+    {
+      "version": "(?-mix:It runs the <a href=\"http:\\/\\/status\\.net\\/\">StatusNet<\\/a> microblogging software, version ([^\\s]+), available under the <a )"
+    }
+  ],
+  "dorks": [
+    "\"powered by StatusNet version\" inurl:\"/main/version\" -filetype:html"
+  ],
+  "website": "http://status.net/"
+}

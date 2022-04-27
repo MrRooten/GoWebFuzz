@@ -1,0 +1,33 @@
+{
+  "name": "DemandWare eCommerce System",
+  "matches": [
+    {
+      "regexp": "(?-mix:\\/demandware.store\\/)",
+      "certainty": 25
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:cqcid)",
+      "name": "cqcid cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:dwac_)",
+      "name": "dwac_ cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:dwac_)",
+      "name": "dwac_ cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:dwsid)",
+      "name": "dwsid cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.demandware.com/"
+}

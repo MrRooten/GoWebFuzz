@@ -1,0 +1,20 @@
+{
+  "name": "glFusion",
+  "matches": [
+    {
+      "certainty": 75,
+      "regexp": "(?-mix:<div (class|id)=\"gl_moomenu1\">)"
+    },
+    {
+      "certainty": 75,
+      "text": "<ul class=\"gl_moomenu1\">"
+    },
+    {
+      "regexp": "(?-mix:Page created in [\\d\\.]+ seconds( |&nbsp;)by <a href=\"http:\\/\\/www.glfusion.org\\/\"[^>]*>glFusion<\\/a>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.glfusion.org/"
+}

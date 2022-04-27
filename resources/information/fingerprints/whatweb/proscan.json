@@ -1,0 +1,22 @@
+{
+  "name": "ProScan",
+  "matches": [
+    {
+      "regexp": "(?-mix:^ProScan)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^ProScan ([^\\s]+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "name": "icy-notice2 header",
+      "regexp": "(?-mix:^ProScan)",
+      "search": "headers[icy-notice2]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.proscan.org/"
+}

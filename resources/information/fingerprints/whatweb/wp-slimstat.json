@@ -1,0 +1,13 @@
+{
+  "name": "WP-SlimStat",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:slimstat_tracking_code=[a-f\\d]{32};)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://wordpress.org/extend/plugins/wp-slimstat/"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Open-Blog",
+  "matches": [
+    {
+      "regexp": "(?-mix:Powered by <a href=\"http:\\/\\/www.open-blog.info[\\/]*\" target=\"_blank\">Open Blog<\\/a>)"
+    },
+    {
+      "text": "Powered by <a href=\"http://www.open-blog.info\""
+    },
+    {
+      "text": "    \tPowered by <a href=\"http://www.open-blog.info\" target=\"_blank\">Open Blog</a>"
+    },
+    {
+      "version": "(?-mix:\t\t\t<a href=\"install.php\">Install Open Blog<\\/a> - choose this option, if you would like to install Open Blog ([\\d\\.]+)<br \\/>)"
+    }
+  ],
+  "dorks": [
+    "\"powered by Open blog\""
+  ],
+  "website": "http://www.open-blog.info/"
+}

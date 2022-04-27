@@ -1,0 +1,10 @@
+{
+  "name": "Nintendo-GameCube",
+  "matches": [
+
+  ],
+  "dorks": [
+    "intitle:\"HTML Page\" \"This is test.html page\""
+  ],
+  "website": "http://www.nintendo.com/"
+}

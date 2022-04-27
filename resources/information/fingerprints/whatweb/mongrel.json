@@ -1,0 +1,13 @@
+{
+  "name": "Mongrel",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Mongrel ([\\d][^\\s]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://rubyforge.org/projects/mongrel/"
+}

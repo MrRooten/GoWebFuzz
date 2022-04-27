@@ -1,0 +1,19 @@
+{
+  "name": "ClickMotive",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:ddcaffinitygroup)",
+      "name": "ddcaffinitygroup cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:ddcpoolid)",
+      "name": "ddcpoolid cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://example.com/"
+}

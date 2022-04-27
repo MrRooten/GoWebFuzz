@@ -1,0 +1,15 @@
+{
+  "name": "Email",
+  "matches": [
+    {
+      "string": "(?i-mx:[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4})"
+    },
+    {
+      "string": "(?i-mx:<[^>]+href=[^>]*mailto:([^\\'\\\"\\?>]+)[^>]*>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

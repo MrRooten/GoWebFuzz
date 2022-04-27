@@ -1,0 +1,24 @@
+{
+  "name": "AlstraSoft-AskMe",
+  "matches": [
+    {
+      "text": "Enter details about your question and press the button bellow. All fields are required."
+    },
+    {
+      "text": "<font size=\"+2\">AskMe Pro Admin</font></b>"
+    },
+    {
+      "text": "<br> Powered by <a href='http://www.alstrasoft.com' targe='_blank'><font color=blue>AlstraSoft AskMe Pro</font></a><br><br>"
+    },
+    {
+      "text": "<td colspan=2 align=\"center\"><a href=\"pass_recover.php\">Forgotten Password?</a></td>"
+    },
+    {
+      "text": "Powered By <a href=\"http://www.alstrasoft.com\">AlstraSoft AskMe Pro</td></tr></table></body></a></html>"
+    }
+  ],
+  "dorks": [
+    "\"powered by AlstraSoft AskMe Pro\" -vulnerability"
+  ],
+  "website": "http://www.alstrasoft.com/askme.htm"
+}

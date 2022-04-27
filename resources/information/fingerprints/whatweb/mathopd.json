@@ -1,0 +1,17 @@
+{
+  "name": "Mathopd",
+  "matches": [
+    {
+      "version": "(?-mix:^Mathopd\\/([^\\s]+))",
+      "search": "headers[server]"
+    },
+    {
+      "regexp": "(?-mix:^Mathopd)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.mathopd.org/"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Pragyan-CMS",
+  "matches": [
+    {
+      "text": "powered by <a href=\"http://sourceforge.net/projects/pragyan\">Pragyan CMS</a>"
+    },
+    {
+      "version": "(?-mix:powered by <a href=\"http:\\/\\/sourceforge.net\\/projects\\/pragyan\" title=\"(Praygan|Probe) CMS\">Pragyan CMS v([\\d\\.]+)<\\/a>)",
+      "offset": 1
+    }
+  ],
+  "dorks": [
+    "\"powered by Pragyan CMS\""
+  ],
+  "website": "http://sourceforge.net/projects/pragyan/"
+}

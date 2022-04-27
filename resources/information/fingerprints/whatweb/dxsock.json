@@ -1,0 +1,17 @@
+{
+  "name": "DXSock",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^RemObjects DXSock Web Server)"
+    },
+    {
+      "search": "headers[user-agent]",
+      "regexp": "(?-mix:^RemObjects SDK$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.dxsock.com/view/"
+}

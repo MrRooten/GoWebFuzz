@@ -1,0 +1,28 @@
+{
+  "name": "VisualRoute",
+  "matches": [
+    {
+      "regexp": "(?-mix:^VisualRoute )",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^VisualRoute \\((tm|R)\\) ([^\\s]+)$)",
+      "offset": 1,
+      "search": "headers[server]"
+    },
+    {
+      "string": "(?-mix:^VisualRoute \\((tm|R)\\) ([\\d]{4} .+ Edition) \\(v([^\\)]+)\\)$)",
+      "offset": 1,
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^VisualRoute \\((tm|R)\\) ([\\d]{4} .+ Edition) \\(v([^\\)]+)\\)$)",
+      "offset": 2,
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.visualroute.com/"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Phoenix-Contact-Device",
+  "matches": [
+
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.phoenixcontact.com/"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Mint",
+  "matches": [
+    {
+      "regexp": "(?i-mx:<script [^>]*src=[\"'][^>]*mint\\/\\?js)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.haveamint.com/"
+}

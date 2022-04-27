@@ -1,0 +1,18 @@
+{
+  "name": "SmodCMS",
+  "matches": [
+    {
+      "text": "<meta name=\"Generator\" content=\"SmodCMS\" />"
+    },
+    {
+      "text": "<meta name=\"Authoring_Tool\" content=\"SmodCMS // www.smod.pl\" />"
+    },
+    {
+      "regexp": "(?-mix:[P|p]+owered by <a href=\"http:\\/\\/www.smod.pl[\\/]+\"[^>]+>SmodCMS[\\s]*<\\/a>)"
+    }
+  ],
+  "dorks": [
+    "\"powered by SmodCMS\""
+  ],
+  "website": "http://www.smod.pl/"
+}

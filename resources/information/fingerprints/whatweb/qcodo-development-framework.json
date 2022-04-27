@@ -1,0 +1,13 @@
+{
+  "name": "Qcodo-Development-Framework",
+  "matches": [
+    {
+      "version": "(?-mix:<b>PHP Version:<\\/b> [^;]+;&nbsp;&nbsp;<b>Zend Engine Version:<\\/b> [^;]+;&nbsp;&nbsp;<b>Qcodo Version:<\\/b> ([^\\(]+) \\([^\\(]+\\)<br \\/>)",
+      "string": "Error"
+    }
+  ],
+  "dorks": [
+    "\"qcodo/_devtools/codegen.php\" intitle:\"Development Framework - Start Page\""
+  ],
+  "website": "http://www.qcodo.com/"
+}

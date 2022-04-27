@@ -1,0 +1,13 @@
+{
+  "name": "Cougar",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Cougar\\/([\\d\\.]+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.cougarconference.com/"
+}

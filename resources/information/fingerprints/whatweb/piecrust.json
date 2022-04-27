@@ -1,0 +1,18 @@
+{
+  "name": "PieCrust",
+  "matches": [
+    {
+      "text": "<meta name=\"generator\" content=\"PieCrust\" />"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"PieCrust ([^\\s^\"]+)\" \\/>)"
+    },
+    {
+      "version": "(?-mix:Baked with <em><a href=\"http:\\/\\/bolt80\\.com\\/piecrust\\/\">PieCrust<\\/a> ([^\\s^<]+)<\\/em>\\.<\\/p>)"
+    }
+  ],
+  "dorks": [
+    "\"Baked with PieCrust\""
+  ],
+  "website": "http://bolt80.com/piecrust/"
+}

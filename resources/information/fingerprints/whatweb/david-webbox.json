@@ -1,0 +1,13 @@
+{
+  "name": "David-WebBox",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^David-WebBox\\/([^\\s]+ \\([^\\)]+\\))$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.tobit.com/davidfx/access/"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Lantronix-Device",
+  "matches": [
+    {
+      "url": "/summary.html",
+      "version": "(?-mix:<TITLE>Lantronix ThinWeb Manager ([\\d\\.]+): Home<\\/TITLE>)"
+    },
+    {
+      "url": "/navigation.html",
+      "version": "(?-mix:<img src=\"logo\\.gif\" width=129 height=84 border=0 alt=\"Lantronix ThinWeb Manager ([\\d\\.]+)\"><br>)"
+    },
+    {
+      "url": "/navigation.html",
+      "model": "(?-mix:<font face=\"Arial,Helvetica\" color=\"#660066\"><b>([^<]+)<\\/b><\\/font><br><br>)"
+    },
+    {
+      "version": "(?-mix:^Gordian Embedded([\\d\\.]+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "regexp": "(?-mix:^Gordian Embedded)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.lantronix.com/"
+}

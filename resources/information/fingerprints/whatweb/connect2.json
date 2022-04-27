@@ -1,0 +1,17 @@
+{
+  "name": "Connect2",
+  "matches": [
+    {
+      "regexp": "(?-mix:for Connect2-SMTP)",
+      "search": "headers[server]"
+    },
+    {
+      "module": "(?-mix:^(Web Services Module [^\\s]+ \\([\\d]+\\)) for Connect2-SMTP$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

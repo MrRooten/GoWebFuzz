@@ -1,0 +1,17 @@
+{
+  "name": "Raptor-Firewall",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Simple, Secure Web Server)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Simple, Secure Web Server (.+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.symantec.com/en/nz/business/support/overview.jsp?pid=52789"
+}

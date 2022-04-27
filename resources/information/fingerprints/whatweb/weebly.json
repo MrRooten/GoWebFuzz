@@ -1,0 +1,14 @@
+{
+  "name": "Weebly",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^is_mobile)",
+      "name": "is_mobile cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.weebly.com/"
+}

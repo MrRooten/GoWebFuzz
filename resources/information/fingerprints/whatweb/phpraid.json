@@ -1,0 +1,16 @@
+{
+  "name": "phpRaid",
+  "matches": [
+    {
+      "certainty": 75,
+      "text": "Raid Management Provided by phpRaid"
+    },
+    {
+      "version": "(?-mix:Raid Management Provided by <a href=\"http:\\/\\/www.spiffyjr.com\\/\">phpRaid<\\/a> v([\\d\\.]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.spiffyjr.com/"
+}

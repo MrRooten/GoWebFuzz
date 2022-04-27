@@ -1,0 +1,13 @@
+{
+  "name": "MikroTik-RouterOS",
+  "matches": [
+    {
+      "url": "/webfig/iframe.html",
+      "text": "<body onload=\"parent.generateContent(parent.location.hash.substr(1));\">"
+    }
+  ],
+  "dorks": [
+    "intitle:\"RouterOS router configuration page\" \"RouterOS\" \"You have connected to a router\""
+  ],
+  "website": "http://www.mikrotik.com/software.html & http://www.routerboard.com/"
+}

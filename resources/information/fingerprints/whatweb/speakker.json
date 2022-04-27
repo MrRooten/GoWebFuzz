@@ -1,0 +1,18 @@
+{
+  "name": "Speakker",
+  "matches": [
+    {
+      "text": "<!-- INSTANTIATE SPEAKKER -->"
+    },
+    {
+      "text": "<!-- INCLUDE SPEAKKER -->"
+    },
+    {
+      "regexp": "(?-mix:<script type=\"text\\/javascript\" src=\"[^\"]+\\/(projekktor|speakker)\\.min\\.js\"><\\/script>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.speakker.com/"
+}

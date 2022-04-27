@@ -1,0 +1,20 @@
+{
+  "name": "Quanterra-Q330",
+  "matches": [
+    {
+      "text": "<form action=\"BALEPWR.HTM\" method=\"POST\"><input type=\"SUBMIT\" name=\"PWR\" value=\"Turn on Baler Power\"><br>"
+    },
+    {
+      "regexp": "(?-mix:^Q330)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Q330 V([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Q330 Web Server\" -\"$ID$\""
+  ],
+  "website": "http://kmi.com/p-163-Home.aspx"
+}

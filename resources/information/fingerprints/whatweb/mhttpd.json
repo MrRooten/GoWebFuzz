@@ -1,0 +1,33 @@
+{
+  "name": "MHttpd",
+  "matches": [
+    {
+      "regexp": "(?-mix:[\\s]*mhttpd)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:[\\s]*mhttpd v([\\d\\.]+))",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:[\\s]*MHttpd\\/([\\d\\.]+) \\([^\\;]+; [^\\;]+; Meta-HTML\\/[\\d\\.]+\\))",
+      "search": "headers[server]"
+    },
+    {
+      "module": "(?-mix:[\\s]*MHttpd\\/[\\d\\.]+ \\([^\\;]+; ([^\\;]+); Meta-HTML\\/[\\d\\.]+\\))",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:[\\s]*MHttpd\\/([\\d\\.]+) \\([^\\;]+; [^\\;]+; Meta-HTML\\/[\\d\\.]+\\))",
+      "search": "headers[meta-html-engine]"
+    },
+    {
+      "module": "(?-mix:[\\s]*MHttpd\\/[\\d\\.]+ \\([^\\;]+; ([^\\;]+); Meta-HTML\\/[\\d\\.]+\\))",
+      "search": "headers[meta-html-engine]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

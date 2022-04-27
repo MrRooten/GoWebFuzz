@@ -1,0 +1,17 @@
+{
+  "name": "Brother-Fax",
+  "matches": [
+    {
+      "model": "(?-mix:<TITLE>\\nBrother (MFC-[\\dA-Z]+)\\n<\\/TITLE>)"
+    },
+    {
+      "certainty": 25,
+      "search": "headers[server]",
+      "version": "(?-mix:^[Dd]ebut\\/([\\d\\.]+)$)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"brother mfc\" inurl:\"/main/main.html\""
+  ],
+  "website": "http://www.brother.com/"
+}

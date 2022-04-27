@@ -1,0 +1,17 @@
+{
+  "name": "TiVo",
+  "matches": [
+    {
+      "regexp": "(?-mix:^tivo-httpd)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^tivo-httpd-[\\d]+:(.+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+    "intitle:\"TiVo DVR\" \"Congratulations\" \"You've successfully connected your TiVo\""
+  ],
+  "website": "http://www.tivo.com/"
+}

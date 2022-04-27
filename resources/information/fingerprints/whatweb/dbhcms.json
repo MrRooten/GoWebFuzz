@@ -1,0 +1,21 @@
+{
+  "name": "DBHcms",
+  "matches": [
+    {
+      "text": "<a target=\"_blank\" href=\"http://www.drbenhur.com/\" class=\"copyright\"> powered by DBHcms </a>"
+    },
+    {
+      "regexp": "(?-mix:<!--[\\s]+\\#{90,100}[\\s]+#[\\s]+#[\\s]+#  DBHCMS - Web Content Management System[\\s]+#[\\s]+#[\\s]+#[\\s]+\\#{90,100})"
+    },
+    {
+      "regexp": "(?-mix:<!--[\\s]+Please leave this link on your website, it will help a lot for the DBHcms to get well-known.)"
+    },
+    {
+      "regexp": "(?-mix:<!--[\\s]+Change the copyright but please leave a link \"powered by DBHcms\" to http:\\/\\/www.drbenhur.com[\\s])"
+    }
+  ],
+  "dorks": [
+    "\"powered by DBHcms\" -dork"
+  ],
+  "website": "http://www.drbenhur.com"
+}

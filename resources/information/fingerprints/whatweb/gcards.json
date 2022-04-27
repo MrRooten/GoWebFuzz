@@ -1,0 +1,21 @@
+{
+  "name": "gCards",
+  "matches": [
+    {
+      "certainty": 75,
+      "text": "<a href=\"compose.php?imageid="
+    },
+    {
+      "text": "<title>eCards Administration Console Login</title>"
+    },
+    {
+      "version": "(?-mix:<td>(Driftet av|Powered by|Un script de ) <a href=\"http:\\/\\/www.gregphoto.net\\/gcards\\/index.php\"[^>]*>gCards<\\/a> v([\\d\\.]+)<\\/td>)",
+      "offset": 1
+    }
+  ],
+  "dorks": [
+    "\"powered by gcards\"",
+    "intitle:\"eCards Administration Console Login\" inurl:login.php"
+  ],
+  "website": "http://www.gregphoto.net/gcards/index.php"
+}

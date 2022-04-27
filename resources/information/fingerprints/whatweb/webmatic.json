@@ -1,0 +1,15 @@
+{
+  "name": "Webmatic",
+  "matches": [
+    {
+      "text": "Powered&nbsp;by&nbsp;<a href=\"http://www.webmatic.it\">Webmatic</a>"
+    },
+    {
+      "version": "(?i-mx: href=\"http:\\/\\/www.valarsoft.com\"[^>]+>Powered by: Webmatic ([^<]+)<\\/a>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.webmatic.it/it/"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "PHPEasyData",
+  "matches": [
+    {
+      "text": "<div id='phpeasydata_container'  >"
+    },
+    {
+      "text": "  <head><title>PhpEasyData login page</title>"
+    },
+    {
+      "version": "(?-mix:<a[^>]*href=\"http:\\/\\/www.(phpeasydata.com|freewebmaster-scripts.com\\/phpeasydata)[^>]*>PHPEasyData[\\s]*([^<]+)<\\/a>)"
+    },
+    {
+      "version": "(?-mix:n main de pages dynamiques. \" target=\"_blank\"[\\s]*>PhpEasyData[\\s]*([^<]+)<\\/a><\\/b>)"
+    }
+  ],
+  "dorks": [
+    "\"powered by PHPEasyData\""
+  ],
+  "website": "http://www.phpeasydata.com/"
+}

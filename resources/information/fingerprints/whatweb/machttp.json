@@ -1,0 +1,17 @@
+{
+  "name": "MacHTTP",
+  "matches": [
+    {
+      "version": "(?-mix:^MacHTTP\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "regexp": "(?-mix:^MacHTTP$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.machttp.org/downloads/machttp/"
+}

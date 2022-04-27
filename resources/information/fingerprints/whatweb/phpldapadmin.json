@@ -1,0 +1,24 @@
+{
+  "name": "phpLDAPadmin",
+  "matches": [
+    {
+      "version": "(?-mix:<head><title>phpLDAPadmin - ([^\\s^<]+)[\\s]?<\\/title><\\/head>)"
+    },
+    {
+      "version": "(?-mix:<h3 class=\"subtitle\" style=\"margin:0px\">phpLDAPadmin - ([^\\s^<]+))"
+    },
+    {
+      "version": "(?-mix:<title>phpLDAPadmin \\(([^\\s^\\)]+)\\) - <\\/title>)"
+    },
+    {
+      "version": "(?-mix:<div id=\"ajFOOT\">([^\\s^<]+)<\\/div><a href=\"https:\\/\\/sourceforge\\.net\\/projects\\/phpldapadmin\">)"
+    },
+    {
+      "string": "(?-mix:<td class=\"icon\"><img src=\"images\\/[^\\/^\"]*\\/server.png\" alt=\"Server\" \\/><\\/td><td class=\"name\" colspan=\"2\">([^<]+)<\\/td><\\/tr>)"
+    }
+  ],
+  "dorks": [
+    "\"Home\" \"Purge caches\" intitle:phpLDAPadmin"
+  ],
+  "website": "http://phpldapadmin.sourceforge.net/"
+}

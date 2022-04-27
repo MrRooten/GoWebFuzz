@@ -1,0 +1,15 @@
+{
+  "name": "Auxilium-PetRatePro",
+  "matches": [
+    {
+      "text": "<form method=\"post\" name=\"myform2\" action=\"index.php?cmd=11\">"
+    },
+    {
+      "text": "<p class=\"text\"><b>Leader Of The Pack (Top 10 Pets)</b><br><br>"
+    }
+  ],
+  "dorks": [
+    "inurl:\"index.php?cmd=10\" \"Pets Rating\""
+  ],
+  "website": "http://www.auxiliumsoftware.com/PetRatePro/"
+}

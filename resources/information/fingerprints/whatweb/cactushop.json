@@ -1,0 +1,22 @@
+{
+  "name": "CactuShop",
+  "matches": [
+    {
+      "text": "<select name=\"numCurrencyID\" class=\"currencymenu\" onchange=\"javascript:document.getElementById('currmenuform').submit();\">"
+    },
+    {
+      "certainty": 75,
+      "regexp": "(?-mix:<!-- MYDEVLICNUM -->)"
+    },
+    {
+      "version": "(?-mix:<!-- CactuShop v\\.?([^\\s]+) license: [\\s]+ -->)"
+    },
+    {
+      "version": "(?-mix:<!---?[\\s]+===============================================================================[\\s]+CACTUSHOP v?([^\\s]+) ASP SHOPPING CART)"
+    }
+  ],
+  "dorks": [
+    "\"Cactusoft International FZ-LLC & Cactusoft Ltd All rights reserved\""
+  ],
+  "website": "http://www.cactushop.com/"
+}

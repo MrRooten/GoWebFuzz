@@ -1,0 +1,12 @@
+{
+  "name": "AMX-Mod-X",
+  "matches": [
+    {
+      "text": "// *NOTE* amx_sql_type specifies the DEFAULT database type which admin.sma will use."
+    }
+  ],
+  "dorks": [
+    "ext:cfg \"Linux users may encounter problems if they specify\""
+  ],
+  "website": "http://www.amxmodx.org/"
+}

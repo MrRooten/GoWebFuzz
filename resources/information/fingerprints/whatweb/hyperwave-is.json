@@ -1,0 +1,21 @@
+{
+  "name": "Hyperwave-IS",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Hyperwave-)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Hyperwave-IS\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Hyperwave-Information-Server\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.hyperwave.com/"
+}

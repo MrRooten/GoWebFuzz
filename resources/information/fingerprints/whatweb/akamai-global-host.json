@@ -1,0 +1,13 @@
+{
+  "name": "Akamai-Global-Host",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^AkamaiGHost)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.akamai.com"
+}

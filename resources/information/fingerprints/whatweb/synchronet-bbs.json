@@ -1,0 +1,17 @@
+{
+  "name": "Synchronet-BBS",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Synchronet BBS)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Synchronet BBS for .+ Version ([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.synchro.net/"
+}

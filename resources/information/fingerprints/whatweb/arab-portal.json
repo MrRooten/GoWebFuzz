@@ -1,0 +1,18 @@
+{
+  "name": "Arab-Portal",
+  "matches": [
+    {
+      "regexp": "(?-mix:<META NAME=\"COPYRIGHT\" CONTENT=\"Copyright[^\\>]*by Arab[\\s]*Portal\")"
+    },
+    {
+      "version": "(?-mix:<META content=\"[^>]*Powered by: Arab Portal v([\\d\\.]+), Copyright[^>]*\" name=\"description\">)"
+    },
+    {
+      "version": "(?-mix:<center><font size=2>Powered by: Arab[\\s]*Portal v([\\d\\.]+)[\\s]*, Copyright)"
+    }
+  ],
+  "dorks": [
+    "\"powered by Arab Portal\" -exploit"
+  ],
+  "website": null
+}

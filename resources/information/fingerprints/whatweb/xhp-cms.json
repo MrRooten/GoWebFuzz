@@ -1,0 +1,18 @@
+{
+  "name": "XHP-CMS",
+  "matches": [
+    {
+      "text": "<title>XHP installation</title>"
+    },
+    {
+      "version": "(?-mix:<meta name=\"GENERATOR\" content=\"XHP - eXpandable Home Page v([\\d\\.]+)\"\\/>)"
+    },
+    {
+      "version": "(?-mix:<a href=\"http:\\/\\/xhp.targetit.ro\\/\">Powered by XHP CMS v([\\d\\.]+)<\\/a><br\\/><a href=\"http:\\/\\/lars.targetit.ro\\/\">Site engine is copyright)"
+    }
+  ],
+  "dorks": [
+    "\"powered by XHP CMS\" \"Site engine is copyright\""
+  ],
+  "website": "http://xhp.targetit.ro/"
+}

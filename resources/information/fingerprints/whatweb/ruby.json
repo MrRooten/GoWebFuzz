@@ -1,0 +1,34 @@
+{
+  "name": "Ruby",
+  "matches": [
+    {
+      "regexp": "(?-mix:Ruby)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:Ruby\\/([^\\s^\\/^\\(]+))",
+      "search": "headers[server]"
+    },
+    {
+      "regexp": "(?-mix:^WEBrick)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^(WEBrick\\/[\\d\\.]+) \\(Ruby\\/[\\d\\.]+\\/[\\d]{4}-[\\d]{2}-[\\d]{2}\\))",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^WEBrick\\/[\\d\\.]+ \\(Ruby\\/([\\d\\.]+)\\/[\\d]{4}-[\\d]{2}-[\\d]{2}\\))",
+      "search": "headers[server]"
+    },
+    {
+      "name": "File extension",
+      "regexp": "(?-mix:^(rb|rhtml)$)",
+      "search": "uri.extension"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.ruby-lang.org/"
+}

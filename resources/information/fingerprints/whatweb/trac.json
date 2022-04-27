@@ -1,0 +1,16 @@
+{
+  "name": "Trac",
+  "matches": [
+    {
+      "ghdb": "\"Powered by Trac\" +intitle:Trac",
+      "certainty": 75
+    },
+    {
+      "version": "(?-mix:Powered by <a[^>]*><strong>Trac ([^<]+)<\\/strong><\\/a><br \\/>)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by Trac\" intitle:Trac"
+  ],
+  "website": "http://trac.edgewall.org/"
+}

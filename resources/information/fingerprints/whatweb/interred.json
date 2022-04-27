@@ -1,0 +1,16 @@
+{
+  "name": "InterRed",
+  "matches": [
+    {
+      "version": "(?-mix:<meta name=\"(generator|GENERATOR)\" content=\"InterRed V([^,]+), http:\\/\\/www\\.interred\\.de\\/, InterRed GmbH\"( \\/)?>)",
+      "offset": 1
+    },
+    {
+      "version": "(?-mix:<!-- Created with InterRed V([^,]+), http:\\/\\/www\\.interred\\.de\\/, by InterRed GmbH -->)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.interred.de/"
+}

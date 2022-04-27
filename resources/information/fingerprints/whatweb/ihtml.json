@@ -1,0 +1,17 @@
+{
+  "name": "iHTML",
+  "matches": [
+    {
+      "version": "(?-mix: \\(Using iHTML\\/([^\\)^\\s]+)\\))",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^iHTML\\/([^\\s]+)$)",
+      "search": "headers[x-powered-by]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.ihtml.com/"
+}

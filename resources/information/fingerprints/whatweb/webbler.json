@@ -1,0 +1,12 @@
+{
+  "name": "Webbler",
+  "matches": [
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"webbler ([^\\s]+) - http:\\/\\/tincan\\.co\\.uk\\/webbler\"  \\/?>)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by the Webbler\""
+  ],
+  "website": "http://www.tincan.co.uk/Webbler"
+}

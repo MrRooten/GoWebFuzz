@@ -1,0 +1,12 @@
+{
+  "name": "Kandidat-CMS",
+  "matches": [
+    {
+      "regexp": "(?-mix:Powered by[\\ ]?[:]? <a href=\"http:\\/\\/www.kan-studio.ru[\\/]?\">Kandidat CMS<\\/a>)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by Kandidat CMS\""
+  ],
+  "website": null
+}

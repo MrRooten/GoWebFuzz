@@ -1,0 +1,17 @@
+{
+  "name": "Lasso-Web-Data-Engine",
+  "matches": [
+    {
+      "certainty": 25,
+      "ghdb": "filetype:lasso"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:Lasso\\/([^\\s]+))"
+    }
+  ],
+  "dorks": [
+    "ext:lasso"
+  ],
+  "website": "http://www.blueworld.com/blueworld/products/"
+}

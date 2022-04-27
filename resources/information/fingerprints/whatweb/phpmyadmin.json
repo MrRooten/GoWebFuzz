@@ -1,0 +1,33 @@
+{
+  "name": "phpMyAdmin",
+  "matches": [
+    {
+      "certainty": 75,
+      "ghdb": "intitle:phpMyAdmin \"Language: Afrikaans\" \"Welcome to phpMyAdmin\""
+    },
+    {
+      "version": "(?-mix:<title>phpMyAdmin ([^\\s^<]+)[^<]*<\\/title>)"
+    },
+    {
+      "version": "(?-mix:PMA_VERSION\\:\"([0-9\\.]+)\",auth_type)"
+    },
+    {
+      "version": "(?-mix:<h2>Welcome to  phpMyAdmin ([^<]+)<\\/h2>)"
+    },
+    {
+      "text": "<img src=\"./themes/original/img/logo_right.png\" id=\"imLogo\" name=\"imLogo\" alt=\"phpMyAdmin\" border=\"0\" /></a>"
+    },
+    {
+      "md5": "d037ef2f629a22ddadcf438e6be7a325",
+      "url": "favicon.ico"
+    },
+    {
+      "regexp": "(?-mix:<form method=\"post\" action=\"index\\.php\" target=\"_(top|parent)\"><input type=\"hidden\" name=\"phpMyAdmin\" value=\")"
+    }
+  ],
+  "dorks": [
+    "intitle:phpMyAdmin \"Language: Afrikaans\" \"Welcome to phpMyAdmin\"",
+    "inurl:main.php \"Welcome to phpMyAdmin\""
+  ],
+  "website": "http://www.phpmyadmin.net/home_page/index.php"
+}

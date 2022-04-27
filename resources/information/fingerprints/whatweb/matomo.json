@@ -1,0 +1,33 @@
+{
+  "name": "Matomo",
+  "matches": [
+    {
+      "name": "enableLinkTracking",
+      "text": "_paq.push(['enableLinkTracking'])"
+    },
+    {
+      "name": "Title",
+      "text": "<title>Sign in - Matomo</title>"
+    },
+    {
+      "name": "CHANGELOG.md",
+      "url": "/CHANGELOG.md",
+      "status": 200,
+      "text": "# Matomo Platform Changelog"
+    },
+    {
+      "name": "X-Matomo-Request-Id Header",
+      "text": "",
+      "search": "headers[X-Matomo-Request-Id]"
+    },
+    {
+      "name": "MATOMO_SESSID Cookie",
+      "text": "MATOMO_SESSID",
+      "search": "headers[Set-Cookie]"
+    }
+  ],
+  "dorks": [
+    "intitle:\"sign in - Matomo\""
+  ],
+  "website": "https://matomo.org"
+}

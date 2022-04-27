@@ -1,0 +1,37 @@
+{
+  "name": "BigCommerce",
+  "matches": [
+    {
+      "name": "iselector.css is a common file in BigCommerce systems",
+      "regexp": "(?-mix:\\/iselector.css)",
+      "certainty": 25
+    },
+    {
+      "regexp": "(?-mix:config.ShopPath = )",
+      "certainty": 25
+    },
+    {
+      "regexp": "(?-mix:config.AppPath = )",
+      "certainty": 25
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^fornax_anonymousId)",
+      "name": "fornax_anonymousId cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^RECENTLY_VIEWED_PRODUCTS)",
+      "name": "RECENTLY_VIEWED_PRODUCTS cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^SHOP_SESSION_TOKEN)",
+      "name": "SHOP_SESSION_TOKEN cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.bigcommerce.com/"
+}

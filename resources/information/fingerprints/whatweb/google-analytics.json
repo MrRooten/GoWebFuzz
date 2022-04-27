@@ -1,0 +1,16 @@
+{
+  "name": "Google-Analytics",
+  "matches": [
+    {
+      "account": "(?-mix:_gaq.push\\(\\['_setAccount',[\\s]*'(\\w{2}-\\d{1,}-\\d{1,})'\\])"
+    },
+    {
+      "version": "Universal",
+      "account": "(?-mix:ga\\([\\s]*'create',[\\s]*'(\\w{2}-\\d{1,}-\\d{1,})',)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.google.com/analytics/"
+}

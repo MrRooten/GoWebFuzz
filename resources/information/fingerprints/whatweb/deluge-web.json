@@ -1,0 +1,12 @@
+{
+  "name": "Deluge-web",
+  "matches": [
+    {
+      "version": "(?-mix:<title>Deluge: Web UI ([^<]+)<\\/title>)"
+    }
+  ],
+  "dorks": [
+    "inurl:8112 intitle:deluge"
+  ],
+  "website": null
+}

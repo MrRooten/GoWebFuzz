@@ -1,0 +1,15 @@
+{
+  "name": "SlideShowPro-Director",
+  "matches": [
+    {
+      "version": "(?-mix:<div id=\"simple-footer\">\\s+<span>SlideShowPro Director ([^<]+)<\\/span>)"
+    },
+    {
+      "text": "</div> <!--close login-container-->\t</body>"
+    }
+  ],
+  "dorks": [
+    "intitle:\"SlideShowPro Director\" \"Lost Username\" \"Password\" \"Sign in\" \"Remember me\""
+  ],
+  "website": "http://slideshowpro.net/products/slideshowpro_director/"
+}

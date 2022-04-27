@@ -1,0 +1,13 @@
+{
+  "name": "McAfee-Secure",
+  "matches": [
+    {
+      "string": "(?i-mx:<a target=\"?_blank\"? href=\"https?:\\/\\/www\\.(mcafeesecure|scanalert)\\.com\\/RatingVerify\\?ref=([^\"]+)\"[^>]*>[\\s]*<img)",
+      "offset": 1
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.mcafeesecure.com/"
+}

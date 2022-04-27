@@ -1,0 +1,15 @@
+{
+  "name": "MapServer-4-Windows",
+  "matches": [
+    {
+      "text": "<title>MS4W - MapServer 4 Windows</title>"
+    },
+    {
+      "version": "(?-mix:<h1>MS4W - MapServer 4 Windows - version ([^<]+)<\\/h1>\\s+<h2>Introduction<\\/h2>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.maptools.org/ms4w/"
+}

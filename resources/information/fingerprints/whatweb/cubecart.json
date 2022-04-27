@@ -1,0 +1,19 @@
+{
+  "name": "CubeCart",
+  "matches": [
+    {
+      "text": "<div class='txtCopyright'>Powered by <a href='http://www.cubecart.com' class='txtCopyright' target='_blank'>CubeCart</a>"
+    },
+    {
+      "regexp": "(?-mix:<title>[^<]{1,256} \\(Powered by CubeCart\\)<\\/title>)"
+    },
+    {
+      "version": "(?-mix:<p class=\"defaultText\">Powered by CubeCart version ([\\d\\.]+)<br \\/>)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"powered by cubecart\"",
+    "\"powered by cubecart\""
+  ],
+  "website": "http://www.cubecart.com/"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "HP-Printer",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "model": "(?-mix:^HP HTTP Server; HP (.+) series - )"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.hp.com/"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "SonicWALL-SSL-VPN",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^SonicWALL SSL-VPN Web Server\\.?$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.sonicwall.com/"
+}

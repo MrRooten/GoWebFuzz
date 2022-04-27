@@ -1,0 +1,18 @@
+{
+  "name": "OpenDocMan",
+  "matches": [
+    {
+      "version": "(?-mix:<a href=\"http:\\/\\/www\\.opendocman\\.com\\/\" target=\"_new\">OpenDocMan v([^\"^\\s]+)<\\/a>)"
+    },
+    {
+      "text": "<td align=\"left\"><img src=\"images/logo.gif\" alt=\"Site Logo\" border=0></td>"
+    },
+    {
+      "regexp": "(?-mix:<td valign=\"top\">\\s+Welcome to OpenDocMan\\.?\\s+<p>)"
+    }
+  ],
+  "dorks": [
+    "\"OpenDocMan\" \"Stephen Lawrence\" intitle:\"Document Repository\""
+  ],
+  "website": "http://www.opendocman.com/"
+}

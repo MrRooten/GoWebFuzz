@@ -1,0 +1,24 @@
+{
+  "name": "MapServer",
+  "matches": [
+    {
+      "name": "Version",
+      "url": "?map=*",
+      "version": "(?-mix:<\\/HEAD>\\s*<!\\-\\- MapServer version (.*?)\\s)"
+    },
+    {
+      "name": "Invalid Map Parameter",
+      "url": "/cgi-bin/mapserv/?map=*",
+      "regexp": "(?-mix:<BODY BGCOLOR=\"#FFFFFF\">\\s*msLoadMap(): Regular expression error)"
+    },
+    {
+      "name": "Invalid Map Parameter",
+      "url": "/cgi-bin/mapserv/?map=*",
+      "regexp": "(?-mix:<HEAD><TITLE>MapServer Message<\\/TITLE><\\/HEAD>\\s*<!\\-\\- MapServer version)"
+    }
+  ],
+  "dorks": [
+    "inurl:cgi-bin/mapserv/?map"
+  ],
+  "website": null
+}

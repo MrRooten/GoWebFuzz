@@ -1,0 +1,15 @@
+{
+  "name": "OurDisclaimer",
+  "matches": [
+    {
+      "version": "(?i-mx:<a[^>]+href[\\s]*=[\\s]*\"http:\\/\\/ourdisclaimer.com\\/\\?i=([^\\\"]+))"
+    },
+    {
+      "version": "(?i-mx:<iframe[^>]+src[\\s]*=[\\s]*\"http:\\/\\/ourdisclaimer.com\\/\\?i=([^\\\"]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://ourdisclaimer.com/"
+}

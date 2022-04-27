@@ -1,0 +1,24 @@
+{
+  "name": "Reinvigorate",
+  "matches": [
+    {
+      "certainty": 10,
+      "text": "<!-- Reinvigorate -->"
+    },
+    {
+      "text": "<script type=\"text/javascript\" src=\"http://include.reinvigorate.net/re_.js\"></script>"
+    },
+    {
+      "certainty": 25,
+      "string": "(?-mix:reinvigorate\\.track\\(\"([a-z\\d]{5}-[a-z\\d]{10})\"\\);)"
+    },
+    {
+      "certainty": 10,
+      "string": "(?-mix:re_\\(\"([a-z\\d]{5}-[a-z\\d]{10})\"\\);)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.reinvigorate.net/"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Sun-Java-System-Server",
+  "matches": [
+    {
+      "regexp": "(?-mix:^[\\s]*Sun[\\-\\ ]{1}Java[\\-\\ ]{1}System[\\/\\ ]{1}Application[\\-\\ ]{1}Server)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^[\\s]*Sun-Java-System-Web-[Proxy-]*Server\\/([\\d\\.]+))",
+      "search": "headers[proxy-agent]",
+      "module": "Proxy Server"
+    },
+    {
+      "version": "(?-mix:^[\\s]*Sun-Java-System-Web-Server\\/([\\d\\.]+))",
+      "search": "headers[server]",
+      "module": "Web Server"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://developers.sun.com/appserver/"
+}

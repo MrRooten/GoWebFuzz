@@ -1,0 +1,16 @@
+{
+  "name": "Wowza-Media-Server",
+  "matches": [
+    {
+      "version": "(?-mix:<html><head><title>Wowza Media Server [\\d]+ Monthly Edition ([\\d\\.]+ build[\\d]+)<\\/title><\\/head><body>Wowza Media Server [\\d]+ Monthly Edition ([\\d\\.]+ build[\\d]+)<\\/body><\\/html>)"
+    },
+    {
+      "search": "headers[www-authenticate]",
+      "text": "realm=\"Wowza Media Systems\""
+    }
+  ],
+  "dorks": [
+    "intitle:\"Wowza Media Server 3 Monthly Edition\""
+  ],
+  "website": "www.wowza.com/"
+}

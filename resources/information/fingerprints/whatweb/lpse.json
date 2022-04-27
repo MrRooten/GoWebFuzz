@@ -1,0 +1,16 @@
+{
+  "name": "LPSE",
+  "matches": [
+    {
+      "search": "headers[location]",
+      "regexp": "(?-mix:^(https?:\\/\\/[^\\/]+)?\\/eproc\\/app)"
+    },
+    {
+      "text": "<link rel=\"stylesheet\" type=\"text/css\" href=\"/eproc/assets/application.css\"/>"
+    }
+  ],
+  "dorks": [
+    "inurl:\"/eproc/app\""
+  ],
+  "website": "http://www.lkpp.go.id/v2/content.php?mid=2580235452"
+}

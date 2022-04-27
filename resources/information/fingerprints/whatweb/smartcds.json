@@ -1,0 +1,28 @@
+{
+  "name": "SmartCDS",
+  "matches": [
+    {
+      "text": "<img border=0 src=\"http://www.globaldawin.com/capcds/refresh.gif\" width=\"13\" height=\"16\""
+    },
+    {
+      "regexp": "(?-mix:^smartcds)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^smartcds\\/([^\\s]+))",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Version:([^\\s]+)$)",
+      "search": "headers[smartcds]"
+    },
+    {
+      "string": "(?-mix:^(.*)$)",
+      "search": "headers[x-smartcds-error]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.globaldawin.com/product/smartcds.php3"
+}

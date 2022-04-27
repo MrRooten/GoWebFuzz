@@ -1,0 +1,13 @@
+{
+  "name": "FusionBB",
+  "matches": [
+    {
+      "version": "(?-mix:FusionBB&trade; Version (\\d+\\.?\\d+?))",
+      "name": "version"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

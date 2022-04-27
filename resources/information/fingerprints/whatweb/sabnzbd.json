@@ -1,0 +1,12 @@
+{
+  "name": "SABnzbd",
+  "matches": [
+    {
+      "regexp": "(?-mix:    <form action=\"\\/sabnzbd\\/[^\"]*\" method=\"POST\">)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://sabnzbd.org/"
+}

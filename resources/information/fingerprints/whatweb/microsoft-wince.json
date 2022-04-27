@@ -1,0 +1,17 @@
+{
+  "name": "Microsoft-WinCE",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Microsoft-WinCE)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Microsoft-WinCE\\/([\\S]+))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://msdn.microsoft.com/en-us/library/ms834461.aspx"
+}

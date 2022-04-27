@@ -1,0 +1,35 @@
+{
+  "name": "USP-Secure-Login-Service",
+  "matches": [
+    {
+      "text": "<!-- Optional: If browser does not support Javascript, load URL xyz -->"
+    },
+    {
+      "text": "<!-- SLS JavaScripts -->"
+    },
+    {
+      "text": "<form action=\"auth\" method=\"post\" name=\"LoginForm\" onsubmit=\"return checkFormSubmit();\" >"
+    },
+    {
+      "certainty": 75,
+      "regexp": "(?-mix:<input name=\"currentRequestedPage\" type=\"hidden\" value=\"[^\"]+\" \\/><\\/form>)"
+    },
+    {
+      "search": "headers[slsstatus]",
+      "string": "(?-mix:^([\\d]+)$)"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:SLSLanguage=([a-z]{2,3});)"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "module": "zzzzzz",
+      "regexp": "(?-mix:SCDID_S=[^;\\s\\$]{54}\\$\\$;)"
+    }
+  ],
+  "dorks": [
+    "inurl:\"sls/auth?RequestedPage\""
+  ],
+  "website": "http://www.united-security-providers.com/"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "XtraBusinessHosting",
+  "matches": [
+    {
+      "text": "<title>Xtra Business: Web Hosting</title>"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

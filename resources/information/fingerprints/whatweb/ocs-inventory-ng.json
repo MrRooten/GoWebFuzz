@@ -1,0 +1,15 @@
+{
+  "name": "OCS-Inventory-NG",
+  "matches": [
+    {
+      "text": "<LINK REL='StyleSheet' TYPE='text/css' HREF='css/ocsreports.css'>"
+    },
+    {
+      "version": "(?-mix:<img src=image\\/banner-ocs\\.png><\\/a><\\/td><td width='33%' align='right'>[\\s]+<b>Ver\\. ([^&]+)&nbsp&nbsp&nbsp;<\\/b>)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"OCS Inventory\" \"Ver\" inurl:\"index.php?av=\""
+  ],
+  "website": null
+}

@@ -1,0 +1,15 @@
+{
+  "name": "DMXReady-Secure-Document-Library",
+  "matches": [
+    {
+      "regexp": "(?-mix:<a href=\"[^\"]*\\/applications\\/[sS]ecureDocumentLibrary\\/inc_securedocumentlibrary\\.asp\\?show=sendpassword\">Forget Password\\?<\\/a>)"
+    },
+    {
+      "regexp": "(?i-mx:<form action=\"[^\"]*\\/applications\\/SecureDocumentLibrary\\/inc_securedocumentlibrary\\.asp\" method=\"POST\" name=\"login\" onSubmit=\"YY_checkform\\('login','entity_username','#q','0','Please provide username','entity_password','#q','0','Please provide password'\\);return document.MM_returnValue\")"
+    }
+  ],
+  "dorks": [
+    "inurl:inc_securedocumentlibrary.asp"
+  ],
+  "website": "http://www.dmxready.com/?product=secure-document-library"
+}

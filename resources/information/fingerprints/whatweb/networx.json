@@ -1,0 +1,12 @@
+{
+  "name": "NetworX",
+  "matches": [
+    {
+      "text": "Powered by <a href=\"http://www.socialabc.com\">NetworX</a>"
+    }
+  ],
+  "dorks": [
+    "\"powered by networx\" \"Privacy Policy Terms of Use About Us Contact Us\""
+  ],
+  "website": null
+}

@@ -1,0 +1,14 @@
+{
+  "name": "ABO_CMS",
+  "matches": [
+    {
+      "version": "(?-mix:^ABO\\.CMS( E-commerce| Corporative)? ([\\d\\.]+))",
+      "offset": 1,
+      "search": "headers[a-powered-by]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.abocms.com/"
+}

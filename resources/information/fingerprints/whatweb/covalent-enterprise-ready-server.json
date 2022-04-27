@@ -1,0 +1,17 @@
+{
+  "name": "Covalent-Enterprise-Ready-Server",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:secured_by_Covalent\\/([^\\s]+))"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:(CovalentSNMP\\/[^\\s]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.covalent.net/resource/documentation/ers/2.1.0/HTML/InstallGuide/installers.html"
+}

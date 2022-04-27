@@ -1,0 +1,16 @@
+{
+  "name": "bitcoin-js-remote",
+  "matches": [
+    {
+      "certainty": 75,
+      "text": "<span id=\"balance\"</span>"
+    },
+    {
+      "text": "<p><a href=\"http://tcatm.github.com/bitcoin-js-remote\">bitcoin-js-remote</a> <span id=\"version\"></span> by <a href=\"mailto:tcatm@gawab.com\">tcatm</a></p>"
+    }
+  ],
+  "dorks": [
+    "\"bitcoin-js-remote by tcatm\" \"This information is not transmitted, it'll only be stored in your wallet.\""
+  ],
+  "website": "http://tcatm.github.com/bitcoin-js-remote/"
+}

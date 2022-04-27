@@ -1,0 +1,15 @@
+{
+  "name": "Net2Phone",
+  "matches": [
+    {
+      "text": "<HTML><HEAD><TITLE>Net2Phone Init Page</TITLE>"
+    },
+    {
+      "model": "(?-mix:<P align=center><IMG border=0[\\s]+src=\"([a-zA-Z]{2}[\\d]+[a-zA-Z]?)\\.gif\" width=\")"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Net2Phone Init Page\" \"Net2Phone, Inc. All Rights Reserved.\""
+  ],
+  "website": "http://www.net2phone.com/"
+}

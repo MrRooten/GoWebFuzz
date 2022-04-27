@@ -1,0 +1,12 @@
+{
+  "name": "CruxPA",
+  "matches": [
+    {
+      "text": "<div id=\"copy\"><center>Powered By <a href=\"http://www.cruxsoftware.co.uk\">CruxPA</a><br>"
+    }
+  ],
+  "dorks": [
+    "\"Powered By CruxPA\""
+  ],
+  "website": "http://www.cruxsoftware.co.uk/"
+}

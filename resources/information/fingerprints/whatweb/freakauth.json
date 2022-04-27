@@ -1,0 +1,15 @@
+{
+  "name": "FreakAuth",
+  "matches": [
+    {
+      "regexp": "(?-mix:<title>FreakAuth &raquo; [^<]+<\\/title>)"
+    },
+    {
+      "regexp": "(?-mix:Welcome on board ! \\/ <a href=\"http[^\"]+\">Login<\\/a>\t\t<\\/div>)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"FreakAuth\" \"Welcome on board ! / Login\""
+  ],
+  "website": "http://freakauth.4webby.com/"
+}

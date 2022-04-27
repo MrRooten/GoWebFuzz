@@ -1,0 +1,18 @@
+{
+  "name": "Odoo",
+  "matches": [
+    {
+      "name": "generator",
+      "text": "<meta name=\"generator\" content=\"Odoo\"/>"
+    },
+    {
+      "name": "favicon",
+      "url": "/web/static/src/img/favicon.ico",
+      "md5": "a342fe863a8e41dff2a55410c7f118c5"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.odoo.com/"
+}

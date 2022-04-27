@@ -1,0 +1,11 @@
+{
+  "name": "phpinfo",
+  "matches": [
+
+  ],
+  "dorks": [
+    "intitle:\"phpinfo()\" \"mysql.default_password\" \"Zend Scripting Language Engine\"",
+    "inurl:\"phpinfo.php\" intitle:\"phpinfo()\" \"mysql.default_password\""
+  ],
+  "website": null
+}

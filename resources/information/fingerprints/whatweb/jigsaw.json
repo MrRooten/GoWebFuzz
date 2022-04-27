@@ -1,0 +1,17 @@
+{
+  "name": "Jigsaw",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Jigsaw)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Jigsaw\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.w3.org/Jigsaw/"
+}

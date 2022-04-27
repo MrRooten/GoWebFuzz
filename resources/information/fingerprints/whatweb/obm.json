@@ -1,0 +1,20 @@
+{
+  "name": "OBM",
+  "matches": [
+    {
+      "certainty": 75,
+      "version": "(?-mix:<title>Login - OBM ([^\\s^<]+)<\\/title>)"
+    },
+    {
+      "regexp": "(?-mix:<body>[\\s]+[\\s]+<p id=\"aliasource\">[\\s]+<a href=\"http:\\/\\/www\\.obm\\.org\">OBM\\.org<\\/a>[\\s]+<\\/p>[\\s]+<h1>)"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:OBM_Session=[\\s]+;)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Login - OBM\" \"OBM.org\""
+  ],
+  "website": "http://obm.org/"
+}

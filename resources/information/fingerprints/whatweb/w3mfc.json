@@ -1,0 +1,13 @@
+{
+  "name": "W3MFC",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^W3MFC\\/([\\d\\.]+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.naughter.com/w3mfc.html"
+}

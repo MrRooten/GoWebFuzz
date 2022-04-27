@@ -1,0 +1,13 @@
+{
+  "name": "Xavante",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Xavante (.+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://keplerproject.github.com/xavante/"
+}

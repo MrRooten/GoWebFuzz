@@ -1,0 +1,15 @@
+{
+  "name": "Proxmox-VE",
+  "matches": [
+    {
+      "version": "(?-mix:<a href='http:\\/\\/www\\.proxmox\\.com' target='_blank' class=\"boxheadline\">Proxmox Virtual Environment ([^<^\\s]+)<\\/a>)"
+    },
+    {
+      "text": "<img alt=\"\" style=\"display:block;border:0px;width:1000px;max-height:300px;\" src='/images/logo_pve.jpg'>"
+    }
+  ],
+  "dorks": [
+    "\"JavaScript is not available\" intitle:\"Proxmox Virtual Environment\""
+  ],
+  "website": "http://www.proxmox.com/products/proxmox-ve"
+}

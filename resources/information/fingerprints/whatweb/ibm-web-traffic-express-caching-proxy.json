@@ -1,0 +1,22 @@
+{
+  "name": "IBM-Web-Traffic-Express-Caching-Proxy",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^IBM-PROXY-WTE\\/([^\\s]+))"
+    },
+    {
+      "url": "/admin-bin/webexec/wte.html",
+      "string": "(?-mix:<a href=\"https?:\\/\\/([^\\/^\"]+)(:\\d+)?\\/\"><img src=\"https?:\\/\\/([^\\/^\"]+)(:\\d+)?\\/Docs\\/docmast\\.gif\" alt=\"Caching Proxy Version ([^\"]+)\"><\\/a>)"
+    },
+    {
+      "url": "/admin-bin/webexec/wte.html",
+      "version": "(?-mix:<a href=\"https?:\\/\\/([^\\/^\"]+)(:\\d+)?\\/\"><img src=\"https?:\\/\\/([^\\/^\"]+)(:\\d+)?\\/Docs\\/docmast\\.gif\" alt=\"Caching Proxy Version ([^\"]+)\"><\\/a>)",
+      "offset": 4
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.software.ibm.com/webservers/wte/"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Lightbox",
+  "matches": [
+    {
+      "regexp": "(?-mix:<script [^>]*(lightbox[^>]*.js)[^>]*)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

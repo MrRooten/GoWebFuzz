@@ -1,0 +1,16 @@
+{
+  "name": "DataNet",
+  "matches": [
+    {
+      "version": "(?-mix:<td><input class=\"txt\" onkeypress='return keyPress\\(this,event\\);' type='password'( maxlength='10')? id='password'><\\/td><\\/tr>[\\s]+<tr><td class=\"ver\">\\(Version ([^\\s^<]+)\\)<\\/td>)",
+      "offset": 1
+    },
+    {
+      "text": "<div class=\"scada\"><a class=\"scada\" href='/scada'>DataNet Scada Interface</a></div></body>"
+    }
+  ],
+  "dorks": [
+    "intitle:\"DataNet Tracking System Login\" \"DataNet Tracking System.\" \"User Name\" \"Password\""
+  ],
+  "website": "http://www.datalinksystemsinc.com/software.html"
+}

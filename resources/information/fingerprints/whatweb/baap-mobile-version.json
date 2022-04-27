@@ -1,0 +1,13 @@
+{
+  "name": "BAAP-Mobile-Version",
+  "matches": [
+    {
+      "search": "headers[x-mobilized-by]",
+      "version": "(?-mix:^BAAP Mobile Version ([^\\s]+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://wordpress.org/extend/plugins/baap-mobile-version/"
+}

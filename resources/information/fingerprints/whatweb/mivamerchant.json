@@ -1,0 +1,19 @@
+{
+  "name": "MivaMerchant",
+  "matches": [
+    {
+      "text": "<div id=\"mmcategorytree\">"
+    },
+    {
+      "ghdb": "inurl:merchant.mvc filetype:mvc"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:htscallerid=)"
+    }
+  ],
+  "dorks": [
+    "inurl:merchant.mvc ext:mvc"
+  ],
+  "website": "http://www.mivamerchant.com/"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Zen-Load-Balancer",
+  "matches": [
+    {
+      "url": "/config/global.conf",
+      "version": "(?-mix:#version ZEN\\s+\\$version=\\\"([^\\\"]+)\")"
+    },
+    {
+      "search": "headers[www-authenticate]",
+      "text": "Basic realm=\"Zen Load Balancer\""
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.zenloadbalancer.com/web/"
+}

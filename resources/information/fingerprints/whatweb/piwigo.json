@@ -1,0 +1,21 @@
+{
+  "name": "Piwigo",
+  "matches": [
+    {
+      "text": "<meta name=\"generator\" content=\"Piwigo (aka PWG), see piwigo.org\">"
+    },
+    {
+      "text": "<meta name=\"generator\" content=\"Piwigo, piwigo.org\">"
+    },
+    {
+      "regexp": "(?-mix:<div id=\"copyright\">\\s+<a name=\"EoP\"><\\/a>\\s+<!-- End of Page -->)"
+    },
+    {
+      "regexp": "(?-mix:Powered by\\s+<a href=\"http:\\/\\/piwigo\\.org\" class=\"Piwigo\">)"
+    }
+  ],
+  "dorks": [
+    "\"powered by piwigo\""
+  ],
+  "website": "http://piwigo.org/"
+}

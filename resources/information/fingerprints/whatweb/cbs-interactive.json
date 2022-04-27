@@ -1,0 +1,18 @@
+{
+  "name": "CBS-Interactive",
+  "matches": [
+    {
+      "regexp": "(?-mix:<script[^>]+ src=\"http:\\/\\/dw\\.com\\.com\\/js\\/dw\\.js\"><\\/script>)"
+    },
+    {
+      "account": "(?-mix:<script>DW.pageParams = \\{siteId:'([^']+)'\\};DW.clear\\(\\);<\\/script>)"
+    },
+    {
+      "account": "(?-mix:<img src=\"http:\\/\\/dw\\.com\\.com\\/clear\\/c\\.gif\\?sid=([^\"^\\s^>^&]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.cbsinteractive.com/"
+}

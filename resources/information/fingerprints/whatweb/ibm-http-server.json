@@ -1,0 +1,26 @@
+{
+  "name": "IBM-HTTP-Server",
+  "matches": [
+    {
+      "version": "(?-mix:[\\s]*IBM-HTTP-Server\\/([\\d\\.]+))",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:[\\s]*IBM_HTTP_Server\\/([\\d\\.]+))",
+      "search": "headers[server]"
+    },
+    {
+      "name": "IBM_HTTP_Server",
+      "regexp": "(?-mix:^[\\s]*IBM_HTTP_Server)",
+      "search": "headers[server]"
+    },
+    {
+      "string": "(?-mix:^(.*)$)",
+      "search": "headers[srvrname]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.ibm.com/software/webservers/httpservers/"
+}

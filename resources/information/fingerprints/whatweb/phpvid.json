@@ -1,0 +1,12 @@
+{
+  "name": "phpVID",
+  "matches": [
+    {
+      "text": "<div align=\"center\" class='powered_by_a'>Powered By <a href='http://www.vastal.com/' target='_blank' class='powered_by_a'>"
+    }
+  ],
+  "dorks": [
+    "\"Powered By phpVID\""
+  ],
+  "website": "http://www.vastal.com/phpvid-the-video-sharing-software.html"
+}

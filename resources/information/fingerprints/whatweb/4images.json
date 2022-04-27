@@ -1,0 +1,15 @@
+{
+  "name": "4images",
+  "matches": [
+    {
+      "regexp": "(?-mix:Copyright &copy; 2002-[0-9]{4} <a href=\"http:\\/\\/www.4homepages.de[\\>]*>4homepages.de<\\/a>)"
+    },
+    {
+      "version": "(?-mix:Powered by <b>4images<\\/b> ([\\d\\.]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.4homepages.de/"
+}

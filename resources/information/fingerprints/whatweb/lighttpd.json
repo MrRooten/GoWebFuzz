@@ -1,0 +1,21 @@
+{
+  "name": "lighttpd",
+  "matches": [
+    {
+      "regexp": "(?-mix:lighttpd)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^[\\s]*lighttpd\\/([^\\s]+))",
+      "search": "headers[server]"
+    },
+    {
+      "os": "(?-mix:^[\\s]*lighttpd \\(([^\\)]+)\\))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.lighttpd.net/"
+}

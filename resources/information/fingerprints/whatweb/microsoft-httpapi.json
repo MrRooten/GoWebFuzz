@@ -1,0 +1,17 @@
+{
+  "name": "Microsoft-HTTPAPI",
+  "matches": [
+    {
+      "regexp": "(?-mix:Microsoft-HTTPAPI)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:Microsoft-HTTPAPI\\/(.+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://msdn.microsoft.com/en-us/library/aa364510%28v=vs.85%29.aspx"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Hughes-Satellite-Router",
+  "matches": [
+    {
+      "text": "<frame src=/fs/dynaform/dw_logo.html scrolling=no marginheight=0 marginwidth=0 NORESIZE>"
+    },
+    {
+      "model": "(?-mix:<title>([A-Z]{0,2}[\\d]{1,5}[A-Z]?) System Control Center<\\/title>)"
+    },
+    {
+      "url": "/fs/dynaform/welcome.html",
+      "model": "(?-mix:<ctrlCenter style=\"font-size: 14pt; color: #000000; font-weight: bold\">([^\\s]+) <\\/ctrlCenter>)"
+    },
+    {
+      "url": "/sys_info/",
+      "version": "(?-mix:<\\/td><\\/tr><tr><td><div class=text>Software Release:<\\/td><td><div class=text>([^<^\\s]+)<\\/td><\\/tr>)"
+    },
+    {
+      "url": "/sys_info/",
+      "string": "(?-mix:<\\/td><\\/tr><tr><td><div class=text>LAN[\\d]{1,2} MAC Address:<\\/td><td><div class=text>([A-F\\d:]{17})<\\/td><\\/tr>)"
+    },
+    {
+      "search": "headers[www-authenticate]",
+      "regexp": "(?-mix:^Basic realm=\"HUGHES Terminal\"$)"
+    }
+  ],
+  "dorks": [
+    "inurl:sys_info \"Print this page. It will be needed if your system fails.\""
+  ],
+  "website": "http://www.hughes.com/ProductsAndTechnology/BroadbandSatelliteSystems/Pages/default.aspx"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Xitami",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^Xitami$)"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Xitami\\/([^\\s]+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.xitami.com/"
+}

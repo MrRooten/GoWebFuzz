@@ -1,0 +1,21 @@
+{
+  "name": "xproxy",
+  "matches": [
+    {
+      "regexp": "(?-mix:^xproxy)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^xproxy\\/([^\\(]+)\\([\\d]+\\)$)",
+      "search": "headers[server]"
+    },
+    {
+      "string": "(?-mix:^xproxy\\/[^\\(]+\\(([\\d]+)\\)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Lotus-Notes-Traveler",
+  "matches": [
+    {
+      "search": "headers[www-authenticate]",
+      "string": "(?-mix:^Basic realm=\"Lotus Notes Traveler \\(([^\\)]+)\\)\"$)"
+    },
+    {
+      "status": 401,
+      "text": "<HTML><HEAD><TITLE>Unable to Process Request</TITLE></HEAD><BODY><P>Servlet Status Code: 401</P><P>Servlet Status Message: Unauthorized</P></BODY></HTML>"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www-01.ibm.com/software/lotus/products/notes/traveler.html"
+}

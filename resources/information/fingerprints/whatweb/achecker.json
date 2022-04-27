@@ -1,0 +1,12 @@
+{
+  "name": "AChecker",
+  "matches": [
+    {
+      "text": "<title>AChecker : ATRC Accessibility Checker: </title>"
+    }
+  ],
+  "dorks": [
+    "intitle:\"AChecker : ATRC Accessibility Checker:\""
+  ],
+  "website": "http://www.atutor.ca/achecker/"
+}

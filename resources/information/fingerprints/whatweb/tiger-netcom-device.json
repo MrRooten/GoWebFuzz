@@ -1,0 +1,17 @@
+{
+  "name": "Tiger-Netcom-Device",
+  "matches": [
+    {
+      "regexp": "(?-mix:^TigerNetCom)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^TigerNetCom\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.vanaccess.com/"
+}

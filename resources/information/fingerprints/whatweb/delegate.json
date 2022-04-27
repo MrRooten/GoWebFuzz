@@ -1,0 +1,17 @@
+{
+  "name": "DeleGate",
+  "matches": [
+    {
+      "version": "(?-mix:^DeleGate\\/([^\\s]+))",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^([^\\s]+) \\(delay=)",
+      "search": "headers[delegate-ver]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.delegate.org/delegate/"
+}

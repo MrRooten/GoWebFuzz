@@ -1,0 +1,18 @@
+{
+  "name": "Acme_Serve",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Acme\\.Serve\\/v([\\d\\.]+) of [\\d]{2}[a-z]{3}[\\d]{2}$)"
+    },
+    {
+      "name": "Date from server header",
+      "search": "headers[server]",
+      "string": "(?-mix:^Acme\\.Serve\\/v[\\d\\.]+ of ([\\d]{2}[a-z]{3}[\\d]{2})$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.acme.com/java/software/Acme.Serve.Serve.html"
+}

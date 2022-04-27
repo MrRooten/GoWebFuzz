@@ -1,0 +1,16 @@
+{
+  "name": "Mibew-Messenger",
+  "matches": [
+    {
+      "version": "(?-mix:<p id=\"legal\"><a href=\"http:\\/\\/mibew\\.org\\/\" class=\"flink\">Mibew Messenger<\\/a> ([^\\s]+) \\| \\(c\\) 20[\\d]{2} mibew\\.org<\\/p>)"
+    },
+    {
+      "certainty": 75,
+      "text": "<div class=\"empty_inner\" style=\"\">&#160;</div>"
+    }
+  ],
+  "dorks": [
+    "\"Mibew Messenger\" \"mibew.org\" intitle:\"Mibew Messenger\" inurl:\"operator/restore.php\""
+  ],
+  "website": "http://mibew.org/"
+}

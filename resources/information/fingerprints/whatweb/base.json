@@ -1,0 +1,16 @@
+{
+  "name": "BASE",
+  "matches": [
+    {
+      "text": "<!-- Basic Analysis and Security Engine (BASE) -->"
+    },
+    {
+      "version": "(?-mix:<!-- Basic Analysis and Security Engine \\(BASE\\) ([\\d\\.]+ \\([^\\)]+\\)) -->)"
+    }
+  ],
+  "dorks": [
+    "\"The following pages will prompt you for set up information to finish the install of BASE.\" intitle:\"Basic Analysis and Security Engine (BASE)\"",
+    "intitle:\"Basic Analysis and Security Engine (BASE)\" \"Built on ACID by Roman Danyliw\" \"Login\" \"Password\""
+  ],
+  "website": "http://base.secureideas.net/"
+}

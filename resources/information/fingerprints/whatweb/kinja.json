@@ -1,0 +1,14 @@
+{
+  "name": "Kinja",
+  "matches": [
+    {
+      "name": "X-Kinja Header",
+      "regexp": "(?-mix:^$)",
+      "search": "headers[x-kinja]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

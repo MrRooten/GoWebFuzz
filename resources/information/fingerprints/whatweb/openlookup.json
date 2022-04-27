@@ -1,0 +1,15 @@
+{
+  "name": "OpenLookup",
+  "matches": [
+    {
+      "text": "<h2>OpenLookup Node Status</h2>"
+    },
+    {
+      "version": "(?-mix:<p><a href=\"http:\\/\\/openlookup\\.googlecode\\.com\\/\">Source code and\\n\tfurther information<\\/a> are available\\.  This is OpenLookup V([^<]+)\\.<\\/p>)"
+    }
+  ],
+  "dorks": [
+    "\"OpenLookup Node Status\" intitle:Openlookup \"To query a node via round-robin DNS\""
+  ],
+  "website": "http://openlookup.googlecode.com/"
+}

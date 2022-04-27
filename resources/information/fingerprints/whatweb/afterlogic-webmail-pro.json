@@ -1,0 +1,28 @@
+{
+  "name": "AfterLogic-WebMail-Pro",
+  "matches": [
+    {
+      "text": "Powered by <a href=\"http://www.afterlogic.com/products/webmail-pro\" target=\"_blank\">AfterLogic WebMail Pro</a><br />"
+    },
+    {
+      "version": "(?-mix:AfterLogic Corporation<\\/a>\\s?<\\/div>\\s+<\\/body>\\s<\\/html>\\s<!--\\s?([\\d\\.]+)\\s?-->)"
+    },
+    {
+      "version": "(?-mix:AfterLogic Corporation<\\/a>\\s?<\\/div>\\s+<!--\\s?([\\d\\.]+)\\s?-->\\s<\\/body>\\s<\\/html>)"
+    },
+    {
+      "name": "PHPWEBMAILSESSID cookie",
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^PHPWEBMAILSESSID=[^;]+;)"
+    },
+    {
+      "name": "PHPWMADMINSESSID cookie",
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^PHPWEBMAILSESSID=[^;]+;)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by AfterLogic WebMail Pro\" intitle:\"AfterLogic WebMail Pro\""
+  ],
+  "website": "http://www.afterlogic.com/mailbee/webmail-pro.asp"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "TomatoCMS",
+  "matches": [
+    {
+      "text": "<a href=\"http://www.tomatocms.com\" title=\"Powered by TomatoCMS\" target=\"_blank\">"
+    },
+    {
+      "text": "\tTomato.Core.Widget.Loader.baseUrl = 'http://"
+    },
+    {
+      "text": "\t\t\t\t\t<h1>TomatoCMS Install Wizard</h1>",
+      "version": "Install Page"
+    }
+  ],
+  "dorks": [
+    "\"powered by TomatoCMS\""
+  ],
+  "website": "http://www.tomatocms.com/"
+}

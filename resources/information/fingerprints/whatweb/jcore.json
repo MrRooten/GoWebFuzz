@@ -1,0 +1,16 @@
+{
+  "name": "jCore",
+  "matches": [
+    {
+      "version": "(?-mix:<script type='text\\/javascript'>\\s+var JCORE_VERSION = '([^']+)';)"
+    },
+    {
+      "version": "(?-mix:<link href='https?:\\/\\/[^'^\\?]+\\/static\\.php\\?request=css(&amp;admin=1)?&amp;[\\d]+\\-v([\\d\\.]+))",
+      "offset": 1
+    }
+  ],
+  "dorks": [
+    "intitle:\"Admin - jCore - the Webmaster's Multisite CMS\""
+  ],
+  "website": "http://jcore.net/about"
+}

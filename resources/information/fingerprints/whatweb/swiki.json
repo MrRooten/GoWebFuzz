@@ -1,0 +1,13 @@
+{
+  "name": "Swiki",
+  "matches": [
+    {
+      "url": "/defaultScheme/comSwiki.gif",
+      "md5": "81d538bed9f676fffbdaedb9d95cdbc1"
+    }
+  ],
+  "dorks": [
+    "\"powered by Squeak\" \"Squeak * :: Comanche * :: Swiki\""
+  ],
+  "website": "http://wiki.squeak.org/swiki/"
+}

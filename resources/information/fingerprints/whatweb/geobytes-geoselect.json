@@ -1,0 +1,17 @@
+{
+  "name": "Geobytes-GeoSelect",
+  "matches": [
+    {
+      "version": "(?-mix:Geobytes-GeoSelect\\/([\\d\\.]+))",
+      "search": "headers[server]"
+    },
+    {
+      "regexp": "(?-mix:Geobytes-GeoSelect)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.geobytes.com/GeoSelect.htm"
+}

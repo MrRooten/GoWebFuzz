@@ -1,0 +1,29 @@
+{
+  "name": "Safedog",
+  "matches": [
+    {
+      "name": "Server Header",
+      "regexp": "(?-mix:^Safedog)",
+      "search": "headers[server]"
+    },
+    {
+      "name": "Server Header Version Detection",
+      "version": "(?-mix:^Safedog\\/([\\d\\.]+))",
+      "search": "headers[server]"
+    },
+    {
+      "name": "X-Powered-By Header",
+      "regexp": "(?-mix:^WAF\\/2\\.0)",
+      "search": "headers[x-powered-by]"
+    },
+    {
+      "name": "safedog-flow-item Cookie",
+      "text": "safedog-flow-item=",
+      "search": "headers[set-cookie]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": ""
+}

@@ -1,0 +1,13 @@
+{
+  "name": "RapidSite",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Rapidsite)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.rapidsite.net/"
+}

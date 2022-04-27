@@ -1,0 +1,15 @@
+{
+  "name": "AppServ",
+  "matches": [
+    {
+      "version": "(?-mix:<span class=\"headd\"><strong><big>&nbsp; The AppServ Open Project - ([^\\s]+) for (Windows|Linux) <\\/big><\\/strong><\\/span><\\/font><\\/td>)"
+    },
+    {
+      "text": "<font color=\"#000080\" class=\"headd\">&nbsp;&nbsp;&nbsp;<img src=\"appserv/softicon.gif\""
+    }
+  ],
+  "dorks": [
+    "intitle:\"AppServ Open Project\" \"About AppServ Version\""
+  ],
+  "website": "http://www.appservnetwork.com/"
+}

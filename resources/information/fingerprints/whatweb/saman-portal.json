@@ -1,0 +1,26 @@
+{
+  "name": "Saman-Portal",
+  "matches": [
+    {
+      "text": "<meta name=\"Generator\" content=\"Saman Information Structure\" />"
+    },
+    {
+      "version": "(?-mix:<script  type=\"text\\/javascript\" language=\"JavaScript\" src=\"\\/portlets\\/sisRapid\\/dream\\/libs\\/(V[\\d\\.]+)\\/core\\/sisValidationAPI\\.js\">)"
+    },
+    {
+      "regexp": "(?-mix:<script  type=\"text\\/javascript\" language=\"JavaScript\">[\\s]+var sisTHEMEPATH_HTTP = \")"
+    },
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:sisRapid Framework)"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:SAMANPORTALSID=[^;]+;)"
+    }
+  ],
+  "dorks": [
+    "inurl:sismodule=user"
+  ],
+  "website": "http://www.sis-eg.com/"
+}

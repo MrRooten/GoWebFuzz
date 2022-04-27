@@ -1,0 +1,12 @@
+{
+  "name": "MyZone",
+  "matches": [
+    {
+      "regexp": "(?m-ix:<title>MyZone<\\/title>.*www\\.netcomm\\.com\\.au)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "www.netcomm.com.au"
+}

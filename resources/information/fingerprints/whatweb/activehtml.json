@@ -1,0 +1,17 @@
+{
+  "name": "ActiveHTML",
+  "matches": [
+    {
+      "version": "(?-mix:ActiveHTML\\/([^\\s]+))",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:seliSoft ActiveHTML\\/([^\\s]+))",
+      "search": "headers[x-powered-by]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.selisoft.com/en/ahtml/"
+}

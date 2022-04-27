@@ -1,0 +1,13 @@
+{
+  "name": "ethProxy",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^ethProxy$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.ethproxy.com/"
+}

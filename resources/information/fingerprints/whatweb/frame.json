@@ -1,0 +1,12 @@
+{
+  "name": "Frame",
+  "matches": [
+    {
+      "regexp": "(?i-mx:<i?frame\\s+)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

@@ -1,0 +1,15 @@
+{
+  "name": "KMSoft-Guestbook",
+  "matches": [
+    {
+      "version": "(?-mix:<div id=\"footer\">KMSoft Guestbook v ([\\d\\.]+) Powered by <a href=\"http:\\/\\/www.kmsoft.org[\\/]*\">KMSoft<\\/a><\\/div>)"
+    },
+    {
+      "version": "(?-mix:<title>KMSoft Guestbook v([\\d\\.]+)[^<]+<\\/title>)"
+    }
+  ],
+  "dorks": [
+    "\"KMSoft Guestbook\" inurl:form.asp"
+  ],
+  "website": "http://www.kmsoft.org/"
+}

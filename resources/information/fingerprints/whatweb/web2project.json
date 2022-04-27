@@ -1,0 +1,23 @@
+{
+  "name": "web2Project",
+  "matches": [
+    {
+      "text": "<title>web2Project Development :: web2Project Login</title>"
+    },
+    {
+      "text": "</head><body>Fatal Error. You haven't created a config file yet.<br/><a href="
+    },
+    {
+      "certainty": 25,
+      "version": "(?-mix:<meta name=\"Version\" content=\"([^\"^\\s]+)\" \\/>)"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:web2project=[^;]+;)"
+    }
+  ],
+  "dorks": [
+    "\"Fatal Error. You haven't created a config file yet.\" \"Click Here To Start Installation and Create One! (forwarded in 5 sec.)\""
+  ],
+  "website": "http://web2project.net/"
+}

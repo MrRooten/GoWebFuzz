@@ -1,0 +1,19 @@
+{
+  "name": "KSearch",
+  "matches": [
+    {
+      "ghdb": "\"Powered by KSearch\" inurl:ksearch.cgi filetype:cgi"
+    },
+    {
+      "version": "(?-mix:Powered by[\\s]+<a[^>]+href=\"http:\\/\\/www\\.kscripts\\.com\\/(scripts\\.html#ksearch)?\"[^>]*>KSearch[\\s]+([\\d\\.]+[a-z]?)[\\s]*<\\/a>)",
+      "offset": 1
+    },
+    {
+      "regexp": "(?-mix:Powered by[\\s]+<a[^>]+href=\"http:\\/\\/www\\.kscripts\\.com\\/(scripts\\.html#ksearch)?\"[^>]*>KSearch<\\/a>)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by KSearch\" inurl:ksearch.cgi filetype:cgi"
+  ],
+  "website": "http://www.kscripts.com/"
+}

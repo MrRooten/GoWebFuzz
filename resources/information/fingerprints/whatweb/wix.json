@@ -1,0 +1,24 @@
+{
+  "name": "Wix",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:_wixAB3)",
+      "name": "_wixAB3 cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^hs\\s)",
+      "name": "hs cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:svSession)",
+      "name": "svSession cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.wix.com/"
+}

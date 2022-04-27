@@ -1,0 +1,29 @@
+{
+  "name": "Zikula",
+  "matches": [
+    {
+      "name": "meta generator",
+      "text": "<meta name=\"Generator\" content=\"Zikula - www.zikula.org\" />"
+    },
+    {
+      "name": "meta generator de",
+      "text": "<meta name=\"Generator\" content=\"Zikula - http://zikula.de\" />"
+    },
+    {
+      "name": "meta generator - full",
+      "text": "<meta name=\"generator\" content=\"Zikula Application Framework - http://zikula.de\" />"
+    },
+    {
+      "name": "powered by community text",
+      "text": "<a href=\"http://community.zikula.org/\" title=\"Powered by Zikula\">Zikula</a>"
+    },
+    {
+      "name": "powered by text",
+      "text": "Powered by <a href=\"http://www.zikula.org\">Zikula</a>"
+    }
+  ],
+  "dorks": [
+    "\"Powered by Zikula\""
+  ],
+  "website": "http://zikula.org"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Niagara-Web-Server",
+  "matches": [
+    {
+      "regexp": "(?-mix:Niagara Web Server)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:Niagara Web Server\\/([\\d\\.]+))",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^(.*)$)",
+      "search": "headers[niagara-release]"
+    },
+    {
+      "name": "Niagara-ffs HTTP Header",
+      "regexp": "(?-mix:)",
+      "search": "headers[niagara-ffs]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

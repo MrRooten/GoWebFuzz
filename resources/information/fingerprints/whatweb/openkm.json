@@ -1,0 +1,15 @@
+{
+  "name": "OpenKM",
+  "matches": [
+    {
+      "text": "<form name=\"login\" method=\"post\" action=\"j_security_check\" onsubmit=\"setCookie()\">"
+    },
+    {
+      "regexp": "(?-mix:<title>OpenKM Login<\\/title>[\\s]+<\\/head>[\\s]+<body onload=\"document\\.forms\\[0\\]\\.elements\\[0\\]\\.focus\\(\\)\">)"
+    }
+  ],
+  "dorks": [
+    "\"Welcome to OpenKM\" intitle:\"OpenKM login\""
+  ],
+  "website": "http://www.openkm.com/en/"
+}

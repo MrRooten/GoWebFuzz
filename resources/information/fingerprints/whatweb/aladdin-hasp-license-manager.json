@@ -1,0 +1,13 @@
+{
+  "name": "Aladdin-HASP-License-Manager",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^HASP LM\\/([^\\s]+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www3.safenet-inc.com/support/hasp/enduser.aspx#lm"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Scriptaculous",
+  "matches": [
+    {
+      "regexp": "(?-mix:<script [^>]*(scriptaculous[^>]*.js)[^>]*)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

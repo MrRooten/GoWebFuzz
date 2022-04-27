@@ -1,0 +1,14 @@
+{
+  "name": "AmazonElasticLoadBalancer",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:AWSELB)",
+      "name": "AWSELB cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://aws.amazon.com/elasticloadbalancing/"
+}

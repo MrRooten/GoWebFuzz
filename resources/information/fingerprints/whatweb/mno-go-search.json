@@ -1,0 +1,16 @@
+{
+  "name": "MnoGoSearch",
+  "matches": [
+    {
+      "regexp": "(?-mix:Powered by mnoGoSearch .{3} free web search engine software)"
+    },
+    {
+      "certainty": 75,
+      "regexp": "(?-mix:<title>mnoGoSearch:)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by mnoGoSearch\""
+  ],
+  "website": null
+}

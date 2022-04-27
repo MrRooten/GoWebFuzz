@@ -1,0 +1,17 @@
+{
+  "name": "Viking",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Viking)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Viking\\/([^\\s]{1,15}))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.robtex.com/viking.html"
+}

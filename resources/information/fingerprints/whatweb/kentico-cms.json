@@ -1,0 +1,37 @@
+{
+  "name": "Kentico-CMS",
+  "matches": [
+    {
+      "version": "(?-mix:<\\/title><meta name=\"generator\" content=\"Kentico CMS [^\\(^>]{1,5} \\(build ([\\d\\.]{1,10})\\) [^\"^>]*\" \\/>)"
+    },
+    {
+      "regexp": "(?-mix:2fCMSAdministration.aspx\" id=\"form1\" class=\"logon-page\")",
+      "name": "Admin-Login-Page",
+      "certainty": 100
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:CMSCsrfCookie)",
+      "name": "CMSCsrfCookie cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:CMSCurrentTheme)",
+      "name": "CMSCurrentTheme cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:CMSPreferredCulture)",
+      "name": "CMSPreferredCulture cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:CMSCsrfCookie)",
+      "name": "CMSCsrfCookie cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.kentico.com/"
+}

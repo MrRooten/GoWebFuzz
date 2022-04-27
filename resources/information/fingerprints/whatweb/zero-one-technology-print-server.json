@@ -1,0 +1,17 @@
+{
+  "name": "Zero-One-Technology-Print-Server",
+  "matches": [
+    {
+      "regexp": "(?-mix:^ZOT-PS-)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^ZOT-PS-[\\d]+\\/(.+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.01tech.com/p1-1product.asp?Bid=2"
+}

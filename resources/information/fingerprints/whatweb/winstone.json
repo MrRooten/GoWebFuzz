@@ -1,0 +1,17 @@
+{
+  "name": "Winstone",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Winstone Servlet Engine v([^\\s]+))"
+    },
+    {
+      "search": "headers[x-powered-by]",
+      "version": "(?-mix:Servlet\\/[^\\s]+ \\(Winstone\\/([^\\)]+)\\))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://winstone.sourceforge.net/"
+}

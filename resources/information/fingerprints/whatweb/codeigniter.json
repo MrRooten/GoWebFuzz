@@ -1,0 +1,43 @@
+{
+  "name": "CodeIgniter-PHP-Framework",
+  "matches": [
+    {
+      "string": "404 Signature",
+      "url": "1fsf64z6",
+      "md5": "e087ab5729efdfa939ba620e4593bd99"
+    },
+    {
+      "string": "404 Signature",
+      "url": "index.php/m96qhm8x",
+      "md5": "e087ab5729efdfa939ba620e4593bd99"
+    },
+    {
+      "string": "Database Error Signature",
+      "url": "index.php/46irhuid",
+      "md5": "951c845488483135e52252609a1d99b2"
+    },
+    {
+      "string": "Database Error Signature",
+      "md5": "951c845488483135e52252609a1d99b2"
+    },
+    {
+      "string": "Invalid Character Filter",
+      "url": "64qnej9e!!!",
+      "md5": "c9b724012ab64481a034f9a453143ece"
+    },
+    {
+      "string": "Invalid Character Filter",
+      "url": "6d46afhs!!!",
+      "text": "The URI you submitted has disallowed characters."
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:ci_session)",
+      "name": "ci_session cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://codeigniter.com/"
+}

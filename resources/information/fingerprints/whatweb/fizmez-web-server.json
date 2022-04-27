@@ -1,0 +1,18 @@
+{
+  "name": "Fizmez-Web-Server",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^Fizmez\\/0\\.0\\.1)",
+      "version": "1.0"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Fizmez\\/([1-9]+\\.[\\d\\.]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://sourceforge.net/projects/fizmezwebserver/"
+}

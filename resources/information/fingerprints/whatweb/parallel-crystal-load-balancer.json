@@ -1,0 +1,17 @@
+{
+  "name": "Parallel-Crystal-Load-Balancer",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Crystal2 BalancerServer)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Crystal2 BalancerServer ([\\d\\.]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.dynalivery.com/products/parallelcrystal/parallelcrystal2_x.html"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "WebSocket",
+  "matches": [
+    {
+      "search": "headers[upgrade]",
+      "regexp": "(?i-mx:^WebSocket$)"
+    },
+    {
+      "search": "headers[websocket-location]",
+      "string": "(?-mix:^(wss?:\\/\\/.+))"
+    },
+    {
+      "search": "headers[sec-websocket-location]",
+      "string": "(?-mix:^(wss?:\\/\\/.+))"
+    },
+    {
+      "search": "headers[sec-websocket-version-server]",
+      "version": "(?-mix:(.+))"
+    },
+    {
+      "search": "headers[sec-websocket-protocol]",
+      "module": "(?-mix:(.+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

@@ -1,0 +1,12 @@
+{
+  "name": "TypePad",
+  "matches": [
+    {
+      "text": "<meta name=\"generator\" content=\"http://www.typepad.com/\""
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

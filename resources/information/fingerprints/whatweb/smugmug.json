@@ -1,0 +1,22 @@
+{
+  "name": "SmugMug",
+  "matches": [
+    {
+      "regexp": "(?-mix:^SmugMug)",
+      "search": "headers[x-powered-by]"
+    },
+    {
+      "version": "(?-mix:^SmugMug\\/([\\d\\.]+)$)",
+      "search": "headers[x-powered-by]"
+    },
+    {
+      "name": "X-SmugMug-Values HTTP Header",
+      "regexp": "(?-mix:)",
+      "search": "headers[x-smugmug-values]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.smugmug.com/"
+}

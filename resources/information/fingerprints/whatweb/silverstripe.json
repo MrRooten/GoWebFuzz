@@ -1,0 +1,24 @@
+{
+  "name": "SilverStripe",
+  "matches": [
+    {
+      "regexp": "(?-mix:<meta name=\"generator\"[^>]*content=\"SilverStripe)"
+    },
+    {
+      "name": "layout, typography, form css files",
+      "certainty": 75,
+      "regexp": "(?-mix:<link[^>]*stylesheet[^>]*layout.css[^>]*>[^<]*<link[^>]*stylesheet[^>]*typography.css[^>]*>[^<]*<link[^>]*stylesheet[^>]*form.css[^>]*>)"
+    },
+    {
+      "certainty": 75,
+      "regexp": "(?-mix:<img src=\"\\/assets\\/[^\\/]+\\/_resampled\\/[^\"]+.jpg\")"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\"[^>]*content=\"SilverStripe ([0-9\\.]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.silverstripe.com"
+}

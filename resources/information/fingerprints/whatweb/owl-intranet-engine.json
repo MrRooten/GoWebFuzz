@@ -1,0 +1,19 @@
+{
+  "name": "Owl-Intranet-Engine",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:owl_sessid=)"
+    },
+    {
+      "version": "(?-mix:<a class=\"version2\" href=\"http:\\/\\/owl\\.sourceforge\\.net\\/\" target=\"_blank\">Owl Intranet Engine, Version Owl ([^<]+)<\\/a>)"
+    },
+    {
+      "version": "(?-mix:<title>[^<]+ Owl ([\\d\\.]+ [\\d]{8})<\\/title>)"
+    }
+  ],
+  "dorks": [
+    "\"Owl Intranet Engine, Version Owl\" \"Username\" \"Password\""
+  ],
+  "website": "http://owl.anytimecomm.com"
+}

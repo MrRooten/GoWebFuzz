@@ -1,0 +1,14 @@
+{
+  "name": "Sitecom-NAS",
+  "matches": [
+    {
+      "certainty": 75,
+      "search": "headers[www-authenticate]",
+      "text": "Basic realm=\"SITECOM LOGIN Enter Password (default is sitecom)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.sitecom.com/home-storage-center/p/863"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "RCTTools",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^RCTTools \\(SecureSOHO Web configuration Tools\\) v([^\\s]+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "[offline] http://www.redsonic.com/"
+}

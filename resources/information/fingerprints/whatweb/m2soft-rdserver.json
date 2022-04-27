@@ -1,0 +1,24 @@
+{
+  "name": "M2Soft-RDServer",
+  "matches": [
+    {
+      "text": "<title>M2Soft Report Designer Server</title>"
+    },
+    {
+      "url": "/RDServer/rdagent.jsp",
+      "version": "(?-mix:<font face=\"Verdana\" size=2>\\s+<li>Server version : ([^\\s]+))"
+    },
+    {
+      "search": "headers[writereportlog]",
+      "regexp": "(?-mix:^FALSE$)"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^RDServer\\/([^\\s]+)$)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"M2Soft Report Designer Server\" inurl:\"RDServer/rdagent.jsp\""
+  ],
+  "website": "http://www.m2soft.co.kr/english/reporting-tool.asp"
+}

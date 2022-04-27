@@ -1,0 +1,12 @@
+{
+  "name": "Buddy-Zone",
+  "matches": [
+    {
+      "text": "Powered By <a href=\"http://www.vastal.com\" class=\"bottom\">Buddy Zone</a>"
+    }
+  ],
+  "dorks": [
+    "\"Powered By Buddy Zone\""
+  ],
+  "website": "http://www.vastal.com/buddy-zone-social-networking-script.html"
+}

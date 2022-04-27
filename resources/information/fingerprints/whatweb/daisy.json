@@ -1,0 +1,21 @@
+{
+  "name": "Daisy",
+  "matches": [
+    {
+      "regexp": "(?-mix:)",
+      "search": "headers[x-daisy-version]"
+    },
+    {
+      "version": "(?-mix:^([^\\s]+) \\(build: [^\\s]+)",
+      "search": "headers[x-daisy-version]"
+    },
+    {
+      "string": "(?-mix:^[^\\s]+ \\(build: ([^\\s]+))",
+      "search": "headers[x-daisy-version]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://daisycms.org/daisy/about.html"
+}

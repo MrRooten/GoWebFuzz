@@ -1,0 +1,17 @@
+{
+  "name": "Trend-Micro",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^Trend Micro$)"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Trend Micro ([^\\s]+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

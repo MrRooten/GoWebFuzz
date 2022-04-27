@@ -1,0 +1,12 @@
+{
+  "name": "Huginn",
+  "matches": [
+    {
+      "text": "<a tabindex=\"-1\" href=\"https://github.com/huginn/huginn\">About</a>"
+    }
+  ],
+  "dorks": [
+    "\"Your agents are standing by\" \"Huginn monitors the world and acts on your behalf.\" Login Signup"
+  ],
+  "website": "https://github.com/huginn/huginn"
+}

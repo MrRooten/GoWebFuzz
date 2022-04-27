@@ -1,0 +1,13 @@
+{
+  "name": "BadBlue",
+  "matches": [
+    {
+      "version": "(?-mix:^BadBlue\\/([\\d\\.]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+    "intitle:\"BadBlue: the file-sharing web server anyone can use\" -intitle"
+  ],
+  "website": "http://www.badblue.com/"
+}

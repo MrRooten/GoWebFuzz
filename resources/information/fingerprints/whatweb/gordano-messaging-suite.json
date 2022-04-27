@@ -1,0 +1,14 @@
+{
+  "name": "Gordano-Messaging-Suite",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Gordano (Messaging Suite )?Web Server v([^\\s]+)$)",
+      "offset": 1
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://gordano.com/products/webmail.htm"
+}

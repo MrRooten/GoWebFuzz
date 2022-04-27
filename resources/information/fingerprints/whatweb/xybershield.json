@@ -1,0 +1,17 @@
+{
+  "name": "XyberShield",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:XyberShieldSession=[^\\s]+;)"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:XyberShieldStatus=[^\\s]+;)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.xybershield.com/default.aspx"
+}

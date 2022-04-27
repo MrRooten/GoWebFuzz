@@ -1,0 +1,19 @@
+{
+  "name": "chillyCMS",
+  "matches": [
+    {
+      "text": "\tpowered by <a href=\"http://FrozenPepper.de\">chillyCMS</a>."
+    },
+    {
+      "text": "\t<p>&copy;2010 <a href=\"\">demo.opensourcecms.com</a>,"
+    },
+    {
+      "text": "\t<p>&copy;2010 <a href=\"\">chillycms.bplaced.net</a>,"
+    }
+  ],
+  "dorks": [
+    "inurl:chillyCMS/core/show.site.php",
+    "\"powered by chillyCMS\""
+  ],
+  "website": "http://chillycms.bplaced.net/"
+}

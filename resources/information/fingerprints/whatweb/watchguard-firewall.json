@@ -1,0 +1,10 @@
+{
+  "name": "WatchGuard-Firewall",
+  "matches": [
+
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

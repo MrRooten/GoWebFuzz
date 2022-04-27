@@ -1,0 +1,19 @@
+{
+  "name": "CMSimple",
+  "matches": [
+    {
+      "ghdb": "\"Powered by CMSimple.dk\" welcome",
+      "certainty": 75
+    },
+    {
+      "text": "<meta name=\"generator\" content=\"CMSimple"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"CMSimple ([\\d\\.]+)[^>]*>)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by CMSimple.dk\" \"welcome\""
+  ],
+  "website": "http://www.cmsimple.org/"
+}

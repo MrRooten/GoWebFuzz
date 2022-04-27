@@ -1,0 +1,15 @@
+{
+  "name": "PacketShaper",
+  "matches": [
+    {
+      "text": "<title>PacketShaper Customer Login</title>"
+    },
+    {
+      "text": "<SCRIPT LANGUAGE=JavaScript SRC=\"/libmd5.js\"></SCRIPT>"
+    }
+  ],
+  "dorks": [
+    "(intitle:\"PacketShaper Login\")|(intitle:\"PacketShaper Customer Login\") -intitle"
+  ],
+  "website": "http://www.bluecoat.com/products/packetshaper"
+}

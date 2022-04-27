@@ -1,0 +1,28 @@
+{
+  "name": "Cimplicity-WebView",
+  "matches": [
+    {
+      "url": "/index.html",
+      "text": "<TITLE>CIMPLICITY WebView</TITLE>"
+    },
+    {
+      "text": "<APPLET NAME=\"ProwlerClientAppletObject\" ARCHIVE=\"/ProwlerClient.jar\" "
+    },
+    {
+      "md5": "be47085f5ac23b78c5b6a952ea0947b3",
+      "url": "/ProwlerClient.jar"
+    },
+    {
+      "regexp": "(?-mix:^CIMPLICITY-HttpSvr)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^CIMPLICITY-HttpSvr\\/([\\d\\.]+))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.ge-ip.com/products/2819"
+}

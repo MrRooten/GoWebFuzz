@@ -1,0 +1,12 @@
+{
+  "name": "LiteRadius",
+  "matches": [
+    {
+      "ghdb": "inurl:locator.php parsed_page lat long"
+    }
+  ],
+  "dorks": [
+    "allinurl: locator.php?long="
+  ],
+  "website": "http://www.escaperadius.com/er/products/literadius/lr.php"
+}

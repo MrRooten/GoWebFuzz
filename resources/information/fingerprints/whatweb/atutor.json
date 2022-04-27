@@ -1,0 +1,23 @@
+{
+  "name": "ATutor",
+  "matches": [
+    {
+      "name": "Meta Generator",
+      "string": "(?-mix:<meta name=\"Generator\" content=\"ATutor - Copyright ([0-9]{4}) by http:\\/\\/atutor.ca\" \\/>)"
+    },
+    {
+      "name": "JavaScript",
+      "certainty": 75,
+      "text": "ATutor.course = ATutor.course || {};"
+    },
+    {
+      "name": "Documentation link",
+      "text": "<span id=\"howto\">For guidance on using ATutor see the official"
+    }
+  ],
+  "dorks": [
+    "For guidance on using ATutor see the official ATutor Handbook",
+    "inurl:\"mods/_standard/social/index_public.php\""
+  ],
+  "website": "http://www.atutor.ca/"
+}

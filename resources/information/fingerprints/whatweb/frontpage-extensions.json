@@ -1,0 +1,17 @@
+{
+  "name": "FrontPage-Extensions",
+  "matches": [
+    {
+      "version": "(?-mix:FrontPage\\/([^\\s]+))",
+      "search": "headers[server]"
+    },
+    {
+      "regexp": "(?-mix:^FrontPage)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://office.microsoft.com/en-au/frontpage-help/"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Redaxscript",
+  "matches": [
+    {
+      "text": "Powered by <a href=\"http://redaxscript.com\">Redaxscript</a>"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"Redaxscript ([^\\s^\"]+)\" \\/>)"
+    },
+    {
+      "version": "(?-mix:Powered by <a href=\"http:\\/\\/redaxscript\\.com\" title=\"Redaxscript\">Redaxscript<\\/a> ([^\\s^<]+)<)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by Redaxscript\""
+  ],
+  "website": "http://redaxscript.com/"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Clearwell-E-Discovery",
+  "matches": [
+    {
+      "url": "/esa/",
+      "text": "/><a class=\"needHelp\" style=\"text-decoration:none\" href=\"javascript:logonHelp();void(0);\">Need help?</a>"
+    },
+    {
+      "url": "/esa/",
+      "text": "<title>Clearwell E-Discovery Platform log in</title>"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Clearwell E-Discovery Platform log in\""
+  ],
+  "website": "http://www.clearwellsystems.com/"
+}

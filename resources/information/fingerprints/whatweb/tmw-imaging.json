@@ -1,0 +1,23 @@
+{
+  "name": "TMW-Imaging",
+  "matches": [
+    {
+      "url": "/cgi-bin/img-system-status.pl?server",
+      "version": "(?-mix:<TD>TMW Imaging Version<\\/TD>\\s+<TD>([^\\s^<]+)<\\/TD>)"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:TMWImagingSession=[^;]+)"
+    },
+    {
+      "text": "<!-- TMW Document Imaging -->"
+    },
+    {
+      "text": "<!-- HTML Library is $Id: TmwHTML.pm"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.tmwsystems.com/imaging"
+}

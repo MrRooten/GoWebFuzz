@@ -1,0 +1,13 @@
+{
+  "name": "PowerSchool",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^PowerSchool$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.pearsonschoolsystems.com/products/powerschool/"
+}

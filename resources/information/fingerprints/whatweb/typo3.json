@@ -1,0 +1,30 @@
+{
+  "name": "TYPO3",
+  "matches": [
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"TYPO3 ([\\d\\.]+) CMS\")"
+    },
+    {
+      "text": "<!--TYPO3SEARCH_end-->",
+      "certainty": 75
+    },
+    {
+      "name": "Powered by HTML comment",
+      "regexp": "(?-mix:<!--\\W+This website is powered by TYPO3)"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^fe_typo_user)",
+      "name": "fe_typo_user cookie"
+    },
+    {
+      "search": "headers[x-typo3-parsetime]",
+      "regexp": "(?-mix:\\d+ms)",
+      "name": "X-TYPO3-Parsetime header"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://typo3.com/"
+}

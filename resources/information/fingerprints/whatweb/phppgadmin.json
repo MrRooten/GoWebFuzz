@@ -1,0 +1,20 @@
+{
+  "name": "phpPgAdmin",
+  "matches": [
+    {
+      "name": "PPA_ID Cookie",
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^PPA_ID=[a-z0-9]+)"
+    },
+    {
+      "text": "<td><span class=\"appname\">phpPgAdmin</span></td>"
+    },
+    {
+      "version": "(?-mix:<span class=\"appname\">phpPgAdmin<\\/span> <span class=\"version\">([\\d\\.]+)<\\/span>)"
+    }
+  ],
+  "dorks": [
+    "inurl:\"phppgadmin/intro.php\""
+  ],
+  "website": "http://phppgadmin.sourceforge.net/"
+}

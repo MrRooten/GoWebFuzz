@@ -1,0 +1,12 @@
+{
+  "name": "PoweredBy",
+  "matches": [
+    {
+      "string": "(?i-mx:powered[ -]?by[ ]?([^\\s<>'\".]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

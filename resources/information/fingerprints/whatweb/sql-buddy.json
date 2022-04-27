@@ -1,0 +1,11 @@
+{
+  "name": "SQL-Buddy",
+  "matches": [
+
+  ],
+  "dorks": [
+    "intitle:\"SQL Buddy\" \"Host\" \"Username\" \"Password\" \"Database\" -sbconfig -site:www.sqlbuddy.com -site:code.google.com",
+    "inurl:\"sqlbuddy/login.php\" \"Host\" \"Username\" \"Password\" \"Database\" -sbconfig"
+  ],
+  "website": "http://www.sqlbuddy.com/"
+}

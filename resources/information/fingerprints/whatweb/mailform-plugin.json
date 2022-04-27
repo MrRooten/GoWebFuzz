@@ -1,0 +1,15 @@
+{
+  "name": "MailForm-Plugin",
+  "matches": [
+    {
+      "version": "(?i-mx:<a href=\"http:\\/\\/www.h-fj.com\\/blog\\/mtplgdoc\\/mailformv[\\d\\.\\_]+.php\"[^>]*>Powered by Mailform plugin[s]? V([\\d\\.]+)<\\/a>)"
+    },
+    {
+      "version": "(?i-mx:<a href=\"http:\\/\\/www.h-fj.com\\/blog\\/mtplgdoc\\/mailformv[\\d\\.\\_]+.php\"[^>]*>Powered by Mailform V([\\d\\.]+)<\\/a>)"
+    }
+  ],
+  "dorks": [
+    "\"powered by MailForm\""
+  ],
+  "website": "http://www.h-fj.com/blog/mtplgdoc/"
+}

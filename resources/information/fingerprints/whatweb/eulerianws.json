@@ -1,0 +1,16 @@
+{
+  "name": "EulerianWS",
+  "matches": [
+    {
+      "version": "(?-mix:<td align=\"right\"><address>EulerianWS\\/([\\d\\.]+)<\\/address><\\/td><\\/tr>)"
+    },
+    {
+      "version": "(?-mix:^[\\s]*EulerianWS\\/([^\\s^\\r^\\n]+))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.eulerian.com/fr/"
+}

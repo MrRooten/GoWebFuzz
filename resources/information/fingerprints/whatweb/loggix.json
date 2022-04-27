@@ -1,0 +1,15 @@
+{
+  "name": "Loggix",
+  "matches": [
+    {
+      "text": "<meta name=\"generator\" content=\"Loggix\" />"
+    },
+    {
+      "version": "(?-mix:Powered by <a href=\"http:\\/\\/loggix.gotdns.org\">Loggix<\\/a> ver.([\\d\\.]+)<\\/address>)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by Loggix\""
+  ],
+  "website": "http://loggix.gotdns.org/"
+}

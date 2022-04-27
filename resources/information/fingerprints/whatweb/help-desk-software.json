@@ -1,0 +1,15 @@
+{
+  "name": "Help-Desk-Software",
+  "matches": [
+    {
+      "version": "(?-mix:<div class=\"AdminTDSmall\">[\\s]+powered by <a href=\"http:\\/\\/freehelpdesk\\.org\\/\\?ver=([^\"^>^\\s]+)\" target=\"_blank\">freehelpdesk\\.org<\\/a>[\\s]+<\\/div>)"
+    },
+    {
+      "version": "(?-mix:<\\/html>[\\s]+<font style='font-size:0px'>([^<^\\s]+)<\\/font>)"
+    }
+  ],
+  "dorks": [
+    "\"powered by freehelpdesk.org\" intitle:\"Help Request System\""
+  ],
+  "website": "http://freehelpdesk.org/"
+}

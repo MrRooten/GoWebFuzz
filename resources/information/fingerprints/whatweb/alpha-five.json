@@ -1,0 +1,22 @@
+{
+  "name": "Alpha-Five",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Alpha Five( Application Server)?\\/([\\d\\.]+ Build\\/[\\d\\-]+))",
+      "offset": 1
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:A5wSessionId=[a-f\\d]{32};)"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:A5wBrowserId=[a-f\\d]{32};)"
+    }
+  ],
+  "dorks": [
+    "inurl:/login.a5w"
+  ],
+  "website": "https://www.alphasoftware.com/"
+}

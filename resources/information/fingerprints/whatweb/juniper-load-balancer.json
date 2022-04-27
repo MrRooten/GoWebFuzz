@@ -1,0 +1,10 @@
+{
+  "name": "Juniper-Load-Balancer",
+  "matches": [
+
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://juniper.net/ - Note: This will slow down your web app pentest scanning. Use only manual fuzzing with time throttling."
+}

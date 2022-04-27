@@ -1,0 +1,12 @@
+{
+  "name": "Whizzy-CMS",
+  "matches": [
+    {
+      "version": "(?-mix:Powered by Whizzy CMS <big>&spades;<\\/big> <\\/a><\\/div><!-- \\[Whizzy CMS:Whizzy CMS ([^\\]]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://unverse.net/"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "DokuWiki",
+  "matches": [
+    {
+      "ghdb": "\"powered by DokuWiki\" inurl:doku.php filetype:php"
+    },
+    {
+      "regexp": "(?-mix:<div class=\"dokuwiki\"[\\s]?>)"
+    },
+    {
+      "text": "<meta name=\"generator\" content=\"DokuWiki\" />"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"DokuWiki Release ([^\"]+)\" \\/>)"
+    }
+  ],
+  "dorks": [
+    "\"powered by DokuWiki\" inurl:doku.php filetype:php"
+  ],
+  "website": "http://dokuwiki.org/"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "BXR",
+  "matches": [
+    {
+      "text": "<meta name=\"generator\" content=\"BXR::Web\" />"
+    },
+    {
+      "version": "(?-mix:<div class=\"bxrlogo\">Powered by <a href=\"http:\\/\\/sourceforge.net\\/projects\\/bxr\\/\">BXR<\\/a> ([\\d\\.]+)<\\/div>)"
+    }
+  ],
+  "dorks": [
+    "\"BXR Web Login\" intitle:\"Please Enter Password\""
+  ],
+  "website": "http://sourceforge.net/projects/bxr/"
+}

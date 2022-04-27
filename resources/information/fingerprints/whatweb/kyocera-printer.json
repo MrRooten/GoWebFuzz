@@ -1,0 +1,30 @@
+{
+  "name": "Kyocera-Printer",
+  "matches": [
+    {
+      "regexp": "(?-mix:^KM-MFP-http)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^KM-MFP-http\\/V([\\d\\.]+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^KM-httpd\\/([\\d\\.]+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^JC-HTTPD\\/([\\d\\.]+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "string": "Scanner",
+      "version": "(?-mix:^NetworkScanner WebServer Ver([\\d\\.]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://global.kyocera.com/"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "NSFocus",
+  "matches": [
+    {
+      "md5": "4a6a68c719d64f1dd153a94122287f54"
+    },
+    {
+      "regexp": "(?-mix:^NSFocus)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^NSFocus\\/([^\\s]+) \\( NSFOCUS \\))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.nsfocus.com/"
+}

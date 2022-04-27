@@ -1,0 +1,18 @@
+{
+  "name": "Glossword",
+  "matches": [
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"Glossword version ([\\d\\.\\-a-z]+)\" \\/>)"
+    },
+    {
+      "version": "(?-mix:<meta content=\"Glossword version ([\\d\\.\\-a-z]+)\" name=\"generator\" \\/>)"
+    },
+    {
+      "version": "(?-mix:<p>Powered by <a href=\"http:\\/\\/glossword.info\\/\" style=\"text-decoration:underline\">Glossword<\\/a> ([\\d\\.]+)<\\/p>)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by Glossword\""
+  ],
+  "website": "http://glossword.biz/"
+}

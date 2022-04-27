@@ -1,0 +1,13 @@
+{
+  "name": "I-O-DATA-Router",
+  "matches": [
+    {
+      "url": "/",
+      "model": "(?-mix:<title>I-O DATA Wireless Broadband Router (WN-[^\\s^<]+)<\\/title>)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"I-O DATA Wireless Broadband Router\""
+  ],
+  "website": null
+}

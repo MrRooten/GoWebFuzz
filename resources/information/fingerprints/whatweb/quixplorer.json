@@ -1,0 +1,18 @@
+{
+  "name": "QuiXplorer",
+  "matches": [
+    {
+      "version": "(?-mix:<title>QuiXplorer ([^\\s]+) - the QuiX project<\\/title>)"
+    },
+    {
+      "version": "(?-mix:<A class=\"title\" href=\"http:\\/\\/quixplorer\\.sourceforge\\.net\" target=\"_blank\">QuiXplorer ([^<]+)<\\/A> - <A href=\"http:\\/\\/quix\\.tk\" target=\"_blank\">the QuiX project<\\/A><\\/SMALL>)"
+    },
+    {
+      "text": "<A class=\"title\" href=\"http://quixplorer.sourceforge.net\" target=\"_blank\">QuiXplorer</A> - <A href=\"http://quix.tk\" target=\"_blank\">the QuiX project</A></SMALL>"
+    }
+  ],
+  "dorks": [
+    "\"QuiXplorer\" \"Username\" \"Password\" \"the QuiX project\""
+  ],
+  "website": "http://quixplorer.sourceforge.net/"
+}

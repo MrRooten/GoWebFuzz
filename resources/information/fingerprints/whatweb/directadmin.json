@@ -1,0 +1,25 @@
+{
+  "name": "DirectAdmin",
+  "matches": [
+    {
+      "text": "<td class=listtitle colspan=2>Please enter your Username and Password</td></tr>"
+    },
+    {
+      "text": "<title>DirectAdmin Login</title>"
+    },
+    {
+      "text": "*{ FONT-SIZE: 8pt; FONT-FAMILY: verdana; } b { FONT-WEIGHT: bold; } .listtitle { BACKGROUND: #425984; COLOR: #EEEEEE; white-space: nowrap; } td.list { BACKGROUND: #EEEEEE; white-space: nowrap; } </style>"
+    },
+    {
+      "text": "onload=\"document.form.username.focus();if(document.form.referer.value.indexOf('#')==-1)document.form.referer.value+=location.hash;\">"
+    },
+    {
+      "version": "(?-mix:^DirectAdmin Daemon v([^\\s]+) Registered to )",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+    "intitle:\"DirectAdmin Login\" \"DirectAdmin Login Page\" \"Please enter your Username and Password\""
+  ],
+  "website": "http://www.directadmin.com/"
+}

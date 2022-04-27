@@ -1,0 +1,21 @@
+{
+  "name": "Oracle-Internet-Application-Server",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Oracle9iAS\\/([^\\s]+))"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Oracle9iAS \\(([^\\s^\\)]+)\\))"
+    },
+    {
+      "search": "headers[server]",
+      "module": "(?-mix:^Oracle9iAS.+ (Oracle9iAS-Web-Cache\\/[^\\s]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.oracle.com/technetwork/middleware/ias/index.html"
+}

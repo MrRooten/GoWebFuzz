@@ -1,0 +1,19 @@
+{
+  "name": "IBM-CICS-Transaction-Server",
+  "matches": [
+    {
+      "os": "z/OS",
+      "version": "(?-mix:^IBM_CICS_Transaction_Server\\/([^\\(]+)\\(zOS\\)$)",
+      "search": "headers[server]"
+    },
+    {
+      "os": "z/OS",
+      "regexp": "(?-mix:^IBM_CICS_Transaction_Server)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": " http://www-01.ibm.com/software/htp/cics/tserver/v41/"
+}

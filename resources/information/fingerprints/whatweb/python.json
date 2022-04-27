@@ -1,0 +1,19 @@
+{
+  "name": "Python",
+  "matches": [
+    {
+      "name": "# Server # Version Detection",
+      "search": "headers[server]",
+      "version": "(?-mix:[^\\r^\\n]* Python\\/([^\\s^\\r^\\n]+))"
+    },
+    {
+      "name": "File extension",
+      "regexp": "(?-mix:^(py|pyc|py3|pyo|pyw|pyx|pyd|pxd|pyi|pyz|pywz|rpy|pyde|pyp|pyt|xpy|ipynb)$)",
+      "search": "uri.extension"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.python.org/"
+}

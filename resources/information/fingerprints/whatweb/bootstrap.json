@@ -1,0 +1,119 @@
+{
+  "name": "Bootstrap",
+  "matches": [
+    {
+      "regexp": "(?-mix:<script [^>]*bootstrap)"
+    },
+    {
+      "regexp": "(?-mix:<link [^>]*bootstrap)"
+    },
+    {
+      "version": "(?-mix:bootstrap(\\.min)?\\.js\\?ver=([0-9\\.]+)['\"])",
+      "offset": 1
+    },
+    {
+      "version": "(?-mix:bootstrap\\/([0-9\\.]+)(\\/js)?\\/bootstrap(\\.min)?\\.js)",
+      "offset": 0
+    },
+    {
+      "version": "(?-mix:bootstrap-([0-9\\.]+)(\\.min)?\\.js)",
+      "offset": 0
+    },
+    {
+      "version": "(?-mix:bootstrap(\\.min)?\\.css\\?ver=([0-9\\.]+)['\"])",
+      "offset": 1
+    },
+    {
+      "version": "(?-mix:bootstrap\\/([0-9\\.]+)(\\/css)?\\/bootstrap(\\.min)?\\.css)",
+      "offset": 0
+    },
+    {
+      "version": "(?-mix:bootstrap-([0-9\\.]+)(\\.min)?\\.css)",
+      "offset": 0
+    },
+    {
+      "url": "bootstrap/js/bootstrap.js",
+      "version": "(?-mix:Bootstrap ([vV])?([0-9\\.]+))",
+      "offset": 1
+    },
+    {
+      "url": "bootstrap/js/bootstrap.bundle.js",
+      "version": "(?-mix:Bootstrap ([vV])?([0-9\\.]+))",
+      "offset": 1
+    },
+    {
+      "url": "bootstrap/js/bootstrap.min.js",
+      "version": "(?-mix:Bootstrap ([vV])?([0-9\\.]+))",
+      "offset": 1
+    },
+    {
+      "url": "bootstrap/js/bootstrap.bundle.min.js",
+      "version": "(?-mix:Bootstrap ([vV])?([0-9\\.]+))",
+      "offset": 1
+    },
+    {
+      "url": "js/bootstrap.js",
+      "version": "(?-mix:Bootstrap ([vV])?([0-9\\.]+))",
+      "offset": 1
+    },
+    {
+      "url": "js/bootstrap.bundle.js",
+      "version": "(?-mix:Bootstrap ([vV])?([0-9\\.]+))",
+      "offset": 1
+    },
+    {
+      "url": "js/bootstrap.min.js",
+      "version": "(?-mix:Bootstrap ([vV])?([0-9\\.]+))",
+      "offset": 1
+    },
+    {
+      "url": "js/bootstrap.bundle.min.js",
+      "version": "(?-mix:Bootstrap ([vV])?([0-9\\.]+))",
+      "offset": 1
+    },
+    {
+      "url": "bootstrap/css/bootstrap.css",
+      "version": "(?-mix:Bootstrap ([vV])?([0-9\\.]+))",
+      "offset": 1
+    },
+    {
+      "url": "bootstrap/css/bootstrap.bundle.css",
+      "version": "(?-mix:Bootstrap ([vV])?([0-9\\.]+))",
+      "offset": 1
+    },
+    {
+      "url": "bootstrap/css/bootstrap.min.css",
+      "version": "(?-mix:Bootstrap ([vV])?([0-9\\.]+))",
+      "offset": 1
+    },
+    {
+      "url": "bootstrap/css/bootstrap.bundle.min.css",
+      "version": "(?-mix:Bootstrap ([vV])?([0-9\\.]+))",
+      "offset": 1
+    },
+    {
+      "url": "css/bootstrap.css",
+      "version": "(?-mix:Bootstrap ([vV])?([0-9\\.]+))",
+      "offset": 1
+    },
+    {
+      "url": "css/bootstrap.bundle.css",
+      "version": "(?-mix:Bootstrap ([vV])?([0-9\\.]+))",
+      "offset": 1
+    },
+    {
+      "url": "css/bootstrap.min.css",
+      "version": "(?-mix:Bootstrap ([vV])?([0-9\\.]+))",
+      "offset": 1
+    },
+    {
+      "url": "css/bootstrap.bundle.min.css",
+      "version": "(?-mix:Bootstrap ([vV])?([0-9\\.]+))",
+      "offset": 1
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://getbootstrap.com/"
+}

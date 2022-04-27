@@ -1,0 +1,21 @@
+{
+  "name": "FirePHP",
+  "matches": [
+    {
+      "search": "headers[x-wf-1-plugin-1]",
+      "version": "(?-mix:^http:\\/\\/meta\\.firephp\\.org\\/Wildfire\\/Plugin\\/FirePHP\\/Library-FirePHPCore\\/([^\\s]+)$)"
+    },
+    {
+      "search": "headers[x-wf-1-structure-1]",
+      "string": "(?-mix:^http:\\/\\/meta\\.firephp\\.org\\/Wildfire\\/Structure\\/FirePHP\\/(FirebugConsole\\/[^\\s]+)$)"
+    },
+    {
+      "search": "headers[x-wf-protocol-1]",
+      "regexp": "(?-mix:^http:\\/\\/meta\\.wildfirehq\\.org\\/Protocol\\/)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.firephp.org/"
+}

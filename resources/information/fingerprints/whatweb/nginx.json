@@ -1,0 +1,17 @@
+{
+  "name": "nginx",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^nginx$)"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^nginx\\/([^\\s]+).*$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://nginx.net/"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "BlueDragon",
+  "matches": [
+    {
+      "version": "(?-mix:BlueDragon Server (JXAS|JX))",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:BlueDragon Server\\/([^\\s^,]+))",
+      "search": "headers[x-powered-by]"
+    },
+    {
+      "version": "(?-mix:BlueDragon Server( JXAS| JX)?(\\/| )([\\d\\.]+))",
+      "offset": 2,
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.newatlanta.com/products/bluedragon/product_info/overview.cfm"
+}

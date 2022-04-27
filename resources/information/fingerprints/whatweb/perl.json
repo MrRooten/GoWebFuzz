@@ -1,0 +1,24 @@
+{
+  "name": "Perl",
+  "matches": [
+    {
+      "name": "HTTP Server Header",
+      "version": "(?i-mx:[^\\r^\\n]*Perl\\/v([^\\s^\\r^\\n]+))",
+      "search": "headers[server]"
+    },
+    {
+      "name": "HTTP Content-Type Header",
+      "regexp": "(?i-mx:application\\/perl)",
+      "search": "headers[content-type]"
+    },
+    {
+      "name": "File extension",
+      "regexp": "(?-mix:^(pl)$)",
+      "search": "uri.extension"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.perl.org/"
+}

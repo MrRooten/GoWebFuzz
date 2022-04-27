@@ -1,0 +1,12 @@
+{
+  "name": "AirTiesRouter",
+  "matches": [
+    {
+      "version": "(?-mix:<title>Airties ([^<]+)<)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.airties.com/"
+}

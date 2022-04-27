@@ -1,0 +1,21 @@
+{
+  "name": "KaiBB",
+  "matches": [
+    {
+      "text": "<!-- THIS MUST REMAIN INTACT AND SHOWN ON ALL PAGES -->"
+    },
+    {
+      "version": "(?-mix:Powered by <a href=\"http:\\/\\/www\\.kaibb\\.co\\.uk\" class=\"normfont\">KaiBB ([^\\s^<]+)<\\/a>)"
+    },
+    {
+      "version": "(?-mix:Powered by <a href=\"http:\\/\\/\\www\\.mi-dia\\.co\\.uk\" class=\"normfont\">KaiBB ([^\\s^<]+)<\\/a>)"
+    },
+    {
+      "text": "<meta name=\"Description\" http-equiv=\"Description\" content=\"Forum powered by KaiBB - Powered by KaiBB\" />"
+    }
+  ],
+  "dorks": [
+    "\"Powered by KaiBB\""
+  ],
+  "website": "http://www.kaibb.co.uk/"
+}

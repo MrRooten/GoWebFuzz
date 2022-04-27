@@ -1,0 +1,68 @@
+{
+  "name": "Java",
+  "matches": [
+    {
+      "name": "JSESSIONID Cookie",
+      "search": "headers[set-cookie]",
+      "regexp": "(?i-mx:JSESSIONID=[^;]{0,32};[\\s]?path=\\/)"
+    },
+    {
+      "name": "X-Powered-By # JSP Version Detection",
+      "search": "headers[x-powered-by]",
+      "version": "(?-mix:JSP\\/([\\d\\.]+))"
+    },
+    {
+      "name": "X-Powered-By # Servlet Version Detection",
+      "search": "headers[x-powered-by]",
+      "string": "(?i-mx:(Servlet\\/[\\d\\.]+))"
+    },
+    {
+      "name": "X-Powered-By # JRE Version Detection",
+      "search": "headers[x-powered-by]",
+      "string": "(?-mix:(JRE\\/[\\d\\.\\-\\_]+))"
+    },
+    {
+      "name": "Server # Version Detection",
+      "search": "headers[server]",
+      "version": "(?-mix:java\\/([\\d\\.\\-\\_]+))"
+    },
+    {
+      "name": "Server # Version Detection",
+      "search": "headers[server]",
+      "string": "(?-mix:(JDK [\\d\\.\\-\\_]+))"
+    },
+    {
+      "name": "Servlet-Engine # JSP Version Detection",
+      "search": "headers[servlet-engine]",
+      "string": "(?-mix:\\((.*?); (.*?); Java (.*?); (.*?); java.vendor=[^\\)]{0,50}\\))",
+      "offset": 0
+    },
+    {
+      "name": "Servlet-Engine # Servlet Version Detection",
+      "search": "headers[servlet-engine]",
+      "string": "(?-mix:\\((.*?); (.*?); Java (.*?); (.*?); java.vendor=[^\\)]{0,50}\\))",
+      "offset": 1
+    },
+    {
+      "name": "Servlet-Engine # Version Detection",
+      "search": "headers[servlet-engine]",
+      "version": "(?-mix:\\((.*?); (.*?); Java (.*?); (.*?); java.vendor=[^\\)]{0,50}\\))",
+      "offset": 2
+    },
+    {
+      "name": "Servlet-Engine # OS Detection",
+      "search": "headers[servlet-engine]",
+      "os": "(?-mix:\\((.*?); (.*?); Java (.*?); (.*?); java.vendor=[^\\)]{0,50}\\))",
+      "offset": 3
+    },
+    {
+      "name": "File extension",
+      "regexp": "(?-mix:^(jsp|jpx|wss|do)$)",
+      "search": "uri.extension"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.java.com/"
+}

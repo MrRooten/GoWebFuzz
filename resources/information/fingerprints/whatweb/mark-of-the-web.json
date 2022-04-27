@@ -1,0 +1,12 @@
+{
+  "name": "Mark-of-the-Web",
+  "matches": [
+    {
+      "string": "(?-mix:<!-- saved from url=\\([\\d]+\\)([^>]+) -->[\\r\\n])"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://msdn.microsoft.com/en-us/library/ms537628%28v=vs.85%29.aspx"
+}

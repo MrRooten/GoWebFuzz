@@ -1,0 +1,23 @@
+{
+  "name": "Artifactory",
+  "matches": [
+    {
+      "text": "<html ng-app=\"artifactory.ui\">"
+    },
+    {
+      "text": "<body jf-body-class ng-class=\"{'load-complete':jfBodyClass.isLoadCompleted()}\">"
+    },
+    {
+      "url": "/ui/auth/screen/footer",
+      "version": "(?-mix:\"buildNumber\":\"([\\d\\.]+ rev \\d+)\")"
+    },
+    {
+      "url": "/artifactory/ui/auth/screen/footer",
+      "version": "(?-mix:\"buildNumber\":\"([\\d\\.]+ rev \\d+)\")"
+    }
+  ],
+  "dorks": [
+    "\"Artifactory is happily serving\" \"Artifactory Version\" intitle:\"Artifactory\""
+  ],
+  "website": "https://jfrog.com/artifactory/"
+}

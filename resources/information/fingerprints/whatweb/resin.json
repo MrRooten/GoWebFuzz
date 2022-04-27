@@ -1,0 +1,23 @@
+{
+  "name": "Resin",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Resin)",
+      "search": "headers[server]"
+    },
+    {
+      "string": "Standalone",
+      "version": "(?-mix:^Resin\\/([^\\s]+))",
+      "search": "headers[server]"
+    },
+    {
+      "string": "Plugin",
+      "version": "(?-mix:[\\s]+Resin\\/([^\\s]+))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.caucho.com/resin/admin/http-server.xtp"
+}

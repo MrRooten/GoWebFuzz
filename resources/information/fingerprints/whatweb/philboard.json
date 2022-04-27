@@ -1,0 +1,16 @@
+{
+  "name": "PhilBoard",
+  "matches": [
+    {
+      "ghdb": "\"powered by philboard\" inurl:philboard.asp",
+      "certainty": 75
+    },
+    {
+      "version": "(?-mix:<img src=\"images\\/philboard_small.gif\" alt=\"powered by philboard [v]*([\\d\\.]+)\" width=\"76\" height=\"21\" border=\"0\" align=\"middle\">)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.philboards.com/"
+}

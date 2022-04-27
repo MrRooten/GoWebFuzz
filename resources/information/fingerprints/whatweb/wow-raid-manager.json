@@ -1,0 +1,16 @@
+{
+  "name": "WoW-Raid-Manager",
+  "matches": [
+    {
+      "certainty": 75,
+      "ghdb": "\"Raid Management Provided by WoW Raid Manager\""
+    },
+    {
+      "version": "(?-mix:Raid Management Provided by <a href=\"http:\\/\\/www.wowraidmanager.net\\/\">WoW Raid Manager<\\/a> v([\\d\\.]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.wowraidmanager.net/"
+}

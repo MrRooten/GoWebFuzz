@@ -1,0 +1,15 @@
+{
+  "name": "Mercurial",
+  "matches": [
+    {
+      "text": "<a href=\"http://mercurial.selenic.com/\" title=\"Mercurial\" style=\"float: right;\">Mercurial</a>"
+    },
+    {
+      "regexp": "(?-mix:<div id=\"powered-by\">[\\s]+<p><a href=\"http:\\/\\/mercurial\\.selenic\\.com\\/\" title=\"Mercurial\">)"
+    }
+  ],
+  "dorks": [
+    "Mercurial summary shortlog changelog graph tags branches files changeset bz2 zip gz"
+  ],
+  "website": "http://mercurial.selenic.com/"
+}

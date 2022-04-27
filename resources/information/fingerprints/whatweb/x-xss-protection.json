@@ -1,0 +1,10 @@
+{
+  "name": "X-XSS-Protection",
+  "matches": [
+
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

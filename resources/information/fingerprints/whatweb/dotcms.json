@@ -1,0 +1,23 @@
+{
+  "name": "DotCMS",
+  "matches": [
+    {
+      "regexp": "(?-mix:<img[^>]+src=\"[^\"]*\\/dotAsset\\/)"
+    },
+    {
+      "regexp": "(?-mix:<link[^>]+href=\"[^\"]*\\/dotAsset\\/)"
+    },
+    {
+      "regexp": "(?-mix:<a[^>]+href=\"[^h][^\"]*index\\.dot)"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:dotcms)",
+      "name": "dotcms cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.dotcms.org/"
+}

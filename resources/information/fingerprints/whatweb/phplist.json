@@ -1,0 +1,24 @@
+{
+  "name": "phplist",
+  "matches": [
+    {
+      "text": "<html><head><title>Nothing here</title></head><body>"
+    },
+    {
+      "text": "<p>You probably want to be <a href=\"../\">here</a> or <a href=\"admin/\">here</a>.</p>"
+    },
+    {
+      "text": "<meta name=\"Author\" content=\"Michiel Dethmers - http://www.phplist.com\" />"
+    },
+    {
+      "version": "(?-mix:<meta name=\"Powered-By\" content=\"phplist version ([^\"]+)\" \\/>)"
+    },
+    {
+      "version": "(?-mix:<span class=\"urhere\">phplist powered by <\\/span><a class=\"urhere\" href=\"http:\\/\\/www\\.phplist\\.com\" target=\"_blank\">phplist<\\/a> - version ([^<]+)<\\/td>)"
+    }
+  ],
+  "dorks": [
+    "\"powered by phplist version\" intitle:phplist"
+  ],
+  "website": "http://www.phplist.com/"
+}

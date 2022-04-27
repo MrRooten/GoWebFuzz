@@ -1,0 +1,21 @@
+{
+  "name": "MooTools",
+  "matches": [
+    {
+      "regexp": "(?-mix:^\\/\\/ Load your build at: http:\\/\\/mootools.net\\/core\\/)"
+    },
+    {
+      "version": "(?-mix:^MooTools.More[\\s]*=[\\s]*\\{[\\s]*version:[\\s]*[\"']?([^\\\"^\\']+)[\"']?)"
+    },
+    {
+      "version": "(?-mix:^var MooTools[\\s]*=[\\s]*\\{[\\s]*version:[\\s]*[\"']?([^\\\"^\\']+))"
+    },
+    {
+      "regexp": "(?-mix:^\\/\\/MooTools More, <http:\\/\\/mootools.net\\/more>. Copyright \\(c\\) 2006-2008 Valerio Proietti, <http:\\/\\/mad4milk.net>, MIT Style License.)"
+    }
+  ],
+  "dorks": [
+    "ext:js \"Copyright (c) 2006-2008 Valerio Proietti\" \"http://mad4milk.net\""
+  ],
+  "website": "http://mootools.net/"
+}

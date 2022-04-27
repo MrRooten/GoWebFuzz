@@ -1,0 +1,16 @@
+{
+  "name": "siteGENIUS",
+  "matches": [
+    {
+      "certainty": 75,
+      "ghdb": "inurl:\"sitegenius/topic.php\""
+    },
+    {
+      "regexp": "(?-mix:var PortalBrowser = window.open\\('popup.php\\?page_type='\\+page_type\\+'&lang=[A-Z]{2}&page_id='\\+pgid(\\+addToURL)?, '', myFeatures\\); )"
+    }
+  ],
+  "dorks": [
+    "inurl:\"sitegenius/topic.php?id=\""
+  ],
+  "website": "http://www.sitegenius.com/"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "bbPress",
+  "matches": [
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"bbPress ([\\d\\.]+)\" \\/>)"
+    },
+    {
+      "regexp": "(?-mix: is proudly powered by <a[^>]+href=\"http:\\/\\/bbpress\\.org\">bbPress<\\/a>)"
+    },
+    {
+      "text": "<!-- If you like showing off the fact that your server rocks -->"
+    },
+    {
+      "text": "<div id=\"bbpress-forums\">"
+    }
+  ],
+  "dorks": [
+    "\"is proudly powered by bbPress\""
+  ],
+  "website": "http://bbpress.org/"
+}

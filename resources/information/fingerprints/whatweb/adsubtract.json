@@ -1,0 +1,13 @@
+{
+  "name": "AdSubtract",
+  "matches": [
+    {
+      "version": "(?-mix:^AdSubtract ([\\d\\.]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://AdSubtract.com"
+}

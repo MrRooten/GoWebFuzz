@@ -1,0 +1,19 @@
+{
+  "name": "DSpace",
+  "matches": [
+    {
+      "text": "<meta content=\"DSpace\" name=\"Generator\" />"
+    },
+    {
+      "version": "(?-mix:<meta name=\"Generator\" content=\"DSpace ([\\d\\.]+)\" \\/>)"
+    },
+    {
+      "version": "(?-mix:[pP]owered by <a href=\"http:\\/\\/(www\\.)?dspace\\.org\"[^>]*>DSpace<\\/a>, version ([\\d\\.]+))",
+      "offset": 1
+    }
+  ],
+  "dorks": [
+    "\"Powered by DSpace, version\""
+  ],
+  "website": "http://www.dspace.org/"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "IdeaWebServer",
+  "matches": [
+    {
+      "version": "(?-mix:^IdeaWebServer\\/v([\\d\\.]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://home.net.pl"
+}

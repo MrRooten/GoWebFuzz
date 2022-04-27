@@ -1,0 +1,32 @@
+{
+  "name": "Grandstream-Phone",
+  "matches": [
+    {
+      "text": "<title>Grandstream Device Configuration</title>"
+    },
+    {
+      "text": "All Rights Reserved Grandstream Networks, Inc.",
+      "url": "/"
+    },
+    {
+      "regexp": "(?-mix:^Grandstream)",
+      "search": "headers[server]"
+    },
+    {
+      "model": "(?-mix:^Grandstream ([^\\s]+) [\\d\\.]+$)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Grandstream [^\\s]+ ([\\d\\.]+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Grandstream\\/([\\d\\.]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.grandstream.com/"
+}

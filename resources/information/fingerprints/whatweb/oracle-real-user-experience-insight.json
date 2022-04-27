@@ -1,0 +1,22 @@
+{
+  "name": "Oracle-Real-User-Experience-Insight",
+  "matches": [
+    {
+      "string": "(?-mix:<title>Oracle Real User Experience Insight \\-\\[ ([^\\s]+@[^\\s]+) \\]\\-<\\/title>)"
+    },
+    {
+      "version": "(?-mix:<title>Oracle Real User Experience Insight \\-\\[ ([\\d\\.a-z]+) \\]\\-<\\/title>)"
+    },
+    {
+      "version": "(?-mix:<div class=\"windowWatermark\">Version: ([^\\s]+))"
+    },
+    {
+      "url": "/ruei/rpc.php",
+      "text": "{\"retval\":false,\"error_"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Oracle Real User Experience Insight\" inurl:ruei \"Please login\""
+  ],
+  "website": "http://www.oracle.com/technetwork/oem/uxinsight/"
+}

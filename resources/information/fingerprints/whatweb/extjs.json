@@ -1,0 +1,12 @@
+{
+  "name": "ExtJS",
+  "matches": [
+    {
+      "regexp": "(?i-mx:<script [^>]*src=[\"'][^>]*ext\\-base\\.js[\"'])"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.sencha.com/products/extjs/"
+}

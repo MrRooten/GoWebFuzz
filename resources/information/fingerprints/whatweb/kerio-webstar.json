@@ -1,0 +1,29 @@
+{
+  "name": "Kerio-WebSTAR",
+  "matches": [
+    {
+      "regexp": "(?-mix:^(Kerio_|WebSTAR|4D_WebStar))",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^WebSTAR\\/([^\\s^\\(]+))",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Kerio_WebSTAR\\/([^\\s^\\(]+))",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^WebSTAR ([\\d\\.]+ .+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^4D_WebStar_[A-Z]\\/([\\d\\.]+))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

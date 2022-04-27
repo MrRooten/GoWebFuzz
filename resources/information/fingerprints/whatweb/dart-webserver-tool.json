@@ -1,0 +1,13 @@
+{
+  "name": "Dart-WebServer-Tool",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Dart WebServer Tool\\/([\\d\\.]+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.dart.com/ptwbs.aspx"
+}

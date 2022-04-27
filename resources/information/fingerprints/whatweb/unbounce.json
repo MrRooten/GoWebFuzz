@@ -1,0 +1,24 @@
+{
+  "name": "UnBounce",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^ubpv)",
+      "name": "ubpv cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^ubvs)",
+      "name": "ubvs cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^ubvt)",
+      "name": "ubvt cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.unbounce.com/"
+}

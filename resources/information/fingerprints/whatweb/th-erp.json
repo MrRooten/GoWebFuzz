@@ -1,0 +1,15 @@
+{
+  "name": "th-ERP",
+  "matches": [
+    {
+      "text": "<LINK REL=StyleSheet HREF='../include/therp.css' TYPE='text/css'><script>"
+    },
+    {
+      "text": "<title>thERP - Login</title>"
+    }
+  ],
+  "dorks": [
+    "intitle:\"thERP - Login\" Username Password"
+  ],
+  "website": "http://sourceforge.net/projects/therp/"
+}

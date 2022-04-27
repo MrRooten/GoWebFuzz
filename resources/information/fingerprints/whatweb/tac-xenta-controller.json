@@ -1,0 +1,24 @@
+{
+  "name": "TAC-Xenta-Controller",
+  "matches": [
+    {
+      "text": "<html><body><script>var url=\"https://\"+location.hostname+\"/www/index/Slogin.html\";location.href=url;</script></body></html>"
+    },
+    {
+      "regexp": "(?-mix:^TAC\\/Xenta)",
+      "search": "headers[server]"
+    },
+    {
+      "model": "(?-mix:^TAC\\/Xenta([\\d]{3}|[\\d]{3}-[A-Z]{3}) [\\d\\.]{4})",
+      "search": "headers[server]"
+    },
+    {
+      "firmware": "(?-mix:^TAC\\/Xenta[^\\ ]+ ([\\d\\.]{4}))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.tac.com/ap/Navigate?node=1656"
+}

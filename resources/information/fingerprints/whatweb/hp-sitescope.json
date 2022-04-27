@@ -1,0 +1,16 @@
+{
+  "name": "HP-SiteScope",
+  "matches": [
+    {
+      "text": "<center><H2>SiteScope Login</H2></center><hr>"
+    },
+    {
+      "url": "/",
+      "version": "(?-mix:<p class=fine align=center><small>SiteScope ([\\d\\.]+))"
+    }
+  ],
+  "dorks": [
+    "\"SiteScope Login\" intitle:\"SiteScope Login\" \"Mercury Interactive Corporation\""
+  ],
+  "website": "More Info: http://en.wikipedia.org/wiki/HP_SiteScope"
+}

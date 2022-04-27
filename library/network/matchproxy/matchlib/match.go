@@ -5,8 +5,8 @@ import (
 	"compress/gzip"
 	"errors"
 	"gowebfuzz/library/fuzz"
-	"gowebfuzz/library/modules/information"
 	"gowebfuzz/library/network/gwfhttp"
+	information2 "gowebfuzz/modules/information"
 	"io/ioutil"
 	"net/http"
 	"os"
@@ -65,8 +65,8 @@ var Records _Records
 
 // linkfinder information.LinksFinder
 
-var sensitiveLeak information.SensitiveiLeak
-var siteMap information.SiteMap
+var sensitiveLeak information2.SensitiveiLeak
+var siteMap information2.SiteMap
 
 func Exists(name string) (bool, error) {
 	_, err := os.Stat(name)

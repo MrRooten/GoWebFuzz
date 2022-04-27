@@ -1,0 +1,27 @@
+{
+  "name": "BM-Classifieds",
+  "matches": [
+    {
+      "text": "<!-- // All source code on this site © 2007 BM Scripts unless otherwise stated - All Rights Reserved // -->"
+    },
+    {
+      "text": "<!-- // All source code on this site © 2007 BM Scripts unless otherwise noted - All Rights Reserved // -->"
+    },
+    {
+      "text": "\t\t<!-- START HEADER TABLE - HOLDS GRAPHIC AND SITE NAME -->"
+    },
+    {
+      "text": "\t\t<!-- START MAIN TABLE - HOLDS CATEGORIES, MENU, ETC. -->"
+    },
+    {
+      "text": "\t<p class='credits'><a href='http://www.bmscripts.com'>Powered by BM Classifieds</a><br /></p>"
+    },
+    {
+      "text": "\t<p class='credits'>Powered by BM Classifieds<br /></p>"
+    }
+  ],
+  "dorks": [
+    "\"powered by BM Classifieds\""
+  ],
+  "website": "http://www.bmscripts.com/"
+}

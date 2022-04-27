@@ -1,0 +1,13 @@
+{
+  "name": "UrlRewriter_NET",
+  "matches": [
+    {
+      "search": "headers[x-powered-by]",
+      "version": "(?-mix:UrlRewriter\\.NET ([^\\s]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://urlrewriter.net/"
+}

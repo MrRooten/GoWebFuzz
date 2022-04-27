@@ -1,0 +1,23 @@
+{
+  "name": "sabros_us",
+  "matches": [
+    {
+      "text": "\t<title>sabros.us/"
+    },
+    {
+      "text": "\t\t<p class=\"powered\">powered by: <a title=\"sabros.us\" href=\"http://sabros.us/\">sabros.us</a></p>",
+      "version": "1.8"
+    },
+    {
+      "text": "\t\t<p class=\"powered\">powered by: <a title=\"sabros.us\" href=\"http://sourceforge.net/projects/sabrosus/\">sabros.us</a></p>",
+      "version": "1.7"
+    },
+    {
+      "version": "(?-mix:\t<meta name=\"generator\" content=\"sabros.us ([\\d\\.]+)\" \\/>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://sabros.us/"
+}

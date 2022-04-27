@@ -1,0 +1,16 @@
+{
+  "name": "Seagate-GoFlex",
+  "matches": [
+    {
+      "search": "headers[location]",
+      "string": "(?-mix:^https:\\/\\/www\\.seagateshare\\.com\\/\\?hipname=([^\\s^&]+))"
+    },
+    {
+      "string": "(?-mix:<input id=\"inSubdomain\" name=\"inSubdomain\" type=\"text\" maxlength=\"30\" size=\"23\" value=\"([^\\s^\"^>]*)\"><br><br>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.seagate.com/home-entertainment/media-sharing-devices/goflex-home/"
+}

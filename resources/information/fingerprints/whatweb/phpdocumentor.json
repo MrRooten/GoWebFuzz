@@ -1,0 +1,28 @@
+{
+  "name": "phpDocumentor",
+  "matches": [
+    {
+      "certainty": 75,
+      "text": "<title>docBuilder - phpDocumentor web interface</title>"
+    },
+    {
+      "text": "<meta name=\"Description\" content=\"Frameset for phpDcoumentor docBuilder web interface\">"
+    },
+    {
+      "text": "<meta name=\"Description\" content=\"Frameset for phpDocumentor docBuilder web interface\">"
+    },
+    {
+      "filepath": "(?-mix:<input type=\"text\" name=\"fileName\" value=\"([^\"]+)\" size=\"60\" class=\"text\" \\/>)"
+    },
+    {
+      "version": "(?-mix:\t<title>\\n\t\tForm to submit to phpDocumentor v([^\\s]+)\t<\\/title>)"
+    },
+    {
+      "version": "(?-mix:<span class=\"title\"><strong>docBuilder<\\/strong> :: phpDocumentor v([^\\s]+) Web Interface<\\/span>)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"docBuilder - phpDocumentor web interface\""
+  ],
+  "website": null
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Inktomi-Search",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Inktomi Search ([^\\s]+)$)"
+    },
+    {
+      "url": "/util/badkey.html",
+      "version": "(?-mix:<font size=\"\\+1\"><b>License Key Problems<\\/b><\\/font><br>[\\s]+<b>Inktomi Search ([^<^\\s]+)<\\/b><br>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.inktomi.com/products/search/"
+}

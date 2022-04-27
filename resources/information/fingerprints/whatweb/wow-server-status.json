@@ -1,0 +1,12 @@
+{
+  "name": "WoW-Server-Status",
+  "matches": [
+    {
+      "regexp": "(?-mix:<img[^>]*src=\"wow_ss.php\\?realm=)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://53x11.com/blog/2005/04/21/WoW-Server-Status-41.10"
+}

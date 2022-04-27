@@ -1,0 +1,15 @@
+{
+  "name": "Modernizr",
+  "matches": [
+    {
+      "regexp": "(?i-mx:<script [^>]*src=[\"'][^>]*modernizr[^>]*\\.js)"
+    },
+    {
+      "version": "(?i-mx:<script [^>]*src=[\"'][^>]*modernizr-([^>]+)\\.js)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.modernizr.com/"
+}

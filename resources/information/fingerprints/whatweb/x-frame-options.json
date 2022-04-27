@@ -1,0 +1,10 @@
+{
+  "name": "X-Frame-Options",
+  "matches": [
+
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

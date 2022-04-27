@@ -1,0 +1,17 @@
+{
+  "name": "MS-SDK-HttpServer",
+  "matches": [
+    {
+      "regexp": "(?-mix:^MS-SDK-HttpServer)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^MS-SDK-HttpServer\\/([\\d\\.]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://msdn.microsoft.com/en-us/library/ee434092.aspx"
+}

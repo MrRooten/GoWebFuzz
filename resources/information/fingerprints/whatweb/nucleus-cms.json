@@ -1,0 +1,21 @@
+{
+  "name": "Nucleus-CMS",
+  "matches": [
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"Nucleus CMS v([^\"^>]+)\" \\/>)"
+    },
+    {
+      "filepath": "(?-mix:<td>Admin-area <strong>path<\\/strong>:<\\/td>[\\s]+<td><input name=\"AdminPath\" size=\"60\" value=\"([^\"]+)\" \\/>)"
+    },
+    {
+      "text": "<meta name=\"name\" content=\"My Nucleus CMS\" />"
+    },
+    {
+      "version": "(?-mix:<small>Copyright \\| <a href=\"http:\\/\\/nucleuscms\\.org\">Nucleus CMS v([^\\s^>]+)<\\/a> \\|)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Nucleus Install\" \"Install Nucleus\" \"Hostname\" \"Username\" \"Password\""
+  ],
+  "website": "http://nucleuscms.org/"
+}

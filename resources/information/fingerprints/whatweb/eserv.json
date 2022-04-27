@@ -1,0 +1,19 @@
+{
+  "name": "Eserv",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Eserv\\/([^\\s]+))"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"Eserv\\/([^\\s^\"]+)\" \\/>)"
+    },
+    {
+      "version": "(?-mix:<span id='powered_by'>[^<]+<a href=\"http:\\/\\/www\\.eserv\\.ru\\/\"><span itemprop=\"name\">Eserv<\\/span><\\/a>\\/([^\\s]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.eserv.ru/"
+}

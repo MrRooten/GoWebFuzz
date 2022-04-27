@@ -1,0 +1,14 @@
+{
+  "name": "SailsJS",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^sails.sid)",
+      "name": "sails.sid cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://sailsjs.com/"
+}

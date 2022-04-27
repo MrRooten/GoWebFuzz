@@ -1,0 +1,21 @@
+{
+  "name": "MeetingPlaza",
+  "matches": [
+    {
+      "certainty": 25,
+      "text": "<html> <body> Hello. I'm MeetingPlaza HTTP Tunneling Server.<br>Date: "
+    },
+    {
+      "version": "(?-mix:^InterSpace HTTP Tunneling\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "regexp": "(?-mix:^InterSpace HTTP Tunneling)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+    "\"Hello. I'm MeetingPlaza HTTP Tunneling Server.\" \"Date\""
+  ],
+  "website": "http://www.meetingplaza.com/e/"
+}

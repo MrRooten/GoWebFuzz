@@ -1,0 +1,32 @@
+{
+  "name": "ExpressionEngine",
+  "matches": [
+    {
+      "regexp": "(?-mix:owered by <a href=\"http:\\/\\/expressionengine.com\\/\">ExpressionEngine<\\/a>)"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^exp_last_visit)",
+      "name": "exp_last_visit cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^exp_last_activity)",
+      "name": "exp_last_activity cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^exp_tracker)",
+      "name": "exp_tracker cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^exp_csrf_token)",
+      "name": "exp_csrf_token cookie"
+    }
+  ],
+  "dorks": [
+    "\"Powered by ExpressionEngine\""
+  ],
+  "website": "http://expressionengine.com"
+}

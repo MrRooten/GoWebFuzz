@@ -1,0 +1,13 @@
+{
+  "name": "Alter-Native",
+  "matches": [
+    {
+      "string": "(?-mix:^SPID HTTP Server - Alter Native \\(([^\\)]+)\\))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.alternative.fr/"
+}

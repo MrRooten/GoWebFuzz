@@ -1,0 +1,16 @@
+{
+  "name": "SlingBox",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:_sling_skey=[^;]+)"
+    },
+    {
+      "version": "(?-mix:<!-- Footer start -->\\s+<div id=\"footer_center\">\\s+<p>Portal Version:&nbsp;([^,]+), Plugin Version:&nbsp;)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Slingbox Setup\" \"Welcome to Slingbox Setup\" \"We'll help you set up your Slingbox\""
+  ],
+  "website": "http://slingbox.com/"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "reCAPTCHA",
+  "matches": [
+    {
+      "regexp": "(?-mix:<noscript>[\\s]*<iframe src=\"http:\\/\\/www\\.google\\.com\\/recaptcha\\/api\\/noscript\\?k=)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.google.com/recaptcha"
+}

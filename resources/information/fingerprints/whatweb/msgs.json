@@ -1,0 +1,12 @@
+{
+  "name": "MSGS",
+  "matches": [
+    {
+      "version": "(?-mix:<title> Mercury Satellite Ground Station: Version ([\\d\\.]+)<\\/title>)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Mercury Satellite Ground Station\""
+  ],
+  "website": "http://mgsn.sourceforge.net/"
+}

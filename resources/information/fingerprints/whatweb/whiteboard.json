@@ -1,0 +1,19 @@
+{
+  "name": "WhiteBoard",
+  "matches": [
+    {
+      "text": "\t\t\t&copy; <a href=\"http://www.powerwd.com\">SaroSoftware</a><br />",
+      "certainty": 75
+    },
+    {
+      "version": "(?-mix:Powered By WhiteBoard ([\\d\\.]+)<br \\/>)"
+    },
+    {
+      "version": "(?-mix:Powered By WhiteBoard <span id=\"version\">([\\d\\.]+)<\\/span><br \\/>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://sarosoftware.com/"
+}

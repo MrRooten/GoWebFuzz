@@ -1,0 +1,21 @@
+{
+  "name": "Zope",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:Zope\\/\\(([^,]*))"
+    },
+    {
+      "search": "headers[server]",
+      "module": "(?-mix:Zope\\/\\([^,]*, ([^,]*))"
+    },
+    {
+      "search": "headers[server]",
+      "string": "(?-mix:Zope\\/\\([^,]*, [^,]*, ([^\\)^\\s]*))"
+    }
+  ],
+  "dorks": [
+    "inurl:\"HelpSys\" intitle:\"Zope Help System\""
+  ],
+  "website": "http://www.zope.org/"
+}

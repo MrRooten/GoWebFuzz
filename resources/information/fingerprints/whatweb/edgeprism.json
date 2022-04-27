@@ -1,0 +1,17 @@
+{
+  "name": "EdgePrism",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^EdgePrism\\/([^\\s]+)$)"
+    },
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^EdgePrismSSL)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

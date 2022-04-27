@@ -1,0 +1,24 @@
+{
+  "name": "Namazu",
+  "matches": [
+    {
+      "regexp": "(?-mix:This search system is powered by[\\s]+<strong><a href=\"http:\\/\\/www\\.namazu\\.org\\/\">Namazu<\\/a><\\/strong>)"
+    },
+    {
+      "regexp": "(?-mix:Powered by <a href=\"http:\\/\\/www\\.namazu\\.(org|cc)\\/[^\"]*\" target=\"_blank\">(N|n)amazu<\\/a>)"
+    },
+    {
+      "regexp": "(?-mix:<p><strong> Total <!-- HIT -->[\\d]+<!-- HIT --> documents matching your query.<\\/strong><\\/p>)"
+    },
+    {
+      "version": "(?i-mx:<strong><a href=\"http:\\/\\/www\\.namazu\\.org\\/\">Namazu<\\/a> <!-- VERSION --> v([\\d\\.]+) <!-- VERSION --><\\/strong>)"
+    },
+    {
+      "version": "(?i-mx:This search system is powered by <a href=\"http:\\/\\/www\\.namazu\\.org\\/\">Namazu<\\/a> <!-- VERSION --> v([\\d\\.]+) <!-- VERSION --><\\/p>)"
+    }
+  ],
+  "dorks": [
+    "\"powered by Namazu\""
+  ],
+  "website": "http://www.namazu.org/"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Script",
+  "matches": [
+    {
+      "regexp": "(?i-mx:<script(\\s|>))"
+    },
+    {
+      "string": "(?-mix:<script[^>]+(language|type)\\s*=\\s*['\"]?([^'\"\\s]+)['\"]?)",
+      "offset": 1
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

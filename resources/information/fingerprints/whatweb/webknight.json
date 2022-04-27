@@ -1,0 +1,17 @@
+{
+  "name": "WebKnight",
+  "matches": [
+    {
+      "regexp": "(?-mix:^WebKnight)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^WebKnight\\/(.+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.aqtronix.com/?PageID=99"
+}

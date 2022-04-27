@@ -1,0 +1,27 @@
+{
+  "name": "FastCGI-echo",
+  "matches": [
+    {
+      "text": "SCRIPT_NAME=/fcgi-bin/echo"
+    },
+    {
+      "text": "<title>FastCGI echo</title><h1>FastCGI echo</h1>"
+    },
+    {
+      "text": "REQUEST_URI=/fcgi-bin/echo"
+    },
+    {
+      "version": "(?-mix:HTTP_ORACLE_CACHE_VERSION=([\\d\\.]+))"
+    },
+    {
+      "version": "(?-mix:SERVER_SOFTWARE=([^\\n]+))"
+    },
+    {
+      "version": "(?-mix:SERVER_SIGNATURE=<ADDRESS>([^<]+))"
+    }
+  ],
+  "dorks": [
+    "inurl:fcgi-bin/echo intitle:\"FastCGI echo\""
+  ],
+  "website": null
+}

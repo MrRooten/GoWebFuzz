@@ -1,0 +1,17 @@
+{
+  "name": "TivoWebPlus",
+  "matches": [
+    {
+      "regexp": "(?-mix:TivoWebPlus)",
+      "search": "headers[www-authenticate]"
+    },
+    {
+      "version": "(?-mix:^Basic realm=['\"]TivoWebPlus - v([^'^\"]+)['\"]$)",
+      "search": "headers[www-authenticate]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://sourceforge.net/projects/tivowebplus/"
+}

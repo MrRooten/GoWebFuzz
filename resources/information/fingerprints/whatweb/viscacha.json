@@ -1,0 +1,19 @@
+{
+  "name": "Viscacha",
+  "matches": [
+    {
+      "text": "<meta name=\"generator\" content=\"Viscacha (http://www.viscacha.org)\" />"
+    },
+    {
+      "text": "<link rel=\"copyright\" href=\"http://www.viscacha.org\" />",
+      "certainty": 75
+    },
+    {
+      "version": "(?-mix:Powered by <strong><a[^>]+href=\"http:\\/\\/www\\.viscacha\\.org\" target=\"_blank\">Viscacha ([^<]+)<\\/a>)"
+    }
+  ],
+  "dorks": [
+    "\"powered by Viscacha\" \"The Viscacha Project\" inurl:register.php"
+  ],
+  "website": "http://www.viscacha.org/"
+}

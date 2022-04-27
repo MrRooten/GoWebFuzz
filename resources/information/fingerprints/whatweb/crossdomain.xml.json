@@ -1,0 +1,24 @@
+{
+  "name": "crossdomain_xml",
+  "matches": [
+    {
+      "text": "<cross-domain-policy>",
+      "path": "crossdomain.xml"
+    },
+    {
+      "text": "<site-control permitted-cross-domain-policies=\"none\"/>",
+      "string": "none",
+      "module": "Permit",
+      "path": "crossdomain.xml"
+    },
+    {
+      "string": "(?-mix:<allow-access-from domain=\"([^\"]+)\")",
+      "path": "crossdomain.xml",
+      "module": "Allow"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

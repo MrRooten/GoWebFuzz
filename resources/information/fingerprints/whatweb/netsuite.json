@@ -1,0 +1,24 @@
+{
+  "name": "NetSuite",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^NLSD3)",
+      "name": "NLSD3 cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^NS_ROUTING_VERSION)",
+      "name": "NS_ROUTING_VERSION cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^NS_VER)",
+      "name": "NS_VER cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.netsuite.com/portal/home.shtml"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Meta-Geo",
+  "matches": [
+    {
+      "string": "(?-mix:<meta name=\"geo.[^\"]+\" content=\"([^\"]+)\"[^>]*>)"
+    },
+    {
+      "string": "(?-mix:<meta name=\"ICBM\" content=\"([^\"]+)\"[^>]*>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

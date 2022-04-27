@@ -1,0 +1,24 @@
+{
+  "name": "Ultrastats",
+  "matches": [
+    {
+      "text": "<DIV align=center>Powered by Ultrastats"
+    },
+    {
+      "text": "<img src=\"./images/main/ultrastatslogo.png\" width=\"300\" height=\"200\" name=\"ultrastats_logo\" align=\"center\">"
+    },
+    {
+      "regexp": "(?i-mx:<title>Ultrastats :: [^<]+<\\/title>)"
+    },
+    {
+      "text": "<title>UltraStats :: Critical Error occured</title>"
+    },
+    {
+      "version": "(?i-mx: &nbsp;<a href=\"http:\\/\\/www.ultrastats.org[\\/]?\" target=\"_blank\">Ultrastats<\\/a> Version ([\\d\\.]+))"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Ultrastats :: Home\""
+  ],
+  "website": "http://www.ultrastats.org/"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "MyPHP-Forum",
+  "matches": [
+    {
+      "version": "(?-mix:    <td width=\"50%\" class=\"copy\" height=\"24\">Powered by: MyPHP Forum v([\\d\\.]+))"
+    },
+    {
+      "version": "(?-mix:    <td width=\"50%\" class=\"copy\" height=\"24\">Powered by: <a href=\"http:\\/\\/www.myphp.ws\">MyPHP Forum v([\\d\\.]+))"
+    }
+  ],
+  "dorks": [
+    "\"powered by MyPHP Forum\" -Vulnerability"
+  ],
+  "website": "http://www.myphp.ws/"
+}

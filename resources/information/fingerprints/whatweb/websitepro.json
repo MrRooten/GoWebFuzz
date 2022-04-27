@@ -1,0 +1,13 @@
+{
+  "name": "WebSitePro",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^WebSitePro\\/([^\\s]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://website.ora.com/"
+}

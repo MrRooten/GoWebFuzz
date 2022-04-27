@@ -1,0 +1,33 @@
+{
+  "name": "Home-Control-Box",
+  "matches": [
+    {
+      "regexp": "(?-mix:^hcb_web)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^hcb_web\\/v([^\\s]+) BoxTalk\\/[^\\s]+ SWILL\\/[^\\s]+ \\([^\\)]+\\)$)",
+      "search": "headers[server]"
+    },
+    {
+      "module": "(?-mix:^hcb_web\\/v[^\\s]+ (BoxTalk\\/[^\\s]+) SWILL\\/[^\\s]+ \\([^\\)]+\\)$)",
+      "search": "headers[server]"
+    },
+    {
+      "module": "(?-mix:^hcb_web\\/v[^\\s]+ BoxTalk\\/[^\\s]+ (SWILL\\/[^\\s]+) \\([^\\)]+\\)$)",
+      "search": "headers[server]"
+    },
+    {
+      "account": "(?-mix:^Basic realm=\"Home Control Box Configuration \\(hcb-([a-z]{3}-[\\d]{4})\\)\"$)",
+      "search": "headers[www-authenticate]"
+    },
+    {
+      "string": "No Login Required",
+      "text": "<frame frameborder=\"0\" name=\"MGUI\" src=\"myhcb_gui.html\" scrolling=\"no\""
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.homecontrolbox.com/"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "BitKeeper",
+  "matches": [
+    {
+      "text": "<A class=\"tab\" HREF=\"/cgi-bin/query.cgi?.page=advquery\">Advanced Query</A>"
+    },
+    {
+      "version": "(?-mix:^bkhttp\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://bitkeeper.com/"
+}

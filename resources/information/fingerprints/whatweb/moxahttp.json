@@ -1,0 +1,17 @@
+{
+  "name": "MoxaHttp",
+  "matches": [
+    {
+      "regexp": "(?-mix:^MoxaHttp)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^MoxaHttp\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.moxa.com/product/product.aspx"
+}

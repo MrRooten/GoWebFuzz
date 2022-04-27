@@ -1,0 +1,19 @@
+{
+  "name": "Web2",
+  "matches": [
+    {
+      "os": "Mac OS/2",
+      "regexp": "(?-mix:^Web\\/2 )",
+      "search": "headers[server]"
+    },
+    {
+      "os": "Mac OS/2",
+      "version": "(?-mix:^Web\\/2 v([^\\r^\\n]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

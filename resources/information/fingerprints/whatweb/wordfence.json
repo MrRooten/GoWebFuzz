@@ -1,0 +1,14 @@
+{
+  "name": "WordFence",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^wfvt_)",
+      "name": "wfvt_ cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.WordFence.com/"
+}

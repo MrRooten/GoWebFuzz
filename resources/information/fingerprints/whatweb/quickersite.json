@@ -1,0 +1,15 @@
+{
+  "name": "QuickerSite",
+  "matches": [
+    {
+      "regexp": "(?i-mx:<meta content=\"QuickerSite CMS - visit www.quickersite.com\" name=\"generator\" \\/>)"
+    },
+    {
+      "regexp": "(?i-mx:<meta name=\"generator\" content=\"QuickerSite CMS - visit www.quickersite.com\">)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by QuickerSite\""
+  ],
+  "website": "http://www.quickersite.com/"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "ModxCMS",
+  "matches": [
+    {
+      "text": "<meta name=\"generator\" content=\"ModX"
+    },
+    {
+      "text": "<script type=\"text/javascript\">var MODX_MEDIA_PATH"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://modxcms.com/"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Tencent-QQ",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^HTTP_ME\\/\\d\\.\\d Tencent\\/HTTP_Magic_Expression$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.qq.com/"
+}

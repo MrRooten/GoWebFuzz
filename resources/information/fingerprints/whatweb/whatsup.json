@@ -1,0 +1,26 @@
+{
+  "name": "WhatsUp",
+  "matches": [
+    {
+      "name": "HTTP Server Header",
+      "regexp": "(?-mix:^WhatsUp)",
+      "search": "headers[server]"
+    },
+    {
+      "string": "Gold",
+      "version": "(?-mix:^WhatsUp_Gold\\/([\\d\\.]+))",
+      "search": "headers[server]"
+    },
+    {
+      "string": "Gold",
+      "certainty": 75,
+      "name": "WWW-Authenticate",
+      "regexp": "(?-mix:^Basic realm=\"WhatsUp[\\s]?Gold\")",
+      "search": "headers[www-authenticate]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.whatsupgold.com/"
+}

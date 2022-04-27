@@ -1,0 +1,17 @@
+{
+  "name": "Spinnaker",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Spinnaker)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Spinnaker\\/([^\\s]+))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.telegrafix.com/"
+}

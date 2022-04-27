@@ -1,0 +1,13 @@
+{
+  "name": "Sagem-Router",
+  "matches": [
+    {
+      "search": "headers[www-authenticate]",
+      "regexp": "(?-mix:^Basic realm=\"?Sagem\"?$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

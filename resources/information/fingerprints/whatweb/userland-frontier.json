@@ -1,0 +1,24 @@
+{
+  "name": "UserLand-Frontier",
+  "matches": [
+    {
+      "regexp": "(?-mix:^UserLand Frontier)",
+      "name": "HTTP Server Header",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^UserLand Frontier\\/([^-]+)-(.+)$)",
+      "offset": 0,
+      "search": "headers[server]"
+    },
+    {
+      "os": "(?-mix:^UserLand Frontier\\/([^-]+)-(.+)$)",
+      "offset": 1,
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://frontier.userland.com/"
+}

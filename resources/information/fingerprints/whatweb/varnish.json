@@ -1,0 +1,24 @@
+{
+  "name": "Varnish",
+  "matches": [
+    {
+      "search": "headers[x-varnish]",
+      "regexp": "(?-mix:)",
+      "name": "x-varnish header"
+    },
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^Varnish$)",
+      "name": "Varnish Server Header"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:ENUnique)",
+      "name": "ENUnique cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.varnish-cache.org/"
+}

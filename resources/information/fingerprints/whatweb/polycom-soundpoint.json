@@ -1,0 +1,10 @@
+{
+  "name": "Polycom-SoundPoint",
+  "matches": [
+
+  ],
+  "dorks": [
+    "\"SoundPoint IP Configuration\" intitle:\"SoundPoint IP Configuration Utility - Registration\" ext:htm"
+  ],
+  "website": "http://www.polycom.com/products/voice/desktop_solutions/soundpoint/"
+}

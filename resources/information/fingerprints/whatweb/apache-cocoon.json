@@ -1,0 +1,13 @@
+{
+  "name": "Apache-Cocoon",
+  "matches": [
+    {
+      "version": "(?-mix:^(.*)$)",
+      "search": "headers[x-cocoon-version]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://cocoon.apache.org/"
+}

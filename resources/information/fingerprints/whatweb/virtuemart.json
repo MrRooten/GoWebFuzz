@@ -1,0 +1,17 @@
+{
+  "name": "VirtueMart",
+  "matches": [
+    {
+      "certainty": 25,
+      "regexp": "(?-mix:<div id=[\"']vmMainPage)"
+    },
+    {
+      "certainty": 75,
+      "text": "href=\"/index.php?option=com_virtuemart&amp;page=shop.registration\">"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://virtuemart.net/"
+}

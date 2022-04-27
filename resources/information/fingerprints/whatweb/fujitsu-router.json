@@ -1,0 +1,13 @@
+{
+  "name": "Fujitsu-Router",
+  "matches": [
+    {
+      "model": "(?-mix:^(Si-[A-Za-z\\d]{4,10})$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://fujitsu.com/"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "CL-HTTP",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^CL-HTTP\\/([^\\s]+))"
+    },
+    {
+      "search": "headers[server]",
+      "string": "(?-mix:^CL-HTTP\\/[^\\s]+ \\(([^\\)]+)\\))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.cl-http.org:8001/cl-http/"
+}

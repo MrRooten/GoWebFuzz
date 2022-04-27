@@ -1,0 +1,14 @@
+{
+  "name": "Siemens-Router",
+  "matches": [
+    {
+      "search": "headers[www-authenticate]",
+      "model": "(?-mix:Basic realm=\"Siemens ADSL ([^\"^\\s]+)\")",
+      "certainty": 75
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.siemens.com/"
+}

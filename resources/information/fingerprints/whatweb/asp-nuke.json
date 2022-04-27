@@ -1,0 +1,60 @@
+{
+  "name": "ASP-Nuke",
+  "matches": [
+    {
+      "text": "<meta name=\"Generator\" CONTENT=\"ASP-Nuke"
+    },
+    {
+      "text": "<meta name=\"Generator\" content=\"ASPNuke"
+    },
+    {
+      "version": "2",
+      "text": "<meta name=\"Generator\" content=\"ASPNUKE v2.0 - distributed under GPL license\">"
+    },
+    {
+      "regexp": "(?-mix:<a href=\"\\/gotoURL.asp\\?url=)"
+    },
+    {
+      "text": "<a href=\"http://www.rot.dk\" target=\"_blank\">Asp-Nuke</a> community"
+    },
+    {
+      "regexp": "(?-mix:<link rel=\"Shortcut Icon\" href=\"[^>]*aspnuke.ico\">)"
+    },
+    {
+      "regexp": "(?-mix:<a href=\"http:\\/\\/www.aspnuke.it\" target=\"_blank\">ASP-Nuke [0-9\\.]*<\\/a>)"
+    },
+    {
+      "regexp": "(?-mix:<form name='Authentication' method='post' action='[^']*\\/authent.asp'>)"
+    },
+    {
+      "text": "Designed with <a href=\"http://www.asp-nuke.net\" target=\"_blank\">ASP-Nuke</a>"
+    },
+    {
+      "version": "v1.1+",
+      "text": "<br>Designed with ASP-Nuke v1.1+"
+    },
+    {
+      "version": "(?-mix:<meta name=\"Generator\" (content|CONTENT)=\"(ASPNUKE|ASP-Nuke) ([^->\"]+))",
+      "offset": 2,
+      "name": "meta generator tag"
+    },
+    {
+      "version": "(?-mix:Designed with <a href=\"http:\\/\\/www.asp-nuke.net\" target=\"_blank\">ASP-Nuke<\\/a> ([^<]+)<br>)",
+      "name": "desgined by"
+    },
+    {
+      "version": "(?-mix:<a href=\"http:\\/\\/www.aspnuke.it\" target=\"_blank\">Asp-Nuke ([\\d\\.]+)<\\/a>)",
+      "name": "aspnuke.it"
+    },
+    {
+      "name": "P3P Privacy Headers",
+      "certainty": 25,
+      "search": "headers[p3p]",
+      "text": "CP=\"NOI CUR OUR IND UNI COM NAV INT\""
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.aspnuke.com/"
+}

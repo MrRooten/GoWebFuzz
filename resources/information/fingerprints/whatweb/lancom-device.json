@@ -1,0 +1,25 @@
+{
+  "name": "LANCOM-Device",
+  "matches": [
+    {
+      "regexp": "(?-mix:^LANCOM)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^LANCOM [^\\s]+ .+ ([\\d\\.]+) \\/ [\\d]{2}\\.[\\d]{2}\\.[\\d]{4}$)",
+      "search": "headers[server]"
+    },
+    {
+      "model": "(?-mix:^LANCOM ([^\\s]+) .+ [\\d\\.]+ \\/ [\\d]{2}\\.[\\d]{2}\\.[\\d]{4}$)",
+      "search": "headers[server]"
+    },
+    {
+      "string": "(?-mix:^LANCOM [^\\s]+ (.+) [\\d\\.]+ \\/ [\\d]{2}\\.[\\d]{2}\\.[\\d]{4}$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.lancom-systems.nl/"
+}

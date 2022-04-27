@@ -1,0 +1,17 @@
+{
+  "name": "TeleFinder",
+  "matches": [
+    {
+      "regexp": "(?-mix:^TeleFinder)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^TeleFinder\\/([\\d\\.]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

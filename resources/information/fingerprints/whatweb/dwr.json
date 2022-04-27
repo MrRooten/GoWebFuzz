@@ -1,0 +1,17 @@
+{
+  "name": "dwr",
+  "matches": [
+    {
+      "name": "HTML Body",
+      "text": "/dwr/engine.js'>"
+    },
+    {
+      "name": "HTML Body",
+      "text": "/dwr/engine.js\">"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

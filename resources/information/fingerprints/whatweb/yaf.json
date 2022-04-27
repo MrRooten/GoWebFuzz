@@ -1,0 +1,17 @@
+{
+  "name": "YAF.NET",
+  "matches": [
+    {
+      "name": "Copyright for version 1",
+      "regexp": "(?-mix:Copyright &copy; 2\\d{3}-2\\d{3} Yet Another Forum.net)"
+    },
+    {
+      "name": "Copyright for version 2",
+      "regexp": "(?-mix:YAF.NET &copy; 2\\d{3}-2\\d{3}, Yet Another Forum.NET)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

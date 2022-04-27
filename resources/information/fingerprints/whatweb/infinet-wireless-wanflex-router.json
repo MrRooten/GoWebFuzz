@@ -1,0 +1,16 @@
+{
+  "name": "Infinet-Wireless-WANFleX-Router",
+  "matches": [
+    {
+      "text": "<meta name=\"generator\" content=\"InfiNet Wireless Company\" />"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^WANFlex HTTP Daemon v([^\\s]+)$)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Login Page\" \"InfiNet Wireless\" \"All rights reserved.\" \"User Name\" \"Password\""
+  ],
+  "website": "http://www.infinetwireless.com/products"
+}

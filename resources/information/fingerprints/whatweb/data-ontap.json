@@ -1,0 +1,13 @@
+{
+  "name": "Data-ONTAP",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Data ONTAP\\/\\/?([^\\s]+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.netapp.com/us/products/platform-os/data-ontap/"
+}

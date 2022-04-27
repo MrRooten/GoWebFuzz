@@ -1,0 +1,17 @@
+{
+  "name": "Netscape-Enterprise",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Netscape-Enterprise)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Netscape-Enterprise\\/(.+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://wikis.sun.com/display/WebServer/Sun+Java+System+Web+Server"
+}

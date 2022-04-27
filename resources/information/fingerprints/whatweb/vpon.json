@@ -1,0 +1,21 @@
+{
+  "name": "VPON",
+  "matches": [
+    {
+      "url": "/ctrl_ver.js",
+      "version": "(?-mix:^var live_video_control_version =\"([^\"]+)\";)"
+    },
+    {
+      "url": "/ctrl_ver.js",
+      "model": "(?-mix:^var vpon_platform = \"([^\"]+)\";)"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^VPON Server\\/([\\d\\.]+)$)"
+    }
+  ],
+  "dorks": [
+    "inurl:\"start.htm?scrw=\""
+  ],
+  "website": "http://www.vpon21.com/"
+}

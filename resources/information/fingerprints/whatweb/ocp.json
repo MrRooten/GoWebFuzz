@@ -1,0 +1,12 @@
+{
+  "name": "Open Commerce Platform",
+  "matches": [
+    {
+      "regexp": "(?-mix:\\/js\\/ocpsdk\\/base.js)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.micros-fidelio.eu/en/Solutions/Products-N-Z/OCP-Open-Commerce-Platform.aspx"
+}

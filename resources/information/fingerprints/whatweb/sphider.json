@@ -1,0 +1,16 @@
+{
+  "name": "Sphider",
+  "matches": [
+    {
+      "regexp": "(?-mix:<html>[\\s]+<head>[\\s]+<title>[\\s]+Sphider installation script\\.[\\s]+<\\/title>[\\s]+<LINK REL=STYLESHEET HREF=\"admin\\.css\" TYPE=\"text\\/css\">[\\s]+<\\/head>[\\s]+<body>)"
+    },
+    {
+      "regexp": "(?-mix:<title>Sphider Admin Login<\\/title>[\\s]+<LINK REL=STYLESHEET HREF=\"admin\\.css\" TYPE=\"text\\/css\">[\\s]+<\\/head>)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Sphider Admin Login\" inurl:\"admin\" \"Username\" \"Password\"",
+    "intitle:\"Sphider installation script\" intext:\"Sphider installation script\" inurl:\"install.php\""
+  ],
+  "website": "http://www.sphider.eu/"
+}

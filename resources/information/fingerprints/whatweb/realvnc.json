@@ -1,0 +1,17 @@
+{
+  "name": "RealVNC",
+  "matches": [
+    {
+      "regexp": "(?-mix:^RealVNC)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^RealVNC\\/(.+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.realvnc.com/"
+}

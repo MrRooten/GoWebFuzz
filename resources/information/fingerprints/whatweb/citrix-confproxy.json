@@ -1,0 +1,13 @@
+{
+  "name": "Citrix-ConfProxy",
+  "matches": [
+    {
+      "version": "(?-mix:^confproxy\\/([\\d\\.]+))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.citrix.com/"
+}

@@ -1,0 +1,26 @@
+{
+  "name": "Oracle-Fusion-Middleware",
+  "matches": [
+    {
+      "text": "<title>Welcome to Oracle Fusion Middleware</title>"
+    },
+    {
+      "text": "<link href=\"css/fmw_bottom_area.css\" rel=\"stylesheet\" type=\"text/css\">"
+    },
+    {
+      "version": "(?-mix:<div id=\"welcome_text\">TO ORACLE<strong> FUSION MIDDLEWARE ([^\\s^<]+)<\\/strong> <\\/div>)"
+    },
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^Oracle-Fusion-Middleware)"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Oracle-Fusion-Middleware\\/([^\\s]+ \\([^\\)]+\\)))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.oracle.com/au/products/middleware/index.html"
+}

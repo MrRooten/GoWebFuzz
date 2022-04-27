@@ -1,0 +1,19 @@
+{
+  "name": "darkstat",
+  "matches": [
+    {
+      "version": "(?-mix:<li class=\"label\">darkstat ([^\\s^<]+)<\\/li><li><a href=\"[^\"]+\">graphs<\\/a><\\/li>)"
+    },
+    {
+      "version": "(?-mix:<title>darkstat ([^\\s]+) : graphs ([^\\s^\\)]+)<\\/title>)"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^darkstat\\/([^\\s]+)$)"
+    }
+  ],
+  "dorks": [
+    "intitle:darkstat intitle:\"graphs\" \"graphs\" \"Running for\""
+  ],
+  "website": "http://unix4lyfe.org/darkstat/"
+}

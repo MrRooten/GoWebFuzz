@@ -1,0 +1,21 @@
+{
+  "name": "vbPortal",
+  "matches": [
+    {
+      "text": "<meta name=\"generator\" content=\"vbPortal - Copyright 2010\" />"
+    },
+    {
+      "text": "\t<!-- Do not remove  or your scheduled tasks will cease to function -->"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"vbPortal ([\\d\\.]+)\" \\/>)"
+    },
+    {
+      "version": "(?-mix:Portal By vbPortal Version ([\\d\\.]+)<br \\/>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.vbportal.com/"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Simplewire",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Simplewire)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Simplewire\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.simplewire.com/"
+}

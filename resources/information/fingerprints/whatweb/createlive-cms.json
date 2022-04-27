@@ -1,0 +1,19 @@
+{
+  "name": "CreateLive-Cms",
+  "matches": [
+    {
+      "version": "(?i-mx:Powered by:(<a href=\"http:\\/\\/www.aspoo.cn\\/\" target=\"_blank\">)?CreateLive CMS Version ([\\d\\.]+))"
+    },
+    {
+      "version": "(?-mix:<!--By CreateLiveCms (\\d)\\.00-->)"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:Kill=kill=(Yes|No))"
+    }
+  ],
+  "dorks": [
+    "intext:\"Powered by CreateLive CMS Version\""
+  ],
+  "website": "http://www.aspoo.cn/"
+}

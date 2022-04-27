@@ -1,0 +1,12 @@
+{
+  "name": "WooFramework",
+  "matches": [
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"WooFramework ([\\d\\.]+)\")"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

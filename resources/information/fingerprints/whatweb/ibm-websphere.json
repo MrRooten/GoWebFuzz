@@ -1,0 +1,17 @@
+{
+  "name": "IBM-WebSphere",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^WebSphere Application Server\\/([^\\s]+)$)"
+    },
+    {
+      "text": "<HTML><HEAD><TITLE>Snoop Servlet</TITLE></HEAD><BODY BGCOLOR=\"#FFFFEE\">",
+      "module": "Snoop Servlet"
+    }
+  ],
+  "dorks": [
+    "inurl:\"snoop\" intitle:\"Snoop Servlet\" \"Request method\""
+  ],
+  "website": "https://www-01.ibm.com/software/websphere/"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Managed-Fusion-Url-Rewriter",
+  "matches": [
+    {
+      "search": "headers[x-rewritten-by]",
+      "regexp": "(?-mix:^ManagedFusion \\(rewriter; reverse-proxy; +http:\\/\\/managedfusion\\.com\\/\\)$)"
+    },
+    {
+      "search": "headers[x-managedfusion-rewriter-version]",
+      "version": "(?-mix:^(.+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://managedfusion.com/"
+}

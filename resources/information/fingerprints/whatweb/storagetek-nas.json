@@ -1,0 +1,25 @@
+{
+  "name": "StorageTek-NAS",
+  "matches": [
+    {
+      "url": "/sedona.jnlp",
+      "text": "<title>Sun StorageTek NAS OS Web Admin</title>"
+    },
+    {
+      "regexp": "(?-mix:^StorageTek-HTTPD)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^StorageTek-HTTPD\\/([^\\s]+) \\([^\\s]+ NAS\\)$)",
+      "search": "headers[server]"
+    },
+    {
+      "model": "(?-mix:^StorageTek-HTTPD\\/[^\\s]+ \\(([^\\s]+) NAS\\)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.oracle.com/technetwork/documentation/oracle-unified-ss-193371.html"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "CoDeSys-Web-Visualization",
+  "matches": [
+    {
+      "text": "<TITLE>CoDeSys WebVisualization</TITLE>"
+    },
+    {
+      "text": "<APPLET CODEBASE=. CODE=webvisu/WebVisu.class name=\"WebVisu\" width=\"100%\" height=\"100%\" id=\"webvisuapplet\">"
+    },
+    {
+      "text": "<APPLET CODEBASE=. CODE=webvisu/WebVisu.class name=\"WebVisu\" width=\"99%\" height=\"99%\" id=\"webvisuapplet\">"
+    },
+    {
+      "text": "<param name=\"archive\" value=\"webvisu.jar,minml.jar\">"
+    }
+  ],
+  "dorks": [
+    "inurl:\"plc/webvisu.htm\" intitle:\"CoDeSys WebVisualization\""
+  ],
+  "website": "http://www.3s-software.com/index.shtml?en_CoDeSys_WebVisu"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "Sphinx",
+  "matches": [
+    {
+      "version": "(?-mix:Created using <a href=\"http:\\/\\/sphinx\\.pocoo\\.org\\/\">Sphinx<\\/a> ([^\\s]+)\\.)"
+    },
+    {
+      "regexp": "(?-mix:<div class=\"sphinxsidebar\">[\\s]+<div class=\"sphinxsidebarwrapper\">)"
+    }
+  ],
+  "dorks": [
+    "\"Created using Sphinx\" \"Copyright\""
+  ],
+  "website": "http://sphinx.pocoo.org/"
+}

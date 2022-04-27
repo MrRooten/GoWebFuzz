@@ -1,0 +1,13 @@
+{
+  "name": "Comanche",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Comanche\\/([^\\s]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://wiki.squeak.org/swiki"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ZebraNet-PrintServer",
+  "matches": [
+    {
+      "name": "h1 tag",
+      "string": "(?-mix:<H1>([^\\)]+) - ZebraNet PrintServer<\\/H1>)"
+    }
+  ],
+  "dorks": [
+    "\"ZebraNet PrintServer\" \"Status and Configuration\" \"Cancel Job\" -guide"
+  ],
+  "website": "http://www.zebra.com/us/en/products-services/accessories/print-servers.html"
+}

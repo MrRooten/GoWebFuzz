@@ -1,0 +1,16 @@
+{
+  "name": "ActiveX",
+  "matches": [
+    {
+      "module": "(?i-mx:<object [^>]*classid=[\"']?clsid:([\\s]*[a-f\\d\\-]+)['\"]?)"
+    },
+    {
+      "string": "Flash-ActiveX",
+      "regexp": "(?-mix:d27cdb6e-ae6d-11cf-96b8-444553540000)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

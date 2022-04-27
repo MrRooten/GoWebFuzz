@@ -1,0 +1,20 @@
+{
+  "name": "Purveyor-Encrypt-WebServer",
+  "matches": [
+    {
+      "os": "OpenVMS",
+      "regexp": "(?-mix:^Purveyor Encrypt)",
+      "search": "headers[server]"
+    },
+    {
+      "os": "OpenVMS",
+      "version": "(?-mix:^Purveyor Encrypt (Export|Domestic)\\/v([^\\s]+) OpenVMS$)",
+      "offset": 1,
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

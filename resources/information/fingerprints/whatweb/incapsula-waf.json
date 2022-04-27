@@ -1,0 +1,24 @@
+{
+  "name": "Incapsula-WAF",
+  "matches": [
+    {
+      "name": "Set-cookie Header",
+      "search": "headers[set-cookie]",
+      "regexp": "(?i-mx:incap_ses_)"
+    },
+    {
+      "name": "Set-cookie Header",
+      "search": "headers[set-cookie]",
+      "regexp": "(?i-mx:incap_visid_83_)"
+    },
+    {
+      "name": "visid_incap_ cookie",
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^visid_incap_)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.incapsula.com"
+}

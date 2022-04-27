@@ -1,0 +1,16 @@
+{
+  "name": "HTML5",
+  "matches": [
+    {
+      "regexp": "(?i-mx:<!DOCTYPE html>)"
+    },
+    {
+      "string": "applicationCache",
+      "regexp": "(?-mix:<html[^>]* manifest=)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

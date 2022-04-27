@@ -1,0 +1,14 @@
+{
+  "name": "WebsiteTonight",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:dps_site_id)",
+      "name": "dps_site_id cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.godaddy.com/websites/website-builder"
+}

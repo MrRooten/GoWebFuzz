@@ -1,0 +1,12 @@
+{
+  "name": "MetaPoweredBy",
+  "matches": [
+    {
+      "string": "(?i-mx:<meta[^>]+name=[\"']powered[\\- ]?by[\"'][^>]+content=[\"']([^\"]+)[\"'])"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

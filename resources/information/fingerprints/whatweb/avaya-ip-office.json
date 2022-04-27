@@ -1,0 +1,19 @@
+{
+  "name": "Avaya-IP-Office",
+  "matches": [
+    {
+      "text": "<html><head><title>IP Office System Status</title><style"
+    },
+    {
+      "version": "(?-mix:^IPOffice\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:<title>About IP Office ([^\\s^<]+)<\\/title>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://marketingtools.avaya.com/knowledgebase/"
+}

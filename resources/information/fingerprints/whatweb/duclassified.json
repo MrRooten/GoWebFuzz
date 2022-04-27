@@ -1,0 +1,21 @@
+{
+  "name": "DUclassified",
+  "matches": [
+    {
+      "certainty": 75,
+      "ghdb": "\"powered by DUclassified\" intitle:DUclassified"
+    },
+    {
+      "name": "default title",
+      "regexp": "(?-mix:<title>DUclassified[\\s\\d\\.]*<\\/title>)"
+    },
+    {
+      "name": "assets/DUclassified.css",
+      "regexp": "(?-mix:<link[^>]href=\"[^\"]*assets\\/DUclassified.css\"[^>]+>)"
+    }
+  ],
+  "dorks": [
+    "\"powered by DUclassified\" intitle:DUclassified"
+  ],
+  "website": "http://www.duware.com/"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Webmedia-Explorer",
+  "matches": [
+    {
+      "version": "(?i-mx:Powered by <a href=\"http:\\/\\/www.webmediaexplorer.com[^>]*>webmedia explorer ([\\d\\.]+)<\\/a>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.webmediaexplorer.com/"
+}

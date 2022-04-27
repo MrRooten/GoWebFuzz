@@ -1,0 +1,31 @@
+{
+  "name": "BEA-WebLogic-Server",
+  "matches": [
+    {
+      "text": "<title>Default BEA WebLogic Server Web Server Index Page</title>"
+    },
+    {
+      "text": "<TITLE>Default BEA WebLogic Server Web Server Index Page</TITLE>"
+    },
+    {
+      "version": "(?-mix:<h1>BEA WebLogic Server ([^\\s]+)&#153;<\\/h1>)"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^WebLogic( WebLogic)?( Server)? (.+)  [\\d]{2}\\/[\\d]{2}\\/[\\d]{4})",
+      "offset": 2
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^WebLogic WebLogic (Temporary .+) [\\d]{2}\\/[\\d]{2}\\/[\\d]{4})"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^WebLogic Server (.+) [A-Z][a-z]{2} [A-Z][a-z]{2} [\\d]{1,2} [\\d]{2}:[\\d]{2}:[\\d]{2})"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Default BEA WebLogic Server Web Server Index Page\""
+  ],
+  "website": "http://download.oracle.com/docs/cd/E13222_01/wls/docs100/index.html"
+}

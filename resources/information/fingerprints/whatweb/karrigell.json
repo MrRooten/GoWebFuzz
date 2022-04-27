@@ -1,0 +1,21 @@
+{
+  "name": "Karrigell",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Karrigell)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Karrigell\\/([^\\s]+) )",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Karrigell ([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://karrigell.sourceforge.net/en/index.html"
+}

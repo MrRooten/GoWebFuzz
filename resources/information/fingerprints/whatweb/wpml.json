@@ -1,0 +1,14 @@
+{
+  "name": "WPML-Plugin",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:_icl_current_language)",
+      "name": "_icl_current_language cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://wpml.org/"
+}

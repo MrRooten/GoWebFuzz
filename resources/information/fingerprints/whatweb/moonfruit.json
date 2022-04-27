@@ -1,0 +1,19 @@
+{
+  "name": "MoonFruit",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:markc)",
+      "name": "markc cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^moonfruit)",
+      "name": "moonfruit cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.moonfruit.com/"
+}

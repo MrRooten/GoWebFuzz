@@ -1,0 +1,21 @@
+{
+  "name": "Day-Communique",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^Communique)"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:Communique\\/([^\\s]+ \\([^\\)]+\\)))"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:Communique\\/([^\\s]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.day.com/"
+}

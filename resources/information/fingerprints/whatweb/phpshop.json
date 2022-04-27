@@ -1,0 +1,19 @@
+{
+  "name": "PHPShop",
+  "matches": [
+    {
+      "certainty": 25,
+      "regexp": "(?i-mx:Powered by phpShop)"
+    },
+    {
+      "regexp": "(?i-mx:Powered by <a href=\"http:\\/\\/www.phpshop.org\"[^>]*>phpShop<\\/a>)"
+    },
+    {
+      "version": "(?-mix:Powered by <a href=\"http:\\/\\/www.phpshop.org\"[^>]*>phpShop<\\/a>[\\r\\n\\s]+([\\d\\.]+) )"
+    }
+  ],
+  "dorks": [
+    "\"powered by PHPShop\""
+  ],
+  "website": "http://code.google.com/p/phpshop/"
+}

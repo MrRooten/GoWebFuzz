@@ -1,0 +1,13 @@
+{
+  "name": "Hybrid-Cluster",
+  "matches": [
+    {
+      "version": "(?-mix:^Hybrid Cluster\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.hybrid-cluster.com/cloud-computing/"
+}

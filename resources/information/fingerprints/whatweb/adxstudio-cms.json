@@ -1,0 +1,23 @@
+{
+  "name": "adxstudio-cms",
+  "matches": [
+    {
+      "name": "Set-cookie Header",
+      "search": "headers[set-cookie]",
+      "regexp": "(?i-mx:anonprofile)"
+    },
+    {
+      "text": "/PoweredByADX.gif"
+    },
+    {
+      "text": "alt=\"Powered by Adxstudio\""
+    },
+    {
+      "text": "/poweredbyadx.png"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.adxstudio.com"
+}

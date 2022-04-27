@@ -1,0 +1,27 @@
+{
+  "name": "Cisco-IOS",
+  "matches": [
+    {
+      "model": "(?-mix:\\ssdmconfig-([^\\.]+).cfg)"
+    },
+    {
+      "model": "(?-mix:\\sc(\\d+)(nm)?[^\\-]*-\\S+-mz\\S+\\.bin)"
+    },
+    {
+      "string": "Dir",
+      "regexp": "(?-mix:<input type=\"hidden\" name=\"DIRINFO\" value=\"\\s+Directory of archive:\\/)"
+    },
+    {
+      "string": "DirFail",
+      "regexp": "(?-mix:<input type=\"hidden\" name=\"DIRINFO\" value=\"\\s*(Command authorization failed|% Authorization failed))"
+    },
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^cisco-IOS)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

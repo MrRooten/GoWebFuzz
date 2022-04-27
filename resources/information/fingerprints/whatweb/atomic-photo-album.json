@@ -1,0 +1,12 @@
+{
+  "name": "Atomic-Photo-Album",
+  "matches": [
+    {
+      "version": "(?-mix:Powered by <a href=\"http:\\/\\/atomicpa.sourceforge.net\\/\" target=\"_blank\">Atomic Photo Album ([\\d\\.a-z]+)<\\/a>)"
+    }
+  ],
+  "dorks": [
+    "\"powered by Atomic Photo Album\" -Vulnerabilities -inurl inurl:apa_album_ID"
+  ],
+  "website": "http://atomicpa.sourceforge.net/"
+}

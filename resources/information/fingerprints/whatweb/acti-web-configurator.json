@@ -1,0 +1,18 @@
+{
+  "name": "ACTi-Web-Configurator",
+  "matches": [
+    {
+      "version": "(?-mix:<title>Web Configurator - Version ([^\\s]*\\s?v[^<]+)<\\/title>)"
+    },
+    {
+      "regexp": "(?-mix:<form name=\"frm(LOGIN|Config)\" method=\"POST\" enctype=\"multipart\\/form-data\" action=\"videoconfiguration\\.cgi\">)"
+    },
+    {
+      "string": "(?-mix:<tr class=\"layout_footer_bgcolor\">\\s*<td width=\"776\"[^>]*>\\s+Copyright@2003-(20[\\d]{2}) ACTi Corporation All Rights Reserved)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Web Configurator\" \"ACTi Corporation All Rights Reserved\""
+  ],
+  "website": "http://www.acti.com/home/index.asp"
+}

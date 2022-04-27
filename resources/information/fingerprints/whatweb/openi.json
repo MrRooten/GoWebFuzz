@@ -1,0 +1,15 @@
+{
+  "name": "OpenI",
+  "matches": [
+    {
+      "version": "(?-mix:<span class=\"big-title\">Openi ([^\\s^<]+)<\\/span><br)"
+    },
+    {
+      "string": "(?-mix:<span class=\"big-title\">Openi-(Jasper)<\\/span><br)"
+    }
+  ],
+  "dorks": [
+    "\"Openi Intelligence Portal\" \"Username\" \"Password\""
+  ],
+  "website": "http://openi.org/"
+}

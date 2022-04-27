@@ -1,0 +1,19 @@
+{
+  "name": "XWiki",
+  "matches": [
+    {
+      "text": "<meta name=\"wiki\" content=\"xwiki\"/>"
+    },
+    {
+      "text": "<div id=\"xwikilicence\">"
+    },
+    {
+      "version": "(?-mix:<div id=\"xwikiplatformversion\">(Powered by )?(XWiki Enterprise )?([^\\s<>]+))",
+      "offset": 2
+    }
+  ],
+  "dorks": [
+    "\"XWiki Enterprise * Documentation\" inurl:\"bin/view/Main\""
+  ],
+  "website": "http://www.xwiki.org/"
+}

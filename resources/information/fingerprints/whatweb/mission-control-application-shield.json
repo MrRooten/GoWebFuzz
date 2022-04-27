@@ -1,0 +1,16 @@
+{
+  "name": "Mission-Control-Application-Shield",
+  "matches": [
+    {
+      "text": "<img id=\"logo\" src=\"/srm-error-pages/images/logo.gif\" alt=\"mission control application shield\" ></td><td><p class=\"notification\">Notification</p></td>"
+    },
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^Mission Control Application Shield$)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Application Shield Notification\" inurl:\"CookieCheckError.shtml?trg=\""
+  ],
+  "website": "http://www.open.ch/1_1_2_1.html"
+}

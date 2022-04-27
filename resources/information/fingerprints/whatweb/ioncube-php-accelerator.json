@@ -1,0 +1,13 @@
+{
+  "name": "ionCube-PHP-Accelerator",
+  "matches": [
+    {
+      "version": "(?-mix:^[\\s]*PHPA\\/([^\\r^\\n]*))",
+      "search": "headers[x-accelerated-by]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.php-accelerator.co.uk/"
+}

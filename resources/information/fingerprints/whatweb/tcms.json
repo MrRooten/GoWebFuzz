@@ -1,0 +1,13 @@
+{
+  "name": "TCMS",
+  "matches": [
+    {
+      "ghdb": "\"powered by TCMS\"",
+      "certainty": 75
+    }
+  ],
+  "dorks": [
+    "\"powered by TCMS\""
+  ],
+  "website": "http://www.tanzarine.co.uk/Articles/cms.html"
+}

@@ -1,0 +1,24 @@
+{
+  "name": "GridSite",
+  "matches": [
+    {
+      "text": "<a href=\"gridsite-admin.cgi?cmd=history&amp;file=index.html\">View&nbsp;page&nbsp;history</a>"
+    },
+    {
+      "text": "<a href=\"gridsite-admin.cgi?cmd=print&amp;file=index.html\">Print&nbsp;View</a>"
+    },
+    {
+      "version": "(?-mix:Built with <a href=\"http:\\/\\/www.gridsite.org\\/\">GridSite<\\/a>&nbsp;([\\d\\.]+))"
+    },
+    {
+      "version": "(?-mix:Built with <a href=\"http:\\/\\/www.gridsite.org\\/\">GridSite<\\/a> ([\\d\\.]+))"
+    },
+    {
+      "text": "<!-- start of gridsitefoot.txt -->"
+    }
+  ],
+  "dorks": [
+    "inurl:gridsite-admin.cgi filetype:cgi -inurl"
+  ],
+  "website": "http://www.gridsite.org/"
+}

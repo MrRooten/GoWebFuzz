@@ -1,0 +1,12 @@
+{
+  "name": "GeneXus",
+  "matches": [
+    {
+      "text": "<meta name=\"Generator\" content=\"GeneXus\" />"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://caceriadespammers.com.ar"
+}

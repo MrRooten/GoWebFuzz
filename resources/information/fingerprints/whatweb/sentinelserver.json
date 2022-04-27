@@ -1,0 +1,13 @@
+{
+  "name": "SentinelServer",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^SentinelServer)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"SentinelServer Login\" \"SentinelServer Login\""
+  ],
+  "website": "http://www.ymor.eu/"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Stronghold",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^Stronghold$)"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Stronghold\\/([^\\s]+))"
+    },
+    {
+      "search": "headers[server]",
+      "string": "(?-mix:(C2Net[A-Z]{2}\\/[^\\s]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.redhat.com/software/stronghold/"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "WSTOOL",
+  "matches": [
+    {
+      "version": "(?-mix:<a href=\"http:\\/\\/sourceforge\\.net\\/projects\\/wstool\" target=\"_blank\">Server Error & SQL Injection Sacnner \\(Ver ([^\\s^\\)]+)\\)<\\/a>)"
+    },
+    {
+      "version": "(?-mix:<title>Server Error & SQL Injection Sacnner \\(Ver ([^\\s^\\)]+)\\)<\\/title>)"
+    }
+  ],
+  "dorks": [
+    " intitle:\"Server Error & SQL Injection Sacnner\" \"Server info\" \"Domain or IP\""
+  ],
+  "website": "http://wstool.sourceforge.net/"
+}

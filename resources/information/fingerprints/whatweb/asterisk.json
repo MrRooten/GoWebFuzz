@@ -1,0 +1,35 @@
+{
+  "name": "Asterisk",
+  "matches": [
+    {
+      "url": "/static/index.html",
+      "regexp": "(?-mix:Your browser should automatically go to the configuration page\\.[\\s]+<br>[\\s]+Or you can <a href=\"config\\/cfgbasic\\.html\">click here<\\/a>[\\s]+<br>)"
+    },
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^Asterisk\\/)"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Asterisk\\/(.+)$)"
+    },
+    {
+      "regexp": "(?-mix:<!--[\\s]+\\* Asterisk-GUI -[\\s]+an Asterisk configuration interface)"
+    },
+    {
+      "text": "<link href=\"stylesheets/cfgbasic.css\" media=\"all\" rel=\"Stylesheet\" type=\"text/css\" />"
+    },
+    {
+      "url": "/static/config/index.html",
+      "text": "<div id=\"ACTIVE_CONTENT\"><noscript>You need to enable Javascript in your browser !!</noscript></div>"
+    },
+    {
+      "url": "/static/config/js/astman.js",
+      "module": "(?-mix:\t\tversion : '([^']+)' \\/\\/ gui version)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Asterisk Configuration GUI\" \"Asterisk Configuration Panel - Please click on a panel to manage related features\""
+  ],
+  "website": "https://www.asterisk.org/asterisk"
+}

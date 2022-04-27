@@ -1,0 +1,17 @@
+{
+  "name": "Pi3Web",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Pi3Web)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Pi3Web\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://pi3web.sourceforge.net/pi3web/"
+}

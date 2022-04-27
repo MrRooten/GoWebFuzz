@@ -1,0 +1,13 @@
+{
+  "name": "Lithium",
+  "matches": [
+    {
+      "name": "BODY id element",
+      "regexp": "(?-mix:<body[^>]+id=\"lia-body\")"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

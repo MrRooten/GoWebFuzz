@@ -1,0 +1,13 @@
+{
+  "name": "Mezzanine",
+  "matches": [
+    {
+      "regexp": "(?-mix:mezzanine_login_interface)",
+      "name": "Admin Login Page "
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://mezzanine.jupo.org/"
+}

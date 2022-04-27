@@ -1,0 +1,17 @@
+{
+  "name": "Lussumo-Vanilla",
+  "matches": [
+    {
+      "version": "(?-mix:Lussumo Vanilla)",
+      "search": "headers[x-powered-by]"
+    },
+    {
+      "version": "(?-mix:Lussumo Vanilla ([^\\s]+))",
+      "search": "headers[x-powered-by]"
+    }
+  ],
+  "dorks": [
+    "inurl:\"people.php?PageAction=SignOutNow\""
+  ],
+  "website": "http://code.google.com/p/lussumo-vanilla/"
+}

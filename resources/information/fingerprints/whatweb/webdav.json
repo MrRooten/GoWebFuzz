@@ -1,0 +1,31 @@
+{
+  "name": "WebDAV",
+  "matches": [
+    {
+      "regexp": "(?-mix:[^\\r^\\n]*DAV\\/)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:[^\\r^\\n]*DAV\\/([^\\s^\\r^\\n]*))",
+      "search": "headers[server]"
+    },
+    {
+      "name": "MS-Author-Via HTTP Header",
+      "regexp": "(?-mix:^[\\s]*DAV)",
+      "search": "headers[MS-Author-Via]"
+    },
+    {
+      "version": "(?-mix:[\\s]*1,2,<http:\\/\\/([^>]+)>)",
+      "search": "headers[dav]"
+    },
+    {
+      "name": "x-webdav-status HTTP Header",
+      "regexp": "(?-mix:)",
+      "search": "headers[x-webdav-status]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

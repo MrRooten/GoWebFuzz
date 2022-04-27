@@ -1,0 +1,15 @@
+{
+  "name": "Motorito",
+  "matches": [
+    {
+      "text": "<!-- end META_TAGS subst -->"
+    },
+    {
+      "text": "<!-- CAL POSAR UN DISCRIMINADOR DE NAVEGADORS PER CARREGAR ELS ESTILS ADEQUATS -->"
+    }
+  ],
+  "dorks": [
+    "inurl:mmod=staticContent"
+  ],
+  "website": "http://www.motorito.com/"
+}

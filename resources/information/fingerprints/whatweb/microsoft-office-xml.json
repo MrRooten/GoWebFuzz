@@ -1,0 +1,10 @@
+{
+  "name": "Microsoft-Office-XML",
+  "matches": [
+
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://en.wikipedia.org/wiki/Microsoft_Office_XML_formats"
+}

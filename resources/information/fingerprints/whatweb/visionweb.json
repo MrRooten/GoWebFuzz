@@ -1,0 +1,23 @@
+{
+  "name": "VisionWEB",
+  "matches": [
+    {
+      "certainty": 75,
+      "search": "headers[server]",
+      "regexp": "(?-mix:^IWeb\\/([^\\s]+))"
+    },
+    {
+      "version": "(?-mix:VarPageTitle=\"Proxima\\d? DVMS VisionWEB v([^\\s^\"]+)\";)"
+    },
+    {
+      "text": "<b>CIEFFE srl</b> - \"We power Your eyes\"<br"
+    },
+    {
+      "string": "(?-mix:<meta name=\"COPYRIGHT\" content=\"&copy; 2001-(2[\\d]{3}) Insignis Technologies\")"
+    }
+  ],
+  "dorks": [
+    "intitle:\"VisionWEB\" \"Insignis Technologies\""
+  ],
+  "website": null
+}

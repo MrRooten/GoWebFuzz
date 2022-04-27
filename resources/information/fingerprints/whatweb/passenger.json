@@ -1,0 +1,21 @@
+{
+  "name": "Passenger",
+  "matches": [
+    {
+      "regexp": "(?-mix:.*Phusion_Passenger)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:[\\s]+Phusion_Passenger\\/([\\d\\.]+))",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:Phusion Passenger \\(mod_rails\\/mod_rack\\) ([\\d\\.]+))",
+      "search": "headers[x-powered-by]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

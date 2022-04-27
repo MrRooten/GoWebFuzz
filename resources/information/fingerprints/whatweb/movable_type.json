@@ -1,0 +1,45 @@
+{
+  "name": "Movable-Type",
+  "matches": [
+    {
+      "name": "javascript with 'mt' in the name",
+      "certainty": 50,
+      "regexp": "(?-mix:<script type=\"text\\/javascript\" src=\"[^\"]+mt(-site)?\\.js\"><\\/script>)"
+    },
+    {
+      "name": "mt-tags|mt-tb|mt-cp|mt-search|mt-user-login|mt-recommend cgi",
+      "certainty": 75,
+      "regexp": "(?-mix:\"[^\"]+\\/mt-(tags|tb|cp|search|user-login|recommend)\\.[f]?cgi[^\"]*\")"
+    },
+    {
+      "name": "meta generator tag",
+      "regexp": "(?-mix:<meta name=\"generator\" content=\"http:\\/\\/www\\.movabletype\\.org\\/\" \\/>)"
+    },
+    {
+      "text": "<title>Movable Type System Check [mt-check.cgi]</title>"
+    },
+    {
+      "version": "(?-mix:<li><strong>Movable Type version:<\\/strong> <code>([^<]+)<\\/code><\\/li>)"
+    },
+    {
+      "filepath": "(?-mix:<li><strong>Current working directory:<\\/strong> <code>([^<]+)<\\/code><\\/li>)"
+    },
+    {
+      "name": "Powered by link",
+      "regexp": "(?-mix:<a href=\"http:\\/\\/sixapart\\.com\">Powered by Movable Type<\\/a>)"
+    },
+    {
+      "name": "Powered by link",
+      "regexp": "(?-mix:Powered by <a href=\"http:\\/\\/www\\.movabletype\\.com\\/\"[^>]*>Movable Type<\\/a>)"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"Movable Type ([^\"]*))",
+      "name": "meta generator tag"
+    }
+  ],
+  "dorks": [
+    "\"Powered by Movable Type\"",
+    "inurl:/mt-check.cgi intitle:\"Movable Type System Check [mt-check.cgi]\""
+  ],
+  "website": "http://www.movabletype.org/"
+}

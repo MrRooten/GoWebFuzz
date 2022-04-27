@@ -1,0 +1,31 @@
+{
+  "name": "SMART-SOFT-VCard-Server",
+  "matches": [
+    {
+      "text": "<title>Error</title></head><body><h1>403 - Directory browsing not allowed</h1><hr>SMART-SOFT VCard HTTP/SSL server"
+    },
+    {
+      "version": "(?-mix:<title>Error<\\/title><\\/head><body><h1>403 - Directory browsing not allowed<\\/h1><hr>SMART-SOFT VCard HTTP\\/SSL server \\(([^\\)]+)\\)<br>)"
+    },
+    {
+      "string": "(?-mix:<title>Error<\\/title><\\/head><body><h1>403 - Directory browsing not allowed<\\/h1><hr>SMART-SOFT VCard HTTP\\/SSL server \\([^\\)]+\\)<br>Server - ([\\w]+))"
+    },
+    {
+      "regexp": "(?-mix:^SMART-SOFT VCard)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^SMART-SOFT VCard HTTP\\/SSL server \\(([^\\)]+)\\)$)",
+      "search": "headers[server]"
+    },
+    {
+      "name": "Exception header",
+      "regexp": "(?-mix:^Directory%20browsing%20not%20allowed$)",
+      "search": "headers[exception]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.smart-soft.ru/"
+}

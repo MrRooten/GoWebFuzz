@@ -1,0 +1,21 @@
+{
+  "name": "System-Shop",
+  "matches": [
+    {
+      "text": "      powered by System4you.com internet solutions"
+    },
+    {
+      "text": "                powered by System-Shop"
+    },
+    {
+      "text": "               http://www.system-shop.at"
+    },
+    {
+      "text": "<a href=\"http://www.systemshop.at\" target=\"_blank\">Powered by System"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://system-shop.at/"
+}

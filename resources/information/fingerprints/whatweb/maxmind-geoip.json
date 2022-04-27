@@ -1,0 +1,12 @@
+{
+  "name": "MaxMind-GeoIP",
+  "matches": [
+    {
+      "regexp": "(?-mix:<script type=\"(JavaScript|text\\/javascript)\" src=\"(http:\\/\\/)?j\\.maxmind\\.com\\/app\\/(country|geoip)\\.js\"><\\/script>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.maxmind.com/app/javascript"
+}

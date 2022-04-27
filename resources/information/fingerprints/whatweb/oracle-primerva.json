@@ -1,0 +1,25 @@
+{
+  "name": "Oracle-Primerva",
+  "matches": [
+    {
+      "string": "(?-mix:<!-- @#\\$ Copyright Start\\s+. 1999 - (20[\\d]{2}) Primavera Systems, Inc\\.  All rights reserved\\.)"
+    },
+    {
+      "text": "<!-- use the default style sheet only.... we do not know the users locale at this time -->"
+    },
+    {
+      "version": "(?-mix:<div class=\"IntroAreaBuildId\" id=\"BuildId\">Version ([^,^\\s]+, Build \\d+)(&nbsp;)*<\\/div>)"
+    },
+    {
+      "version": "(?-mix:<div align=\"right\" id=\"BuildId\">Version ([^,^\\s]+, Build \\d+)(&nbsp;)*<\\/div>)"
+    },
+    {
+      "text": "<img src=\"img/process_meter.gif\" border=0 id=\"progressimage\"><br><br>Loading Java Plugin and Security Certificate"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Primavera Contract Management\" \"Oracle is a registered trademark of Oracle Corporation and/or its affiliates.\" \"Loading Java Plugin and Security Certificate\"",
+    "inurl:\"exponline/logon.jsp\" intitle:\"Primavera Contract Management\""
+  ],
+  "website": "http://www.oracle.com/oms/eppm/index.html"
+}

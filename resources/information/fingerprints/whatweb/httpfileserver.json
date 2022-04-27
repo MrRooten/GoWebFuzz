@@ -1,0 +1,20 @@
+{
+  "name": "HttpFileServer",
+  "matches": [
+    {
+      "version": "(?-mix:<div id=footer>[\\s]+<a href=\"http:\\/\\/www\\.rejetto\\.com\\/hfs\\/\">HttpFileServer ([^<]+)<\\/a>[\\s]+<br \\/>Servertime)"
+    },
+    {
+      "version": "(?-mix:^HFS (\\d\\.\\d.+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "regexp": "(?-mix:^HFS )",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+    "\"File List\" \"Folder archive\" \"HttpFileServer\" \"Servertime\" \"Uptime\" \"Build-time\" intitle:HFS"
+  ],
+  "website": "http://www.rejetto.com/hfs/"
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Wobserver",
+  "matches": [
+    {
+      "text": "<meta name=\"description\" content=\"A web based version of the Erlang observer.\">"
+    },
+    {
+      "text": "<title>Wobserver</title>"
+    },
+    {
+      "url": "/wobserver/api/system",
+      "status": 200,
+      "name": "system_architecture",
+      "string": "(?-mix:system_architecture\":\"([^\"]+)\")"
+    },
+    {
+      "url": "/wobserver/api/system",
+      "status": 200,
+      "name": "elixir_version",
+      "string": "(?-mix:elixir_version\":\"([^\"]+)\")"
+    },
+    {
+      "url": "/wobserver/api/system",
+      "status": 200,
+      "name": "erts_version",
+      "string": "(?-mix:erts_version\":\"([^\"]+)\")"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://github.com/shinyscorpion/wobserver"
+}

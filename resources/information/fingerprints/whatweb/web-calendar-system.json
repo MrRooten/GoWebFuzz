@@ -1,0 +1,16 @@
+{
+  "name": "Web-Calendar-System",
+  "matches": [
+    {
+      "certainty": 25,
+      "ghdb": "+intitle:\"Web Calendar system v\" inurl:.asp"
+    },
+    {
+      "version": "(?-mix:<TITLE>Web Calendar system v ([\\.\\d]+)<\\/TITLE>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

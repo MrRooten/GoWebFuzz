@@ -1,0 +1,88 @@
+{
+  "name": "ASP_NET",
+  "matches": [
+    {
+      "text": "vti_title:SR|Web Settings for Active Server Pages"
+    },
+    {
+      "string": "(?-mix:connectionstring=DRIVER=([^\\n]+))"
+    },
+    {
+      "string": "(?-mix:connectionstring=Provider=([^\\n]+))"
+    },
+    {
+      "string": "(?-mix:connectionString=\"([^\\\"]+))"
+    },
+    {
+      "string": "(?-mix:<add key=\"ConnectionString\" value=\"([^\\\"]+))"
+    },
+    {
+      "search": "body",
+      "string": "Verbose error messages",
+      "text": "This error page might contain sensitive information because ASP.NET is configured to show verbose error messages"
+    },
+    {
+      "search": "body",
+      "filepath": "(?-mix:<b> Source File: <\\/b> ([^<]+)<b> &nbsp;&nbsp; Line:.*This error page might contain sensitive information because ASP.NET)"
+    },
+    {
+      "string": "ViewState Encrypted",
+      "search": "body",
+      "text": "name=\"__VIEWSTATEENCRYPTED\" id=\"__VIEWSTATEENCRYPTED\""
+    },
+    {
+      "name": "x-powered-by HTTP header",
+      "search": "headers[x-powered-by]",
+      "regexp": "(?-mix:asp\\.net)"
+    },
+    {
+      "name": "X-AspNet-Version HTTP header",
+      "search": "headers[x-aspnet-version]",
+      "version": "(?-mix:^(.*)$)"
+    },
+    {
+      "module": "AnonymousIdentificationModule",
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^anonymousID=[^;]+; expires=[^;]+; path=[^;]+; HttpOnly)"
+    },
+    {
+      "module": "AnonymousIdentificationModule",
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^chkvalues=[^;]+; expires=[^;]+; path=[^;]+; HttpOnly)"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^__RequestVerificationToken)",
+      "name": "__RequestVerificationToken cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^.ASPXANONYMOUS)",
+      "name": ".ASPXANONYMOUS cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^ASP.NET_SessionId)",
+      "name": "ASP.NET_SessionId cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^ASPSESSIONID)",
+      "name": "ASPSESSIONID cookie"
+    },
+    {
+      "search": "body",
+      "text": "<input type=\"hidden\" name=\"__VIEWSTATE\" id=\"__VIEWSTATE\""
+    },
+    {
+      "name": "File extension",
+      "regexp": "(?-mix:^(asp|aspx|ashx)$)",
+      "search": "uri.extension"
+    }
+  ],
+  "dorks": [
+    "inurl:web.config ext:config \"ConnectionString\"",
+    "inurl:global.asa ext:asa \"ConnectionString\""
+  ],
+  "website": "https://www.asp.net/"
+}

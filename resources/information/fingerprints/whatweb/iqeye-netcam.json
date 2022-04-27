@@ -1,0 +1,12 @@
+{
+  "name": "IQeye-Netcam",
+  "matches": [
+    {
+      "model": "(?i-mx:<title>IQeye([^:]+): Live Images[^<]*<\\/title>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

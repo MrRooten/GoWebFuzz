@@ -111,12 +111,13 @@ func NewMatchProxy(matchProxy MatchProxy) (*MatchProxy, error) {
 
 		go p.Serve(tls.NewListener(tl, mc.TLS()))
 	}
-	reqHandler := matchlib.NewMatchRequestHandler(5)
-	reqHandler.Request = new(http.Request)
-	reqHandler.Pair = new(matchlib.Pair)
+	//reqHandler := matchlib.NewMatchRequestHandler(5)
+	//reqHandler.Request = new(http.Request)
+	//reqHandler.Pair = new(matchlib.Pair)
+	modifier := matchlib.NewModifier()
 	matchlib.Records.Pairs = []*matchlib.Pair{}
-	p.SetRequestModifier(reqHandler)
-	p.SetResponseModifier(matchlib.NewMatchResponseHandler(reqHandler))
+	p.SetRequestModifier(modifier)
+	p.SetResponseModifier(modifier)
 
 	m := martianhttp.NewModifier()
 

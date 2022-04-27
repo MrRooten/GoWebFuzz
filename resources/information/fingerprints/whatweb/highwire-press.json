@@ -1,0 +1,21 @@
+{
+  "name": "HighWire-Press",
+  "matches": [
+    {
+      "search": "headers[x-firenze-processing-time]",
+      "regexp": "(?-mix:^[\\d\\.]+$)"
+    },
+    {
+      "search": "headers[x-firenze-processing-tims]",
+      "regexp": "(?-mix:^detect-robot:)"
+    },
+    {
+      "search": "headers[x-highwire-sessionid]",
+      "regexp": "(?-mix:^.+$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://highwire.stanford.edu/about/"
+}

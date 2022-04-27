@@ -1,0 +1,31 @@
+{
+  "name": "Online-Grades",
+  "matches": [
+    {
+      "text": "<small><br /><em>Disclaimer</em>:  If you handed in an assignment or took a test today, don't expect the grade to be online immediately.  Teachers only update their grade books as needed.</small><ul><li>"
+    },
+    {
+      "certainty": 75,
+      "version": "(?-mix:<meta name=\"keywords\" content=\"Online Grades Version ([^\\s^\"]+)\" \\/>)"
+    },
+    {
+      "version": "(?-mix:      <div class=\"center\">[\\r\\n]      Online Grades Version:[\\r\\n]      ([^\\s]+)      <\\/div>)"
+    },
+    {
+      "text": "<meta name=\"author\" content=\"Online Grade Posting System -- http://www.onlinegrades.org\" />"
+    },
+    {
+      "text": "<!-- YOU CAN SAFELY REMOVE OR CHANGE ANYTHING BETWEEN THIS SECTION OF COMENTED CODE -->"
+    },
+    {
+      "text": "<!-- STOP REMOVING LINES HERE IF REMOVING/CHANGING THE FOOTER -->"
+    },
+    {
+      "regexp": "(?-mix:<a href=\"http:\\/\\/www.onlinegrades.org\"><img src=\"[^\"^>]+\\/images\\/og.png\"[^>]+alt=\"Powered by Online Grades\"[^>]*><\\/a>)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by Online Grades\" -dork"
+  ],
+  "website": "http://www.onlinegrades.org/"
+}

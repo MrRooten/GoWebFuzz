@@ -1,0 +1,17 @@
+{
+  "name": "SysMaster",
+  "matches": [
+    {
+      "regexp": "(?-mix:^SysMaster Web Server)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^SysMaster Web Server\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.sysmaster.com/"
+}

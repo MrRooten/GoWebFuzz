@@ -1,0 +1,12 @@
+{
+  "name": "X-UA-Compatible",
+  "matches": [
+    {
+      "string": "(?i-mx:<meta http-equiv[\\s]*=[^>]*X-UA-Compatible[^>]*[\\s]+content[\\s]*=[\\s]*['|\"]?([a-z0-9=]+)[^>]*>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

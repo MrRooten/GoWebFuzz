@@ -1,0 +1,24 @@
+{
+  "name": "OrangeHRM",
+  "matches": [
+    {
+      "version": "(?-mix:<div id=\"content\">\\s+<h2>Welcome to the OrangeHRM ver ([^\\s]+) Setup Wizard<\\/h2>)"
+    },
+    {
+      "module": "(?-mix:<div id=\"footer\"><a href=\"http:\\/\\/www\\.orangehrm\\.com\" target=\"_blank\" tabindex=\"[^\"^>]*\">OrangeHRM<\\/a> (Web Installation Wizard ver [^\\s]+) &copy; OrangeHRM Inc)"
+    },
+    {
+      "text": "<input type=\"hidden\" name=\"hdnUserTimeZoneOffset\" id=\"hdnUserTimeZoneOffset\" value=\"0\" />"
+    },
+    {
+      "version": "(?-mix:<div id=\"divFooter\" >\\s+<span id=\"spanCopyright\">\\s+<a href=\"http:\\/\\/www\\.orangehrm\\.com\" target=\"_blank\">OrangeHRM<\\/a>\\s+ver ([^&]+) &copy; OrangeHRM Inc)"
+    },
+    {
+      "version": "(?-mix:<td align=\"center\"><a href=\"http:\\/\\/www\\.orangehrm\\.com\" target=\"_blank\">OrangeHRM<\\/a> ver ([^\\s]+) &copy; OrangeHRM Inc)"
+    }
+  ],
+  "dorks": [
+    "\"OrangeHRM ver\" \"OrangeHRM Inc.\" \"All rights reserved.\""
+  ],
+  "website": "http://www.orangehrm.com/"
+}

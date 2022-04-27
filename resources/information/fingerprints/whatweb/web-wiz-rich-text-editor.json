@@ -1,0 +1,18 @@
+{
+  "name": "Web-Wiz-Rich-Text-Editor",
+  "matches": [
+    {
+      "version": "(?-mix:<a href=\"http:\\/\\/www\\.richtexteditor\\.org\" target=\"_blank\" style=\"font-size:10px\">Web Wiz Rich Text Editor<\\/a> version ([^<]+)<\\/span><\\/td>)"
+    },
+    {
+      "version": "(?-mix:<\\!\\-\\-\\/\\/\\s+\\/\\* [^\\s]+\\s+Software: Web Wiz Rich Text Editor\\(TM\\) ver\\. ([^\\s]+))"
+    },
+    {
+      "text": "<form method=\"post\" action=\"RTE_popup_file_atch.asp\" name=\"frmImageInsrt\">"
+    }
+  ],
+  "dorks": [
+    "inurl:\"RTE_popup_file_atch.asp\" ext:asp"
+  ],
+  "website": "http://www.richtexteditor.org/"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Epson-Printer",
+  "matches": [
+    {
+      "version": "(?-mix:^EPSON-HTTP\\/([^\\s]+))",
+      "search": "headers[server]"
+    },
+    {
+      "module": "(?-mix:<TITLE>EpsonNet (WebAssist |Config )Rev\\.([^<]+)<\\/TITLE>)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"EpsonNet (Config|WebAssist) Rev\""
+  ],
+  "website": "http://www.epson.com/"
+}

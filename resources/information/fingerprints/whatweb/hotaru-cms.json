@@ -1,0 +1,12 @@
+{
+  "name": "Hotaru-CMS",
+  "matches": [
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"Hotaru CMS ([^\\s^\"^>]+)\" \\/>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://hotarucms.org/"
+}

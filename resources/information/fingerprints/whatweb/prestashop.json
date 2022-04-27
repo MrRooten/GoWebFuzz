@@ -1,0 +1,32 @@
+{
+  "name": "PrestaShop",
+  "matches": [
+    {
+      "name": "PrestaShop-powered meta generator",
+      "regexp": "(?-mix:<meta name=\"generator\"[^>]*content=\"PrestaShop)"
+    },
+    {
+      "string": "FR",
+      "name": "PrestaShop-Powered meta description",
+      "regexp": "(?-mix:<meta name=\"description\"[^>]*content=\"par PrestaShop)"
+    },
+    {
+      "string": "EN",
+      "name": "PrestaShop-Powered meta description",
+      "regexp": "(?-mix:<meta name=\"description\"[^>]*content=\"Shop powered by PrestaShop)"
+    },
+    {
+      "name": "html comment",
+      "regexp": "(?-mix:<!-- \\/Block permanent links module HEADER -->)"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:PrestaShop)",
+      "name": "PrestaShop cookie"
+    }
+  ],
+  "dorks": [
+    "inurl:id_cms"
+  ],
+  "website": "http://www.prestashop.com/"
+}

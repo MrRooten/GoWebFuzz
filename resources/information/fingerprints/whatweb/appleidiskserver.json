@@ -1,0 +1,17 @@
+{
+  "name": "AppleIDiskServer",
+  "matches": [
+    {
+      "regexp": "(?-mix:^AppleIDiskServer)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^AppleIDiskServer[\\.|-][A-Z\\d]+$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.apple.com/mobileme/features/idisk.html"
+}

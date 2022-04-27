@@ -1,0 +1,12 @@
+{
+  "name": "Applet",
+  "matches": [
+    {
+      "string": "(?i-mx:<applet[^>]+code[\\s]*=[\\s]*[\"|']?([^\\s^>^\"^']+)[^>]*>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://en.wikipedia.org/wiki/Java_applet"
+}

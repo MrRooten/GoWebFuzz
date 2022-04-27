@@ -1,0 +1,12 @@
+{
+  "name": "TinyBB",
+  "matches": [
+    {
+      "text": "Proudly powered by <a href='http://tinybb.net'>TinyBB</a>"
+    }
+  ],
+  "dorks": [
+    "\"Proudly powered by TinyBB\""
+  ],
+  "website": "http://tinybb.net/"
+}

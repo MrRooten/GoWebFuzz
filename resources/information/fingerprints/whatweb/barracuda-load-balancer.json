@@ -1,0 +1,19 @@
+{
+  "name": "Barracuda-Load-Balancer",
+  "matches": [
+    {
+      "name": "BNI__BARRACUDA_LB_COOKIE cookie",
+      "text": "BNI__BARRACUDA_LB_COOKIE",
+      "search": "headers[set-cookie]"
+    },
+    {
+      "name": "BNI_BARRACUDA_LB_COOKIE cookie",
+      "text": "BNI_BARRACUDA_LB_COOKIE",
+      "search": "headers[set-cookie]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.barracudanetworks.com/ns/products/balancer_overview.php"
+}

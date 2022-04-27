@@ -1,0 +1,17 @@
+{
+  "name": "Tengine-Web-Server",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^Tengine$)"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Tengine\\/([^\\s]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://tengine.taobao.org/"
+}

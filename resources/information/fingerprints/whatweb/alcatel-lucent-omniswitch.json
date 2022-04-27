@@ -1,0 +1,15 @@
+{
+  "name": "Alcatel-Lucent-Omniswitch",
+  "matches": [
+    {
+      "text": "<title>Webview Logon Page</title>"
+    },
+    {
+      "text": "document.write(errMsg==\"\"?\"&nbsp;\":(\"<u>Error</u>&nbsp;-&nbsp;\" + errMsg));"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.al-enterprise.com/en/products/switches"
+}

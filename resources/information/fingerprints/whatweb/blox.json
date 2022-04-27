@@ -1,0 +1,17 @@
+{
+  "name": "BLOX",
+  "matches": [
+    {
+      "regexp": "(?-mix:BLOX CMS version: [\\d.]+)"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^TNNoMobile)",
+      "name": "TNNoMobile cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.townnews365.com./"
+}

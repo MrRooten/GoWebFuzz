@@ -1,0 +1,43 @@
+{
+  "name": "My-WebCamXP-Server",
+  "matches": [
+    {
+      "text": "<html><head><title>my webcamXP server!</title>"
+    },
+    {
+      "text": "\t\t\t<h1><span>webcamXP 5</span></h1>"
+    },
+    {
+      "text": "newWindow = window.open(camstr, winstr, 'toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=' + width + ',height=' + height);"
+    },
+    {
+      "text": "<br><br><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" bordercolor=\"#579A48\"><tr><td><a href=\"http://www.webcamXP.com\"><img src=\"http://www.darkwet.net/banners/webcamxp2.gif\" width=\"88\" height=\"31\" border=\"0\"></a>"
+    },
+    {
+      "text": "<html><head><title>webcamXP :: unauthorized access</title></head>"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"webcamXP [^\"]{0,15}v([\\d\\.]+)\">)"
+    },
+    {
+      "version": "(?-mix:mXP.com\" target=\"_blank\">webcamXP 5<\\/a> v([\\d\\.]+))"
+    },
+    {
+      "version": "(?-mix:powered by <a href=\"http:\\/\\/www.webcamXP.com\" target=\"_blank\">webcamXP<\\/a>[\\ \\d]* v([\\d\\.a-z\\ ]+)<\\/div>)"
+    },
+    {
+      "version": "(?-mix:<\\/td><\\/tr><\\/table><br>powered by webcamXP PRO[\\ \\d]* v([\\d\\.]+)<br><br><br><\\/font><\\/center><\\/body><\\/html>)"
+    },
+    {
+      "version": "(?-mix:\t\t\tpowered by <a href=\"http:\\/\\/www.webcamxp.com\" title=\"www.webcamxp.com\">webcamxp 5<\\/a> v([\\d\\.]+))"
+    },
+    {
+      "version": "(?-mix:powered by <a href=\"http:\\/\\/www.webcamXP.com\" target=\"_blank\">webcamXP 5<\\/a> v([\\d\\.]+)<\\/a>)"
+    }
+  ],
+  "dorks": [
+    "\"powered by webcamXP\"",
+    "intitle:\"my webcamXP server!\" inurl:\":8080\""
+  ],
+  "website": "http://www.webcamxp.com"
+}

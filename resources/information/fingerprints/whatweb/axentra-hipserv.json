@@ -1,0 +1,24 @@
+{
+  "name": "Axentra-HipServ",
+  "matches": [
+    {
+      "text": "<meta name=\"author\" content=\"Axentra\">"
+    },
+    {
+      "text": "<title id=\"document_title\">Axentra :: Digital Home/SOHO Software Platform for Internet Gateway and NAS Devices</title>"
+    },
+    {
+      "regexp": "(?-mix:)",
+      "search": "headers[x-axentra-version]"
+    },
+    {
+      "name": "HOMEBASEID Cookie",
+      "regexp": "(?-mix:HOMEBASEID=)",
+      "search": "headers[set-cookie]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.axentra.com/en/"
+}

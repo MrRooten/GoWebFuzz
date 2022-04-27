@@ -1,0 +1,17 @@
+{
+  "name": "Roxen",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^Roxen$)"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Roxen\\/([^\\s]+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.roxen.com/products/webserver/"
+}

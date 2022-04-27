@@ -1,0 +1,21 @@
+{
+  "name": "Jamroom",
+  "matches": [
+    {
+      "text": "<input type=\"text\" name=\"search_string\" class=\"jform s_input\" style=\"width:300px;\">"
+    },
+    {
+      "text": "<meta name=\"designer\" content=\"Talldude Networks, LLC.\">"
+    },
+    {
+      "regexp": "(?-mix:<a href=\"http:\\/\\/www.jamroom.net\"><img src=\"[^\"]*\" alt=\"Powered by Jamroom - the Powerful Social Media Platform\" title=\"Powered by Jamroom - the Powerful Social Media Platform\" border=\"0\"><\\/a>)"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"Jamroom ([\\d\\.]+)\">)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by Jamroom\""
+  ],
+  "website": "http://www.jamroom.net/"
+}

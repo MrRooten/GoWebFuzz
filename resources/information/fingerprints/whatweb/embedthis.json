@@ -1,0 +1,17 @@
+{
+  "name": "Embedthis-AppWeb",
+  "matches": [
+    {
+      "version": "(?-mix:Mbedthis-Appweb\\/(.*))",
+      "search": "headers[server]"
+    },
+    {
+      "regexp": "(?-mix:^Mbedthis-Appweb)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://embedthis.com/products/appweb/embedded-web-server.html"
+}

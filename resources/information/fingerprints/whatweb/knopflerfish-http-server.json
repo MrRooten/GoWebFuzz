@@ -1,0 +1,13 @@
+{
+  "name": "Knopflerfish-HTTP-Server",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^The Knopflerfish HTTP Server$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.knopflerfish.org/"
+}

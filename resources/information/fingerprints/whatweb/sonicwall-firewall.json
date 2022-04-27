@@ -1,0 +1,21 @@
+{
+  "name": "SonicWALL-Firewall",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^SonicWALL$)"
+    },
+    {
+      "url": "/auth1.html",
+      "module": "(?-mix:<div align=\"right\">Click <a href=\"sslvpn\" onClick=\"top\\.location\\.href='sslvpn'\";>here<\\/a> for (sslvpn) login)"
+    },
+    {
+      "url": "/auth1.html",
+      "firmware": "(?-mix:<link href=\"swl_login-([^\"]+)\\.css\" rel=\"stylesheet\" type=\"text\\/css\">)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"SonicWALL - Authentication\" \"Username\" \"Password\" \"Language\""
+  ],
+  "website": "http://www.sonicwall.com/us/products/Network_Security.html"
+}

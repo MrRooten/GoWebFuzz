@@ -1,0 +1,13 @@
+{
+  "name": "Via-Proxy",
+  "matches": [
+    {
+      "search": "headers[via]",
+      "string": "(?-mix:^.*$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

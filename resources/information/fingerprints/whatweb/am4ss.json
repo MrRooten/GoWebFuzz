@@ -1,0 +1,21 @@
+{
+  "name": "AM4SS",
+  "matches": [
+    {
+      "version": "(?-mix:<meta name=\"copyright\" content=\"Powered by am4ss ([^\\s]+) (Programmed By|programming by) Mohammed Cherkaoui\" \\/>)"
+    },
+    {
+      "text": "<!-- Header end and right block start -->"
+    },
+    {
+      "text": "Powered By <a href=\"http://am4ss.com\"><font color=\"#FF000\">AM4SS</font></a>"
+    },
+    {
+      "regexp": "(?-mix:<link rel=\"stylesheet\" type=\"text\\/css\" href=\"templates\\/[^\\/]+\\/am4ss\\.css\" \\/>)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Powered by AM4SS\""
+  ],
+  "website": "http://am4ss.org/"
+}

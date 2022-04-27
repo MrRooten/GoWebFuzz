@@ -1,0 +1,17 @@
+{
+  "name": "KeyFocus-WebServer",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^KFWebServer$)"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^KFWebServer\\/([\\d\\.]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.keyfocus.net/kfws/"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "SourceBans",
+  "matches": [
+    {
+      "version": "(?-mix:\t\t<a href=\"http:\\/\\/www.sourcebans.net\" target=\"_blank\"><img src=\"images\\/sb.png\" alt=\"SourceBans\" border=\"0\" \\/><\\/a><br\\/>\\n\t\t<div id=\"footqversion\">Version ([\\d\\.]+) <\\/div>)"
+    },
+    {
+      "text": "\t\t<a href=\"http://www.sourcebans.net\" target=\"_blank\"><img src=\"images/sb.png\" alt=\"SourceBans\" border=\"0\" /></a><br/>"
+    },
+    {
+      "regexp": "(?-mix:<div class='dbg' id='[0-9a-f]{7}'><span style='font-weight:bold'>Table '[a-z]+\\.sb_settings' doesn't exist<\\/span> <br \\/><br \\/><span>SQL Query type: <\\/span><span style='font-weight:bold'>EXECUTE<\\/span><span><br \\/><span>)"
+    }
+  ],
+  "dorks": [
+    "inurl:web_upload ext:php \"steam\""
+  ],
+  "website": "http://www.sourcebans.net/"
+}

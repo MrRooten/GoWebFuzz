@@ -1,0 +1,13 @@
+{
+  "name": "IBM-WebSphere-DataPower",
+  "matches": [
+    {
+      "search": "headers[x-backside-transport]",
+      "string": "(?-mix:(FAIL|OK))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www-01.ibm.com/software/integration/datapower/"
+}

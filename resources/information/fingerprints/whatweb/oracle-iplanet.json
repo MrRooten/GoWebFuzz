@@ -1,0 +1,24 @@
+{
+  "name": "Oracle-iPlanet",
+  "matches": [
+    {
+      "search": "headers[proxy-agent]",
+      "version": "(?-mix:iPlanet-Web-Proxy-Server\\/([\\d\\.]+))",
+      "module": "Proxy"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:iPlanet-WebServer-Enterprise\\/([\\d\\.]+))",
+      "module": "Web"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:Oracle-iPlanet-Web-Server\\/([\\d\\.]+))",
+      "module": "Web"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.oracle.com/technetwork/middleware/iplanetwebserver-098726.html"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Chamilo",
+  "matches": [
+    {
+      "search": "headers[x-powered-by]",
+      "version": "(?-mix:^Chamilo ([\\d\\.]+))"
+    },
+    {
+      "text": "<link href=\"http://www.chamilo.org/documentation.php\" rel=\"Help\" />"
+    },
+    {
+      "regexp": "(?-mix:<meta name=\"Generator\" content=\"Chamilo ([\\d\\.]+)\">)"
+    },
+    {
+      "text": "<!-- end of #main\" started at the end of banner.inc.php -->"
+    },
+    {
+      "version": "(?-mix:<\\/div>(Portal|Plattform|Platform|Plataforma) <a href=\"http:\\/\\/www\\.chamilo\\.org\\/?\" target=\"_blank\">Chamilo ([^<^\\s]+)<\\/a> &copy;)",
+      "offset": 1
+    },
+    {
+      "version": "(?-mix:<div class=\"copyright\">(Portal|Plattform|Platform|Plataforma) <a href=\"http:\\/\\/www\\.chamilo\\.org\\/?\" target=\"_blank\">Chamilo ([^<^\\s]+)<\\/a> &copy;)",
+      "offset": 1
+    }
+  ],
+  "dorks": [
+    "(\"Plattform Chamilo\"|\"Portal Chamilo\"|\"Plataforma Chamilo\") inurl:index.php?language=",
+    "\"Congratulations! You have successfully installed your e-learning portal!\" \"Chamilo\""
+  ],
+  "website": "http://www.chamilo.org/"
+}

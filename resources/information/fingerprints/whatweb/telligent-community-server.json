@@ -1,0 +1,23 @@
+{
+  "name": "Telligent-Community-Server",
+  "matches": [
+    {
+      "version": "(?-mix:^([\\d\\.]+)$)",
+      "search": "headers[communityserver]"
+    },
+    {
+      "regexp": "(?-mix:^CommunityServer-UserCookie[\\d\\.]+)",
+      "search": "headers[set-cookie]",
+      "name": "Cookies"
+    },
+    {
+      "regexp": "(?-mix:^CommunityServer-LastVisitUpdated-[\\d\\.]+)",
+      "search": "headers[set-cookie]",
+      "name": "Cookies"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://telligent.com/products/telligent_community/"
+}

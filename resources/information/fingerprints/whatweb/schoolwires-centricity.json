@@ -1,0 +1,26 @@
+{
+  "name": "SchoolWire-Centricity",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^SWSessionID)",
+      "name": "SWSessionID cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^PSDB)",
+      "name": "PSDB cookie",
+      "certainty": 25
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^PSN)",
+      "name": "PSN cookie",
+      "certainty": 25
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.schoolwires.com/centricity2"
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Open-Xchange",
+  "matches": [
+    {
+      "text": "<noscript><div class=\"noscriptmsg\">You need to enable JavaScript to access the Open-Xchange Server."
+    },
+    {
+      "text": "<td class=\"browserchecktextnormal\" id=\"browserchecktext_id\">You need to enable JavaScript to access the Open-Xchange Server."
+    },
+    {
+      "version": "(?-mix:<div class=\"login-bottomline\">\\W+<span id=\"[a-z]\\d+[a-z]\\d+\">Version<\\/span>\\s+:\\W+([^\\s]+\\W+[^\\W]+))"
+    },
+    {
+      "certainty": 75,
+      "search": "headers[location]",
+      "regexp": "(?-mix:^https?:\\/\\/[^\\/]+\\/ox6\\/ox\\.html$)",
+      "version": "6.x"
+    }
+  ],
+  "dorks": [
+    "inurl:\"ox6/ox.html\"",
+    "\"You need to enable JavaScript to access the Open-Xchange Server.\" +Version inurl:ox"
+  ],
+  "website": "http://www.open-xchange.com/"
+}

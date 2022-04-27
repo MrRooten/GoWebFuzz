@@ -1,0 +1,10 @@
+{
+  "name": "MicrosoftOfficeWebServer",
+  "matches": [
+
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://microsoft.com/"
+}

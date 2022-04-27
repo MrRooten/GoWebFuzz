@@ -1,0 +1,17 @@
+{
+  "name": "SVN",
+  "matches": [
+    {
+      "regexp": "(?-mix:[^\\r^\\n]*SVN)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:[^\\r^\\n]*SVN\\/([^\\r^\\n^\\s]*))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

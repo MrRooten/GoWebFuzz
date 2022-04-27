@@ -1,0 +1,21 @@
+{
+  "name": "Allegro-RomPager",
+  "matches": [
+    {
+      "version": "(?-mix:^[\\s]*RomPager\\/([^\\s]+))",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^[\\s]*Allegro-Software-RomPager\\/([^\\s]+))",
+      "search": "headers[server]"
+    },
+    {
+      "text": "",
+      "search": "headers[ext]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.allegrosoft.com/embedded-web-server"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "BIGACE",
+  "matches": [
+    {
+      "text": "Powered by <a href=\"http://www.bigace.de/\" target=\"_blank\">BIGACE</a>"
+    },
+    {
+      "version": "(?-mix:Powered by <a href=\"http:\\/\\/www.bigace.de\\/\"[^>]*>BIGACE ([\\d\\.]+)<\\/a>)"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"BIGACE ([\\d\\.]+)\"( \\/)?>)"
+    },
+    {
+      "version": "(?-mix:<!--[\\r\\n][\\r\\n]   Site is running BIGACE ([\\d\\.]+) [\\r\\n]        a PHP based Web CMS for MySQL[\\r\\n]             \\(C\\) Kevin Papst \\(www.bigace.de\\)[\\r\\n])"
+    }
+  ],
+  "dorks": [
+    "\"Powered by BIGACE\" -dork"
+  ],
+  "website": "http://www.bigace.de/"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "TBDev-YSE",
+  "matches": [
+    {
+      "text": "<!-- /////// Top Navigation Menu for unregistered-->"
+    },
+    {
+      "text": "<!-- /////////// here we go, with the menu //////////// -->"
+    },
+    {
+      "version": "(?-mix:Powered by <a href=\"(http:\\/\\/)?(www\\.tbdev\\.net|bit-torrent\\.kiev\\.ua\\/)\" target=\"_blank\" style=\"cursor: help;\" title=\"[^\"]*\" class=\"copyright\">TBDev<\\/a> v([\\d\\.]+) )",
+      "offset": 2
+    }
+  ],
+  "dorks": [
+    "\"Powered by TBDev v2.0 Yuna Scatari Edition\""
+  ],
+  "website": "http://bit-torrent.kiev.ua/"
+}

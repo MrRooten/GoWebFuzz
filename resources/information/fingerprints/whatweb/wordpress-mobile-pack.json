@@ -1,0 +1,13 @@
+{
+  "name": "WordPress-Mobile-Pack",
+  "matches": [
+    {
+      "search": "headers[x-mobilized-by]",
+      "version": "(?-mix:^WordPress Mobile Pack ([^\\s]+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://wordpress.org/extend/plugins/wordpress-mobile-pack/"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "RackCorp-CDN",
+  "matches": [
+    {
+      "regexp": "(?-mix:^[\\s]*rackcorpcdn)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^[\\s]*rackcorpcdn\\/([\\d\\.]{3,6}))",
+      "search": "headers[server]",
+      "string": "Apache or Nginx",
+      "os": "Linux"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.rackcorp.com/"
+}

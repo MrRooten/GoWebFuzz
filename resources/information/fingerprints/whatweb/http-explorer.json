@@ -1,0 +1,16 @@
+{
+  "name": "Http-Explorer",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Http explorer ([^\\s]+)$)"
+    },
+    {
+      "version": "(?-mix:<p id=\"pgfooter_p_main\">\\s+<a href=\"http:\\/\\/http\\-explorer\\.sourceforge\\.net\\/\\?lang=[^\"]+\">Http explorer\\s+([^\\s^<]+)<\\/a>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://http-explorer.sourceforge.net/"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "JEUS",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Jeus WebContainer)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Jeus WebContainer\\/([\\d\\.]+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Jeus WebContainer\\/JEUS (.+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://us.tmaxsoft.com/jsp/product/detailcontents.jsp?psCd=00PD04&menuCd=00PDMSJE"
+}

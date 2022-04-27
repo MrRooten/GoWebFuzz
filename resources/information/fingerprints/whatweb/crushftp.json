@@ -1,0 +1,32 @@
+{
+  "name": "CrushFTP",
+  "matches": [
+    {
+      "certainty": 25,
+      "text": "<script type=\"text/javascript\" src=\"crushftp_functions.js\"></script>"
+    },
+    {
+      "regexp": "(?-mix:^CrushFTP )",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^CrushFTP (HTTP[\\d]? Server )?Version ([\\d\\.]+)$)",
+      "offset": 1,
+      "search": "headers[server]"
+    },
+    {
+      "name": "CrushAuth Cookie",
+      "regexp": "(?-mix:^CrushAuth=)",
+      "search": "headers[set-cookie]"
+    },
+    {
+      "name": "WWW-Authenticate",
+      "version": "(?-mix:^Basic realm=\"CrushFTP Server Version ([\\d\\.]+)\"$)",
+      "search": "headers[www-authenticate]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.crushftp.com/"
+}

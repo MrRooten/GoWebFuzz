@@ -1,0 +1,13 @@
+{
+  "name": "NetCache-Appliance",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^NetCache appliance \\(NetApp\\/([^\\)]+)\\)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.netapp.com/us/products/netcache.html"
+}

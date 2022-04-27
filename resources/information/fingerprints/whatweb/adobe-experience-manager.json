@@ -1,0 +1,33 @@
+{
+  "name": "Adobe-Experience-Manager",
+  "matches": [
+    {
+      "name": "div class parbase",
+      "regexp": "(?-mix:<div class=\\\"[^\\\"]*parbase)"
+    },
+    {
+      "name": "div data-component-path jcr",
+      "regexp": "(?-mix:<div[^>]+data-component-path=\\\"[^\\\"+]jcr:)"
+    },
+    {
+      "name": "div class aem-Grid",
+      "regexp": "(?-mix:<div class=\\\"[^\\\"]*aem-Grid)"
+    },
+    {
+      "name": "/etc/designs/",
+      "regexp": "(?-mix:<script type=\"text\\/javascript\" src=\"\\/etc\\/designs\\/)"
+    },
+    {
+      "name": "/etc/clientlibs/",
+      "regexp": "(?-mix:<script type=\"text\\/javascript\" src=\"\\/etc\\/clientlibs\\/)"
+    },
+    {
+      "name": "/etc.clientlibs/",
+      "regexp": "(?-mix:<script type=\"text\\/javascript\" src=\"\\/etc\\.clientlibs\\/)"
+    }
+  ],
+  "dorks": [
+    "inurl:/libs/granite/core/content/login.html \"Welcome to Adobe Experience Manager\""
+  ],
+  "website": "https://www.adobe.com/marketing/experience-manager.html"
+}

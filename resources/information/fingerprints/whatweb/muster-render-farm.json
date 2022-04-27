@@ -1,0 +1,23 @@
+{
+  "name": "Muster-Render-Farm",
+  "matches": [
+    {
+      "text": "<body onLoad=\"init_page()\" name=\"muster_login\" >"
+    },
+    {
+      "url": "/dologin.html",
+      "version": "(?-mix:<title>Muster ([\\d]+) Integrated Web server login<\\/title>)"
+    },
+    {
+      "text": "<applet code=\"FileFolderSelector.class\" archive=\"FileFolderSelector.jar\" CODEBASE=\"js\" id=\"FileSelector\" name=\"FileSelector\" width=\"1\" height=\"1\">"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^cias-muster([\\d])$)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Muster\" intitle:\"Integrated Web server login\""
+  ],
+  "website": "http://www.vvertex.com/products.php"
+}

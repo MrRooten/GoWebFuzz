@@ -1,0 +1,14 @@
+{
+  "name": "1&1 Hosting",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:DIY_SB)",
+      "name": "DIY_SB cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.1and1.com/"
+}

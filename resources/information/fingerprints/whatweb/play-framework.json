@@ -1,0 +1,13 @@
+{
+  "name": "Play-Framework",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Play! Framework;(\\d[^\\s^;]+;[^\\s]+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.playframework.org/"
+}

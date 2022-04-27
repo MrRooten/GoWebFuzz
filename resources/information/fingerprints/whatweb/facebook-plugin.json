@@ -1,0 +1,13 @@
+{
+  "name": "Facebook-Plugin",
+  "matches": [
+    {
+      "string": "(?i-mx:<i?frame[^>]+src[\\s]*=\"http:\\/\\/(www|apps)\\.facebook.com\\/plugins\\/([^\\.^\\/^\\?]+)\\.php\\?)",
+      "offset": 1
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://apps.facebook.com/widgets/"
+}

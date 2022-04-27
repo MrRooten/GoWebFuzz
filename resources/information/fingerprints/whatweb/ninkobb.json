@@ -1,0 +1,18 @@
+{
+  "name": "NinkoBB",
+  "matches": [
+    {
+      "regexp": "(?-mix:<link href=\"[^\"]*\\/assets\\/css\\/ninko.css\" rel=\"stylesheet\" type=\"text\\/css\" \\/>)"
+    },
+    {
+      "text": "Powered by <a href=\"http://ninkobb.com\">NinkoBB</a>"
+    },
+    {
+      "version": "(?-mix:Powered by <a href=\"http:\\/\\/ninkobb.com\\/\">NinkoBB<\\/a> v. ([\\d\\.]{1,5}) t.)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by NinkoBB\""
+  ],
+  "website": "http://ninkobb.com/"
+}

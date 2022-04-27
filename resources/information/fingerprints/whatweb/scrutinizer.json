@@ -1,0 +1,18 @@
+{
+  "name": "Scrutinizer",
+  "matches": [
+    {
+      "version": "(?-mix:<div id='testAlertDivTitle'>Scrutinizer ([^<]+)<\\/div>)"
+    },
+    {
+      "regexp": "(?-mix:<link id='scrutStyle' rel=\"stylesheet\" href=\"\\/css\\/classic\\.css)"
+    },
+    {
+      "regexp": "(?-mix:<div id='testAlertHdrMsg'>For the best Scrutinizer experience possible, please address the issues below:<\\/div>)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Scrutinizer\" \"For the best Scrutinizer experience possible, please address the issues below\""
+  ],
+  "website": "http://www.plixer.com/products/netflow-sflow/scrutinizer-netflow-sflow.php"
+}

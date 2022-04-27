@@ -1,0 +1,30 @@
+{
+  "name": "Novell-Groupwise",
+  "matches": [
+    {
+      "text": "<!-- START NOVELL SERVICES -->"
+    },
+    {
+      "text": "<!-- START GROUPWISE WEBACCESS -->"
+    },
+    {
+      "text": "<!-- ========== GroupWise WebAccess Form ========== -->"
+    },
+    {
+      "ghdb": "intitle:\"novell webaccess\" inurl:\"servlet/webacc\" -filetype:html"
+    },
+    {
+      "text": "<title>Novell Web Services</title>"
+    },
+    {
+      "text": "<TITLE>Novell WebAccess</TITLE>"
+    },
+    {
+      "version": "(?-mix:^&copy; Copyright 1993-20[\\d]{2} Novell, Inc. All rights reserved.[\\s]+<BR>Version ([\\d\\.]+)$)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"novell webaccess\" inurl:servlet/webacc -filetype:html"
+  ],
+  "website": "http://www.novell.com/products/groupwise/"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Enhydra-Application-Server",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Enhydra-MultiServer\\/([^\\s]+))"
+    },
+    {
+      "search": "headers[servlet-engine]",
+      "version": "(?-mix:Enhydra Application Server\\/([^\\s]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://enhydra.org/"
+}

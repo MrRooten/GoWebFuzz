@@ -1,0 +1,23 @@
+{
+  "name": "Winconnection",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Winconnection )",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Winconnection V([^\\s]+) \\(server ([A-Z\\d]{6})\\)$)",
+      "offset": 0,
+      "search": "headers[server]"
+    },
+    {
+      "string": "(?-mix:^Winconnection V([^\\s]+) \\(server ([A-Z\\d]{6})\\)$)",
+      "offset": 1,
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.winco.com.br/"
+}

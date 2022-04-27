@@ -1,0 +1,12 @@
+{
+  "name": "Allomani-E-Store",
+  "matches": [
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"Allomani Store v([\\d\\.]+)\" \\/>)"
+    }
+  ],
+  "dorks": [
+    "\"Programmed By Allomani\""
+  ],
+  "website": "http://allomani.com/en/store_script.html"
+}

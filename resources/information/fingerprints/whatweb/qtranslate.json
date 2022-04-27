@@ -1,0 +1,13 @@
+{
+  "name": "qTranslate",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:qtrans_cookie_test=[^\\+]+\\+Cookie\\+Test;)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.qianqin.de/qtranslate/"
+}

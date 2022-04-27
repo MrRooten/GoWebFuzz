@@ -1,0 +1,15 @@
+{
+  "name": "cInvoice",
+  "matches": [
+    {
+      "version": "(?-mix:<small>Powered by <a href=\"http:\\/\\/www\\.forperfect\\.com\\/\" class=\"footerlink\">cInvoice system ([\\d\\.]+)<\\/a><\\/small>)"
+    },
+    {
+      "regexp": "(?-mix:\\/images\\/footer_bg\\.gif\" width=\"[\\d]{2}%\" align=\"center\" cellspacing=\"1\" cellpadding=\"1\"><td class=copyright align=\"center\">)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by cInvoice system\""
+  ],
+  "website": "http://www.forperfect.com/seo/cinvoice.php"
+}

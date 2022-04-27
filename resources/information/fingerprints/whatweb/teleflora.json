@@ -1,0 +1,14 @@
+{
+  "name": "Teleflora",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^sdt)",
+      "name": "sdt cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.teleflora.com/"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ASPForum",
+  "matches": [
+    {
+      "version": "(?-mix:<div[^>]+id=\"FORUMS_FORUM_GROUP_V([\\d_]+))",
+      "name": "version"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

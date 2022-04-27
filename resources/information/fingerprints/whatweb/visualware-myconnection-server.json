@@ -1,0 +1,24 @@
+{
+  "name": "Visualware-MyConnection-Server",
+  "matches": [
+    {
+      "text": "<!-- Begin MyConnection Server applet -->"
+    },
+    {
+      "regexp": "(?-mix:^Visualware MyConnection Server)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Visualware MyConnection Server [^\\d]+ (\\d\\.[^\\s]+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "string": "(?-mix:^Visualware MyConnection Server ([^\\d]+) \\d\\.[^\\s]+$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+    "intitle:\"MyConnection\" \"MyConnection Server\" (\"expires in\"|EXPIRED)"
+  ],
+  "website": "http://www.myconnectionserver.com/"
+}

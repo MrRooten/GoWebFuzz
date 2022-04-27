@@ -1,0 +1,25 @@
+{
+  "name": "H3C-SecBlade-FireWall",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^Switch$)"
+    },
+    {
+      "text": "<script language=javascript src=\"js/MulPlatAPI.js\"></script>"
+    },
+    {
+      "text": "<a href=\"../cn/login.html\"><img border=\"0\" src=\"../images/Cnlink.jpg\" alt=\"Chinese\"></a>"
+    },
+    {
+      "text": "<a href=\"../en/login.html\"><img border=\"0\" src=\"../images/Enlink.jpg\" alt=\"English\"></a>"
+    },
+    {
+      "text": "<script language=javascript src=\"/js/MulPlatAPI.js\"></script>"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.h3c.com/portal/Products___Solutions/Products/Security_Products/H3C_SecBlade_Module/H3C_SecBlade_FW/"
+}

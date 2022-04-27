@@ -1,0 +1,14 @@
+{
+  "name": "nopCommerce",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^Nop.customer)",
+      "name": "Nop.customer cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.nopcommerce.com/"
+}

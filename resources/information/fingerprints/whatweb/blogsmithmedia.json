@@ -1,0 +1,13 @@
+{
+  "name": "BlogSmithMedia",
+  "matches": [
+    {
+      "certainty": 75,
+      "regexp": "(?-mix:<script [^>]*\\\"http:\\/\\/www.blogsmithmedia.com)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

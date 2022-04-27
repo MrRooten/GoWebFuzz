@@ -1,0 +1,25 @@
+{
+  "name": "Oracle-Application-Server",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "string": "(?-mix:^Oracle-Application-Server-(1[01]g))"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Oracle-Application-Server-1[01]g\\/([^\\s]+))"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Oracle Application Server\\/1[01]g \\(([^\\s^\\)]+)\\))"
+    },
+    {
+      "search": "headers[server]",
+      "module": "(?-mix:^Oracle[ -]Application[ -]Server.+ (OracleAS-Web-Cache-1[01]g\\/[^\\s]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.oracle.com/technetwork/middleware/ias/index.html"
+}

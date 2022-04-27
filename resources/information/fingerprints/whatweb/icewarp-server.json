@@ -1,0 +1,21 @@
+{
+  "name": "IceWarp-Server",
+  "matches": [
+    {
+      "regexp": "(?-mix:^IceWarp)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^IceWarp\\/(.+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^IceWarp WebSrv\\/(.+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.icewarp.com/"
+}

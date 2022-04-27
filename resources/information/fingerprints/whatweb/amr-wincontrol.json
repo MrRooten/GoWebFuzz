@@ -1,0 +1,13 @@
+{
+  "name": "AMR-WinControl",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:AMR_WinControl[_0-9]*\\/([\\d\\.]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://amr-wincontrol.software.informer.com/"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "MJNioHttpDaemon",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^MJNioHttpDaemon\\/([^\\s]+))"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:MJNIOHTTPDSESSIONID=)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

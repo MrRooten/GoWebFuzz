@@ -1,0 +1,16 @@
+{
+  "name": "Microsys-PROMOTIC",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^Promotic$)"
+    },
+    {
+      "text": "<html><head><title>PROMOTIC Redirection</title></head>"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.promotic.eu/en/promotic/scada-pm.htm"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Laravel",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^laravel_session)",
+      "name": "laravel_session cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://laravel.com/"
+}

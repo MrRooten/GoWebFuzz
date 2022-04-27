@@ -1,0 +1,19 @@
+{
+  "name": "Netgear-Router",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Basic realm=\"?[\\s]*Netgear)",
+      "certainty": 75,
+      "search": "headers[www-authenticate]"
+    },
+    {
+      "model": "(?-mix:^Basic realm=\"?[\\s]*NETGEAR ([^\"]+)[\\s]*\"?)",
+      "certainty": 75,
+      "search": "headers[www-authenticate]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.netgear.com/products/"
+}

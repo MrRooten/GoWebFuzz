@@ -1,0 +1,12 @@
+{
+  "name": "Railo",
+  "matches": [
+    {
+      "text": "<script language = \"JavaScript\" type=\"text/javascript\" src=\"/railo-context/form.cfm\"></script><script language = \"JavaScript\" type=\"text/javascript\">"
+    }
+  ],
+  "dorks": [
+    "inurl:railo-context/admin/ ext:cfm"
+  ],
+  "website": "http://getrailo.com/"
+}

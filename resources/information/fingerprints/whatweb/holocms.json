@@ -1,0 +1,18 @@
+{
+  "name": "HoloCMS",
+  "matches": [
+    {
+      "version": "(?-mix:<meta name=\"build\" content=\"([^\\ ]+) - [^-]+- HoloCMS\" \\/>)"
+    },
+    {
+      "text": "<div id=\"remember-me-notification\" class=\"bottom-bubble\" style=\"display:none;\">"
+    },
+    {
+      "regexp": "(?-mix:^Powered by HoloCMS &copy[;]* 2008 Meth0d & Parts by Yifan, sisija)"
+    }
+  ],
+  "dorks": [
+    "\"powered by HoloCMS\" \"Meth0d\""
+  ],
+  "website": null
+}

@@ -1,0 +1,18 @@
+{
+  "name": "RobPoll",
+  "matches": [
+    {
+      "ghdb": "inurl:\"robpoll.cgi?start\" filetype:cgi"
+    },
+    {
+      "text": "<head><title>RobPoll Admin</title></head>"
+    },
+    {
+      "regexp": "(?-mix:<form action=\"[^\"]*\\/robpoll\\.cgi\" method=\"post\">)"
+    }
+  ],
+  "dorks": [
+    "inurl:robpoll.cgi filetype:cgi"
+  ],
+  "website": "Offline"
+}

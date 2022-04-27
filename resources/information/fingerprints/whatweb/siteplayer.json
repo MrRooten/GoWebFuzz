@@ -1,0 +1,20 @@
+{
+  "name": "SitePlayer",
+  "matches": [
+    {
+      "model": "Telnet",
+      "version": "(?-mix:^SitePlayer Telnet\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "model": "Telnet",
+      "name": "WWW-Authenticate realm",
+      "regexp": "(?-mix:^Basic realm=\"SitePlayer Telnet Configuration\"$)",
+      "search": "headers[www-authenticate]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://netmedia.com/siteplayer/"
+}

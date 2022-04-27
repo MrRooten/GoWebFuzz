@@ -1,0 +1,17 @@
+{
+  "name": "Fujitsu-Wireless-AP",
+  "matches": [
+    {
+      "model": "(?-mix:^(SR-M20A[C|P]{1}1)$)",
+      "search": "headers[server]"
+    },
+    {
+      "url": "/hgi-bin/Setup/setup.cgi",
+      "firmware": "(?-mix:<TABLE cellspacing=0 cellpadding=0><TR><TD align=\"center\"><A href=\"\\/home.html\"><IMG src=\"\\/images\\/logo.gif\" alt=\"[^\"]+\" border=0><\\/A><BR><FONT size='2'>SR-M20A[C|P]{1}1\\(V([\\d\\.]+) config1\\)<BR><\\/FONT><\\/TD><\\/TR><TR><TH colspan=4><HR>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://fenics.fujitsu.com/products/sr-m/"
+}

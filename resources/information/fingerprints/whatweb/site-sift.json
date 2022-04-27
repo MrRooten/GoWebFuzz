@@ -1,0 +1,31 @@
+{
+  "name": "Site-Sift",
+  "matches": [
+    {
+      "certainty": 25,
+      "ghdb": "inurl: \"index.php?go=detail id=\""
+    },
+    {
+      "certainty": 25,
+      "ghdb": "inurl: \"index php go addpage\""
+    },
+    {
+      "certainty": 25,
+      "ghdb": "\"powered by Site Sift\""
+    },
+    {
+      "regexp": "(?i-mx:<div align=\"center\" class=\"copyright\">powered by <A class=\"bottomlink\" href=\"http:\\/\\/[scripts|www]+.site-sift.com[\\/]*\">Site Sift[^<]*<\\/A><\\/div>)"
+    },
+    {
+      "text": "\t\t\t\t<!-- end of header.php -->"
+    },
+    {
+      "text": "\t\t\t\t<!-- begin of footer.php -->"
+    }
+  ],
+  "dorks": [
+    "inurl: \"index php go addpage\"",
+    "\"powered by Site Sift\" -exploit -\"SQL Injection\""
+  ],
+  "website": "http://scripts.site-sift.com/"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "IWSS-Proxy",
+  "matches": [
+
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://us.trendmicro.com/us/products/enterprise/interscan-web-security-suite/"
+}

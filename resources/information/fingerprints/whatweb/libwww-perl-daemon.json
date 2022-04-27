@@ -1,0 +1,13 @@
+{
+  "name": "libwww-perl-daemon",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^libwww-perl-daemon\\/([^\\s]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://search.cpan.org/~gaas/HTTP-Daemon-6.00/lib/HTTP/Daemon.pm"
+}

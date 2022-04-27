@@ -1,0 +1,24 @@
+{
+  "name": "SAP-NetWeaver",
+  "matches": [
+    {
+      "name": "HTTP Server Header",
+      "regexp": "(?-mix:^SAP (Web|NetWeaver))",
+      "search": "headers[server]"
+    },
+    {
+      "string": "(?-mix:^SAP (Web|NetWeaver) Application Server [\\/]?[\\ ]?[\\(]?([^\\)^\\r^\\n]+)[\\)]?)",
+      "offset": 1,
+      "search": "headers[server]"
+    },
+    {
+      "module": "J2EE",
+      "version": "(?-mix:^SAP J2EE Engine\\/([\\d\\.]{1,4}))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Logon - SAP Web Application Server\""
+  ],
+  "website": "http://www.sap.com/platform/netweaver/index.epx"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Commerce-Builder",
+  "matches": [
+    {
+      "version": "(?-mix:^Commerce-Builder\\/([^\\s]+))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.ifact.com/"
+}

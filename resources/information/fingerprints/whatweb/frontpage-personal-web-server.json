@@ -1,0 +1,17 @@
+{
+  "name": "FrontPage-Personal-Web-Server",
+  "matches": [
+    {
+      "version": "(?-mix:^FPWS\\/([^\\s]+))",
+      "search": "headers[server]"
+    },
+    {
+      "regexp": "(?-mix:^FPWS)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.microsoft.com/"
+}

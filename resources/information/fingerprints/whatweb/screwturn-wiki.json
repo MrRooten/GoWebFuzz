@@ -1,0 +1,12 @@
+{
+  "name": "ScrewTurn-Wiki",
+  "matches": [
+    {
+      "version": "(?-mix:Powered by <a class=\"externallink\" href=\"http:\\/\\/www\\.screwturn\\.eu\" title=\"ScrewTurn Wiki\" target=\"_blank\">ScrewTurn Wiki<\\/a> version ([\\d\\.]+))"
+    }
+  ],
+  "dorks": [
+    "\"Powered by ScrewTurn Wiki version \""
+  ],
+  "website": "http://www.screwturn.eu/"
+}

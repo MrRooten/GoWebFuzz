@@ -1,0 +1,15 @@
+{
+  "name": "ContentXXL",
+  "matches": [
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"contentXXL Business Content Management System  ([^\\(]+)\\([^\\)]+\\) \\/ contentXXL International GmbH \\/ www.contentxxl.de\" [\\/]?>)"
+    },
+    {
+      "string": "(?-mix:<meta name=\"generator\" content=\"contentXXL Business Content Management System  [^\\(]+\\(([^\\)]+), [^,^>]+, (Release|Debug)\\) \\/ contentXXL International GmbH \\/ www.contentxxl.de\" [\\/]?>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.contentxxl.de/"
+}

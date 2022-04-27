@@ -1,0 +1,18 @@
+{
+  "name": "eDirectory",
+  "matches": [
+    {
+      "text": "<span class=\"basePowered\">Powered by <a href=\"http://www.edirectory.com\" target=\"_blank\">eDirectory&trade;</a>.</span>"
+    },
+    {
+      "regexp": "(?-mix: class=\"basePowered\">Powered by <a href=\"[^\"]+\" target=\"_blank\">eDirectory&trade;[\\s]?<\\/a>)"
+    },
+    {
+      "version": "(?-mix:<blockquote class=\"eDirectoryVersion\"><span class=\"basePowered\">Powered by <a href=\"http:\\/\\/www\\.edirectory\\.com\" target=\"_blank\">eDirectory&trade;<\\/a> <\\/span> v\\.([^<^\\s]+)<\\/blockquote>)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by eDirectory\" \"type a keyword\" \"listings\" \"events\""
+  ],
+  "website": null
+}

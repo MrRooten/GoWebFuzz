@@ -1,0 +1,49 @@
+{
+  "name": "Canon-Printer",
+  "matches": [
+    {
+      "model": "(?i-mx:<title>Remote UI<Top Page>: (\\w+))"
+    },
+    {
+      "model": "(?i-mx:<title>Remote UI&lt;Top page&gt;: ([^:]+))",
+      "url": "/frame.cgi"
+    },
+    {
+      "model": "(?i-mx:<title>Remote UI&lt;Top page&gt;: ([^:]+))",
+      "url": "/frame.cgi?PageFlag=t_frame.tpl"
+    },
+    {
+      "model": "(?-mix:<link rel=\"shortcut icon\" type=\"image\\/x-icon\" href=\"G24_favicon\\.ico\" \\/><title>Remote UI \\(Top Page\\) : [^:^<]* : Canon ([^\\s^<]+)<\\/title>)"
+    },
+    {
+      "model": "(?-mix:<title>Canon ([^\\s]+) series Network Configuration \\| )"
+    },
+    {
+      "url": "/_top.htm",
+      "text": "<img src=\"top_canon.gif\" width=\"123\" height=\"33\""
+    },
+    {
+      "search": "headers[server]",
+      "regexp": "(?i-mx:^Canon Http Server)"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?i-mx:^Canon Http Server (Ver)?(.*))",
+      "offset": 1
+    },
+    {
+      "certainty": 75,
+      "search": "headers[server]",
+      "version": "(?-mix:^KS_HTTP\\/([^\\s]+))"
+    },
+    {
+      "certainty": 25,
+      "search": "headers[server]",
+      "version": "(?-mix:^LPC Http Server\\/V([^\\s]+))"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Remote UI\" intitle:\"Top Page\" intitle:Canon"
+  ],
+  "website": "http://www.canon.com/"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "Ultraseek",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Ultraseek)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Ultraseek\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

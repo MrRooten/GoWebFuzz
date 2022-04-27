@@ -1,0 +1,12 @@
+{
+  "name": "AddThis",
+  "matches": [
+    {
+      "regexp": "(?i-mx:<script [^>]*src=[\"|'][^>]*addthis\\.com\\/js)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.addthis.com/"
+}

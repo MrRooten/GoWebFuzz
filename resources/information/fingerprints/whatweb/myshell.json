@@ -1,0 +1,15 @@
+{
+  "name": "MyShell",
+  "matches": [
+    {
+      "text": "&nbsp;| ::::::::::&nbsp;<a href=\"http://www.digitart.net\" target=\"_blank\" style=\"text-decoration:none\"><b>MyShell</b> &copy;2001 Digitart Producciones</a>"
+    },
+    {
+      "version": "(?-mix:<title>MyShell ([\\d\\.]+ build [\\d]{8})<\\/title>)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"MyShell 1.1.0 build 20010923\" -intitle"
+  ],
+  "website": null
+}

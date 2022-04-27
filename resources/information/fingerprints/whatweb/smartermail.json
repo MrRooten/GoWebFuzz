@@ -1,0 +1,26 @@
+{
+  "name": "SmarterMail",
+  "matches": [
+    {
+      "string": "(?-mix:<a href='http:\\/\\/www.smartertools.com\\/smartermail\\/mail-server-software.aspx' target='_blank'>SmarterMail (Enterprise|Professional|Free|FREE) ([\\d\\.]+)<\\/a>( |&nbsp;)\\|( |&nbsp;)<a href='http:\\/\\/www.smartertools.com\\/smartermail\\/mail-server-software.aspx' target='_blank'>(Windows Mail Server|Email Server Software|Mail Server Software)<\\/a>)"
+    },
+    {
+      "version": "(?-mix:<a href='http:\\/\\/www.smartertools.com\\/smartermail\\/mail-server-software.aspx' target='_blank'>SmarterMail (Enterprise|Professional|Free|FREE) ([\\d\\.]+)<\\/a>( |&nbsp;)\\|( |&nbsp;)<a href='http:\\/\\/www.smartertools.com\\/smartermail\\/mail-server-software.aspx' target='_blank'>(Windows Mail Server|Email Server Software|Mail Server Software)<\\/a>)",
+      "offset": 1
+    },
+    {
+      "string": "(?-mix:\t\t\t\t\t\t\t\t\t\t<td class=\"?bar1inner\"?>SmarterMail (Enterprise|Professional|Free|FREE) Edition ([\\d\\.]+)<\\/td>)"
+    },
+    {
+      "version": "(?-mix:\t\t\t\t\t\t\t\t\t\t<td class=\"?bar1inner\"?>SmarterMail (Enterprise|Professional|Free|FREE) Edition ([\\d\\.]+)<\\/td>)",
+      "offset": 1
+    },
+    {
+      "text": "<title>Login - SmarterMail</title>"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.smartertools.com/smartermail/mail-server-software.aspx"
+}

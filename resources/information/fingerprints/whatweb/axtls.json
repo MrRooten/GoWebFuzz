@@ -1,0 +1,13 @@
+{
+  "name": "axTLS",
+  "matches": [
+    {
+      "version": "(?-mix:^axhttpd\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://axtls.sourceforge.net/"
+}

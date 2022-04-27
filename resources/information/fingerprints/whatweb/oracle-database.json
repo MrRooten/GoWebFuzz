@@ -1,0 +1,14 @@
+{
+  "name": "Oracle-Database",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^Oracle XML DB\\/Oracle Database$)",
+      "module": "Oracle XML DB"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.oracle.com/technetwork/database/enterprise-edition/overview/index.html"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "EMC-NetWorker",
+  "matches": [
+    {
+      "text": "<title>Welcome to NetWorker Management Console</title>"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.emc.com/domains/legato/index.htm"
+}

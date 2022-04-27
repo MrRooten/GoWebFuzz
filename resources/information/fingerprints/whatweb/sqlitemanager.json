@@ -1,0 +1,34 @@
+{
+  "name": "SQLiteManager",
+  "matches": [
+    {
+      "text": "<!-- SQLiteFunctionProperties.class.php : propView() -->"
+    },
+    {
+      "text": "<!-- common.lib.php : displayMenuTitle() -->"
+    },
+    {
+      "text": "<td style=\"white-space: nowrap\">\t<form name=\"database\" action=\"main.php\" enctype=\"multipart/form-data\" method=\"POST\" onSubmit=\"checkPath();\" target=\"main\">"
+    },
+    {
+      "text": "<h2 class=\"sqlmVersion\">Database : <a href=\"main.php?dbsel="
+    },
+    {
+      "string": "(?-mix:<title>(SQLite version [\\d\\.\\s-]+)(undefined)?<\\/title>)"
+    },
+    {
+      "version": "(?-mix:<h2 class=\"sqlmVersion\">Welcome to <a href=\"http:\\/\\/www\\.sqlitemanager\\.org\" target=\"_blank\">SQLiteManager<\\/a> version ([^\\s^>]+)<\\/h2>)"
+    },
+    {
+      "string": "(?-mix:<h4 class=\"serverInfo\">(SQLite version [\\d\\.\\s-]+)(undefined)? \\/ PHP version 5.2.17<\\/h4>)"
+    },
+    {
+      "string": "(?-mix:<h4 class=\"serverInfo\">SQLite version [\\d\\.\\s-]+(undefined)? \\/ (PHP version [^\\s^<]+)<\\/h4>)",
+      "offset": 1
+    }
+  ],
+  "dorks": [
+    "intitle:\"SQLite version\" \"Welcome to SQLiteManager version\""
+  ],
+  "website": "http://www.sqlitemanager.org"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "FAQ-Manager",
+  "matches": [
+    {
+      "text": "\t\t<a href=\"admin/\">Admin Area</a></td></tr></table></body></html>"
+    },
+    {
+      "text": "\t\t<td><font size=\"-1\">&nbsp;</font><p><b><font size=\"-1\">FAQ ADMIN AREA</font></b></td>"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.t-dreams.com/faqmanager.asp"
+}

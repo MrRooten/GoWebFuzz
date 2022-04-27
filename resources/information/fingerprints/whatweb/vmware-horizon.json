@@ -1,0 +1,19 @@
+{
+  "name": "VMware-Horizon",
+  "matches": [
+    {
+      "name": "title",
+      "certainty": 75,
+      "text": "<title>VMware Horizon</title>"
+    },
+    {
+      "name": "info",
+      "url": "/portal/info.jsp",
+      "version": "(?-mix:\\\"clientVersion\\\":\\\"([\\d\\.]+)\\\")"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.vmware.com/products/horizon.html"
+}

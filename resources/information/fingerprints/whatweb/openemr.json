@@ -1,0 +1,27 @@
+{
+  "name": "OpenEMR",
+  "matches": [
+    {
+      "certainty": 25,
+      "ghdb": "inurl:interface/login/login_frame.php filetype:php"
+    },
+    {
+      "regexp": "(?-mix:<body ONLOAD=\"javascript:top\\.location\\.href='interface\\/login\\/login_frame\\.php(\\?site=default)?';\">)"
+    },
+    {
+      "version": "(?-mix:type=\"text\\/css\">[\\s]+<\\/head>[\\s]+<body class=\"body_title\">[\\s]+<span class=\"title_bar\">[^<]+ v([^\\s^<]+)<\\/span><br>)"
+    },
+    {
+      "regexp": "(?-mix:<!--<frame src=\"\\/[^\\/]+\\/interface\\/login\\/filler\\.php\" name=\"Filler Bottom\" scrolling=\"no\" noresize frameborder=\"NO\">-->)"
+    },
+    {
+      "certainty": 75,
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:OpenEMR=[^\\s]+;)"
+    }
+  ],
+  "dorks": [
+    "inurl:\"interface/login/login_frame.php\" ext:php"
+  ],
+  "website": "http://www.open-emr.org/"
+}

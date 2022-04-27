@@ -1,0 +1,25 @@
+{
+  "name": "Dreambox",
+  "matches": [
+    {
+      "url": "/web-data/img/favicon.ico",
+      "md5": "d9aa63661d742d5f7c7300d02ac18d69"
+    },
+    {
+      "version": "(?-mix:^Enigma2 WebInterface Server ([\\d\\.]+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "regexp": "(?-mix:^TwistedWeb)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^TwistedWeb\\/([\\d\\.]+))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

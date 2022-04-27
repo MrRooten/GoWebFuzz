@@ -1,0 +1,13 @@
+{
+  "name": "thttpd",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^thttpd\\/([^\\s]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://acme.com/software/thttpd/"
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Sun-GlassFish",
+  "matches": [
+    {
+      "regexp": "(?-mix:^GlassFish)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^GlassFish v(.+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "string": "Open Source Edition",
+      "version": "(?-mix:^GlassFish Server Open Source Edition (.+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "string": "Enterprise Server",
+      "version": "(?-mix:Sun GlassFish Enterprise Server v(.+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://glassfish.java.net/"
+}

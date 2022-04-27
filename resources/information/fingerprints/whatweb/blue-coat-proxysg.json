@@ -1,0 +1,13 @@
+{
+  "name": "Blue-Coat-ProxySG",
+  "matches": [
+    {
+      "search": "headers[location]",
+      "regexp": "(?-mix:https?:\\/\\/proxysg\\/\\?cfru=[^\\s]+$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.bluecoat.com/products/proxysg"
+}

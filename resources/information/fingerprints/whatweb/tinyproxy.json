@@ -1,0 +1,13 @@
+{
+  "name": "Tinyproxy",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^tinyproxy\\/([^\\s]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://banu.com/tinyproxy/"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "anyInventory",
+  "matches": [
+    {
+      "text": "\t\t<title>anyInventory: Top</title>"
+    },
+    {
+      "regexp": "(?-mix:\t\t\t\t\t you have inventoried <b>[0-9]*<\\/b>  items with <a href=\"http:\\/\\/anyinventory.sourceforge.net\\/\">anyInventory, the most flexible and powerful web-based inventory system<\\/a>)"
+    },
+    {
+      "version": "(?-mix:\t\t\t\t\t\t\t\tanyInventory ([\\d\\.]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://anyinventory.sourceforge.net/"
+}

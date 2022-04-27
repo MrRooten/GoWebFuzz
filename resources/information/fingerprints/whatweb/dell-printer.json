@@ -1,0 +1,15 @@
+{
+  "name": "Dell-Printer",
+  "matches": [
+    {
+      "model": "(?i-mx:<title>Dell Laser Printer ([A-Z]?[\\d]{4}[a-z]{0,2})<\\/title>)"
+    },
+    {
+      "model": "(?-mix:<TITLE>Dell ([\\d]{4}[a-z]+) Laser Printer<\\/TITLE>)"
+    }
+  ],
+  "dorks": [
+    "\"Online Help\" \"Order Supplies\" intitle:\"Laser Printer\" intitle:dell"
+  ],
+  "website": null
+}

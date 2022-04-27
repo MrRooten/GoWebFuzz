@@ -1,0 +1,17 @@
+{
+  "name": "Zotonic",
+  "matches": [
+    {
+      "regexp": "(?-mix:Zotonic)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:Zotonic\\/([^\\s]+))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://zotonic.com/"
+}

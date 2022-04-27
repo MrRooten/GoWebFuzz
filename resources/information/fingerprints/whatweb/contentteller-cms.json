@@ -1,0 +1,15 @@
+{
+  "name": "Contentteller-CMS",
+  "matches": [
+    {
+      "text": "<meta name=\"generator\" content=\"Esselbach Contentteller CMS\" />"
+    },
+    {
+      "version": "(?-mix:Powered by <a href=\"http:\\/\\/www.contentteller.com\">Contentteller&reg; (Business Edition|Standard Edition)<\\/a><img src=\"index.php\\?ct=core&amp;action=tasks\" alt=\"\" \\/>)"
+    }
+  ],
+  "dorks": [
+    "\"powered by Contentteller\""
+  ],
+  "website": "http://www.contentteller.com/en/"
+}

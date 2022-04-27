@@ -1,0 +1,13 @@
+{
+  "name": "Proxy-Authenticate",
+  "matches": [
+    {
+      "string": "(?-mix:realm=\"([^\"]+)\")",
+      "search": "headers[proxy-authenticate]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

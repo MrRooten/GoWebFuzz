@@ -1,0 +1,26 @@
+{
+  "name": "BlockScout",
+  "matches": [
+    {
+      "name": "footer-info-text",
+      "text": "<p class=\"footer-info-text\">Blockscout is a"
+    },
+    {
+      "name": "input-group",
+      "text": "<div class=\"input-group\" title='Search by address, token symbol name, transaction hash, or block number'>"
+    },
+    {
+      "name": "GitHub footer link",
+      "version": "(?-mix:Version: <a href=\"https:\\/\\/github.com\\/[^\\/]+\\/blockscout\\/.*\" class=\"footer-link\" target=\"_blank\">([^<]+)<)"
+    },
+    {
+      "url": "/admin",
+      "status": 200,
+      "text": "<h2 class=\"card-title text-center\" data-test=\"administrator_login\">Administrator Login</h2>"
+    }
+  ],
+  "dorks": [
+    "BlockScout explorer"
+  ],
+  "website": "https://github.com/poanetwork/blockscout/"
+}

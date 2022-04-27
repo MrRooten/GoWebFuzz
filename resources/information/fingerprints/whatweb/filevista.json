@@ -1,0 +1,15 @@
+{
+  "name": "FileVista",
+  "matches": [
+    {
+      "version": "(?-mix:<!--\\r?\\n\\tFileVista v([\\d\\.]+)\\r?\\n\\tCopyright )"
+    },
+    {
+      "text": "<td>Welcome to FileVista<br />Please enter your credentials:</td>"
+    }
+  ],
+  "dorks": [
+    "\"Welcome to FileVista\" \"Please enter your credentials:\" \"User name\""
+  ],
+  "website": "http://www.gleamtech.com/products/filevista/web-file-manager"
+}

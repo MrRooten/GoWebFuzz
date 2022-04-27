@@ -1,0 +1,21 @@
+{
+  "name": "Open-Graph-Protocol",
+  "matches": [
+    {
+      "regexp": "(?i-mx:<meta[^>]+property=\"og:title\"[^>]*>)"
+    },
+    {
+      "version": "(?-mix:<meta[^>]+property=\"og:type\"[^>]+content=\"([^\"^>]+)\")"
+    },
+    {
+      "account": "(?-mix:<meta[^>]+property=\"fb:admins\"[^>]+content=\"([^\"^>]+)\")"
+    },
+    {
+      "module": "(?-mix:<meta[^>]+property=\"fb:app_id\"[^>]+content=\"([^\"^>]+)\")"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

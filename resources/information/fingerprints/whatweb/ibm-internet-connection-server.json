@@ -1,0 +1,13 @@
+{
+  "name": "IBM-Internet-Connection-Server",
+  "matches": [
+    {
+      "version": "(?-mix:^IBM Internet Connection Server\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

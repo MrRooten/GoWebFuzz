@@ -1,0 +1,18 @@
+{
+  "name": "Realtor-747",
+  "matches": [
+    {
+      "text": "<body onload=\"start_realtor747_admin();\" onunload=\"stop_realtor747_admin();\">"
+    },
+    {
+      "version": "(?-mix:    <a href=\"http:\\/\\/www.it747.com\\/realtor747\" target=\"_blank\"><span style=\"color: green;\">Powered by REALTOR 747 - The Property Listings Management System - Version ([\\d\\.]+)<\\/span><\\/a><br>)"
+    },
+    {
+      "version": "(?-mix:<title>REALTOR 747 - The Property Listings Management System - Administration  - Version ([\\d\\.]+)<\\/title>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.it747.com/realtor747/"
+}

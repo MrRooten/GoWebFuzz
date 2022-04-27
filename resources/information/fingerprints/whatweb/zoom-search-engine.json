@@ -1,0 +1,18 @@
+{
+  "name": "Zoom-Search-Engine",
+  "matches": [
+    {
+      "text": "<center><p><small>Search powered by <a href=\"http://www.wrensoft.com/zoom/\" target=\"_blank\"><b>Zoom Search Engine</b></a></small></p></center>"
+    },
+    {
+      "version": "(?-mix:<!--Zoom Search Engine Version ([\\d\\.]+ \\([\\d]+\\) [A-Z]{3})-->)"
+    },
+    {
+      "version": "(?-mix:<!--Zoom Search Engine Version ([\\d\\.]+ \\([\\d]+\\))-->)"
+    }
+  ],
+  "dorks": [
+    "inurl:zoom_per_page"
+  ],
+  "website": "http://www.wrensoft.com/zoom/"
+}

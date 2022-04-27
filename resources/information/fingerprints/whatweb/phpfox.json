@@ -1,0 +1,15 @@
+{
+  "name": "phpFox",
+  "matches": [
+    {
+      "version": "(?-mix:Powered By <a href=\"http:\\/\\/www\\.phpfox\\.com\\/\"[^>]*>phpFoX<\\/a> Version ([\\d\\.]+))"
+    },
+    {
+      "version": "(?-mix:<a href=\"http:\\/\\/www\\.phpfox\\.com\\/\"[^>]*>Powered by phpFoX Version ([\\d\\.]+)<\\/a>)"
+    }
+  ],
+  "dorks": [
+    "\"Powered By phpFox Version\""
+  ],
+  "website": "http://www.phpfox.com/"
+}

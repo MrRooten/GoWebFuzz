@@ -1,0 +1,60 @@
+{
+  "name": "eGroupWare",
+  "matches": [
+    {
+      "text": "<meta name=\"author\" content=\"eGroupWare http://www.egroupware.org\" />"
+    },
+    {
+      "version": "(?-mix:<div id=\"divPoweredBy>[^<]*<a href=\"http:\\/\\/www.egroupware.org\">eGroupWare<\\/a> version ([\\d\\.]+)<\\/span><\\/div>)"
+    },
+    {
+      "version": "(?-mix:<a href=\"http:\\/\\/www.egroupware.org\" target=\"_blank\">eGroupWare<\\/a> ([\\d\\.]+)[^<]*<\\/div>)"
+    },
+    {
+      "text": "<div align=\"center\"><font color=\"#FF0000\">Votre session n'est pas valide.</font></div>",
+      "string": "Language:French"
+    },
+    {
+      "text": "<div id=\"loginCdMessage\"><font color=\"red\">Your session could not be verified.</font></div>",
+      "string": "Language:English"
+    },
+    {
+      "md5": "628381f4ef8ee6d35665e002ffa61bb0",
+      "url": "phpgwapi/templates/idots/images/password.png"
+    },
+    {
+      "md5": "f6e9339e652b8655d4e26f3e947cf212",
+      "url": "phpgwapi/templates/idots/images/favicon.ico"
+    },
+    {
+      "text": "<title>EGroupware [Login]</title>"
+    },
+    {
+      "string": "(?i-mx:<meta name=\"copyright\" content=\"eGroupWare http:\\/\\/www.egroupware.org \\(c\\) ([\\d\\.]+)\" \\/>)"
+    },
+    {
+      "text": "<!-- we don't need body tags anymore, do we?) we do!!! onload!! LK -->",
+      "version": "1.3 - 1.6"
+    },
+    {
+      "text": "<META NAME=\"description\" CONTENT=\"Expresso Livre login screen, working environment powered by eGroupWare\">",
+      "module": "Expresso Livre"
+    },
+    {
+      "text": "<META NAME=\"keywords\" CONTENT=\"Expresso Livre login screen, eGroupWare, groupware, groupware suite\">",
+      "module": "Expresso Livre"
+    },
+    {
+      "text": "<br><a title=\"eGroupWare\" target=\"_blank\" href=\"http://www.egroupware.org/\"> Powered by eGroupWare </a></div></td>",
+      "module": "Expresso Livre"
+    },
+    {
+      "text": "<TITLE>Expresso Livre - Login</TITLE>",
+      "module": "Expresso Livre"
+    }
+  ],
+  "dorks": [
+    "inurl:\"phpgw_forward\" ext:php"
+  ],
+  "website": "http://www.egroupware.org/"
+}

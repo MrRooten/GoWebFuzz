@@ -1,0 +1,13 @@
+{
+  "name": "Quantcast",
+  "matches": [
+    {
+      "name": "quant.js",
+      "regexp": "(?-mix:<script[^>]+src=[\"']http:\\/\\/edge.quantserve.com\\/quant.js[\"'])"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

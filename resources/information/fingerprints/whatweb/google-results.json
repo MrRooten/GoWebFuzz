@@ -1,0 +1,15 @@
+{
+  "name": "Google-Results",
+  "matches": [
+    {
+      "module": "(?-mix:<title>([^<]{1,256}) \\- Google Search<\\/title>)"
+    },
+    {
+      "module": "(?-mix:Advanced search<\\/a><\\/div><div><div id=resultStats>([^<]{1,40}) results<nobr>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.google.com/"
+}

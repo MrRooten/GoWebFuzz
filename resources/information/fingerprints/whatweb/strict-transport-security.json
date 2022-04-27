@@ -1,0 +1,13 @@
+{
+  "name": "Strict-Transport-Security",
+  "matches": [
+    {
+      "search": "headers[Strict-Transport-Security]",
+      "string": "(?-mix:^(.*)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

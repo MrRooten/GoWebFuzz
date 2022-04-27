@@ -1,0 +1,32 @@
+{
+  "name": "ArGoSoft-Mail-Server",
+  "matches": [
+    {
+      "ghdb": "intitle:\"adding new user\" \"ArGoSoft Mail Server\" inurl:addnewuser",
+      "certainty": 75
+    },
+    {
+      "version": "(?-mix:ArGoSoft Mail Server Pro for WinNT\\/2000, Version [\\d\\.]+ \\(([\\d\\.]+)\\)<\\/p>)",
+      "os": "Windows NT/2000"
+    },
+    {
+      "version": "(?-mix:ArGoSoft Mail Server Pro for WinNT\\/2000\\/XP, Version [\\d\\.]+ \\(([\\d\\.]+)\\)<\\/p>)",
+      "os": "Windows NT/2000/XP"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:ArGoSoft Mail Server Pro for WinNT\\/2000, Version [\\d\\.]+ \\(([\\d\\.]+)\\))",
+      "os": "Windows NT/2000"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:ArGoSoft Mail Server Pro for WinNT\\/2000\\/XP, Version [\\d\\.]+ \\(([\\d\\.]+)\\))",
+      "os": "Windows NT/2000/XP"
+    }
+  ],
+  "dorks": [
+    "intitle:\"adding new user\" \"ArGoSoft Mail Server\" inurl:addnewuser -inurl",
+    "\"adding new user\" inurl:addnewuser -\"there are no domains\""
+  ],
+  "website": "http://www.argosoft.com/"
+}

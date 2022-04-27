@@ -1,0 +1,13 @@
+{
+  "name": "SillySmart",
+  "matches": [
+    {
+      "certainty": 85,
+      "text": "var slsBuild"
+    }
+  ],
+  "dorks": [
+    "intext:\"var slsBuild =\""
+  ],
+  "website": null
+}

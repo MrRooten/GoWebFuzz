@@ -1,0 +1,21 @@
+{
+  "name": "TVersity",
+  "matches": [
+    {
+      "md5": "300b5c3f134d7ec0bca862cf113149d8",
+      "url": "/favicon.ico"
+    },
+    {
+      "version": "(?-mix:TVersity Media Server)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:TVersity Media Server\\/([\\d\\.]+))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "tversity.com"
+}

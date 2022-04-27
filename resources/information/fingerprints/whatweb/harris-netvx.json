@@ -1,0 +1,12 @@
+{
+  "name": "Harris-NetVX",
+  "matches": [
+    {
+      "text": "<a href=\"\" onclick='window.open(\"http://www.goahead.com\")' title=\"Powered by the GoAhead Web Server.\">"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.broadcast.harris.com/productsandsolutions/NetworkingEncoding/NetVX/default.asp"
+}

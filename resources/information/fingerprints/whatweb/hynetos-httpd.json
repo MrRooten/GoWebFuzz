@@ -1,0 +1,19 @@
+{
+  "name": "HyNetOS-httpd",
+  "matches": [
+    {
+      "os": "HyNetOS",
+      "version": "(?-mix:^HyNetOS\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "os": "HyNetOS",
+      "regexp": "(?-mix:^HyNetOS)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.msc-ge.com/en/produkte/elekom/mc/hyperstone/sw_hynetos.html"
+}

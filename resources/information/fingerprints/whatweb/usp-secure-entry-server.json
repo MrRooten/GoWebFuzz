@@ -1,0 +1,13 @@
+{
+  "name": "USP-Secure-Entry-Server",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^Secure Entry Server$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.united-security-providers.com/"
+}

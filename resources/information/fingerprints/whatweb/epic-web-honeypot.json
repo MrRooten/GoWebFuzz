@@ -1,0 +1,18 @@
+{
+  "name": "Epic-Web-Honeypot",
+  "matches": [
+    {
+      "text": "<center><font size=\"3\" face=\"monospace\">******************************** Epic Web Honeypot ********************************</font></center>"
+    },
+    {
+      "version": "(?-mix:<center><font size=\"3\" face=\"monospace\">\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\* Version ([^\\s]+) \\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\*<\\/font><\\/center>)"
+    },
+    {
+      "text": "<!-- Added OS fingerprints - creds - nmap and honeyd nmap.prints file!-->"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

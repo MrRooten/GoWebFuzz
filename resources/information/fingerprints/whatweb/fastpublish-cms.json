@@ -1,0 +1,16 @@
+{
+  "name": "Fastpublish-CMS",
+  "matches": [
+    {
+      "url": "favicon.ico",
+      "md5": "e95aa1d29e576c9ebdb08e0c5160cdfa"
+    },
+    {
+      "version": "(?-mix:<meta name=\"Generator\" content=\"fastpublish CMS ([^\"]{1,15})\">)"
+    }
+  ],
+  "dorks": [
+    "\"Securitycode: (please insert the numbers from the picture into the following field)\""
+  ],
+  "website": "http://www.fastpublish.org"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Daffodil-CRM",
+  "matches": [
+    {
+      "text": "<div id=\"right_footer\">Powered by Daffodil Software Ltd</div>"
+    },
+    {
+      "text": "<div id=\"right_footer\">Design & Development by Daffodil Software Ltd</div>"
+    },
+    {
+      "regexp": "(?-mix: href=\"\\?app=forgot_passwd&amp;cmd=passwd_send\">[^>]*Forgot Password\\?<\\/a><\\/td>)"
+    }
+  ],
+  "dorks": [
+    "\"Daffodil\" inurl:app=forgot_passwd"
+  ],
+  "website": "http://crm.daffodilsw.com/"
+}

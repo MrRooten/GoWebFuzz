@@ -1,0 +1,21 @@
+{
+  "name": "TMSoft-MyAuth-Gateway",
+  "matches": [
+    {
+      "version": "(?-mix:MyAuth([0-9]{1})=[a-z0-9]{26})",
+      "search": "headers[set-cookie]"
+    },
+    {
+      "version": "(?-mix:TMSoft MyAuth Gateway ([^\\s^\\r^\\n]+))",
+      "search": "headers[x-powered-by]"
+    },
+    {
+      "version": "(?-mix:MyAuth Gateway ([^\\s]+))",
+      "search": "headers[x-manager-by]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.myauth.com.br/?console=myauth3_info&site=myauth3"
+}

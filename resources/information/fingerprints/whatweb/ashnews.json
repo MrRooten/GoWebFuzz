@@ -1,0 +1,12 @@
+{
+  "name": "ashnews",
+  "matches": [
+    {
+      "version": "(?-mix:<td align=\"center\"><font face=Arial size=1>News powered by <a href=http:\\/\\/projects.ashwebstudio.com>ashnews v([\\d\\.]+)<\\/a><\\/font><\\/td>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://projects.ashwebstudio.com/"
+}

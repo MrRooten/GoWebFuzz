@@ -1,0 +1,13 @@
+{
+  "name": "WindWeb",
+  "matches": [
+    {
+      "version": "(?-mix:^WindWeb\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

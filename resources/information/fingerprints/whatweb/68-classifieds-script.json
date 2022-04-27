@@ -1,0 +1,15 @@
+{
+  "name": "68-Classifieds-Script",
+  "matches": [
+    {
+      "text": "Powered by <a href=\"http://www.68classifieds.com\">68 Classifieds Script</a>"
+    },
+    {
+      "version": "(?-mix:<meta name=\"author\" content=\"68 Classifieds - v([^\"]+)\" \\/>)"
+    }
+  ],
+  "dorks": [
+    "\"powered by 68 Classifieds Script\""
+  ],
+  "website": "http://www.68classifieds.com/"
+}

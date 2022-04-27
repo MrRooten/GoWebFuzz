@@ -1,0 +1,14 @@
+{
+  "name": "JW-Player",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^SEOT)",
+      "name": "SEOT cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.jwplayer.com/"
+}

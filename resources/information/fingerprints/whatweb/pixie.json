@@ -1,0 +1,15 @@
+{
+  "name": "Pixie",
+  "matches": [
+    {
+      "regexp": "(?-mix:href=\"http:\\/\\/www.getpixie.co.uk\" title=\"Get Pixie\">(Pixie Powered|Powered by Pixie|Pixie)<\\/a>)"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"Pixie ([\\d\\.]+) - Copyright \\(C\\) [\\d]{4} - [\\d]{4}\\.\" \\/>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.getpixie.co.uk/"
+}

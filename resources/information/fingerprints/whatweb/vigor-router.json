@@ -1,0 +1,18 @@
+{
+  "name": "Vigor-Router",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "model": "(?-mix:^(VigorAccess) Web Server$)"
+    },
+    {
+      "search": "headers[www-authenticate]",
+      "model": "(?-mix:^Basic realm=\"(Login to )?Vigor ([\\d]+)\"$)",
+      "offset": 1
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.draytek.com/user/PdInfoDetail.php?Id=20"
+}

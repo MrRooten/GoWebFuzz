@@ -1,0 +1,15 @@
+{
+  "name": "Interspire-Shopping-Cart",
+  "matches": [
+    {
+      "text": "\t<meta name=\"generator\" content=\"Interspire Shopping Cart\" />"
+    },
+    {
+      "regexp": "(?-mix:\t\t\t\tPowered by <a href=\"http:\\/\\/www.interspire.com\\/shoppingcart[\\/]*\" target=\"_blank\" class=\"PoweredBy\">Interspire Shopping Cart<\\/a>)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by Interspire Shopping Cart\""
+  ],
+  "website": "http://www.interspire.com/shoppingcart/"
+}

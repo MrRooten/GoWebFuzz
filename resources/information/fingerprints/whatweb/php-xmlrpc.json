@@ -1,0 +1,15 @@
+{
+  "name": "PHP-XMLRPC",
+  "matches": [
+    {
+      "text": "<meta name=\"generator\" content=\"XML-RPC for PHP\" />"
+    },
+    {
+      "version": "(?-mix:<div class=\"footer\">Generated using PHP-XMLRPC ([\\d\\.]+)<\\/div>)"
+    }
+  ],
+  "dorks": [
+    "\"Generated using PHP-XMLRPC\" ext:php"
+  ],
+  "website": "http://phpxmlrpc.sourceforge.net/"
+}

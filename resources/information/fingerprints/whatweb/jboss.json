@@ -1,0 +1,26 @@
+{
+  "name": "JBoss",
+  "matches": [
+    {
+      "name": "Jboss default title",
+      "regexp": "(?-mix:<title>Welcome to JBoss AS<\\/title>)"
+    },
+    {
+      "name": "link to Administration Console",
+      "certainty": 50,
+      "regexp": "(?-mix:<a href=\\\"\\/admin-console\\/\\\">Administration Console<\\/a>)"
+    },
+    {
+      "name": "link to Web Console",
+      "regexp": "(?-mix:<a href=\\\"\\/web-console\\/\\\">Jboss Web Console<\\/a>)"
+    },
+    {
+      "name": "link to JMX Console",
+      "regexp": "(?-mix:<a href=\\\"\\/jmx-console\\/\\\">JMX Console<\\/a>)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Welcome to JBoss AS\""
+  ],
+  "website": null
+}

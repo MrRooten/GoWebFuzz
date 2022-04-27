@@ -1,0 +1,12 @@
+{
+  "name": "Iciniti-Store",
+  "matches": [
+    {
+      "text": "<!-- START (content_stylesheet.inc) -->"
+    }
+  ],
+  "dorks": [
+    "inurl:\"logon_forgot_password.aspx\""
+  ],
+  "website": "http://www.iciniti.com"
+}

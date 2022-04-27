@@ -1,0 +1,16 @@
+{
+  "name": "Web2py",
+  "matches": [
+    {
+      "search": "headers[x-powered-by]",
+      "string": "(?-mix:web2py)"
+    },
+    {
+      "text": "<div id=\"serendipityLeftSideBar\">"
+    }
+  ],
+  "dorks": [
+    "\"powered by Web2py\""
+  ],
+  "website": "http://www.web2py.com/"
+}

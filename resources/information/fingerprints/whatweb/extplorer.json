@@ -1,0 +1,16 @@
+{
+  "name": "eXtplorer",
+  "matches": [
+    {
+      "url": "/extplorer.xml",
+      "version": "(?-mix:<version>([^<]+)<\\/version>)"
+    },
+    {
+      "text": "<title>Login - eXtplorer</title>"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://extplorer.net/"
+}

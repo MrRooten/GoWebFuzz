@@ -1,0 +1,87 @@
+{
+  "name": "Zend",
+  "matches": [
+    {
+      "name": "GHDB: \"Powered by Zend Framework\"",
+      "certainty": 75,
+      "ghdb": "\"Powered by Zend Framework\""
+    },
+    {
+      "string": "PoweredBy Image",
+      "url": "images/PoweredBy_ZF.gif",
+      "md5": "eecf384879cde19f8f7f80c768c12295"
+    },
+    {
+      "string": "Zend Logo Small",
+      "url": "images/logo_small.gif",
+      "md5": "0f76017aa12a3dcb9cabbff26e37ff5c"
+    },
+    {
+      "string": "Footer Link",
+      "text": " alt=\"Powered by Zend Framework!\" />"
+    },
+    {
+      "string": "Null Controller",
+      "url": "rpt3q29r",
+      "text": "controllers/images/PoweredBy_ZF.gif\" alt=\"Powerd by Zend Framework!\" />"
+    },
+    {
+      "string": "Null Controller",
+      "url": "8enjduxo",
+      "regexp": "(?-mix:<h1>Controller\\/action not found!<\\/h1>(\\r\\n|\\n)<p>Controller\\/action not found!<\\/p>)"
+    },
+    {
+      "string": "Zend_Controller_Dispatcher_Exception",
+      "url": "xzsb60ke",
+      "text": "( ! )</span> Zend_Controller_Dispatcher_Exception: Invalid controller specified (application) in"
+    },
+    {
+      "string": "Zend_Controller_Dispatcher_Exception",
+      "url": "1eo6v59h",
+      "text": "<b>Fatal error</b>:  Uncaught exception 'Zend_Controller_Dispatcher_Exception"
+    },
+    {
+      "string": "Zend_Controller_Router_Exception",
+      "url": "s2xh6hwr",
+      "text": "Uncaught exception 'Zend_Controller_Router_Exception' with message 'No route matched the request'"
+    },
+    {
+      "string": "Zend_Controller_Router_Exception",
+      "url": "xd9svd1b",
+      "text": "/Zend/Controller/Router/Rewrite.php</b> on line <b>"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"Zend.com CMS ([\\d\\.]+)\")"
+    },
+    {
+      "text": "<meta name=\"vendor\" content=\"Zend Technologies"
+    },
+    {
+      "regexp": "(?-mix:Zend Framework)",
+      "search": "headers[x-powered-by]"
+    },
+    {
+      "version": "(?-mix:Zend Framework ([a-zA-Z0-9\\.\\/\\+\\-\\(\\)]+))",
+      "string": "Framework",
+      "search": "headers[x-powered-by]"
+    },
+    {
+      "version": "(?-mix:Zend Core\\/([a-zA-Z0-9\\.\\/\\+\\-\\(\\)]+))",
+      "string": "Core",
+      "search": "headers[x-powered-by]"
+    },
+    {
+      "regexp": "(?-mix:^Zend )",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:Zend Core\\/([a-zA-Z0-9\\.\\/\\+\\-\\(\\)]+))",
+      "string": "Core",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

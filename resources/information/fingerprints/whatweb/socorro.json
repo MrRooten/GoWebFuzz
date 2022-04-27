@@ -1,0 +1,12 @@
+{
+  "name": "Socorro",
+  "matches": [
+    {
+      "text": "Powered by <a href=\"http://code.google.com/p/socorro/\">Socorro</a>"
+    }
+  ],
+  "dorks": [
+    "\"Powered by Socorro\""
+  ],
+  "website": "code.google.com/p/socorro/"
+}

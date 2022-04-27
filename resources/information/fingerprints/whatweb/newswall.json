@@ -1,0 +1,12 @@
+{
+  "name": "newswall",
+  "matches": [
+    {
+      "regexp": "(?-mix:<div id=\"screen\"><noscript><p class=\"js\">\\s*There's no newswall without javascript - please activate\\.\\.\\.\\s*<\\/p><\\/noscript><\\/div>)"
+    }
+  ],
+  "dorks": [
+    "\"There's no newswall without javascript - please activate\" inurl:newswall"
+  ],
+  "website": "http://newswall.mayoco.de/"
+}

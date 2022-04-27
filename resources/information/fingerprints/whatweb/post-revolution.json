@@ -1,0 +1,13 @@
+{
+  "name": "Post-Revolution",
+  "matches": [
+    {
+      "text": "Powered by <a href=\"http://www.postrev.com.ar/\">Post Revolution</a>"
+    }
+  ],
+  "dorks": [
+    "\"Powered by Post Revolution\"",
+    "inurl:verpost.php?id_noticia"
+  ],
+  "website": "http://postrev.com.ar/"
+}

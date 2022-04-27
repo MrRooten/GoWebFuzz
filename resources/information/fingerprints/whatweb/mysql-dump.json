@@ -1,0 +1,29 @@
+{
+  "name": "MySQL-dump",
+  "matches": [
+    {
+      "version": "(?-mix:------------------------------------------------------[\\r]?\\n-- Server version[\\s]+([^\\r^\\n]+))"
+    },
+    {
+      "version": "(?-mix:^# phpMyAdmin MySQL-Dump[\\s]+# version [^\\s]+[\\s]+# http:\\/\\/www.phpmyadmin.net\\/ \\(download page\\)[\\s#]+# Host: [^\\s]+[\\s]+# Generation Time: [^\\n]+[\\s]+# Server version: ([\\d\\.]+))"
+    },
+    {
+      "string": "(?-mix:^-- MySQL dump [\\d\\.]+[\\r]?\\n--[\\r]?\\n-- Host: ([^\\s]+)[\\s]+Database:[\\s]+([^\\r^\\n]+))"
+    },
+    {
+      "string": "(?-mix:^-- MySQL dump [\\d\\.]+[\\r]?\\n--[\\r]?\\n-- Host: ([^\\s]+)[\\s]+Database:[\\s]+([^\\r^\\n]+))",
+      "offset": 1
+    },
+    {
+      "string": "(?-mix:^# phpMyAdmin MySQL-Dump[\\s]+# version [^\\s]+[\\s]+# http:\\/\\/www.phpmyadmin.net\\/ \\(download page\\)[\\s#]+# Host: ([^\\s]+)[\\s]+# Generation Time: [^\\#]+# Server version:[^\\#]+# PHP Version:[^\\#]+# Database : `([^\\`]+)`)"
+    },
+    {
+      "string": "(?-mix:^# phpMyAdmin MySQL-Dump[\\s]+# version [^\\s]+[\\s]+# http:\\/\\/www.phpmyadmin.net\\/ \\(download page\\)[\\s#]+# Host: ([^\\s]+)[\\s]+# Generation Time: [^\\#]+# Server version:[^\\#]+# PHP Version:[^\\#]+# Database : `([^\\`]+)`)",
+      "offset": 1
+    }
+  ],
+  "dorks": [
+    "\"MySQL dump\" ext:sql \"Host\" \"Table structure for table\""
+  ],
+  "website": null
+}

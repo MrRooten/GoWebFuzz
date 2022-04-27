@@ -1,0 +1,18 @@
+{
+  "name": "aspWebLinks",
+  "matches": [
+    {
+      "version": "(?-mix:Powered By aspWebLinks ([\\d\\.]+) from <A[^>]*HREF=[\"']http:\\/\\/www.fullrevolution.com[^>]*>Full Revolution, Inc.<\\/A>)"
+    },
+    {
+      "version": "(?-mix:<A[^>]*HREF=[\"']http:\\/\\/www.fullrevolution.com[^>]*>Powered By aspWebLinks ([\\d\\.]+)<\\/A>)"
+    },
+    {
+      "version": "(?-mix:<title>aspWebLinks ([\\d\\.]+)<\\/title>)"
+    }
+  ],
+  "dorks": [
+    "\"powered by aspWebLinks\""
+  ],
+  "website": "http://www.fullrevolution.com/"
+}

@@ -1,0 +1,16 @@
+{
+  "name": "PageUp-People",
+  "matches": [
+    {
+      "ghdb": "\"Powered by PageUp People\"",
+      "certainty": 75
+    },
+    {
+      "text": "<a class=\"pageupLink\" href=\"http://www.pageuppeople.com\" target=\"self\">Powered by PageUp People</a>"
+    }
+  ],
+  "dorks": [
+    "\"Powered by PageUp People\""
+  ],
+  "website": "http://www.pageuppeople.com/"
+}

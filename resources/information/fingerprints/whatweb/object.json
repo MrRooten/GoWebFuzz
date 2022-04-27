@@ -1,0 +1,30 @@
+{
+  "name": "Object",
+  "matches": [
+    {
+      "regexp": "(?i-mx:<object)"
+    },
+    {
+      "module": "(?i-mx:<object [^>]*classid\\s*=\\s*['\"]([^\"']+)['\"])",
+      "offset": 0,
+      "name": "classid"
+    },
+    {
+      "module": "(?i-mx:<object [^>]*classid\\s*=\\s*([^\\s>'\"]+))",
+      "offset": 0,
+      "name": "classid"
+    },
+    {
+      "string": "(?i-mx:<object [^>]*(codebase|codetype|type)\\s*=\\s*['\"]([^\"']+)['\"])",
+      "offset": 1
+    },
+    {
+      "string": "(?i-mx:<object [^>]*(codebase|codetype|type)\\s*=\\s*([^\\s>'\"]+))",
+      "offset": 1
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

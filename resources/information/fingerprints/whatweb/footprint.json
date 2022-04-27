@@ -1,0 +1,17 @@
+{
+  "name": "Footprint",
+  "matches": [
+    {
+      "version": "(?-mix:^Footprint ([\\d\\.]+)\\/FPMCP$)",
+      "search": "headers[server]"
+    },
+    {
+      "regexp": "(?-mix:^Footprint)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

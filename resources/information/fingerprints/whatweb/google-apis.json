@@ -1,0 +1,16 @@
+{
+  "name": "Google-API",
+  "matches": [
+    {
+      "regexp": "(?i-mx:<script[^>]+src[\\s]*=[\\s]*[\"|']?http:\\/\\/www.google.com\\/jsapi[^>]*>[\\s]*<\\/script[\\s]*>)",
+      "string": "Dynamic"
+    },
+    {
+      "string": "(?i-mx:<script[^>]+src[\\s]*=[\\s]*[\"|']?http:\\/\\/ajax.googleapis.com\\/([a-zA-Z0-9\\/\\.-_]+)[\"|']?[^>]*>[\\s]*<\\/script[\\s]*>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

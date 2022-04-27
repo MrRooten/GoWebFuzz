@@ -1,0 +1,12 @@
+{
+  "name": "Zylone-IT",
+  "matches": [
+    {
+      "regexp": "(?-mix:Powered by[:]? <a href=\"http:\\/\\/www.zylone.com[\\/]*[^>]+>Zylone IT)"
+    }
+  ],
+  "dorks": [
+    "\"powered by Zylone IT\" -Vulnerability"
+  ],
+  "website": "http://www.zylone.com/"
+}

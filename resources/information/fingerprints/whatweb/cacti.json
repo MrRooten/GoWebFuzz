@@ -1,0 +1,15 @@
+{
+  "name": "Cacti",
+  "matches": [
+    {
+      "text": "<title>Login to Cacti</title>"
+    },
+    {
+      "text": "<body bgcolor=\"#FFFFFF\" onload=\"document.login.login_username.focus()\">"
+    }
+  ],
+  "dorks": [
+    "inurl:\"cacti/graph_view.php?action=\""
+  ],
+  "website": "http://www.cacti.net/"
+}

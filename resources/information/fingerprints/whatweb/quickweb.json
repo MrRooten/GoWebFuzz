@@ -1,0 +1,12 @@
+{
+  "name": "QuickWeb",
+  "matches": [
+    {
+      "text": "<HTML><HEAD><TITLE>QWScript Error</TITLE></HEAD>"
+    }
+  ],
+  "dorks": [
+    "intitle:\"QWScript Error\" filetype:qws"
+  ],
+  "website": null
+}

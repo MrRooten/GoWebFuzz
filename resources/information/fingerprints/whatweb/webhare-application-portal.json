@@ -1,0 +1,17 @@
+{
+  "name": "WebHare-Application-Portal",
+  "matches": [
+    {
+      "regexp": "(?-mix:^WebHare Application Portal)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^WebHare Application Portal v([\\d\\.]+) Webserver$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.b-lex.nl/"
+}

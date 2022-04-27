@@ -1,0 +1,13 @@
+{
+  "name": "CHANCE-i-DiViS-DVR",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Techno Vision Security System Ver. ([\\d\\.]+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.chance-i.com/dvr_system"
+}

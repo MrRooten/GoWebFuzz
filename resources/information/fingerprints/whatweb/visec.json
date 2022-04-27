@@ -1,0 +1,20 @@
+{
+  "name": "Visec",
+  "matches": [
+    {
+      "regexp": "(?-mix:<!--wml-->\\s+<!--bad-->)"
+    },
+    {
+      "url": "/favicon.ico",
+      "md5": "2e5e985fe125e3f8fca988a86689b127"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^VISEC\\/([^\\s]+)$)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"VISEC - Login\" \"Please enter a password to log into VISEC\""
+  ],
+  "website": "http://www.visec.net/"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Custom-CMS",
+  "matches": [
+    {
+      "text": " - Powered by CCMS</title>",
+      "certainty": 75
+    },
+    {
+      "text": "<meta name=\"generator\" content=\"CustomCMS Gaming\" />"
+    },
+    {
+      "version": "(?-mix:power.png\" border=\"0\" style=\"margin-top: 7px;\" alt=\"\" title=\"Powered by CCMS v([\\d\\.]+)\" \\/><\\/a>)"
+    }
+  ],
+  "dorks": [
+    "\"powered by CCMS\""
+  ],
+  "website": "http://www.customcms.net/"
+}

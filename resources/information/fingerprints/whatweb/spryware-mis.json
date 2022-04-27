@@ -1,0 +1,17 @@
+{
+  "name": "SpryWare-MIS",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^SpryWare\\/([^\\s]+)$)"
+    },
+    {
+      "search": "headers[x-deprecated-response]",
+      "regexp": "(?-mix:^Invalid CheckSum Received$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.spryware.com/products_MIS.html"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Aardvark-Topsites-PHP",
+  "matches": [
+    {
+      "ghdb": "\"Powered by Aardvark Topsites PHP\""
+    },
+    {
+      "regexp": "(?i-mx:Powered by <a href=\"http:\\/\\/www.aardvarktopsitesphp.com[^>]*>[^A]*Aardvark Topsites PHP)"
+    },
+    {
+      "version": "(?-mix:Powered by <a href=\"http:\\/\\/www.aardvarktopsitesphp.com\\/\"><b>Aardvark Topsites PHP<\\/b><\\/a> ([\\d\\.]+))"
+    },
+    {
+      "version": "(?-mix:Powered by <a href=\"http:\\/\\/www.aardvarkind.com\\/\">Aardvark Topsites PHP<\\/a> ([\\d\\.]+))"
+    }
+  ],
+  "dorks": [
+    "\"Powered by Aardvark Topsites PHP\""
+  ],
+  "website": "http://www.aardvarktopsitesphp.com/topsites/"
+}

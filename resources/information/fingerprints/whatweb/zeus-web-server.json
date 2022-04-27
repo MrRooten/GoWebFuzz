@@ -1,0 +1,17 @@
+{
+  "name": "Zeus-Web-Server",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^Zeus$)"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Zeus\\/(([\\d]+)(\\.|_)([\\d]+))$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.zeus.com/products/web-server/"
+}

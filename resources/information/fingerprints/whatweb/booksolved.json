@@ -1,0 +1,18 @@
+{
+  "name": "BOOKSolved",
+  "matches": [
+    {
+      "text": "<!-- BOOKSolved - Copyright by www.usolved.net -->"
+    },
+    {
+      "version": "(?-mix:<!-- BOOKSolved v([^\\s]+)- Copyright by www\\.usolved\\.net -->)"
+    },
+    {
+      "version": "(?-mix:<tr><td style=\"text-align: center;\">[\\s]*BOOKSolved ([^\\s]+) &copy; by <a href=\"http:\\/\\/www\\.usolved\\.net\" (target=\"_blank\" )?class=\"menu\">USOLVED<\\/a>)"
+    }
+  ],
+  "dorks": [
+    "\"BOOKSolved\" \"by USOLVED\" inurl:\"booksolved.php\""
+  ],
+  "website": "http://www.usolved.net/scripts_9.html"
+}

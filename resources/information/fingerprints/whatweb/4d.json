@@ -1,0 +1,14 @@
+{
+  "name": "4D",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^4D_v[\\d]{1,2}(_SQL)?\\/([\\d\\.]+)$)",
+      "offset": 1
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.4d.com/products.html"
+}

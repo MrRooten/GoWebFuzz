@@ -1,0 +1,44 @@
+{
+  "name": "Koobi",
+  "matches": [
+    {
+      "regexp": "(?i-mx:Powered by <a title=\"Koobi ist ein komfortables und leistungsf&auml;higes Content-Management-System \\(CMS\\) f&uuml;r Privatpersonen, Vereine, kleine und mittelst&auml;ndische Unternehmen, die einen professionellen Internetauftritt realisieren m&ouml;chten.\"[^>]+>Koobi)"
+    },
+    {
+      "text": "<!-- powered by koobi - do not remove this info! -->"
+    },
+    {
+      "version": "(?i-mx:powered by <a class=\"foot\" href=\"http:\\/\\/www.dream4.de\\/[^>]+>Koobi Pro ([\\d\\.]+)<\\/a>)",
+      "string": "Pro"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"\\(c\\) Koobi ([\\d\\.]+), http:\\/\\/www.dream4.de\" \\/>)"
+    },
+    {
+      "version": "(?i-mx:Powered by <a title=\"Koobi ist ein komfortables und leistungsf&auml;higes Content-Management-System \\(CMS\\) f&uuml;r Privatpersonen, Vereine, kleine und mittelst&auml;ndische Unternehmen, die einen professionellen Internetauftritt realisieren m&ouml;chten.\"[^>]*>Koobi[\\ :]*(SHOP|PRO|CMS)<\\/a> ([\\d\\.]+))",
+      "offset": 1
+    },
+    {
+      "version": "(?i-mx:Powered by <a[^>]+href=\"http:\\/\\/www.dream4.de\\/cms\\/content\\/6\\/koobi\\/1\\/\">Koobi<\\/a> (PRO|SHOP|CMS)[\\s]*([\\d\\.\\ a-z]+))",
+      "offset": 1
+    },
+    {
+      "version": "(?i-mx:powered by <a[^>]+href=\"http:\\/\\/www.dream4.de\\/[^>]+>koobi-cms<\\/a> ([\\d\\.]+))"
+    },
+    {
+      "version": "(?-mix:<div class=\"copyright\">powered by Koobi CMS ([\\d\\.]+))"
+    },
+    {
+      "version": "(?-mix:    Diese Webseite wurde mit Koobi[\\ :]*(SHOP|PRO|CMS)[\\ \\-]*([\\d\\.\\ a-z]+) erstellt.)",
+      "offset": 1
+    },
+    {
+      "version": "(?-mix:powered by <a class=\"foot\" href=\"http:\\/\\/www.antichat.ru\" target=\"_blank\">Koobi Pro ([\\d\\.]+) \\[nulled by censored! from antichat.ru\\]<\\/a>)",
+      "string": "Nulled"
+    }
+  ],
+  "dorks": [
+    "\"powered by Koobi PRO|SHOP|CMS\" -\"SQL Injection\""
+  ],
+  "website": "http://www.Dream4.de/"
+}

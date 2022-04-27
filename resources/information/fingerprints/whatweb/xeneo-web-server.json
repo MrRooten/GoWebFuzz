@@ -1,0 +1,17 @@
+{
+  "name": "Xeneo-Web-Server",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Xeneo\\/([^\\s]+)$)"
+    },
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^Xeneo$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.northernsolutions.com/products/xeneo/"
+}

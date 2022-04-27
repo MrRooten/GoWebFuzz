@@ -1,0 +1,30 @@
+{
+  "name": "SpirePRO-CMS",
+  "matches": [
+    {
+      "text": "<script xmlns:a=\"http://www.1stomni.com/spire/aml\" type=\"text/javascript\""
+    },
+    {
+      "text": "<meta name=\"Spire-Last-Modified\" content=\""
+    },
+    {
+      "regexp": "(?-mix:<meta name=\"Spire-Editor\" content=\"([^\"]+)\">)"
+    },
+    {
+      "string": "(?-mix:^SpirePRO CMS v([\\d\\.]+ \\(Microkernel v[\\d]+; CMS Server v[\\d]+\\)) )",
+      "search": "headers[x-generator]"
+    },
+    {
+      "string": "(?-mix:^SpirePRO CMS v([\\d\\.]+ \\(Microkernel v[\\d]+; CMS Server v[\\d]+\\)) )",
+      "search": "headers[generator]"
+    },
+    {
+      "regexp": "(?-mix:^SpirePRO CMS)",
+      "search": "headers"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Censura",
+  "matches": [
+    {
+      "version": "(?-mix:Powered by: <a[^>]* href=\"http:\\/\\/www.censura.info\">Censura<\\/a> version ([\\d\\.]+))"
+    }
+  ],
+  "dorks": [
+    "\"Powered by: Censura\""
+  ],
+  "website": "http://www.censura.info/"
+}

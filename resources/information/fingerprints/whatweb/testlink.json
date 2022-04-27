@@ -1,0 +1,22 @@
+{
+  "name": "TestLink",
+  "matches": [
+    {
+      "certainty": 75,
+      "text": "<meta name=\"author\" content=\"Martin Havlat\" />"
+    },
+    {
+      "version": "(?-mix:\\.png\" \\/>[\\s]*<br \\/>TestLink ([^\\s^<]+))"
+    },
+    {
+      "text": "TestLink project <a href=\"http://testlink.sourceforge.net/docs/testLink.php\">Home</a><br />"
+    },
+    {
+      "regexp": "(?-mix:<html><head><\\/head><body><script type='text\\/javascript'>location\\.href='https?:\\/\\/[^\\'^\\?]+\\/login\\.php\\?note=expired';<\\/script><\\/body><\\/html>)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"TestLink\" \"New User\" \"Lost Password\" \"TestLink project Home\" \"TestLink is licensed under the GNU GPL\""
+  ],
+  "website": "http://www.teamst.org/"
+}

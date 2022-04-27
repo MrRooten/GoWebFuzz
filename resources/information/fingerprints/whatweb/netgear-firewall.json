@@ -1,0 +1,13 @@
+{
+  "name": "NetGear-Firewall",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^NETGEAR Firewall$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.netgear.com.au/au/Products/VPN-Firewalls"
+}

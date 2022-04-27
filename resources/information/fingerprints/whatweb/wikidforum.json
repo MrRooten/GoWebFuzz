@@ -1,0 +1,13 @@
+{
+  "name": "WikidForum",
+  "matches": [
+    {
+      "text": "Powered by <a href=\"http://www.wikidforum.com\" title=\"wikidforum.com\">WikidForum</a>"
+    }
+  ],
+  "dorks": [
+    "intitle:\"WikidForum Community Edition\" intitle:\"Installer\"",
+    "\"powered by WikidForum\""
+  ],
+  "website": "http://www.wikidforum.com/"
+}

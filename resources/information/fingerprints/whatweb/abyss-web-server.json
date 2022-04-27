@@ -1,0 +1,13 @@
+{
+  "name": "Abyss-Web-Server",
+  "matches": [
+    {
+      "version": "(?-mix:^Abyss\\/([^\\s]+))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.aprelium.com/abyssws/"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "PHPDirector",
+  "matches": [
+    {
+      "version": "(?-mix:<a href=\"http:\\/\\/www.phpdirector.co.uk\\/\">Powered by PHP Director ([\\d\\.]+)<\\/a>)"
+    }
+  ],
+  "dorks": [
+    "\"powered by PHP Director\""
+  ],
+  "website": "http://www.phpdirector.co.uk/"
+}

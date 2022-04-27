@@ -1,0 +1,17 @@
+{
+  "name": "OKI-Printer",
+  "matches": [
+    {
+      "regexp": "(?-mix:^OKIDATA-HTTPD)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^OKIDATA-HTTPD\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.okiprintingsolutions.com/"
+}

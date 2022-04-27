@@ -1,0 +1,30 @@
+{
+  "name": "Apache-Forrest",
+  "matches": [
+    {
+      "text": "<meta content=\"Apache Forrest\" name=\"Generator\""
+    },
+    {
+      "version": "(?-mix:<meta content=\"([^\"^>]+)\" name=\"Forrest-version\")"
+    },
+    {
+      "version": "(?-mix:<meta name=\"Forrest-version\" content=\"([^\"^>]+)\")"
+    },
+    {
+      "module": "(?-mix:<meta content=\"([^\"^>]+)\" name=\"Forrest-theme-name\")"
+    },
+    {
+      "module": "(?-mix:<meta name=\"Forrest-theme-name\" content=\"([^\"^>]+)\")"
+    },
+    {
+      "module": "(?-mix:<meta name=\"Forrest-skin-name\" content=\"([^\"^>]+)\")"
+    },
+    {
+      "module": "(?-mix:<meta content=\"([^\"^>]+)\" name=\"Forrest-skin-name\")"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://forrest.apache.org/"
+}

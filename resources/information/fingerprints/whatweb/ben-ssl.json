@@ -1,0 +1,13 @@
+{
+  "name": "Ben-SSL",
+  "matches": [
+    {
+      "version": "(?-mix:Ben-SSL\\/([\\d\\.]+))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://apache-ssl.org/"
+}

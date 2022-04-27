@@ -1,0 +1,19 @@
+{
+  "name": "AzureCloud",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:ARRAffinity)",
+      "name": "ARRAffinity cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:WAWebSiteSID)",
+      "name": "WAWebSiteSID cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://azure.microsoft.com/"
+}

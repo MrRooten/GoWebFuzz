@@ -1,0 +1,12 @@
+{
+  "name": "ACollab",
+  "matches": [
+    {
+      "text": "<title>ACollab : Accessible Collaboration Environment:"
+    }
+  ],
+  "dorks": [
+    "intitle:\"ACollab : Accessible Collaboration Environment:\""
+  ],
+  "website": "http://www.atutor.ca/acollab/"
+}

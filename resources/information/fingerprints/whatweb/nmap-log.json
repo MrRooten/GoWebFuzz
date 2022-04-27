@@ -1,0 +1,10 @@
+{
+  "name": "Nmap-Log",
+  "matches": [
+
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.insecure.org/nmap/"
+}

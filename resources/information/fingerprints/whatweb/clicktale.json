@@ -1,0 +1,12 @@
+{
+  "name": "ClickTale",
+  "matches": [
+    {
+      "text": "<div id=\"ClickTaleDiv\" style=\"display: none;\"></div>"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.clicktale.com/"
+}

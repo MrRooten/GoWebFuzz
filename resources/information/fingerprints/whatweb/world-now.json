@@ -1,0 +1,14 @@
+{
+  "name": "WorldNow",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^wn_cg)",
+      "name": "wn_cg cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://franklyinc.com/"
+}

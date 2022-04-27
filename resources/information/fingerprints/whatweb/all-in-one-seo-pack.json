@@ -1,0 +1,15 @@
+{
+  "name": "All-in-one-SEO-Pack",
+  "matches": [
+    {
+      "text": "<!-- /all in one seo pack -->"
+    },
+    {
+      "version": "(?-mix:<!-- All in One SEO Pack ([\\d\\.]+) by Michael Torbert of Semper Fi Web Design)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://wordpress.org/extend/plugins/all-in-one-seo-pack/"
+}

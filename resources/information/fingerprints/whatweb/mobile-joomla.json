@@ -1,0 +1,13 @@
+{
+  "name": "Mobile-Joomla",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:mjmarkup=deleted;)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.mobilejoomla.com/"
+}

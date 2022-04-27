@@ -1,0 +1,17 @@
+{
+  "name": "Spyglass-MicroServer",
+  "matches": [
+    {
+      "regexp": "(?-mix:^Spyglass_MicroServer)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Spyglass_MicroServer\\/(.+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

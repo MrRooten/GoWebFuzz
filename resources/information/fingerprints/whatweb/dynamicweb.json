@@ -1,0 +1,21 @@
+{
+  "name": "DynamicWeb",
+  "matches": [
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"Dynamicweb ([^\\s]+)\")"
+    },
+    {
+      "certainty": 100,
+      "regexp": "(?-mix:\\(c\\) 1999-(20[\\d]{2}) Dynamicweb Software A\\/S)"
+    },
+    {
+      "certainty": 75,
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:Dynamicweb)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://dynamicweb.com/"
+}

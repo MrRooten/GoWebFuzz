@@ -1,0 +1,19 @@
+{
+  "name": "Cherokee",
+  "matches": [
+    {
+      "name": "HTTP Server Header",
+      "version": "(?-mix:^Cherokee\\/([^\\s]+))",
+      "search": "headers[server]"
+    },
+    {
+      "name": "HTTP Server Header",
+      "regexp": "(?-mix:^Cherokee)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.cherokee-project.com/"
+}

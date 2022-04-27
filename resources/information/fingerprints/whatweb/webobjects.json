@@ -1,0 +1,10 @@
+{
+  "name": "WebObjects",
+  "matches": [
+
+  ],
+  "dorks": [
+    "ext:woa"
+  ],
+  "website": "http://www.apple.com/support/webobjects/"
+}

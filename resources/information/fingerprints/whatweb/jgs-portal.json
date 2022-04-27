@@ -1,0 +1,16 @@
+{
+  "name": "JGS-Portal",
+  "matches": [
+    {
+      "certainty": 75,
+      "ghdb": "\"Powered by JGS-Portal Version\""
+    },
+    {
+      "version": "(?-mix:Powered by <b>JGS-Portal Version ([\\d\\.]+)<\\/b> &copy; )"
+    }
+  ],
+  "dorks": [
+    "\"Powered by JGS-Portal Version\""
+  ],
+  "website": "http://www.jgs-xa.de"
+}

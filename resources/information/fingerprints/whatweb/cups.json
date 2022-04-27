@@ -1,0 +1,18 @@
+{
+  "name": "CUPS",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^CUPS\\/([^\\s]+)$)"
+    },
+    {
+      "search": "headers[upgrade]",
+      "regexp": "(?-mix:^TLS\\/1\\.0,HTTP\\/1\\.1$)",
+      "certainty": 25
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.cups.org/"
+}

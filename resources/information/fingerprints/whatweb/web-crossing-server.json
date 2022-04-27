@@ -1,0 +1,21 @@
+{
+  "name": "Web-Crossing-Server",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Web Crossing\\/([^\\s]+)$)"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Web Crossing\\(r\\) [^\\s]+-v([\\d\\.]+) built)"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:webxSess=[\\d]+\\.[^\\s]+;)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://bayspire.com/"
+}

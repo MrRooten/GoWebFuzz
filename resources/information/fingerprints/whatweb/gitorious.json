@@ -1,0 +1,16 @@
+{
+  "name": "Gitorious",
+  "matches": [
+    {
+      "regexp": "(?-mix:<a href=\"http:\\/\\/gitorious\\.org\"><img alt=\"Poweredby\" src=\"\\/images\\/\\.\\.\\/img\\/poweredby\\.png\\?[\\d]+\" title=\"Powered by Gitorious\" \\/><\\/a><\\/div>)"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:_gitorious_sess=[^-]+--[^;]+; domain=)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Gitorious\" \"Gitorious is a great way of collaborating on distributed open source projects\" \"About Gitorious\" \"Dashboard\" \"Login\""
+  ],
+  "website": "https://gitorious.org/gitorious"
+}

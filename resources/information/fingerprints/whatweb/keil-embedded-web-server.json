@@ -1,0 +1,20 @@
+{
+  "name": "Keil-Embedded-WEB-Server",
+  "matches": [
+    {
+      "text": "<head><title>Keil Embedded WEB Server</title></head><body><h2>HTTP 1.0 401 Error. Unauthorized Access</h2>You are not authorized to access this server.<hr>"
+    },
+    {
+      "version": "(?-mix:^Keil-EWEB\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "regexp": "(?-mix:^Keil-EWEB)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.keil.com/"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "b2evolution",
+  "matches": [
+    {
+      "regexp": "(?i-mx:rsc\\/img\\/powered-by-b2evolution-150t.gif\" alt=\"Powered by b2evolution\")"
+    },
+    {
+      "version": "(?-mix:<p class=\"footer\"><a href=\"http:\\/\\/b2evolution.net\\/\" title=\"visit b2evolution's website\"><strong>b2evolution ([^<]+)<\\/strong><\\/a>)"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"b2evolution ([^\\\"]+)\" \\/>)"
+    },
+    {
+      "regexp": "(?-mix:Powered by <a href=\"http:\\/\\/b2evolution.net[\\/]*\"[^>]+>b2evolution<\\/a>)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by b2evolution\""
+  ],
+  "website": "http://b2evolution.net/"
+}

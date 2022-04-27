@@ -1,0 +1,15 @@
+{
+  "name": "WolfCMS",
+  "matches": [
+    {
+      "version": "(?-mix:png\" \\/> Wolf CMS ([^<]+)<\\/div>)"
+    },
+    {
+      "regexp": "(?-mix:href=\"http:\\/\\/www.wolfcms.org\\/\" title=\"Wolf CMS\" rel=\"noreferrer\">Wolf CMS<\\/a>[\\s]+Inside.)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.wolfcms.org/"
+}

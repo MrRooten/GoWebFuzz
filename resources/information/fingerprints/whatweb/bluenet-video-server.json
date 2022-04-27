@@ -1,0 +1,15 @@
+{
+  "name": "BlueNet-Video-Server",
+  "matches": [
+    {
+      "text": "window.location.href='/cgi-bin/client_execute.cgi?tUD=0';"
+    },
+    {
+      "version": "(?-mix:<title>BlueNet Video Viewer Version ([\\d\\.a-z]+)<\\/title>)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"BlueNet Video Viewer\""
+  ],
+  "website": null
+}

@@ -1,0 +1,12 @@
+{
+  "name": "ToshibaPrinter",
+  "matches": [
+    {
+      "text": "<TITLE CLASS=\"clsTitle1\">TopAccess</title>"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

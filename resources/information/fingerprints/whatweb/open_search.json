@@ -1,0 +1,19 @@
+{
+  "name": "OpenSearch",
+  "matches": [
+    {
+      "name": "open search",
+      "regexp": "(?i-mx:<link[^>]+type=[\"']?application\\/opensearchdescription\\+xml['\"]?[^>]*>)"
+    },
+    {
+      "string": "(?i-mx:<link[^>]+href[\\s]*=[\\s]*[\"']([^'^\"^>]+)[\"'][^>]+type[\\s]*=[\\s]*[\"']?application\\/opensearchdescription\\+xml['\"]?[^>]*>)"
+    },
+    {
+      "string": "(?i-mx:<link[^>]+type[\\s]*=[\\s]*[\"']?application\\/opensearchdescription\\+xml['\"]?[^>]+href[\\s]*=[\\s]*[\"']([^'^\"^>]+)[\"'][^>]*>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

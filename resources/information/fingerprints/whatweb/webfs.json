@@ -1,0 +1,17 @@
+{
+  "name": "webfs",
+  "matches": [
+    {
+      "regexp": "(?-mix:^webfs\\/)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^webfs\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://linux.bytesex.org/misc/webfs.html"
+}

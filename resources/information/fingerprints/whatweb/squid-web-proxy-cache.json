@@ -1,0 +1,10 @@
+{
+  "name": "Squid-Web-Proxy-Cache",
+  "matches": [
+
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.squid-cache.org/"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Icecast",
+  "matches": [
+
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.icecast.org/"
+}

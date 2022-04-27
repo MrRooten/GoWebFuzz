@@ -1,0 +1,20 @@
+{
+  "name": "Hyperic-HQ",
+  "matches": [
+    {
+      "url": "/ui_docs/DOC/index.html",
+      "version": "(?-mix:<title>DOCS\\d+ \\(vFabric Hyperic ([^\\)]+)\\))"
+    },
+    {
+      "text": "<a id=\"screencastLink\" href=\"http://www.hyperic.com/demo/screencasts.html\" target=\"_blank\" title=\"Screencasts\">"
+    },
+    {
+      "search": "headers[location]",
+      "regexp": "(?-mix:\\/app\\/login;jsessionid=)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Sign In - Hyperic\" \"Please enter your username and password to sign in\""
+  ],
+  "website": "http://www.vmware.com/products/application-platform/vfabric-hyperic.html"
+}

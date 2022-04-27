@@ -1,0 +1,23 @@
+{
+  "name": "Oracle-HTTP-Server",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:Oracle[ -]HTTP[ -]Server)"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:Oracle_Web_[Ll]istener(_NT_)?([\\d\\.]+\\/[^\\s]+))",
+      "offset": 1
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:Oracle_Web_[Ll]istener(_NT_)?\\/([^\\s]+))",
+      "offset": 1
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.oracle.com/technetwork/middleware/ias/index-091236.html"
+}

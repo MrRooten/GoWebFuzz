@@ -1,0 +1,24 @@
+{
+  "name": "NetVehicle",
+  "matches": [
+    {
+      "text": "<HEAD><TITLE>Welcome to NetVehicle</TITLE></HEAD>"
+    },
+    {
+      "url": "/nv_logo.gif",
+      "md5": "efff3142fb8f4e34836ca5b38ca40512"
+    },
+    {
+      "regexp": "(?-mix:^NetVehicle)",
+      "search": "headers[server]"
+    },
+    {
+      "model": "(?-mix:^NetVehicle-([A-Z\\d]{1,3}))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://fenics.fujitsu.com/products/netvehicle/"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "CERN",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^CERN\\/([^\\s]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.w3.org/Daemon/"
+}

@@ -1,0 +1,34 @@
+{
+  "name": "AWStats",
+  "matches": [
+    {
+      "certainty": 75,
+      "ghdb": "inurl:awstats ext:pl +intitle:\"Statistics for\""
+    },
+    {
+      "text": "<a href=\"http://awstats.sourceforge.net\" target=\"_newawstats\">Created by awstats</a><br>"
+    },
+    {
+      "text": "<meta http-equiv=\"description\" content=\"Awstats - Advanced Web Statistics for"
+    },
+    {
+      "name": "default logo",
+      "text": "<a href=\"http://awstats.sourceforge.net\" target=\"_newawstats\"><img src=\"/icon/other/awstats_logo1.png\" border=0 alt=\"awstats Official Web Site\" title=\"awstats Official Web Site\"></a>"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"AWStats ([0-9\\.]+ \\(build [0-9\\.]+\\)))"
+    },
+    {
+      "version": "(?-mix:<FONT COLOR=\"#000000\"><b>Advanced Web Statistics ([0-9\\.]+ \\(build [0-9\\.]+\\)))"
+    },
+    {
+      "url": "awstats.pl?framename=mainright",
+      "version": "(?-mix:<FONT COLOR=\"#000000\"><b>Advanced Web Statistics ([0-9\\.]+ \\(build [0-9\\.]+\\)))"
+    }
+  ],
+  "dorks": [
+    "inurl:awstats ext:pl intitle:\"Statistics for\"",
+    "intitle:\"statistics of\" \"advanced web statistics\""
+  ],
+  "website": "http://awstats.sourceforge.net/"
+}

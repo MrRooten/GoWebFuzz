@@ -1,0 +1,19 @@
+{
+  "name": "Open-Source-Ticket-Request-System",
+  "matches": [
+    {
+      "ghdb": "\"Powered by OTRS\" inurl:customer.pl",
+      "certainty": 75
+    },
+    {
+      "text": "<title>OTRS  :: Login</title>"
+    },
+    {
+      "version": "(?-mix:Powered by <a href=\"http:\\/\\/otrs.org[\\/]*\" class=\"small\">OTRS ([^<]+)<\\/a>)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by OTRS\" inurl:customer.pl"
+  ],
+  "website": "http://otrs.org/"
+}

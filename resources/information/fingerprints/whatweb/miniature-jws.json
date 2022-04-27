@@ -1,0 +1,21 @@
+{
+  "name": "Miniature-JWS",
+  "matches": [
+    {
+      "regexp": "(?-mix:^(D\\. )?Rogatkin)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Rogatkin's JWS based on Acme\\.Serve\\/\\$Revision: ([\\d\\.]+) \\$$)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^D\\. Rogatkin's TJWS based on Acme\\.Serve\\/Version [^,]+, \\$Revision: ([\\d\\.]+) \\$$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://tjws.sourceforge.net/"
+}

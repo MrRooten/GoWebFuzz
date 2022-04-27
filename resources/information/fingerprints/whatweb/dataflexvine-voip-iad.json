@@ -1,0 +1,13 @@
+{
+  "name": "DataflexViNE-VoIP-IAD",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:DataflexViNE-Webserver\\/([\\d\\.]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.dataflex.com/"
+}

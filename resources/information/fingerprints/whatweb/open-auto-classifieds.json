@@ -1,0 +1,18 @@
+{
+  "name": "Open-Auto-Classifieds",
+  "matches": [
+    {
+      "text": "<p>Powered by <a href=\"http://www.openautoclassifieds.com/index.php\">Open Auto Classifieds</a>"
+    },
+    {
+      "version": "(?-mix:\t\t\t<p>Powered by <a href=\"http:\\/\\/www.openautoclassifieds.com[^\"]*\">Open Auto Classifieds v([\\d\\.a-z]+))"
+    },
+    {
+      "version": "(?-mix:\t\t\t<p>Powered by Open Auto Classifieds v([\\d\\.a-z]+))"
+    }
+  ],
+  "dorks": [
+    "\"powered by Open Auto Classifieds\""
+  ],
+  "website": "http://www.openautoclassifieds.com/index.php"
+}

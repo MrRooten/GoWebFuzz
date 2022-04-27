@@ -1,0 +1,13 @@
+{
+  "name": "LabVIEW",
+  "matches": [
+    {
+      "version": "(?-mix:^LabVIEW\\/([\\d\\.]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.ni.com/labview/"
+}

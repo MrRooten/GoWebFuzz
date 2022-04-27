@@ -1,0 +1,15 @@
+{
+  "name": "phpCollab",
+  "matches": [
+    {
+      "version": "(?-mix:^<!-- Powered by PhpCollab v([\\d\\.]+) \\/\\/-->$)"
+    },
+    {
+      "version": "(?-mix:^<p id=\"footer\">PhpCollab v([\\d\\.]+)[\\s]*<\\/p>$)"
+    }
+  ],
+  "dorks": [
+    "\"PhpCollab\" inurl:/general/login.php"
+  ],
+  "website": "http://www.php-collab.org/"
+}

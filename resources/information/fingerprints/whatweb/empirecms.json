@@ -1,0 +1,12 @@
+{
+  "name": "Empire-CMS",
+  "matches": [
+    {
+      "text": " - Powered by EmpireCMS</title>"
+    }
+  ],
+  "dorks": [
+    "\"powered by EmpireCMS\""
+  ],
+  "website": "http://www.phome.net/"
+}

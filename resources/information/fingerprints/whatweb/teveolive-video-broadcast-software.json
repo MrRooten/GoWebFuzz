@@ -1,0 +1,21 @@
+{
+  "name": "TeveoLive-Video-Broadcast-Software",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^TeveoLive HTTP Server$)"
+    },
+    {
+      "search": "headers[xvideowidth]",
+      "regexp": "(?-mix:^\\d+$)"
+    },
+    {
+      "search": "headers[xvideoheight]",
+      "regexp": "(?-mix:^\\d+$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

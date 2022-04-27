@@ -1,0 +1,23 @@
+{
+  "name": "iGuard-Security-System",
+  "matches": [
+    {
+      "text": "\t<TITLE>iGuard Fingerprint Security System</TITLE>"
+    },
+    {
+      "firmware": "(?-mix:\t<meta content=\"Lucky-Tech iGuard ([\\d\\.]{1,5})\" name=\"GENERATOR\">)"
+    },
+    {
+      "url": "/Admins/Content.vtml",
+      "firmware": "(?-mix:iGuard Security[^<]+<\\/td><\\/tr><tr><td>Firmware Version<\\/td><td>([^<]+)<\\/td>)"
+    },
+    {
+      "url": "/Admins/Content.vtml",
+      "string": "(?-mix:<tr><td>Registered Automatch<\\/td><td>([^<]+)<\\/td><\\/tr>)"
+    }
+  ],
+  "dorks": [
+    "\"iGuard Security System\" \"Lucky Technology Ltd.. All rights reserved.\" \"US Patent No.: 6,643,779\""
+  ],
+  "website": "http://www.lucky-tech.com/p1.php"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Liferay",
+  "matches": [
+    {
+      "text": "Powered by Liferay Portal",
+      "certainty": 10
+    },
+    {
+      "text": "<![CDATA[*/Liferay.Util.addInputFocus();/*]]>*"
+    },
+    {
+      "search": "headers[liferay-portal]",
+      "string": "(?-mix:^Liferay Portal (.+ Edition) (.+)$)"
+    },
+    {
+      "search": "headers[liferay-portal]",
+      "version": "(?-mix:^Liferay Portal (.+ Edition) (.+)$)",
+      "offset": 1
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:GUEST_LANGUAGE_ID=[a-z]{2,3}_[A-Z]{2,3};)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by Liferay Portal\""
+  ],
+  "website": "http://www.liferay.com/"
+}

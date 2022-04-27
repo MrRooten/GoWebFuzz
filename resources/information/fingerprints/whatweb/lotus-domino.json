@@ -1,0 +1,26 @@
+{
+  "name": "Lotus-Domino",
+  "matches": [
+    {
+      "certainty": 25,
+      "ghdb": "filetype:nsf"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Lotus-Domino\\/([^\\s]+))"
+    },
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^Lotus-Domino$)"
+    },
+    {
+      "certainty": 75,
+      "url": "/favicon.ico",
+      "md5": "639b61409215d770a99667b446c80ea1"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www-01.ibm.com/software/lotus/products/domino/"
+}

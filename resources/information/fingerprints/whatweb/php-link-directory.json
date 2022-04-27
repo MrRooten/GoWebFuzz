@@ -1,0 +1,19 @@
+{
+  "name": "PHP-Link-Directory",
+  "matches": [
+    {
+      "ghdb": "\"powered by phpLinkDirectory\"",
+      "certainty": 25
+    },
+    {
+      "regexp": "(?i-mx:<a href=\"http:\\/\\/www.phplinkdirectory.com[^>]*Phplinkdirectory)"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\"[^>]*content=\"PHP Link Directory ([0-9\\.]+)\")"
+    }
+  ],
+  "dorks": [
+    "\"powered by phpLinkDirectory\""
+  ],
+  "website": "http://www.phplinkdirectory.com/"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "TwistedWeb",
+  "matches": [
+    {
+      "version": "(?-mix:TwistedWeb\\/?([^ ]+)?)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

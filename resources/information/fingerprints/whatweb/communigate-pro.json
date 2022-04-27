@@ -1,0 +1,13 @@
+{
+  "name": "CommuniGate-Pro",
+  "matches": [
+    {
+      "version": "(?-mix:^CommuniGatePro\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.communigate.com/cgatepro/"
+}

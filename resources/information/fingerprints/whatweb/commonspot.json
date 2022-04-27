@@ -1,0 +1,21 @@
+{
+  "name": "CommonSpot",
+  "matches": [
+    {
+      "regexp": "(?-mix:<meta[^>]+name=\"Generator\"[^>]+content=\"CommonSpot[^\"]+\"[^>]*\\/>)"
+    },
+    {
+      "regexp": "(?-mix:<img[^>]+src=\"[^\"]+commonspot[^\"]+\"[^>]*\\/>)"
+    },
+    {
+      "regexp": "(?-mix:<link[^>]+href=\"[^\"]commonspot\\/commonspot\\.css\"[^>]+\\/>)"
+    },
+    {
+      "version": "(?-mix:<meta[^>]+name=\"Generator\"[^>]+content=\"CommonSpot[^\\d^\"]+([\\d\\.]+)\"[^>]*\\/>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.paperthin.com/"
+}

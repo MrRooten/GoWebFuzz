@@ -1,0 +1,12 @@
+{
+  "name": "PHPortfolio",
+  "matches": [
+    {
+      "regexp": "(?-mix:style=\"color:gray;font-size:smaller\">Powered by <a href=\"http:\\/\\/www\\.outshine\\.com\\/phportfolio\\/\"[^>]*>PHPortfolio<\\/a>\\.)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by PHPortfolio\" inurl:photo.php"
+  ],
+  "website": "http://www.outshine.com/software/phportfolio/index.php"
+}

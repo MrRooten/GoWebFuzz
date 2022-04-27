@@ -1,0 +1,22 @@
+{
+  "name": "Citrix-NetScaler",
+  "matches": [
+    {
+      "regexp": "(?-mix:NS\\-CACHE)",
+      "search": "headers[via]"
+    },
+    {
+      "version": "(?-mix:NS\\-CACHE\\-(\\d{1,4}\\.\\d{1,4}):)",
+      "search": "headers[via]"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^NSC_)",
+      "name": "NSC_ cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

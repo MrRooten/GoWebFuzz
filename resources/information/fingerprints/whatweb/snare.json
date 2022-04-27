@@ -1,0 +1,24 @@
+{
+  "name": "Snare",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "regexp": "(?-mix:^SNARE\\/([\\d\\.]+)$)"
+    },
+    {
+      "search": "headers[www-authenticate]",
+      "regexp": "(?-mix:Digest realm=\"SNARE\")"
+    },
+    {
+      "version": "(?-mix:<H2><CENTER>SNARE Version ([\\d\\.]+) Status Page<\\/H2><\\/CENTER>)"
+    },
+    {
+      "certainty": 75,
+      "text": "<ADDRESS>Snare Server Remote Control facility</ADDRESS>"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.intersectalliance.com/projects/"
+}

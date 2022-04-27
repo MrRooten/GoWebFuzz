@@ -1,0 +1,41 @@
+{
+  "name": "Snap-Appliance-Server",
+  "matches": [
+    {
+      "string": "(?-mix:<TITLE>Snap Server ([^\\s]+) \\[[^\\]]+\\]<\\/TITLE>)"
+    },
+    {
+      "string": "(?-mix:<HTML><HEAD><TITLE>About Snap Server ([^\\s]+)<\\/TITLE><\\/HEAD>)"
+    },
+    {
+      "text": "<A HREF=\"http://www.snapappliance.com/support\" TARGET=\"new\"><IMG SRC=\"/config/resource/Tech.gif\"  ALIGN=\"TOP\" NATURALSIZEFLAG=\"3\" BORDER=\"0\" ALT=\"\"></A> "
+    },
+    {
+      "text": "<A HREF=\"javascript:_ShowAbout()\" onMouseOver=\"window.status='About Snap Server'; return true;\" onMouseOut=\"window.status=''; return true;\"><IMG SRC=\"/config/resource/About.gif\"  ALIGN=\"TOP\" NATURALSIZEFLAG=\"3\" BORDER=\"0\" ALT=\"\"></A>"
+    },
+    {
+      "text": "   window.open(\"/config?Func=AboutSend\",\"AboutSnap\",\"toolbar=no,location=no,status=no,menubar=no,scrollbars=no,width=500,height=395,resizable=yes,dependent=yes\"); "
+    },
+    {
+      "regexp": "(?-mix:^Snap Appliance)",
+      "search": "headers[server]"
+    },
+    {
+      "regexp": "(?-mix:^Quantum Corporation)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Snap Appliances?, Inc\\.\\/([\\d\\.]+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^Quantum Corporation\\.\\/([\\d\\.]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Snap Server\" intitle:\"Home\" \"Active Users\"",
+    "inurl:config?Func=AboutSend"
+  ],
+  "website": "http://www.overlandstorage.com/"
+}

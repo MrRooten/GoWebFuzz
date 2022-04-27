@@ -1,0 +1,25 @@
+{
+  "name": "3dcart",
+  "matches": [
+    {
+      "text": "<!--START: 3dcart stats-->"
+    },
+    {
+      "text": "<!--END: 3dcart stats-->"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:3dvisit)"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^affiliate\\s)",
+      "name": "affiliate cookie",
+      "certainty": 25
+    }
+  ],
+  "dorks": [
+    "\"powered by 3dcart\""
+  ],
+  "website": "http://www.3dcart.com/"
+}

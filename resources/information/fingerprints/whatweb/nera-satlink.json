@@ -1,0 +1,13 @@
+{
+  "name": "Nera-SatLink",
+  "matches": [
+    {
+      "search": "headers[www-authenticate]",
+      "regexp": "(?-mix:^Basic realm=\"SatLink Terminal\"$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.neraworld.com/"
+}

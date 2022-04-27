@@ -1,0 +1,17 @@
+{
+  "name": "fnord",
+  "matches": [
+    {
+      "version": "(?-mix:^fnord\\/([^\\s]+)$)",
+      "search": "headers[server]"
+    },
+    {
+      "regexp": "(?-mix:^fnord)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.fefe.de/fnord/"
+}

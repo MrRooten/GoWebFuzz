@@ -1,0 +1,12 @@
+{
+  "name": "Brightcove",
+  "matches": [
+    {
+      "regexp": "(?-mix:goku\\.brightcove\\.com|admin\\.brightcove\\.com\\/js)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.brightcove.com/"
+}

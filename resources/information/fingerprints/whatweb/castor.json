@@ -1,0 +1,29 @@
+{
+  "name": "CAStor",
+  "matches": [
+    {
+      "url": "/",
+      "text": "<html><head><title>CAStor Node Status</title></head><body><h2>CAStor Node IP"
+    },
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^CAStor Cluster\\/([^\\s]+)$)"
+    },
+    {
+      "search": "headers[server]",
+      "module": "(?-mix:^CAStor (Reverse Proxy .+)$)"
+    },
+    {
+      "search": "headers[castor-system-totalgbavailable]",
+      "regexp": "(?-mix:^[\\d]+$)"
+    },
+    {
+      "search": "headers[castor-system-totalgbcapacity]",
+      "regexp": "(?-mix:^[\\d]+$)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"CAStor Node Status\" \"CAStor Node IP\""
+  ],
+  "website": "http://www.caringo.com/"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Joomla",
+  "matches": [
+    {
+      "url": "/administrator/manifests/files/joomla.xml",
+      "version": "(?-mix:<version>(.*?)<\\/version>)"
+    },
+    {
+      "version": "1.0",
+      "regexp": "(?-mix:<meta name=\"Generator\" content=\"Joomla! - Copyright \\(C\\) 200[0-9] - 200[0-9] Open Source Matters. All rights reserved.\" \\/>)"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"Joomla! (\\d\\.\\d) - Open Source Content Management\" \\/>)"
+    },
+    {
+      "text": "Powered by <a href=\"http://www.joomla.org\">Joomla!</a>."
+    },
+    {
+      "url": "/administrator/",
+      "regexp": "(?-mix:<div id=\"joomla\"><img src=\"[^\"]*\\/images\\/header_text.png\" alt=\"Joomla! Logo\")",
+      "name": "admin page"
+    }
+  ],
+  "dorks": [
+    "\"powered by joomla\" inurl:option=com_content"
+  ],
+  "website": "http://joomla.org"
+}

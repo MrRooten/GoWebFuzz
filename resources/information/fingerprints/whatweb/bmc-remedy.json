@@ -1,0 +1,29 @@
+{
+  "name": "BMC-Remedy",
+  "matches": [
+    {
+      "text": "<!-- common to all login jsps - not localized information -->"
+    },
+    {
+      "text": "<!-- Added to prevent iFrame exploit. Need to comment out for portlet to work -->"
+    },
+    {
+      "text": "<input type=\"button\" name=\"clear\" value=\"Clear\" class=\"Login\" onClick=\"clearLogin();\"><!--;-->"
+    },
+    {
+      "text": "<input type=\"button\" name=\"clear\" value=\"Clear\" onClick=\"clearLogin();\"><!--;-->"
+    },
+    {
+      "version": "(?-mix:<title>(BMC&nbsp;)?Remedy&nbsp;Mid&nbsp;Tier&nbsp;([^\\s]+) - (Error page|Login)<\\/title><!--;-->)",
+      "offset": 1
+    },
+    {
+      "version": "(?-mix:<title>(BMC )?Remedy Mid Tier ([^\\s]+) - (Error page|Login)<\\/title>)",
+      "offset": 1
+    }
+  ],
+  "dorks": [
+    "intitle:\"Remedy Mid Tier\" \"User Name\" \"Password\""
+  ],
+  "website": "http://www.bmc.com/products/offering/itsm-premise-ondemand.html"
+}

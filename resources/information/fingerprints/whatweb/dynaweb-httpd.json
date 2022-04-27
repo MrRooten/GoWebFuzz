@@ -1,0 +1,10 @@
+{
+  "name": "DynaWeb-httpd",
+  "matches": [
+
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.oracle.com/"
+}

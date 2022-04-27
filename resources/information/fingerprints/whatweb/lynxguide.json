@@ -1,0 +1,19 @@
+{
+  "name": "LynxGuide",
+  "matches": [
+    {
+      "text": "<title>Login to LynxGuide Server</title>"
+    },
+    {
+      "text": "Use subject to <a href=\"/cgi/help/license.htm\">license agreement</a></span>"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:Access_Num=[^;]+;)"
+    }
+  ],
+  "dorks": [
+    "inurl:\"cgi/logon.plx\""
+  ],
+  "website": "http://www.lynxguide.com/"
+}

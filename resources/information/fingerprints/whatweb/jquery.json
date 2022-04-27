@@ -1,0 +1,24 @@
+{
+  "name": "JQuery",
+  "matches": [
+    {
+      "regexp": "(?-mix:<script [^>]*jquery)"
+    },
+    {
+      "version": "(?-mix:jquery(\\.min)?\\.js\\?ver=([0-9\\.]+)['\"])",
+      "offset": 1
+    },
+    {
+      "version": "(?-mix:jquery\\/([0-9\\.]+)\\/jquery(\\.min)?\\.js)",
+      "offset": 0
+    },
+    {
+      "version": "(?-mix:jquery-([0-9\\.]+)(\\.min)?\\.js)",
+      "offset": 0
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://jquery.com/"
+}

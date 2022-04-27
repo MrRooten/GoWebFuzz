@@ -1,0 +1,19 @@
+{
+  "name": "phxEventManager",
+  "matches": [
+    {
+      "text": "<td><div class=\"minicalmonth\"><a href=\"/?y="
+    },
+    {
+      "certainty": 75,
+      "text": "<script type=\"text/javascript\" src=\"pem-includes/xajax/xajax_js/xajax_core.js\"></script>"
+    },
+    {
+      "version": "(?-mix:<div id=\"footer\">\\s+Copyright &copy; 20[\\d]{2}[^\\n]+\\s+Powered by phxEventManager ([^<]+)<br \\/>)"
+    }
+  ],
+  "dorks": [
+    "intext:\"Powered by phxEventManager\" -intext"
+  ],
+  "website": "http://phxeventmanager.com/"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Atmail-WebMail",
+  "matches": [
+    {
+      "text": "<title>Acceder a UOWebmail</title>"
+    },
+    {
+      "text": "<a href='http://atmail.com/webmail-client/' title='Webmail client' target='_blank'>Powered by Atmail Webmail UO</a>",
+      "version": "UO"
+    },
+    {
+      "regexp": "(?-mix:<a href=\"http:\\/\\/www.atmail.com[\\/]*\" target=\"_blank\">Powered by Atmail[\\s]*<\\/a>)"
+    },
+    {
+      "text": "<td class=\"more\"><a href=\"javascript:ExpandOptions()\"><img src=\"imgs/login-more.gif\" alt=\"more\" border=\"none\"></a></td>"
+    },
+    {
+      "version": "(?-mix:<title>Atmail ([\\d\\.]+) - Login Page<\\/title>)"
+    },
+    {
+      "version": "(?-mix:<a href=\"http:\\/\\/www.atmail.com\\/\" target=\"_blank\">Powered by Atmail ([\\d\\.]+))"
+    },
+    {
+      "string": "(?-mix:<input id=\"Mailserverinput\" class=\"input\" type=\"text\" name=\"MailServer\" value=\"([^>]*)\")"
+    }
+  ],
+  "dorks": [
+    "\"Powered by Atmail\" \"WebAdmin Control Panel\" \"Email\" \"Password\" \"More\" \" Mailserver\" \"Protocol\" \"Language\""
+  ],
+  "website": "http://www.atmail.com/webmail-client/"
+}

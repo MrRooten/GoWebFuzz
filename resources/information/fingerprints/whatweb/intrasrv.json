@@ -1,0 +1,13 @@
+{
+  "name": "Intrasrv",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^intrasrv ([\\d\\.]+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.leighb.com/intrasrv.htm"
+}

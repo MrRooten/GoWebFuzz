@@ -1,0 +1,23 @@
+{
+  "name": "iPeer",
+  "matches": [
+    {
+      "version": "(?-mix:<title>iPeer V(\\d) with TeamMaker<\\/title>)"
+    },
+    {
+      "text": "<h1 align=\"center\"><span class=\"footer\">Powered by iPeer and TeamMaker - Created by UBC and Rose-Hulman</span></h1>"
+    },
+    {
+      "version": "(?-mix:<span class=\"bannerText\"><span style='font-size: 120%;'>([^<]+)<\\/span>&nbsp;&nbsp;with TeamMaker<\\/span><\\/td>)"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:IPEER=[^;]+;)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by iPeer and TeamMaker - Created by UBC and Rose-Hulman\"",
+    "intitle:\"iPeer V2 with TeamMaker\""
+  ],
+  "website": "http://ipeer.ctlt.ubc.ca/trac"
+}

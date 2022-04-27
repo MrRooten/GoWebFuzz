@@ -1,0 +1,12 @@
+{
+  "name": "AdaptCMS",
+  "matches": [
+    {
+      "version": "(?-mix:Powered by <a href=\"http:\\/\\/www.adaptcms.com\">[<b>]*AdaptCMS([^<]*)<\\/a>)"
+    }
+  ],
+  "dorks": [
+    "\"powered by AdaptCMS\""
+  ],
+  "website": "http://www.adaptsoftware.org/article/1/Projects/AdaptCMS/"
+}

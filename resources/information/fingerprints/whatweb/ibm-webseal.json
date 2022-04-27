@@ -1,0 +1,13 @@
+{
+  "name": "IBM-WebSEAL",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^WebSEAL\\/([^\\s]+ \\(Build \\d+\\)))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://publib.boulder.ibm.com/tividd/td/ITAME/SC32-1359-00/en_US/HTML/am51_webseal_guide02.htm#wq1"
+}

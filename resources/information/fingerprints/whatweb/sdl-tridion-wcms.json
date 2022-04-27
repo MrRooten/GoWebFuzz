@@ -1,0 +1,17 @@
+{
+  "name": "SDL-Tridion-WCMS",
+  "matches": [
+    {
+      "search": "headers[product-version]",
+      "version": "(?-mix:^(.+)$)"
+    },
+    {
+      "search": "headers[product]",
+      "string": "(?-mix:^Tridion (20[\\d]{2}) Dynamic Content Web Application$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.sdl.com/en/wcm/products/sdltridion/default.asp"
+}

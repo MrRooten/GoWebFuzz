@@ -1,0 +1,21 @@
+{
+  "name": "Connectix-Boards",
+  "matches": [
+    {
+      "text": "\t<title>Installation de Connectix Boards</title>"
+    },
+    {
+      "text": "    <title>Connectix Boards - Fatal Error</title>"
+    },
+    {
+      "text": "\t<title>Connectix Boards Error</title>"
+    },
+    {
+      "version": "(?-mix:Powered by <a href=\"http:\\/\\/www.connectix-boards.org\"[^>]*>Connectix Boards<\\/a> ([^&]+) &copy; [0-9]{4}-[0-9]{4})"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.connectix-boards.org/index.php"
+}

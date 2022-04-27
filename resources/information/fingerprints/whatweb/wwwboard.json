@@ -1,0 +1,22 @@
+{
+  "name": "WWWBoard",
+  "matches": [
+    {
+      "name": "GHDB: inurl:\"WWWADMIN.PL\" intitle:\"wwwadmin\"",
+      "certainty": 75,
+      "ghdb": "inurl:\"WWWADMIN.PL\" intitle:\"wwwadmin\""
+    },
+    {
+      "name": "default title",
+      "text": "<head><title>WWWAdmin For WWWBoard</title></head>"
+    },
+    {
+      "name": "default text",
+      "text": "<center><h1>WWWAdmin For WWWBoard</h1></center>"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.scriptarchive.com/wwwboard.html"
+}

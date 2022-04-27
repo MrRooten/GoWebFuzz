@@ -1,0 +1,16 @@
+{
+  "name": "Indico",
+  "matches": [
+    {
+      "text": "<td class=\"menuConfTopCell\" align=\"left\" valign=\"bottom\">"
+    },
+    {
+      "version": "(?-mix:<\\/span>&nbsp;Powered by(\\ CERN)? <a href=\"http:\\/\\/cern\\.ch\\/indico\">Indico ([^<]+)<\\/a>&nbsp;<span class=\"separator\">)",
+      "offset": 1
+    }
+  ],
+  "dorks": [
+    "\"powered by Indico\" inurl:wcalendar.py"
+  ],
+  "website": "http://indico.cern.ch/"
+}

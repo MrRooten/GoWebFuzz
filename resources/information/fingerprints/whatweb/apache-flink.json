@@ -1,0 +1,23 @@
+{
+  "name": "Apache-Flink",
+  "matches": [
+    {
+      "name": "Apache Flink in title",
+      "regexp": "(?-mix:<title>Apache Flink Web Dashboard<\\/title>)"
+    },
+    {
+      "name": "Flink logo",
+      "url": "/images/flink-logo.png"
+    },
+    {
+      "url": "/overview",
+      "version": "(?-mix:\"flink-version\":\"([^\"]+)\")"
+    }
+  ],
+  "dorks": [
+    {
+      "intitle": "Apache Flink Web Dashboard"
+    }
+  ],
+  "website": "https://flink.apache.org/"
+}

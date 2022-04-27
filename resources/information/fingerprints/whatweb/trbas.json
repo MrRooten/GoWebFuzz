@@ -1,0 +1,12 @@
+{
+  "name": "Trbas",
+  "matches": [
+    {
+      "text": "<link rel=\"stylesheet\" href=\"http://www.trbas.com"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Google-Maps",
+  "matches": [
+    {
+      "regexp": "(?i-mx:<script [^>]*src=[\"'][^>]*maps\\.google\\.com\\/maps(\\?file=api|\\/api\\/staticmap))"
+    }
+  ],
+  "dorks": [
+    "\"powered by google maps\""
+  ],
+  "website": "http://maps.google.com/"
+}

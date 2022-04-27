@@ -1,0 +1,19 @@
+{
+  "name": "uClinux-httpd",
+  "matches": [
+    {
+      "os": "uClinux",
+      "version": "(?-mix:^uClinux)",
+      "search": "headers[server]"
+    },
+    {
+      "os": "uClinux",
+      "version": "(?-mix:^uClinux-httpd ([\\d\\.]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.uclinux.org/"
+}

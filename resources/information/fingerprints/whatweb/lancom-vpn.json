@@ -1,0 +1,28 @@
+{
+  "name": "LANCOM-VPN",
+  "matches": [
+    {
+      "regexp": "(?-mix:^LANCOM.*VPN)",
+      "search": "headers[server]"
+    },
+    {
+      "model": "(?-mix:^LANCOM ([\\d]{4}[\\+]?) VPN( \\([^\\)]+\\))? ([\\d\\.]+) \\/ ([\\d]{2}.[\\d]{2}.[\\d]{4})$)",
+      "offset": 0,
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^LANCOM ([\\d]{4}[\\+]?) VPN( \\([^\\)]+\\))? ([\\d\\.]+) \\/ ([\\d]{2}.[\\d]{2}.[\\d]{4})$)",
+      "offset": 2,
+      "search": "headers[server]"
+    },
+    {
+      "string": "(?-mix:^LANCOM ([\\d]{4}[\\+]?) VPN( \\([^\\)]+\\))? ([\\d\\.]+) \\/ ([\\d]{2}.[\\d]{2}.[\\d]{4})$)",
+      "offset": 3,
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.lancom.es/LANCOM-VPN.279.0.html"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "LEAP",
+  "matches": [
+    {
+      "version": "(?-mix:<meta name=\"Generator\" content=\"LEAP ([\\d\\.]+)\"( \\/)?>)"
+    },
+    {
+      "version": "(?-mix:<meta name=\"Formatter\" content=\"LEAP ([\\d\\.]+)\"( \\/)?>)"
+    }
+  ],
+  "dorks": [
+    "inurl:LEAP/error.lasso"
+  ],
+  "website": "http://www.leapcms.com/"
+}

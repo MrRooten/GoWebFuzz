@@ -1,0 +1,14 @@
+{
+  "name": "HubSpot",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:hsPagesViewedThisSession)",
+      "name": "hsPagesViewedThisSession cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.hubspot.com/"
+}

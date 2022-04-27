@@ -1,0 +1,18 @@
+{
+  "name": "FCMS",
+  "matches": [
+    {
+      "text": "<meta name=\"author\" content=\"Ryan Haudenschilt\"/>"
+    },
+    {
+      "regexp": "(?-mix:- [pP]owered by Family Connections<\\/title>)"
+    },
+    {
+      "version": "(?-mix:- [pP]owered by Family Connections ([^\\s^<]+)[\\s]*<\\/title>[\\s]*(<meta|<link))"
+    }
+  ],
+  "dorks": [
+    "intitle:\"powered by Family Connections\""
+  ],
+  "website": "https://www.familycms.com/index.php"
+}

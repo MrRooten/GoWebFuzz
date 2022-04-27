@@ -1,0 +1,15 @@
+{
+  "name": "BlognPlus",
+  "matches": [
+    {
+      "regexp": "(?i-mx:Powered by[\\s]*<a href=\"http:\\/\\/www.blogn.org[^>]*>BlognPlus)"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\"[^>]*content=\"BlognPlus ([0-9\\.]+))"
+    }
+  ],
+  "dorks": [
+    "\"powered by BlognPlus\""
+  ],
+  "website": "http://www.blogn.org/"
+}

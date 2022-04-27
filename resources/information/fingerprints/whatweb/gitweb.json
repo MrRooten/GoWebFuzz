@@ -1,0 +1,21 @@
+{
+  "name": "Gitweb",
+  "matches": [
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"gitweb\\/([\\d\\.a-z]{1,25}) git\\/[\\d\\.a-z]{1,25}\"\\/>)"
+    },
+    {
+      "version": "(?-mix:<!\\-\\- git web interface version ([\\d\\.a-z]{1,25}), \\(C\\) 2005-2006, Kay Sievers <kay.sievers@vrfy.org>, Christian Gierke \\-\\->)"
+    },
+    {
+      "module": "(?-mix:<!\\-\\- git core binaries version ([\\d\\.a-z]{1,25}) \\-\\->)"
+    },
+    {
+      "module": "(?-mix:<meta name=\"generator\" content=\"gitweb\\/[\\d\\.a-z]{1,25} git\\/([\\d\\.a-z]{1,25})\"\\/>)"
+    }
+  ],
+  "dorks": [
+    "\"Project\" \"Description\" \"Owner\" \"Last Change\" \"Search\" \"summary\" \"shortlog\" \"log\" \"tree\" \"TXT\" \"OPML\" intitle:git"
+  ],
+  "website": "http://git.or.cz/gitwiki/Gitweb"
+}

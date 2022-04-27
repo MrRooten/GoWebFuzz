@@ -1,0 +1,19 @@
+{
+  "name": "EarlyImpact-ProductCart",
+  "matches": [
+    {
+      "certainty": 75,
+      "ghdb": "inurl:custva.asp"
+    },
+    {
+      "text": "<a href=\"fpassword.asp?redirectUrl=&frURL=Custva.asp\""
+    },
+    {
+      "text": "<!-- end of password request -->"
+    }
+  ],
+  "dorks": [
+    "inurl:custva.asp"
+  ],
+  "website": "http://www.earlyimpact.com. Version < 2.53 is vulnerable http://www.securityfocus.com/bid/9669"
+}

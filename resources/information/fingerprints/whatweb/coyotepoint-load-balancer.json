@@ -1,0 +1,17 @@
+{
+  "name": "CoyotePoint-Load-Balancer",
+  "matches": [
+    {
+      "regexp": "(?-mix:^CoyotePoint)",
+      "search": "headers[server]"
+    },
+    {
+      "model": "(?-mix:^CoyotePoint (L[\\d]) Load Balancer$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.coyotepoint.com/products/"
+}

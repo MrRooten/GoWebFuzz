@@ -1,0 +1,17 @@
+{
+  "name": "HeiTel-Digital-Video-Device",
+  "matches": [
+    {
+      "regexp": "(?-mix:^HeiTel GmbH Web Server)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^HeiTel GmbH Web Server \\[V([\\d\\.]+)\\/V([\\d\\.]+)\\/V([\\d\\.]+)\\]$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.heitel.com/en/products/software/web-server/index.html"
+}

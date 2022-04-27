@@ -1,0 +1,15 @@
+{
+  "name": "CMS-WebManager-Pro",
+  "matches": [
+    {
+      "text": "Powered by <a style=\"color:#555555;\" href=\"http://webmanager-pro.com/\">CMS Webmanager-pro</a>"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\" content=\"Webmanager-pro v([\\d\\.]+)\" \\/>)"
+    }
+  ],
+  "dorks": [
+    "\"powered by CMS WebManager-Pro\""
+  ],
+  "website": "http://webmanager-pro.com/"
+}

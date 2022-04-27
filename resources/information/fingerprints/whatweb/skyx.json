@@ -1,0 +1,26 @@
+{
+  "name": "SkyX",
+  "matches": [
+    {
+      "text": "<div id=\"skyx_status\">SkyX status: enhancing</div>"
+    },
+    {
+      "text": "<script language=\"javascript\" type=\"text/javascript\" src=\"/skyxgui.js\"></script>"
+    },
+    {
+      "string": "(?-mix:<div id=\"hostname\"><a href=\"Misc\">Hostname<\\/a>: ([^\\s^<]+)<\\/div>)"
+    },
+    {
+      "regxp": "(?-mix:^SkyX )",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^SkyX HTTPS ([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.bluecoat.com/"
+}

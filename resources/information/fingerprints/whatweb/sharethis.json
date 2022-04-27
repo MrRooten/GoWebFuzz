@@ -1,0 +1,12 @@
+{
+  "name": "ShareThis",
+  "matches": [
+    {
+      "regexp": "(?i-mx:<script [^>]*src=[\"|'][^\"^']+w\\.sharethis\\.com\\/)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://sharethis.com/"
+}

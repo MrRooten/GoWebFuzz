@@ -1,0 +1,22 @@
+{
+  "name": "Linksys-USB-HDD",
+  "matches": [
+    {
+      "ghdb": "intitle:\"Network Storage Link for USB 2.0 Disks\" Firmware",
+      "certainty": 75
+    },
+    {
+      "text": "<title>Network Storage Link for USB 2.0 Disks</title>"
+    },
+    {
+      "firmware": "(?-mix:          Version: &nbsp;V([\\d\\.\\-a-zA-Z]+)<\\/span> &nbsp;&nbsp;<\\/td>)"
+    },
+    {
+      "model": "(?-mix:\t <td align=\"center\" width=\"100\" class=\"mname\">([^<]+)<\\/td>)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"Network Storage Link for USB 2.0 Disks\" Firmware"
+  ],
+  "website": "http://www.linksys.com/"
+}

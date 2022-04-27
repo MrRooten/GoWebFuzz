@@ -1,0 +1,13 @@
+{
+  "name": "Blazix",
+  "matches": [
+    {
+      "version": "(?-mix:^Blazix Java Server ([^\\s]+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.blazix.com/"
+}

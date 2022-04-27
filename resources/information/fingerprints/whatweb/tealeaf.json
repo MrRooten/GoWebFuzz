@@ -1,0 +1,19 @@
+{
+  "name": "TeaLeaf",
+  "matches": [
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^TLTSID)",
+      "name": "TLTSID cookie"
+    },
+    {
+      "search": "headers[set-cookie]",
+      "regexp": "(?-mix:^TLTUID)",
+      "name": "TLTUID cookie"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "https://www.ibm.com/customer-engagement/tealeaf"
+}

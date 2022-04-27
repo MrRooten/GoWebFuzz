@@ -1,0 +1,13 @@
+{
+  "name": "DublinCore",
+  "matches": [
+    {
+      "name": "dublin core",
+      "regexp": "(?i-mx:<meta [^>]*name=\"DC\\.title\"[^>]*>)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://dublincore.org"
+}

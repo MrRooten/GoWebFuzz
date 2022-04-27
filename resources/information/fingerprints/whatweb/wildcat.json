@@ -1,0 +1,17 @@
+{
+  "name": "Wildcat",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^[wW]ildcat\\/v([^\\s]+))"
+    },
+    {
+      "search": "headers[x-powered-by]",
+      "version": "(?-mix:Wildcat.Net v([^\\s]+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.santronics.com/index.php"
+}

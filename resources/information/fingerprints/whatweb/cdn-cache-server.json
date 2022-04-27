@@ -1,0 +1,13 @@
+{
+  "name": "CDN-Cache-Server",
+  "matches": [
+    {
+      "version": "(?-mix:^Cdn Cache Server V([\\d\\.]+))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": null
+}

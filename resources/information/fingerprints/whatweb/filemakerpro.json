@@ -1,0 +1,21 @@
+{
+  "name": "FileMakerPro",
+  "matches": [
+    {
+      "regexp": "(?-mix:^FileMakerPro)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^FileMakerPro\\/([^\\s]+))",
+      "search": "headers[server]"
+    },
+    {
+      "module": "(?-mix:^FileMakerPro\\/[^\\s]+ (WebCompanion\\/.+)$)",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.filemaker.com.au/products/filemaker-pro/"
+}

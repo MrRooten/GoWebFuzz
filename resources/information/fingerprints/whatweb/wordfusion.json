@@ -1,0 +1,15 @@
+{
+  "name": "WordFusion",
+  "matches": [
+    {
+      "regexp": "(?-mix:<head id=\"Head\"><title>\\s+WordFusion\\.Web\\s+\\<\\/title>)"
+    },
+    {
+      "text": "<param name=\"source\" value=\"ClientBin/WordFusion.Web.xap\">"
+    }
+  ],
+  "dorks": [
+    "intitle:\"WordFusion.Web\" intext:\"Get Microsoft Silverlight\""
+  ],
+  "website": "http://www.zumesoft.com/"
+}

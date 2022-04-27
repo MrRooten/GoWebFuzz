@@ -1,0 +1,16 @@
+{
+  "name": "ECShop",
+  "matches": [
+    {
+      "certainty": 25,
+      "regexp": "(?-mix:<title>[^<]+ - Powered by ECShop<\\/title>)"
+    },
+    {
+      "version": "(?-mix:<meta name=\"Generator\" content=\"ECSHOP v([\\d\\.]+)\" \\/>)"
+    }
+  ],
+  "dorks": [
+    "\"powered by ECSHOP\""
+  ],
+  "website": "http://www.ecshop.org/"
+}

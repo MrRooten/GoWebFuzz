@@ -1,0 +1,32 @@
+{
+  "name": "Infomaster",
+  "matches": [
+    {
+      "version": "(?-mix:<head><title>[\\s]+MasterView ([\\d\\.]+) Property Master[\\s]+<\\/title>)",
+      "string": "MasterView"
+    },
+    {
+      "regexp": "(?-mix:class=\"ackn\">[\\s]*Powered by InfoMaster)"
+    },
+    {
+      "text": "<link href=\"../../MasterView.css\" type=\"text/css\" rel=\"stylesheet\"",
+      "string": "MasterView"
+    },
+    {
+      "text": "<link href=\"../../App_Themes/MasterView/MPLeftNavStyle/PanelBar.MPIFMA.css\" type=\"text/css\" rel=\"stylesheet\" />",
+      "string": "MasterView"
+    },
+    {
+      "text": "<script language=\"javascript\" src=\"../../common/masterView.js\"></script>",
+      "string": "MasterView"
+    },
+    {
+      "string": "(?-mix:<form name=\"frm(MasterView|MasterPlan)\" method=\"post\" action=\"default\\.aspx)"
+    }
+  ],
+  "dorks": [
+    "\"Powered by Infomaster\"",
+    "(inurl:\"modules/applicationmaster/default.aspx\"|inurl:\"modules/propertymaster/default.aspx\")"
+  ],
+  "website": "http://www.infomaster.com.au/"
+}

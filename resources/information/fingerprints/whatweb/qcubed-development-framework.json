@@ -1,0 +1,16 @@
+{
+  "name": "QCubed-Development-Framework",
+  "matches": [
+    {
+      "version": "(?-mix:<div id=\"codeVersion\">QCubed Development Framework ([^\\(]+) \\([^\\)]+\\)<\\/div>)"
+    },
+    {
+      "version": "(?-mix:<b>PHP Version:<\\/b> [^;]+;&nbsp;&nbsp;<b>Zend Engine Version:<\\/b> [^;]+;&nbsp;&nbsp;<b>QCubed Version:<\\/b> ([^\\(]+) \\([^\\(]+\\)<br \\/>)"
+    }
+  ],
+  "dorks": [
+    "\"qcodo/_devtools/codegen.php\" intitle:\"Development Framework - Start Page\"",
+    "intitle:\"PHP Error\" \"Qcubed Version\" \"PHP Version\""
+  ],
+  "website": "http://www.qcodo.com/"
+}

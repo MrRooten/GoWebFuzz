@@ -1,0 +1,31 @@
+{
+  "name": "OpenCms",
+  "matches": [
+    {
+      "regexp": "(?-mix:<meta name=\"generator\"[^>]+content=\"OpenCms\"( \\/)?>)"
+    },
+    {
+      "version": "(?-mix:<meta name=\"generator\"[^>]+content=\"Opencms version ([\\d\\.]+)\"( \\/)?>)"
+    },
+    {
+      "certainty": 75,
+      "regexp": "(?-mix:<(link|img)[^>]+(href|src)=\"[^\"^:]*\\/(opencms|export)\\/(sites|system)\\/[^\"]+\"[^>]*>)"
+    },
+    {
+      "certainty": 25,
+      "regexp": "(?-mix:<(link|img)[^>]+(href|src)=\"[^\"^:]*\\/opencms\\/[^\"]+\"[^>]*>)"
+    },
+    {
+      "regexp": "(?-mix:^OpenCms)",
+      "search": "headers[server]"
+    },
+    {
+      "version": "(?-mix:^OpenCms\\/([a-z\\d\\.]+))",
+      "search": "headers[server]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.opencms.org/"
+}

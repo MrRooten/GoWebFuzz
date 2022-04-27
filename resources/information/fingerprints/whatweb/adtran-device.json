@@ -1,0 +1,24 @@
+{
+  "name": "ADTRAN-Device",
+  "matches": [
+    {
+      "regexp": "(?-mix:^ADTRAN)",
+      "search": "headers[server]",
+      "name": "HTTP Server Header"
+    },
+    {
+      "string": "NetVanta",
+      "model": "(?-mix:^Basic realm=\"Net[Vv]anta ([^\"]+)\"$)",
+      "search": "headers[www-authenticate]"
+    },
+    {
+      "string": "Total Access",
+      "model": "(?-mix:^Basic realm=\"Total Access ([^\"]+)\"$)",
+      "search": "headers[www-authenticate]"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.adtran.com/web/page/portal/Adtran/group/3310"
+}

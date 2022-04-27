@@ -1,0 +1,15 @@
+{
+  "name": "iTalkBB",
+  "matches": [
+    {
+      "version": "(?-mix:<HTML><HEAD><TITLE>[^>]+ V([\\d\\.]+)[\\s]+<\\/TITLE><STYLE type=text\\/css>TD \\{FONT-SIZE: 12px; LINE-HEIGHT: normal; TEXT-ALIGN: center\\}<\\/STYLE>)"
+    },
+    {
+      "regexp": "(?i-mx:<P align=center><FONT size=5>welcome to phone settings<\\/FONT><\\/P><FORM action=\\/a )"
+    }
+  ],
+  "dorks": [
+    "intitle:\"V1\" \"welcome to phone settings\" password -intitle"
+  ],
+  "website": "http://www.italkbb.com/"
+}

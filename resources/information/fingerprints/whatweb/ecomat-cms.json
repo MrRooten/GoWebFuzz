@@ -1,0 +1,12 @@
+{
+  "name": "Ecomat-CMS",
+  "matches": [
+    {
+      "version": "(?-mix:<meta name=\"Generator\" content=\"ECOMAT CMS ([\\d\\.]{1,5})\">)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.ecomat.ch/"
+}

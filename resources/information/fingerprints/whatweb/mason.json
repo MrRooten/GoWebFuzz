@@ -1,0 +1,13 @@
+{
+  "name": "Mason",
+  "matches": [
+    {
+      "search": "headers[x-powered-by]",
+      "regexp": "(?-mix:HTML::Mason)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.masonhq.com/"
+}

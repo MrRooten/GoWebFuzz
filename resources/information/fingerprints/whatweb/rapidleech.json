@@ -1,0 +1,16 @@
+{
+  "name": "Rapidleech",
+  "matches": [
+    {
+      "regexp": "(?-mix:<small[^>]+>Credits to Pramode &amp; Checkmate &amp; Kloon<\\/small><br)"
+    },
+    {
+      "regexp": "(?-mix:<small[^>]+>Credits to Pramode &amp; Checkmate &amp; Kloon. Mod by: MsNeil &amp; Idoenk<\\/small><br)",
+      "module": "PlugMod"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://code.google.com/p/rapidleech/"
+}

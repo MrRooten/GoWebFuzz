@@ -1,0 +1,27 @@
+{
+  "name": "eXtreme-Message-Board",
+  "matches": [
+    {
+      "text": "<!-- Powered by XMB "
+    },
+    {
+      "text": "<!-- The XMB Group -->"
+    },
+    {
+      "name": "Powered by footer",
+      "version": "(?-mix:^Powered by XMB ([\\d\\.]+)<br \\/>)"
+    },
+    {
+      "name": "Title",
+      "version": "(?-mix:<title>[^<]+- Powered by XMB ([\\d\\.]+) )"
+    },
+    {
+      "name": "HTML comment",
+      "version": "(?-mix:^<!-- Powered by XMB ([\\d\\.]+) )"
+    }
+  ],
+  "dorks": [
+    "\"powered by XMB\""
+  ],
+  "website": "http://www.xmbforum.com/"
+}

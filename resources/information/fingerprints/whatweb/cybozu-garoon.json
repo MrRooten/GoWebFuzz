@@ -1,0 +1,13 @@
+{
+  "name": "Cybozu-Garoon",
+  "matches": [
+    {
+      "search": "headers[server]",
+      "version": "(?-mix:^Cybozu-WS\\/([^\\s]+)$)"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://cybozu.com/en/grn/product/"
+}

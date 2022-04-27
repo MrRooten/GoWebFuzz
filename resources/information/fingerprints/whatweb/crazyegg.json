@@ -1,0 +1,15 @@
+{
+  "name": "CrazyEgg",
+  "matches": [
+    {
+      "text": "cetrk.com"
+    },
+    {
+      "account": "(?-mix:dnn506yrbagrg\\.cloudfront\\.net\\/pages\\/scripts\\/(\\d+\\/\\d+))"
+    }
+  ],
+  "dorks": [
+
+  ],
+  "website": "http://www.crazyegg.com/"
+}

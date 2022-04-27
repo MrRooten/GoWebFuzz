@@ -1,0 +1,22 @@
+{
+  "name": "TOTVS-SmartClient",
+  "matches": [
+    {
+      "version": "(?-mix:<object\\s+classid=\"clsid:[a-f\\d\\-]+\"\\s+codebase=\"TotvsSmartClientax\\.cab#version=([^\"]+)\")"
+    },
+    {
+      "string": "(?-mix:<param name=\"StartProgram\" value=\"([^\"]+)\"> <<= Programa)"
+    },
+    {
+      "string": "(?-mix:<param name=\"Environment\" value=\"([^\"]+)\"> <<= Ambiente)"
+    },
+    {
+      "search": "headers[TotvsSmartClient]",
+      "regexp": "(?-mix:^TotvsSmartClient$)"
+    }
+  ],
+  "dorks": [
+    "intitle:\"TOTVSSMARTCLIENT\" \"URL do Totvs Server\""
+  ],
+  "website": "http://www.totvs.com/"
+}
